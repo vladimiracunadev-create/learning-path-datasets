@@ -1,0 +1,26 @@
+name: Reporte de error
+description: Algo no funciona como debería en la exportación, la validación o la búsqueda
+labels: [bug]
+body:
+  - type: textarea
+    id: que-pasa
+    attributes:
+      label: Qué ocurre
+      description: Describe el problema y el resultado esperado.
+    validations:
+      required: true
+  - type: textarea
+    id: reproducir
+    attributes:
+      label: Cómo reproducirlo
+      description: Comandos y una fuente mínima o sintética. No pegues datos personales ni textos sin licencia.
+      render: shell
+    validations:
+      required: true
+  - type: input
+    id: entorno
+    attributes:
+      label: Entorno
+      description: Sistema operativo y versión de Python.
+    validations:
+      required: true

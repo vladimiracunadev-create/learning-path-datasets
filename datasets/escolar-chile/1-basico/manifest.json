@@ -1,0 +1,56 @@
+{
+  "archivos": {
+    "eval.jsonl": {
+      "registros": 1797,
+      "sha256": "de808f80bf1a49755528122d00a7ed6ce1248744b873d03e663547bb56cd89ee"
+    },
+    "train.jsonl": {
+      "registros": 14589,
+      "sha256": "4055aa6a93161ce518a857071083c46912b48e54440b4a6d0e3ff99ce8fa49a4"
+    }
+  },
+  "clases_eval": 64,
+  "clases_train": 498,
+  "commit_fuente": "f44b4ad075509b7ff4252cf0e5e98a0cf8687a03",
+  "fuente": "vladimiracunadev-create/chilean-school-learning-path",
+  "licencia": [
+    "CC-BY-NC-SA-4.0"
+  ],
+  "nivel": "1-basico",
+  "pack": "escolar-chile",
+  "por_asignatura": {
+    "artes-visuales": 673,
+    "ciencias-naturales": 1373,
+    "educacion-fisica-salud": 1344,
+    "historia-geografia-ciencias-sociales": 1904,
+    "ingles-propuesta": 2004,
+    "lengua-en": 214,
+    "lengua-es": 355,
+    "lenguaje-comunicacion": 3668,
+    "matematica": 2324,
+    "musica": 812,
+    "orientacion": 980,
+    "tecnologia": 735
+  },
+  "por_idioma": {
+    "en": 214,
+    "es": 16172
+  },
+  "por_tipo": {
+    "actividad_abierta": 562,
+    "autoevaluacion": 1686,
+    "diccionario_en": 214,
+    "diccionario_es": 355,
+    "ejemplo_resuelto": 1131,
+    "ejercicio_cerrado": 7868,
+    "error_comun": 1124,
+    "explicacion": 562,
+    "vocabulario": 2884
+  },
+  "revision": [
+    "ia_asistida_sin_revision_humana"
+  ],
+  "schema": "1.0",
+  "total": 16386,
+  "verificables": 427
+}

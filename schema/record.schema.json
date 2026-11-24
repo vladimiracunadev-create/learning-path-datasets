@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/vladimiracunadev-create/learning-path-datasets/schema/record.schema.json",
+  "title": "Registro de learning-path-datasets (v1.0)",
+  "description": "Un ejemplo de aprendizaje: pregunta, explicación, ejercicio, definición o concepto, con procedencia, licencia y partición.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema", "id", "pack", "dominio", "nivel", "asignatura", "unidad", "tipo", "entrada", "salida",
+    "idioma", "verificable", "fuente", "licencia", "revision", "particion"
+  ],
+  "properties": {
+    "schema": {"const": "1.0"},
+    "id": {"type": "string", "minLength": 1, "description": "Identificador estable y único en todo el dataset."},
+    "pack": {"type": "string", "minLength": 1, "description": "Adaptador de origen, por ejemplo escolar-chile."},
+    "dominio": {"type": "string", "minLength": 1, "description": "Área de conocimiento, por ejemplo educacion-escolar."},
+    "nivel": {"type": "string", "minLength": 1},
+    "asignatura": {"type": "string", "minLength": 1},
+    "unidad": {"type": "string", "minLength": 1, "description": "Código del objetivo, módulo o archivo de origen."},
+    "clase": {"type": ["integer", "null"], "minimum": 1},
+    "tipo": {
+      "enum": [
+        "explicacion", "ejemplo_resuelto", "ejercicio_cerrado", "autoevaluacion", "error_comun",
+        "actividad_abierta", "vocabulario", "diccionario_es", "diccionario_en", "concepto"
+      ]
+    },
+    "dificultad": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},
+    "entrada": {"type": "string", "minLength": 1, "description": "Pregunta, enunciado, contexto o término."},
+    "salida": {"type": "string", "minLength": 1, "description": "Respuesta, texto explicativo o definición."},
+    "razon": {"type": ["string", "null"], "minLength": 1, "description": "Justificación o pasos de la respuesta."},
+    "idioma": {"type": "string", "minLength": 2},
+    "habilidades": {"type": "array", "items": {"type": "string"}},
+    "verificable": {"type": "boolean", "description": "Verdadero si la respuesta puede comprobarse por cálculo."},
+    "fuente": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "commit", "ruta"],
+      "properties": {
+        "repo": {"type": "string", "minLength": 1},
+        "commit": {"type": "string", "minLength": 1},
+        "ruta": {"type": "string", "minLength": 1}
+      }
+    },
+    "licencia": {"type": "string", "minLength": 1},
+    "revision": {
+      "enum": [
+        "ia_asistida_sin_revision_humana", "revision_humana_parcial", "revision_humana_completa", "no_aplica"
+      ]
+    },
+    "particion": {"enum": ["train", "eval"]},
+    "extra": {"type": "object", "description": "Campos propios del tipo (por ejemplo IPA o sílabas)."}
+  }
+}
