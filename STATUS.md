@@ -1,6 +1,6 @@
 # Estado verificable
 
-Versión canónica: **0.1.0** · Python mínimo: **3.11**
+Versión canónica: **0.2.0** · Python mínimo: **3.11**
 
 ## Cifras de los datasets
 
@@ -28,6 +28,7 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | Índice NumPy exacto | `OPERATIVO` | `lpdatasets index` y `search` |
 | Índice Qdrant local | `OPERATIVO-CON-EXTRA` | extra `qdrant`; prueba de equivalencia |
 | Embeddings semánticos | `PLANIFICADO` | no implementado; el embedder por defecto es léxico |
+| Skills y agentes (`.claude/`) | `OPERATIVO` | `scripts/verify_assets.py`; estructura verificada, calidad de salida no medida |
 | Etiquetado de habilidades | `PLANIFICADO` | el campo `habilidades` está vacío |
 | Revisión humana profesional | `NO REALIZADA` | todos los registros declaran `ia_asistida_sin_revision_humana` |
 

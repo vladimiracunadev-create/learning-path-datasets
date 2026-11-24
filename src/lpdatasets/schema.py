@@ -18,6 +18,11 @@ TIPOS = (
     "diccionario_es",
     "diccionario_en",
     "concepto",
+    "hecho",
+    "definicion",
+    "relacion",
+    "procedimiento",
+    "concepcion_erronea",
 )
 REVISIONES = (
     "ia_asistida_sin_revision_humana",

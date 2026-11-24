@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "learning-path-datasets"
-version = "0.1.0"
+version = "0.2.0"
 description = "Datasets multiconocimiento en JSONL y base vectorial, construidos desde programas de aprendizaje con procedencia, licencia y particiones verificables."
 readme = "README.md"
 requires-python = ">=3.11"

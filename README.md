@@ -14,7 +14,7 @@
 
 **learning-path-datasets** convierte programas de aprendizaje estructurados en datasets **multiconocimiento** para entrenar o evaluar modelos: cada ejemplo es una línea JSONL con su pregunta, respuesta, razón, dificultad, **procedencia** (repositorio, versión y archivo), **licencia**, **estado de revisión** y **partición** de entrenamiento o evaluación. Sobre esos mismos datos mantiene una **base vectorial local** para búsqueda y recuperación (RAG).
 
-[Esquema](docs/DATASET_SCHEMA.md) · [Arquitectura](docs/ARCHITECTURE.md) · [Base vectorial](docs/VECTOR_STORE.md) · [Tarjeta del dataset escolar](docs/DATASET_CARD_escolar-chile.md) · [Cómo sumar un programa](docs/ADDING_A_PACK.md) · [Límites y derechos](docs/LIMITS_AND_RIGHTS.md) · [Estado](STATUS.md) · [Hoja de ruta](ROADMAP.md)
+[Esquema](docs/DATASET_SCHEMA.md) · [Arquitectura](docs/ARCHITECTURE.md) · [Base vectorial](docs/VECTOR_STORE.md) · [Tarjeta del dataset escolar](docs/DATASET_CARD_escolar-chile.md) · [Cómo sumar un programa](docs/ADDING_A_PACK.md) · [Conocimiento puro](docs/KNOWLEDGE_STANDARD.md) · [Skills y agentes](docs/SKILLS_AND_AGENTS.md) · [Límites y derechos](docs/LIMITS_AND_RIGHTS.md) · [Estado](STATUS.md) · [Hoja de ruta](ROADMAP.md)
 
 > [!IMPORTANT]
 > Este repositorio **prepara datos; no entrena modelos ni los distribuye**. El contenido fue elaborado con asistencia de IA y **no tiene revisión humana profesional**. Un dato publicado no es automáticamente correcto, representativo ni apto para cualquier uso. Lee [Límites y derechos](docs/LIMITS_AND_RIGHTS.md) antes de entrenar o redistribuir.
@@ -59,6 +59,8 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | Índice NumPy exacto (coseno) | `OPERATIVO` | `lpdatasets index` / `search` |
 | Índice Qdrant local | `OPERATIVO-CON-EXTRA` | extra `qdrant`, prueba de equivalencia con NumPy |
 | Embeddings semánticos | `PLANIFICADO` | el embedder por defecto es **léxico**; ver [Base vectorial](docs/VECTOR_STORE.md) |
+| Tipos de conocimiento puro (`hecho`, `definicion`, `relacion`…) | `OPERATIVO` | esquema y [estándar](docs/KNOWLEDGE_STANDARD.md) |
+| 4 skills y 4 agentes generales para crear datasets | `OPERATIVO` | `.claude/`, `scripts/verify_assets.py` y pruebas; estructura verificada, calidad no medida |
 | Otros niveles escolares y otros programas | `PLANIFICADO` | [hoja de ruta](ROADMAP.md) |
 
 ## ⚡ Empezar
@@ -97,6 +99,10 @@ lpdatasets export --pack escolar-chile --nivel 1-basico \
   "licencia": "CC-BY-NC-SA-4.0", "revision": "ia_asistida_sin_revision_humana", "particion": "train"
 }
 ```
+
+## 🤖 Skills y agentes
+
+Para producir datasets de **conocimiento puro** en cualquier dominio hay cuatro skills (`dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar`, `dataset-pack-nuevo`) y cuatro agentes (`extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos`), con la regla de que **quien verifica no es quien escribió**. Se instalan para todos tus proyectos con `python scripts/install_claude_assets.py`. Detalle en [Skills y agentes](docs/SKILLS_AND_AGENTS.md).
 
 ## 🧩 Packs
 

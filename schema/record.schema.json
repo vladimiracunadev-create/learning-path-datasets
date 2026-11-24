@@ -21,7 +21,8 @@
     "tipo": {
       "enum": [
         "explicacion", "ejemplo_resuelto", "ejercicio_cerrado", "autoevaluacion", "error_comun",
-        "actividad_abierta", "vocabulario", "diccionario_es", "diccionario_en", "concepto"
+        "actividad_abierta", "vocabulario", "diccionario_es", "diccionario_en", "concepto",
+        "hecho", "definicion", "relacion", "procedimiento", "concepcion_erronea"
       ]
     },
     "dificultad": {"type": ["integer", "null"], "minimum": 1, "maximum": 5},

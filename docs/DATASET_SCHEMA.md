@@ -41,6 +41,11 @@ Un archivo `.jsonl` tiene un objeto JSON por línea, con claves ordenadas y sin 
 | `vocabulario` | término | definición |
 | `diccionario_es` / `diccionario_en` | palabra | significado o traducción; el detalle va en `extra` |
 | `concepto` | recorrido de encabezados | texto de la sección |
+| `hecho` | pregunta o sujeto | afirmación atómica; la evidencia va en `razon` |
+| `definicion` | término | definición autocontenida |
+| `relacion` | par de conceptos | cómo se relacionan (causa, parte de, tipo de…) |
+| `procedimiento` | objetivo | pasos en orden |
+| `concepcion_erronea` | idea equivocada frecuente | corrección y por qué se equivoca la gente |
 
 ## Particiones
 

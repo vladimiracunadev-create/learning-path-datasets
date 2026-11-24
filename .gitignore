@@ -11,4 +11,5 @@ build/
 .DS_Store
 .env
 work/
-.claude/
+.claude/worktrees/
+.claude/settings.local.json

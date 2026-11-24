@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0 · conocimiento puro, skills y agentes
+
+- Cinco tipos nuevos de registro para conocimiento puro: `hecho`, `definicion`, `relacion`, `procedimiento` y `concepcion_erronea` (cambio compatible: el esquema sigue en 1.0 y los datos publicados no cambian).
+- Estándar de conocimiento puro con siete principios (`docs/KNOWLEDGE_STANDARD.md`).
+- Cuatro skills generales (extraer, verificar, construir y publicar, crear un pack) y cuatro agentes (extractor, verificador independiente, curador, auditor de derechos), con instalador para `~/.claude` y verificador de estructura y enlaces.
+- Límite declarado: se verificó la estructura y los enlaces de las skills y los agentes, no la calidad de lo que producen en un dominio concreto.
+
 ## 0.1.0 · primera versión
 
 - Esquema común v1.0 con validación ejecutable y JSON Schema.
