@@ -74,7 +74,7 @@ El agente [`limpiador-datos`](../../.claude/agents/limpiador-datos.md) prepara l
 
 ## Métricas
 
-Primer informe, 2026-11-26: 1.140 hallazgos (tabla siguiente). Tras aprobar los lotes y aplicar 24 correcciones ese día: **1.135 hallazgos, 1.042 aceptados y 93 pendientes**, más 16 resueltos.
+Primer informe, 2026-11-26: 1.140 hallazgos (tabla siguiente). Tras aprobar los lotes y aplicar 24 correcciones ese día: **1.135 hallazgos, 1.057 aceptados y 78 pendientes**, más 16 resueltos.
 
 | Pendientes | Hallazgos |
 |---|---:|
@@ -83,7 +83,6 @@ Primer informe, 2026-11-26: 1.140 hallazgos (tabla siguiente). Tras aprobar los 
 | Vocabulario por decidir | 19 |
 | Enunciado y cuaderno por decidir | 16 |
 | Por corregir, sobre las 4 correcciones sin aprobar | 4 |
-| Proponen aceptar y esperan aprobación (11 nuevos y 4 que cambiaron de lote) | 15 |
 
 | Regla | Hallazgos | Afectados |
 |---|---:|---:|
@@ -117,7 +116,7 @@ Hay un informe antes y después, cada hallazgo está resuelto o aceptado con mot
 
 ## Límites
 
-Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. El informe «después» existe solo para las 24 correcciones aplicadas; quedan 93 pendientes. La regla del enunciado no ve una elección regalada con otro género o número (el texto dice «rígida» y se responde «Rígido»): se halló una al redactar y puede haber otras. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
+Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. El informe «después» existe solo para las 24 correcciones aplicadas; quedan 78 pendientes. La regla del enunciado no ve una elección regalada con otro género o número (el texto dice «rígida» y se responde «Rígido»): se halló una al redactar y puede haber otras. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
 
 ## Decisiones
 
@@ -125,6 +124,7 @@ Las reglas encuentran problemas de forma; los errores pedagógicos requieren un 
 - 2026-11-26: los cruces del dataset v1.0 se corrigen al construir la versión siguiente (L08).
 - 2026-11-26: una corrección de contenido se aplica en la fuente y regenera el núcleo y el dataset v1.0; no se editan sus archivos.
 - 2026-11-26: los hallazgos resueltos se archivan con el commit; un hallazgo nuevo no hereda la aprobación de otro.
+- 2026-11-26: el titular aprobó los 15 hallazgos que quedaron proponiendo aceptar tras la reexportación (11 nuevos y 4 que cambiaron de lote).
 - 2026-11-26: las decisiones se aprueban por lote; los lotes de corrección siguen pendientes hasta aplicar el cambio.
 - 2026-11-26: las correcciones se redactan y revisan aquí; el contenido se cambia en la fuente, con autorización expresa, y se vuelve a exportar.
 - 2026-11-26: el titular (`vladimiracunadev-create`) aprobó los 10 lotes de aceptación, incluidas las 12 coincidencias breves con texto oficial.

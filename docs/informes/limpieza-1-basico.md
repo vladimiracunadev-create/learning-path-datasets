@@ -4,7 +4,7 @@ Generado con `lpdatasets clean-report`; no se edita a mano. Propone cambios y **
 
 - Núcleo: 18926 entidades, 16386 ítems, commit de la fuente `3fd976d50bb2`.
 - Dataset v1.0 revisado como línea base: 16386 registros.
-- Hallazgos: 1135; pendientes: 93.
+- Hallazgos: 1135; pendientes: 78.
 
 | Regla | Severidad | Hallazgos | Afectados | Pendientes |
 |---|---|---:|---:|---:|
@@ -14,8 +14,8 @@ Generado con `lpdatasets clean-report`; no se edita a mano. Propone cambios y **
 | `duplicado_exacto` | revisar | 151 | 348 | 0 |
 | `respuestas_en_conflicto` | revisar | 328 | 856 | 19 |
 | `recurso_ausente` | revisar | 0 | 0 | 0 |
-| `solucion_en_enunciado` | revisar | 445 | 1559 | 26 |
-| `solucion_en_cuaderno` | revisar | 160 | 195 | 9 |
+| `solucion_en_enunciado` | revisar | 445 | 1559 | 13 |
+| `solucion_en_cuaderno` | revisar | 160 | 195 | 7 |
 | `texto_oficial` | revisar | 12 | 12 | 0 |
 | `sin_habilidades` | info | 12 | 16386 | 12 |
 | `sin_dificultad` | info | 8 | 8518 | 8 |

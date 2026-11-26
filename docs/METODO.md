@@ -93,6 +93,10 @@ El titular aprobó los 10 lotes de aceptación: 1.042 hallazgos aceptados y 98 p
 - **Efecto en la limpieza:** 16 hallazgos resueltos, 11 nuevos (el resto de grupos anteriores) y 4 que cambiaron de lote porque su grupo conserva la pregunta corregida; los 15 proponen aceptar y esperan aprobación. Se simuló antes de exportar para saber si alguna aprobación quedaba huérfana: ninguna.
 - **Límite:** el cambio en la fuente no es revisión profesional.
 
+### 3.11 Aprobación tras reexportar
+
+El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 78 pendientes. La aprobación por lote solo registra lo que seguía pendiente, así que las decisiones anteriores no se reescriben.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -186,7 +190,7 @@ Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-
 ## 9. Lo que no está hecho
 
 - Ninguna persona ha revisado el contenido.
-- Quedan 93 hallazgos pendientes y 4 correcciones sin aprobar.
+- Quedan 78 hallazgos pendientes: 20 de etiquetas (L03), 19 cruces del dataset (L08), 19 definiciones y 16 casos de enunciado o cuaderno por decidir, y 4 ligados a las 4 correcciones sin aprobar.
 - Líneas L03 a L09 sin implementación nueva; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.
