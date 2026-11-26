@@ -104,7 +104,13 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Cómo:** leer la clase completa antes de recomendar; mantener cuando la forma del ejercicio es su propósito; en un glosario, cambiar solo la definición de la clase afectada. Las comprobaciones se ampliaron: una definición puede cambiar sin cambiar la palabra, y repetir definiciones entre clases no bloquea.
 - **Lecturas ciegas:** primera ronda, 18 de 34 textos objetados (4 de 11 ejercicios y 14 de 23 definiciones, más 1 duda aparte); segunda, sobre 17 cambiados, 1 objeción y 1 duda.
 - **Aprendizaje:** las definiciones para 6 años fallaron mucho más que los ejercicios (términos abstractos, sílabas de una letra, contradicciones con los ejemplos de la clase). Con datos nuevos, verificar siempre un glosario contra los ejemplos de su unidad.
-- **Estado:** nada decidido ni aplicado.
+- **Estado al cierre del paso:** nada decidido ni aplicado.
+
+### 3.13 Decisión sobre las dudas
+
+- **Qué:** el titular aprobó todas las recomendaciones. `clean-resolve-doubts` registró 11 hallazgos mantenidos y 35 textos aprobados; nada se aplicó.
+- **Cómo:** la orden exige que los cuatro informes estén al día, registra cada tipo de decisión donde corresponde y conserva la hoja como historial.
+- **Antes de aplicar (simulado el 2026-11-26):** desaparecerían 10 hallazgos, uno de ellos ya aceptado; 19 pendientes seguirían con el mismo identificador y texto nuevo; surgirían 6. Hoy `clean-mark-applied` no cierra esos 19 ni archiva la decisión huérfana, 5 definiciones se repiten en la fuente (hay que cambiar solo la de su clase) y 1 pregunta no se localiza con la búsqueda literal. Hay que resolver esto antes de la próxima reexportación.
 
 ## 4. Cambios de criterio en el camino
 
@@ -191,16 +197,17 @@ Resolver esto es el primer trabajo antes de sumar datos de otro tipo.
 | `lpdatasets index`, `search` | base vectorial local |
 | `lpdatasets core-export`, `core-validate` | núcleo |
 | `lpdatasets clean-report`, `clean-proposals`, `clean-corrections` | hallazgos, lotes y redacciones; con `--check` no escriben |
-| `lpdatasets clean-approve`, `clean-approve-corrections` | únicas que registran aprobaciones |
+| `lpdatasets clean-approve`, `clean-approve-corrections` | aprobaciones de lotes y de correcciones |
 | `lpdatasets clean-mark-applied` | tras reexportar, registra lo aplicado y archiva lo resuelto |
 | `lpdatasets clean-doubts` | hoja de decisión de las dudas; con `--check` no escribe |
+| `lpdatasets clean-resolve-doubts` | registra la aprobación de las recomendaciones, sin aplicar |
 
 Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar` y `dataset-pack-nuevo`. Agentes: `extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos` y `limpiador-datos`. En este trabajo, las lecturas ciegas las hizo `verificador-independiente`; las propuestas se prepararon sin delegar en `limpiador-datos`, que sigue sin probarse en un lote real.
 
 ## 9. Lo que no está hecho
 
 - Ninguna persona ha revisado el contenido.
-- Quedan 78 hallazgos pendientes: 20 de etiquetas (L03), 19 cruces del dataset (L08), 19 definiciones y 16 casos de enunciado o cuaderno por decidir, y 4 ligados a las 4 correcciones sin aprobar.
+- Quedan 67 hallazgos pendientes: 20 de etiquetas (L03), 19 cruces del dataset (L08) y 28 con texto aprobado (35 textos) sin aplicar en la fuente.
 - Líneas L03 a L09 sin implementación nueva; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.

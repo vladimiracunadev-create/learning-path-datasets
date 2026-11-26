@@ -1441,6 +1441,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "respuestas_en_conflicto:50631ae00456",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: son sentidos correctos y propios de cada clase: patrón e instrumento",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "respuestas_en_conflicto:50c08e89296a",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
@@ -1975,6 +1981,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "respuestas_en_conflicto:939bfa6fcbfe",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: en las dos clases se usa para hablar de ideas sobre grupos; ahí la definición es correcta",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "respuestas_en_conflicto:94a94192ad2b",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
@@ -2494,6 +2506,12 @@
    "id": "respuestas_en_conflicto:e0073617492f",
    "estado": "aceptado",
    "motivo": "lote vocabulario-acepciones: la palabra tiene sentidos distintos según la clase",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "respuestas_en_conflicto:e0983b929fd0",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: las definiciones son correctas en el contexto de cada clase",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -3193,6 +3211,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "solucion_en_cuaderno:655ed42c64cb",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: practica completar una frase citando un dato",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "solucion_en_cuaderno:663cde268994",
    "estado": "aceptado",
    "motivo": "lote cuaderno-propio-enunciado: la respuesta aparece en el cuaderno solo porque está en su propio enunciado",
@@ -3550,6 +3574,12 @@
    "id": "solucion_en_cuaderno:d50a9ebbad44",
    "estado": "aceptado",
    "motivo": "lote cuaderno-ensenanza: la respuesta es el contenido que la clase enseña antes de preguntar",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "solucion_en_cuaderno:d88020692d02",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: aplica el criterio de seguridad a un caso nuevo",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -4165,6 +4195,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "solucion_en_enunciado:3405c8832472",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: para elegir hay que saber qué es textura",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "solucion_en_enunciado:35471576b5bf",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
@@ -4378,6 +4414,12 @@
    "id": "solucion_en_enunciado:451b77e4c016",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "solucion_en_enunciado:45eeb3473364",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: tarea abierta: el ejemplo es un apoyo y la respuesta depende de la mesa de cada niño",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -4807,6 +4849,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "solucion_en_enunciado:7081ecefafb9",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: practica anotar medidas con su unidad en un dibujo",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "solucion_en_enunciado:70cca9eeaecb",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
@@ -5125,6 +5173,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "solucion_en_enunciado:954cc1ca52e5",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: reconocer el mes dentro de un testimonio es adecuado para recuerdo",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "solucion_en_enunciado:968cd37cd50e",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
@@ -5431,6 +5485,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "solucion_en_enunciado:bd25d1e312b6",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: recuerdo de nivel inicial: comprueba la expresión «lugar de nacimiento»",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "solucion_en_enunciado:bd4165219531",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
@@ -5632,6 +5692,12 @@
    "id": "solucion_en_enunciado:d1b1c356fb66",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "solucion_en_enunciado:d1e42cb13db2",
+   "estado": "aceptado",
+   "motivo": "duda resuelta, mantener: practica expresar una duración con su unidad, que es la meta",
    "aprobado_por": "vladimiracunadev-create"
   },
   {

@@ -8,7 +8,7 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 |---|---:|---:|---:|
 | aceptar | 10 | 1057 | 0 |
 | corregir | 4 | 43 | 43 |
-| decidir | 3 | 35 | 35 |
+| decidir | 3 | 35 | 24 |
 
 ## Lotes
 
@@ -18,16 +18,16 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 | `duplicado-repaso` | aceptar | 13 | 26 | leído | 0 |
 | `vocabulario-variantes` | aceptar | 266 | 688 | leído | 0 |
 | `vocabulario-acepciones` | aceptar | 30 | 73 | leído | 0 |
-| `vocabulario-redaccion` | decidir | 19 | 69 | leído | 19 |
+| `vocabulario-redaccion` | decidir | 19 | 69 | leído | 16 |
 | `conflicto-contexto` | aceptar | 13 | 26 | leído | 0 |
 | `enunciado-opciones` | aceptar | 317 | 1003 | por regla | 0 |
 | `enunciado-comprension` | aceptar | 115 | 497 | leído | 0 |
-| `enunciado-decidir` | decidir | 11 | 52 | leído | 11 |
+| `enunciado-decidir` | decidir | 11 | 52 | leído | 5 |
 | `enunciado-corregir` | corregir | 2 | 7 | leído | 2 |
 | `cuaderno-propio-enunciado` | aceptar | 25 | 28 | por regla | 0 |
 | `cuaderno-ensenanza` | aceptar | 128 | 158 | leído y por regla | 0 |
 | `cuaderno-corregir` | corregir | 2 | 2 | leído | 2 |
-| `cuaderno-decidir` | decidir | 5 | 7 | leído | 5 |
+| `cuaderno-decidir` | decidir | 5 | 7 | leído | 3 |
 | `texto-oficial-fragmento` | aceptar | 12 | 12 | leído | 0 |
 | `cruces-dataset` | corregir | 19 | 230 | por regla | 19 |
 | `etiquetas` | corregir | 20 | 24904 | por regla | 20 |

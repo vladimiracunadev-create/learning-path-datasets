@@ -14,7 +14,7 @@ from .cleaning import report
 from .core_build import validate_core
 from .core_escolar import export as export_core
 from .corrections import approve_corrections, corrections_report, mark_applied
-from .doubts import doubts_report
+from .doubts import Docs, doubts_report, resolve_doubts
 from .proposals import approve, proposals_report
 from .vector import build_index, search
 
@@ -85,6 +85,12 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--nucleo", default="nucleo")
     p.add_argument("--informe", default="docs/informes/dudas-1-basico.md")
     p.add_argument("--check", action="store_true", help="falla si la hoja está desactualizada")
+
+    p = sub.add_parser("clean-resolve-doubts", help="registra la aprobación de las recomendaciones sobre dudas")
+    p.add_argument("--aprobado-por", required=True)
+    p.add_argument("--excluir", action="append", default=[], help="hallazgo que no se aprueba; repetible")
+    p.add_argument("--nucleo", default="nucleo")
+    p.add_argument("--datasets", default="datasets")
 
     p = sub.add_parser("validate", help="valida esquema, hashes y particiones")
     p.add_argument("--datasets", default="datasets")
@@ -160,6 +166,17 @@ def main(argv: list[str] | None = None) -> int:
         found = doubts_report(Path(args.nucleo), Path(args.informe), args.check)
         print(os.linesep.join(found) if found else "OK: dudas con recomendación")
         return 1 if found else 0
+    if args.cmd == "clean-resolve-doubts":
+        reports = Path("docs/informes")
+        docs = Docs(
+            reports / "limpieza-1-basico.md",
+            reports / "propuestas-limpieza-1-basico.md",
+            reports / "correcciones-1-basico.md",
+            reports / "dudas-1-basico.md",
+        )
+        kept, texts = resolve_doubts(Path(args.nucleo), Path(args.datasets), args.aprobado_por, docs, args.excluir)
+        print(f"Hallazgos mantenidos: {kept}; textos aprobados: {texts}")
+        return 0
     if args.cmd == "validate":
         problems = validate_datasets(Path(args.datasets))
         print("\n".join(problems[:50]) if problems else "OK: datasets válidos")

@@ -33,7 +33,11 @@
     "enunciado": "fondo",
     "respuesta": "lo que está lejos, atrás, y se dibuja arriba y pequeño"
    },
-   "cambio": "definición de «fondo» más precisa para su clase"
+   "cambio": "definición de «fondo» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3a62c8d01df9"
+   }
   },
   {
    "item": "escolar-chile:1-basico:cn01-oa-03:c02:ej-understand-01",
@@ -187,7 +191,11 @@
     "respuesta": "lo rápido o lento que van los sonidos o los pasos"
    },
    "cambio": "definición de «ritmo» más precisa para su clase",
-   "duda": "es el texto que propuso el segundo lector y nadie más lo ha leído; otra clase define ritmo como orden de sonidos"
+   "duda": "es el texto que propuso el segundo lector y nadie más lo ha leído; otra clase define ritmo como orden de sonidos",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "747084e1169c"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ef01-oa-06:c03:vocab-02",
@@ -200,7 +208,11 @@
     "enunciado": "vigoroso",
     "respuesta": "esfuerzo fuerte en que solo digo palabras sueltas"
    },
-   "cambio": "definición de «vigoroso» más precisa para su clase"
+   "cambio": "definición de «vigoroso» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "906aff2b5efb"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ef01-oa-09:c05:ej-challenge-02",
@@ -275,7 +287,11 @@
     "respuesta": "jueves, sábado, domingo",
     "razon": "Así ocurren dentro de la semana."
    },
-   "cambio": "días que ningún ejemplo ni nota del cuaderno da ya ordenados"
+   "cambio": "días que ningún ejemplo ni nota del cuaderno da ya ordenados",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "cb43619f0539"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-03:c02:ej-apply-01",
@@ -290,7 +306,11 @@
     "respuesta": "El compañero",
     "razon": "Cada persona decide qué quiere contar."
    },
-   "cambio": "trabaja el respeto al preguntar por la procedencia, en vez de ordenar ciudades"
+   "cambio": "trabaja el respeto al preguntar por la procedencia, en vez de ordenar ciudades",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "edd1ac0465dc"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-04:c02:vocab-04",
@@ -303,7 +323,11 @@
     "enunciado": "permiso",
     "respuesta": "el sí que pido antes de hacer preguntas"
    },
-   "cambio": "definición de «permiso» más precisa para su clase"
+   "cambio": "definición de «permiso» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "2f0b53e1bf13"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-04:c05:vocab-01",
@@ -316,7 +340,11 @@
     "enunciado": "permiso",
     "respuesta": "el sí que pido antes de contar algo de otra persona"
    },
-   "cambio": "definición de «permiso» más precisa para su clase"
+   "cambio": "definición de «permiso» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "b86261bec618"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-05:c03:ej-recovery-03",
@@ -351,7 +379,11 @@
     "respuesta": "El aniversario de Santiago",
     "razon": "Es en febrero y San Pedro es en junio."
    },
-   "cambio": "hay que comparar con otra fecha de la clase en vez de repetir el mes"
+   "cambio": "hay que comparar con otra fecha de la clase en vez de repetir el mes",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "7269df5a02d8"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-06:c04:ej-apply-01",
@@ -407,7 +439,11 @@
     "razon": "La localidad es el lugar donde viven personas y está dentro de una región, que es una parte grande del país."
    },
    "cambio": "hay que aplicar los dos conceptos a nombres nuevos",
-   "duda": "se parece al ejemplo resuelto con otros nombres y puede ser fácil para su dificultad; se invirtió el orden de los espacios después de la última lectura"
+   "duda": "se parece al ejemplo resuelto con otros nombres y puede ser fácil para su dificultad; se invirtió el orden de los espacios después de la última lectura",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "ab85168ce31c"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-12:c01:ej-apply-03",
@@ -423,7 +459,11 @@
     "razon": "Primero se busca el continente y después el país dentro de él."
    },
    "cambio": "pregunta por el modo de ubicar un país, sin repetir los datos de los ejemplos",
-   "duda": "es recuerdo de la explicación más que aplicación; podría bajarse la dificultad"
+   "duda": "es recuerdo de la explicación más que aplicación; podría bajarse la dificultad",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "93083a0d20e0"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-13:c05:auto-02",
@@ -456,7 +496,11 @@
     "enunciado": "sentido",
     "respuesta": "lo que una frase quiere decir y se puede entender"
    },
-   "cambio": "definición de «sentido» más precisa para su clase"
+   "cambio": "definición de «sentido» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "e43574f21462"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-04:c01:vocab-04",
@@ -469,7 +513,11 @@
     "enunciado": "sílaba",
     "respuesta": "parte de una palabra que se dice en un solo golpe de voz"
    },
-   "cambio": "definición de «sílaba» más precisa para su clase"
+   "cambio": "definición de «sílaba» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "af1a8523fc5b"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-04:c01:vocab-05",
@@ -482,7 +530,11 @@
     "enunciado": "leer",
     "respuesta": "juntar los sonidos de las letras para entender lo escrito"
    },
-   "cambio": "definición de «leer» más precisa para su clase"
+   "cambio": "definición de «leer» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "5816696e32ba"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-04:c02:vocab-05",
@@ -495,7 +547,11 @@
     "enunciado": "palabra",
     "respuesta": "una o más sílabas que significan algo"
    },
-   "cambio": "definición de «palabra» más precisa para su clase"
+   "cambio": "definición de «palabra» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "0a45ea5ec845"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-04:c05:vocab-02",
@@ -508,7 +564,11 @@
     "enunciado": "sentido",
     "respuesta": "lo que una frase quiere decir y se puede entender"
    },
-   "cambio": "definición de «sentido» más precisa para su clase"
+   "cambio": "definición de «sentido» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "e43574f21462"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-12:c04:ej-understand-01",
@@ -523,7 +583,11 @@
     "respuesta": "Una rana",
     "razon": "Salta a la laguna y canta croac. También vale un sapo."
    },
-   "cambio": "la pregunta ya no nombra al personaje; hay que deducirlo"
+   "cambio": "la pregunta ya no nombra al personaje; hay que deducirlo",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "5b5367a11c72"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-13:c01:vocab-05",
@@ -536,7 +600,11 @@
     "enunciado": "leer",
     "respuesta": "entender lo que está escrito, en voz alta o en silencio"
    },
-   "cambio": "definición de «leer» más precisa para su clase"
+   "cambio": "definición de «leer» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "83e2c55a28d9"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-14:c01:vocab-05",
@@ -549,7 +617,11 @@
     "enunciado": "sentido",
     "respuesta": "lo que una frase quiere decir y se puede entender"
    },
-   "cambio": "definición de «sentido» más precisa para su clase"
+   "cambio": "definición de «sentido» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "e43574f21462"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-14:c02:ej-apply-02",
@@ -602,7 +674,11 @@
     "enunciado": "sentido",
     "respuesta": "lo que una frase quiere decir y se puede entender"
    },
-   "cambio": "definición de «sentido» más precisa para su clase"
+   "cambio": "definición de «sentido» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "e43574f21462"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-17:c03:ej-apply-03",
@@ -637,7 +713,11 @@
     "respuesta": "El gato se quedó dormido en el pasto",
     "razon": "Es lo último que pasa."
    },
-   "cambio": "cuento nuevo, que ningún ejemplo resume"
+   "cambio": "cuento nuevo, que ningún ejemplo resume",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "2a1eafb04242"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-18:c01:vocab-03",
@@ -651,7 +731,11 @@
     "respuesta": "información que se escucha o se lee y se puede comprobar"
    },
    "cambio": "definición de «dato» más precisa para su clase",
-   "duda": "No contradice la clase, pero «se puede comprobar» no se trabaja aquí (comprobar es recordar); la clase usa datos como hora, lugar y cosas que llevar. La profesora decide entre unificar o usar: «información que necesito saber, como la hora o el lugar»"
+   "duda": "No contradice la clase, pero «se puede comprobar» no se trabaja aquí (comprobar es recordar); la clase usa datos como hora, lugar y cosas que llevar. La profesora decide entre unificar o usar: «información que necesito saber, como la hora o el lugar»",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "0da4d098b087"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-21:c03:ej-recovery-01",
@@ -704,7 +788,11 @@
     "enunciado": "orden",
     "respuesta": "forma de avanzar uno por uno sin saltarse ninguno"
    },
-   "cambio": "definición de «orden» más precisa para su clase"
+   "cambio": "definición de «orden» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "f3c6f1989560"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-11:c04:vocab-02",
@@ -717,7 +805,11 @@
     "enunciado": "restar",
     "respuesta": "quitar una cantidad a un número"
    },
-   "cambio": "definición de «restar» más precisa para su clase"
+   "cambio": "definición de «restar» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "89f6b9324dbc"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-11:c04:vocab-04",
@@ -730,7 +822,11 @@
     "enunciado": "cero",
     "respuesta": "el número que dice que no queda ninguno"
    },
-   "cambio": "definición de «cero» más precisa para su clase"
+   "cambio": "definición de «cero» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "54795e70c689"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-12:c03:vocab-05",
@@ -743,7 +839,11 @@
     "enunciado": "comprobar",
     "respuesta": "revisar calculando los dos lados"
    },
-   "cambio": "definición de «comprobar» más precisa para su clase"
+   "cambio": "definición de «comprobar» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "1616a1adff4b"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-13:c04:ej-recovery-03",
@@ -758,7 +858,11 @@
     "respuesta": "La fila 3",
     "razon": "Las filas se cuentan desde arriba."
    },
-   "cambio": "la pregunta ahora dice de qué se está contando"
+   "cambio": "la pregunta ahora dice de qué se está contando",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "d1a18b3dedeb"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-15:c02:vocab-05",
@@ -771,7 +875,11 @@
     "enunciado": "clasificar",
     "respuesta": "formar grupos con las cosas que se parecen en algo"
    },
-   "cambio": "definición de «clasificar» más precisa para su clase"
+   "cambio": "definición de «clasificar» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "5ef7e4a3d3ac"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-17:c04:auto-01",
@@ -806,7 +914,11 @@
     "respuesta": "El estante",
     "razon": "Si el cordel sobra, el segundo objeto es más corto."
    },
-   "cambio": "redacción más clara, con objetos distintos de los del ejemplo"
+   "cambio": "redacción más clara, con objetos distintos de los del ejemplo",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "27a20ff81c4f"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-18:c04:ej-recovery-02",
@@ -821,7 +933,11 @@
     "respuesta": "La ventana",
     "razon": "Si la cinta no alcanza, el segundo objeto es más ancho."
    },
-   "cambio": "redacción más clara, con objetos distintos de los del ejemplo"
+   "cambio": "redacción más clara, con objetos distintos de los del ejemplo",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "cfc268f9d563"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-19:c02:vocab-05",
@@ -834,7 +950,11 @@
     "enunciado": "repetir",
     "respuesta": "anotar dos veces la respuesta de una misma persona"
    },
-   "cambio": "definición de «repetir» más precisa para su clase"
+   "cambio": "definición de «repetir» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "ff765f073288"
+   }
   },
   {
    "item": "escolar-chile:1-basico:mu01-oa-01:c04:vocab-04",
@@ -848,7 +968,11 @@
     "respuesta": "hecha a mi manera, con símbolos que invento y explico"
    },
    "cambio": "definición de «no convencional» más precisa para su clase",
-   "duda": "la clase entrega los tres símbolos que se usan, así que no los inventa el niño; alternativa: «que usa símbolos propios en vez de notas, y explica qué significan»"
+   "duda": "la clase entrega los tres símbolos que se usan, así que no los inventa el niño; alternativa: «que usa símbolos propios en vez de notas, y explica qué significan»",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "d0acef85b44d"
+   }
   },
   {
    "item": "escolar-chile:1-basico:mu01-oa-02:c03:ej-apply-02",
@@ -863,7 +987,11 @@
     "respuesta": "Sube",
     "razon": "Lo agudo se dibuja arriba."
    },
-   "cambio": "el enunciado ya no dice «sube»"
+   "cambio": "el enunciado ya no dice «sube»",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "1899d29303b1"
+   }
   },
   {
    "item": "escolar-chile:1-basico:mu01-oa-03:c01:ej-apply-01",
@@ -896,7 +1024,11 @@
     "enunciado": "no convencional",
     "respuesta": "que no fue hecho para hacer música, como un tarro que hago sonar"
    },
-   "cambio": "definición de «no convencional» más precisa para su clase"
+   "cambio": "definición de «no convencional» más precisa para su clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "2f2fa54773a1"
+   }
   },
   {
    "item": "escolar-chile:1-basico:mu01-oa-06:c04:ej-apply-01",
@@ -911,7 +1043,11 @@
     "respuesta": "Por ejemplo: Me gustó cuando cantaste lento al final porque se oyó cada palabra",
     "razon": "Dice qué gustó y qué se oyó, sin juzgar a la persona. Valen otras frases que cumplan eso."
    },
-   "cambio": "situación distinta de la del ejemplo y sin las frases dadas"
+   "cambio": "situación distinta de la del ejemplo y sin las frases dadas",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "ca489801834f"
+   }
   },
   {
    "item": "escolar-chile:1-basico:mu01-oa-07:c03:ej-apply-02",
@@ -966,7 +1102,11 @@
     "respuesta": "La mesa",
     "razon": "En el plano se respeta qué cosa es más grande."
    },
-   "cambio": "hay que comparar los objetos; el enunciado no dice cuál es grande"
+   "cambio": "hay que comparar los objetos; el enunciado no dice cuál es grande",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "a390a62c110f"
+   }
   }
  ],
  "segunda_lectura": [
