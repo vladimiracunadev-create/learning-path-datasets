@@ -130,6 +130,13 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Reutilizable:** la simulación previa solo reescribe el cuaderno; la guía docente repite respuestas y razones, así que al comparar una reexportación hay que revisar también las guías.
 - **Límite:** quedó sin aplicar una observación de lectura: algunas definiciones de «sentido» dicen «frase» y las clases suelen decir «oración». Nada de esto es revisión profesional.
 
+### 3.16 Aprobación de los 7 y cierre de lo que depende de criterio
+
+- **Qué:** el titular aprobó los 7 hallazgos pendientes de la reexportación con `clean-approve`: 1.073 aceptados, 19 resueltos y 39 pendientes.
+- **Cómo se comprobó:** se añadieron exactamente 7 decisiones y no cambió ninguna anterior; el contenido no se toca.
+- **Qué queda:** los 39 pendientes son 20 de etiquetas (línea L03) y 19 cruces entre entrenamiento y evaluación (línea L08). Ninguno se resuelve aprobando: necesitan construir esas líneas. Por eso L02 no cumple todavía su criterio de término.
+- **Límite:** esos 7 se clasificaron por regla o con la lectura anterior, sin una lectura ciega nueva. La definición aceptada de «sentido» conserva la observación sobre «frase» y «oración».
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -228,7 +235,7 @@ Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-
 ## 9. Lo que no está hecho
 
 - Ninguna persona ha revisado el contenido.
-- Quedan 46 hallazgos pendientes: 20 de etiquetas (L03), 19 cruces del dataset (L08) y 7 que proponen aceptar y esperan aprobación.
+- Quedan 39 hallazgos pendientes: 20 de etiquetas (L03) y 19 cruces del dataset (L08).
 - Líneas L03 a L09 sin implementación nueva; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.

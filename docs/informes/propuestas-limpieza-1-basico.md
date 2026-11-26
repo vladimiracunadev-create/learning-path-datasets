@@ -6,7 +6,7 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 
 | Veredicto propuesto | Lotes | Hallazgos | Pendientes |
 |---|---:|---:|---:|
-| aceptar | 11 | 1081 | 7 |
+| aceptar | 11 | 1081 | 0 |
 | corregir | 2 | 39 | 39 |
 | decidir | 3 | 11 | 0 |
 
@@ -14,16 +14,16 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 
 | Lote | Veredicto | Hallazgos | Afectados | Cómo se clasificó | Pendientes |
 |---|---|---:|---:|---|---:|
-| `duplicado-glosario` | aceptar | 139 | 324 | por regla | 2 |
+| `duplicado-glosario` | aceptar | 139 | 324 | por regla | 0 |
 | `duplicado-repaso` | aceptar | 13 | 26 | leído | 0 |
 | `vocabulario-variantes` | aceptar | 266 | 688 | leído | 0 |
 | `vocabulario-acepciones` | aceptar | 30 | 73 | leído | 0 |
 | `vocabulario-redaccion` | decidir | 3 | 14 | leído | 0 |
 | `conflicto-contexto` | aceptar | 13 | 26 | leído | 0 |
-| `enunciado-opciones` | aceptar | 318 | 1006 | por regla | 1 |
-| `enunciado-comprension` | aceptar | 117 | 504 | leído | 3 |
+| `enunciado-opciones` | aceptar | 318 | 1006 | por regla | 0 |
+| `enunciado-comprension` | aceptar | 117 | 504 | leído | 0 |
 | `enunciado-decidir` | decidir | 6 | 32 | leído | 0 |
-| `cuaderno-propio-enunciado` | aceptar | 26 | 29 | por regla | 1 |
+| `cuaderno-propio-enunciado` | aceptar | 26 | 29 | por regla | 0 |
 | `cuaderno-ensenanza` | aceptar | 128 | 158 | leído y por regla | 0 |
 | `cuaderno-decidir` | decidir | 2 | 3 | leído | 0 |
 | `texto-oficial-fragmento` | aceptar | 12 | 12 | leído | 0 |

@@ -361,6 +361,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "duplicado_exacto:5ab83c4506ca",
+   "estado": "aceptado",
+   "motivo": "lote duplicado-glosario: la misma palabra con la misma definición en el glosario de varias clases",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "duplicado_exacto:5ef42c079d3e",
    "estado": "aceptado",
    "motivo": "lote duplicado-glosario: la misma palabra con la misma definición en el glosario de varias clases",
@@ -764,6 +770,12 @@
   },
   {
    "id": "duplicado_exacto:d556a5384c43",
+   "estado": "aceptado",
+   "motivo": "lote duplicado-glosario: la misma palabra con la misma definición en el glosario de varias clases",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "duplicado_exacto:d589cc46a2de",
    "estado": "aceptado",
    "motivo": "lote duplicado-glosario: la misma palabra con la misma definición en el glosario de varias clases",
    "aprobado_por": "vladimiracunadev-create"
@@ -3757,6 +3769,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "solucion_en_cuaderno:f916250557cf",
+   "estado": "aceptado",
+   "motivo": "lote cuaderno-propio-enunciado: la respuesta aparece en el cuaderno solo porque está en su propio enunciado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "solucion_en_cuaderno:fd210ebfcfd5",
    "estado": "aceptado",
    "motivo": "lote cuaderno-ensenanza: la respuesta es el contenido que la clase enseña antes de preguntar",
@@ -3832,6 +3850,12 @@
    "id": "solucion_en_enunciado:0539002b42a2",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "solucion_en_enunciado:05dfdef40358",
+   "estado": "aceptado",
+   "motivo": "lote enunciado-comprension: copia, comprensión o inferencia sobre un texto dado",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -4000,6 +4024,12 @@
    "id": "solucion_en_enunciado:1a96a81b1235",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "solucion_en_enunciado:1aaa91ed1a8f",
+   "estado": "aceptado",
+   "motivo": "lote enunciado-comprension: copia, comprensión o inferencia sobre un texto dado",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -5095,6 +5125,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "solucion_en_enunciado:7bbf81dbf8f2",
+   "estado": "aceptado",
+   "motivo": "lote enunciado-comprension: copia, comprensión o inferencia sobre un texto dado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "solucion_en_enunciado:7c236eee844e",
    "estado": "aceptado",
    "motivo": "lote enunciado-comprension: copia, comprensión o inferencia sobre un texto dado",
@@ -5650,6 +5686,12 @@
    "id": "solucion_en_enunciado:c4808621f32f",
    "estado": "aceptado",
    "motivo": "lote enunciado-comprension: copia, comprensión o inferencia sobre un texto dado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "solucion_en_enunciado:c60870c58e13",
+   "estado": "aceptado",
+   "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
