@@ -13,7 +13,7 @@ import json
 import os
 from collections.abc import Collection
 from pathlib import Path
-from typing import Any
+from typing import Any, NamedTuple
 
 from .build import dumps, read_jsonl
 from .cleaning import all_findings, core_findings, dataset_records, normalize
@@ -261,11 +261,23 @@ def approve_corrections(nucleo: Path, doc: Path, approver: str, include: Collect
     return len(new)
 
 
-def mark_applied(nucleo: Path, datasets: Path) -> tuple[int, int]:
+class Applied(NamedTuple):
+    """Lo que cambió al registrar una reexportación."""
+
+    corrections: int
+    gone: int  # hallazgos que dejaron de aparecer
+    closed: int  # siguen señalados y quedan resueltos con el texto aprobado
+    withdrawn: int  # aceptaciones retiradas porque cambió el texto que se aceptó
+
+
+def mark_applied(nucleo: Path, datasets: Path) -> Applied:
     """Tras volver a exportar, marca como aplicadas las correcciones aprobadas cuyo texto ya está en el núcleo.
 
-    Archiva los hallazgos que dejaron de aparecer y retira los juicios de lectura sobre textos que ya no existen.
-    Debe ejecutarse antes de `clean-report`, que reescribe los hallazgos. Devuelve (correcciones, resueltos).
+    Con cada hallazgo que toca un texto aplicado hace una de tres cosas: si dejó de aparecer, lo archiva con su
+    decisión y su juicio de lectura; si sigue, estaba pendiente y todos los textos de su duda están aplicados, lo
+    registra como resuelto; si sigue y estaba aceptado, retira la aceptación para que se decida sobre el texto
+    nuevo. También retira los juicios sobre textos que ya no existen. Debe ejecutarse antes de `clean-report`,
+    que reescribe los hallazgos.
     """
     folder = core_folders(nucleo)[0]
     cleaning = folder / "limpieza"
@@ -273,7 +285,7 @@ def mark_applied(nucleo: Path, datasets: Path) -> tuple[int, int]:
     commit = manifest["commit_fuente"]
     entities = read_core(folder)
     contents = {e["id"]: e["contenido"] for e in entities if e["entidad"] == "item"}
-    document = json.loads((cleaning / "correcciones.json").read_text(encoding="utf-8"))
+    document = _load(cleaning / "correcciones.json")
     applied = []
     for row in (r for r in document["correcciones"] if r.get("aprobacion") and not r.get("aplicada")):
         current = contents.get(row["item"])
@@ -285,23 +297,74 @@ def mark_applied(nucleo: Path, datasets: Path) -> tuple[int, int]:
         raise SystemExit("ninguna corrección aprobada está en el núcleo")
     ids = {r["item"] for r in applied}
     current_ids = {f["id"] for f in all_findings(entities, dataset_records(datasets, manifest))}
-    gone = [f for f in read_jsonl(cleaning / "hallazgos.jsonl") if f["id"] not in current_ids]
+    before = read_jsonl(cleaning / "hallazgos.jsonl")
+    gone = [f for f in before if f["id"] not in current_ids]
     unexplained = [f["id"] for f in gone if not ids & set(f["entidades"])]
     if unexplained:
         raise SystemExit("desaparecen hallazgos que ninguna corrección explica: " + ", ".join(unexplained))
-    archive = cleaning / "resueltos.jsonl"
-    previous = read_jsonl(archive) if archive.exists() else []
-    resolved = previous + [f | {"resuelto_en": commit} for f in gone]
-    archive.write_text("".join(dumps(f) + "\n" for f in resolved), encoding="utf-8", newline="\n")
     for row in applied:
         row["aplicada"] = commit
+    done = {r["item"]: r for r in document["correcciones"] if r.get("aplicada")}
+    listed = _load(cleaning / "decisiones.json", {"decisiones": []})["decisiones"]
+    decisions = {d["id"]: d for d in listed}
+    review = _load(cleaning / "revision.json")
+    doubts = {d["hallazgo"]: d for d in _load(cleaning / "dudas.json", {"dudas": []})["dudas"]}
+
+    archived = []
+    for f in gone:
+        history = {"resuelto_en": commit}
+        if f["id"] in decisions:
+            history["decision"] = decisions.pop(f["id"])
+        if f["id"] in review["hallazgos"]:
+            history["juicio"] = review["hallazgos"].pop(f["id"])
+        archived.append(f | history)
+
+    withdrawn, closed = [], 0
+    for f in (f for f in before if f["id"] in current_ids and ids & set(f["entidades"])):
+        ident = f["id"]
+        if ident in decisions:
+            withdrawn.append(decisions.pop(ident) | {"retirada_en": commit})
+            continue
+        entry = doubts.get(ident)
+        if not entry or entry["recomendacion"] == "mantener":
+            continue
+        rows = [done.get(i) for i in entry["items"]]
+        if not rows or not all(rows):
+            continue
+        decisions[ident] = {
+            "id": ident,
+            "estado": "resuelto",
+            "motivo": f"textos aprobados y aplicados en el commit {commit[:12]} de la fuente: {entry['motivo']}",
+            "aprobado_por": ", ".join(sorted({r["aprobacion"]["por"] for r in rows})),
+        }
+        review["hallazgos"].pop(ident, None)
+        closed += 1
+
+    _append(cleaning / "resueltos.jsonl", archived)
+    _append(cleaning / "retiradas.jsonl", withdrawn)
+    if listed or decisions:
+        ordered = [decisions[k] for k in sorted(decisions)]
+        _save(cleaning / "decisiones.json", {"decisiones": ordered}, indent=1)
     _save(cleaning / "correcciones.json", document, indent=1)
-    review = json.loads((cleaning / "revision.json").read_text(encoding="utf-8"))
     review["items"] = {
         rule: {i: j for i, j in table.items() if i not in ids} for rule, table in review["items"].items()
     }
     _save(cleaning / "revision.json", review, indent=1, sort_keys=True)
-    return len(applied), len(gone)
+    return Applied(len(applied), len(archived), closed, len(withdrawn))
+
+
+def _load(path: Path, default: Any = None) -> Any:
+    if default is not None and not path.exists():
+        return default
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def _append(path: Path, rows: list[dict[str, Any]]) -> None:
+    """Añade filas a un archivo histórico, sin reescribir las anteriores."""
+    if not rows:
+        return
+    previous = read_jsonl(path) if path.exists() else []
+    path.write_text("".join(dumps(r) + "\n" for r in previous + rows), encoding="utf-8", newline="\n")
 
 
 def _save(path: Path, document: dict[str, Any], **options: Any) -> None:

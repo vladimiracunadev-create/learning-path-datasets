@@ -159,8 +159,11 @@ def main(argv: list[str] | None = None) -> int:
         print(f"Correcciones aprobadas: {count}")
         return 0
     if args.cmd == "clean-mark-applied":
-        applied, resolved = mark_applied(Path(args.nucleo), Path(args.datasets))
-        print(f"Correcciones aplicadas: {applied}; hallazgos resueltos: {resolved}")
+        done = mark_applied(Path(args.nucleo), Path(args.datasets))
+        print(
+            f"Correcciones aplicadas: {done.corrections}; hallazgos que dejaron de aparecer: {done.gone}; "
+            f"resueltos que la regla sigue señalando: {done.closed}; aceptaciones retiradas: {done.withdrawn}"
+        )
         return 0
     if args.cmd == "clean-doubts":
         found = doubts_report(Path(args.nucleo), Path(args.informe), args.check)

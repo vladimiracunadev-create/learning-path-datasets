@@ -12,6 +12,7 @@
 - El titular aprobó esos 15: 1.057 hallazgos aceptados y 78 pendientes.
 - Hoja de dudas (`clean-doubts`): 39 recomendaciones y textos propuestos, con dos rondas de verificación ciega.
 - El titular aprobó todas las recomendaciones (`clean-resolve-doubts`): 11 hallazgos mantenidos y 35 textos aprobados, sin aplicar. 1.068 aceptados y 67 pendientes.
+- `clean-mark-applied` cierra lo resuelto, archiva decisiones con sus hallazgos y retira aceptaciones sobre textos cambiados; lote `texto-aplicado`.
 - Documento de método (`docs/METODO.md`): lo realizado, sus fundamentos, cambios de criterio y cómo reutilizarlo; el CI exige que nombre cada módulo, script, orden, skill y agente.
 - Campo opcional `idioma` en el contrato `nucleo-0.1`.
 - El lector de la fuente busca el archivo de cada OA una sola vez; el dataset v1.0 no cambia.

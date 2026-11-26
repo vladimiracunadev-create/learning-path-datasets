@@ -267,6 +267,9 @@ def render(
         "«Afectados» cuenta entidades o registros dentro de cada regla; una misma entidad puede aparecer en varias.",
         "Las reglas son comprobaciones de forma: un hallazgo «revisar» puede ser legítimo.",
     ]
+    closed = sum(f["estado"] == "resuelto" for f in findings)
+    if closed:
+        out += ["", f"Resueltos con textos aprobados que la regla sigue señalando: {closed}."]
     if resolved:
         out += [
             "",

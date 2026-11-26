@@ -112,6 +112,14 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Cómo:** la orden exige que los cuatro informes estén al día, registra cada tipo de decisión donde corresponde y conserva la hoja como historial.
 - **Antes de aplicar (simulado el 2026-11-26):** desaparecerían 10 hallazgos, uno de ellos ya aceptado; 19 pendientes seguirían con el mismo identificador y texto nuevo; surgirían 6. Hoy `clean-mark-applied` no cierra esos 19 ni archiva la decisión huérfana, 5 definiciones se repiten en la fuente (hay que cambiar solo la de su clase) y 1 pregunta no se localiza con la búsqueda literal. Hay que resolver esto antes de la próxima reexportación.
 
+### 3.14 Ajustar el registro antes de aplicar
+
+- **Qué:** `clean-mark-applied` ahora trata cada hallazgo que toca un texto aplicado. Si dejó de aparecer, lo archiva en `limpieza/resueltos.jsonl` con su decisión y su juicio de lectura. Si sigue, estaba pendiente y todos los textos de su duda están aplicados, lo registra como `resuelto` (lote `texto-aplicado`) a nombre de quien aprobó los textos. Si sigue y estaba aceptado, retira la aceptación a `limpieza/retiradas.jsonl` para que se decida sobre el texto nuevo.
+- **Por qué:** el identificador de un hallazgo depende de qué entidades afecta, no de su texto. Un cambio de texto podía dejar una aceptación cubriendo palabras que nadie había aceptado, una decisión sin hallazgo (que detiene el informe) o un pendiente ya atendido.
+- **Cómo se comprobó:** dos pruebas nuevas y un ensayo sobre una copia de los datos reales, simulando la reexportación: 35 textos aplicados, 10 hallazgos archivados, 19 resueltos y 1 aceptación retirada.
+- **Reutilizable:** ante cualquier cambio de datos ya decididos, preguntar por separado qué pasa con lo que desaparece, con lo que sigue y con lo ya aprobado.
+- **Límite:** un hallazgo resuelto así descansa en la aprobación del texto, no en una nueva lectura contra la regla.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -128,6 +136,7 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 | La respuesta nueva no puede aparecer en el cuaderno | puede estar en su propio enunciado | las preguntas de elección la contienen |
 | El dataset v1.0 no se modifica | se regenera cuando cambia el contenido de la fuente | publicar defectos ya corregidos no tiene sentido; los cruces siguen para la versión siguiente |
 | Un hallazgo corregido simplemente desaparece | se archiva con el commit que lo resolvió | permite mostrar antes y después |
+| Una aceptación vale mientras el hallazgo tenga el mismo identificador | se retira si cambia un texto que cubre | se aceptó el texto anterior, no el nuevo |
 
 ## 5. Trampas encontradas y qué hacer con datos nuevos
 
@@ -198,7 +207,7 @@ Resolver esto es el primer trabajo antes de sumar datos de otro tipo.
 | `lpdatasets core-export`, `core-validate` | núcleo |
 | `lpdatasets clean-report`, `clean-proposals`, `clean-corrections` | hallazgos, lotes y redacciones; con `--check` no escriben |
 | `lpdatasets clean-approve`, `clean-approve-corrections` | aprobaciones de lotes y de correcciones |
-| `lpdatasets clean-mark-applied` | tras reexportar, registra lo aplicado y archiva lo resuelto |
+| `lpdatasets clean-mark-applied` | tras reexportar, registra lo aplicado, archiva o cierra lo resuelto y retira aceptaciones sobre textos cambiados |
 | `lpdatasets clean-doubts` | hoja de decisión de las dudas; con `--check` no escribe |
 | `lpdatasets clean-resolve-doubts` | registra la aprobación de las recomendaciones, sin aplicar |
 

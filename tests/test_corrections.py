@@ -13,10 +13,12 @@ from lpdatasets.corrections import (
     approve_corrections,
     check_corrections,
     corrections_report,
+    fingerprint,
     mark_applied,
     render,
     simulate,
 )
+from lpdatasets.proposals import proposals_report
 from tests.test_cleaning import item
 from tests.test_core import CLASS
 from tests.test_proposals import text_resource
@@ -154,8 +156,8 @@ def test_applied_corrections_archive_the_findings_they_solve(tmp_path: Path):
     nucleo, datasets, path = apply_in_source(tmp_path)
     folder = path.parent
     before = {f["id"] for f in read_jsonl(folder / "hallazgos.jsonl") if "a" in f["entidades"]}
-    applied, resolved = mark_applied(nucleo, datasets)
-    assert applied == 1 and resolved >= 1
+    done = mark_applied(nucleo, datasets)
+    assert done.corrections == 1 and done.gone >= 1 and done.closed == done.withdrawn == 0
     assert saved(path)["aplicada"] == "nuevo"
     assert {f["id"] for f in read_jsonl(folder / "resueltos.jsonl")} <= before
     assert "a" not in json.loads((folder / "revision.json").read_text(encoding="utf-8"))["items"]["r"]
@@ -195,3 +197,72 @@ def test_a_glossary_definition_can_change_without_changing_the_word():
     assert check_corrections(entities, proposals, [row], findings) == []
     assert "| madera | material que viene de los árboles |" in simulate(entities, [row])[1]["texto"]
     assert "Razón" not in render({"redactor": "p", "fecha": "f", "correcciones": [row]})
+
+
+def word(ident: str, term: str, meaning: str, clase_id: str) -> dict:
+    entity = item(ident, term, meaning, tipo="vocabulario", publico_solucion=["estudiante", "docente"])
+    entity["contenido"] = {"enunciado": term, "respuesta": meaning}
+    return entity | {"clase_id": clase_id}
+
+
+def test_each_finding_touched_by_an_applied_text_is_closed_withdrawn_or_archived(tmp_path: Path):
+    other = CLASS | {"id": "demo:clase:2", "numero": 2}
+    first, second = CLASS["id"], other["id"]
+    entities = [CLASS, other, NOTEBOOK, text_resource("guia_docente")]
+    entities += [word("m1", "madera", "palo", first), word("m2", "madera", "árbol", second)]
+    entities += [word("p1", "piedra", "cosa dura", first), word("p2", "piedra", "cosa dura", second)]
+    changes = {"m1": "material que viene de los árboles", "p1": "material duro", "p2": "material duro"}
+    rows = []
+    for entity in (e for e in entities if e["id"] in changes):
+        after = entity["contenido"] | {"respuesta": changes[entity["id"]]}
+        approval = {"por": "revisora", "huella": fingerprint(after)}
+        rows.append({"item": entity["id"], "antes": entity["contenido"], "despues": after, "aprobacion": approval})
+    nucleo = tmp_path / "nucleo"
+    folder = nucleo / "demo" / "1-basico"
+    info = {"pack": "demo", "nivel": "1-basico", "commit_fuente": "viejo", "cobertura": {}}
+    info["cobertura"] = {"catalogo": 2, "representadas": 2, "excluidas": []}
+    write_core(folder, entities, info)
+    cleaning = folder / "limpieza"
+    cleaning.mkdir()
+    datasets = tmp_path / "datasets"
+    datasets.mkdir()
+    report(nucleo, datasets, tmp_path / "limpieza.md")
+    found = {tuple(f["entidades"]): f["id"] for f in read_jsonl(cleaning / "hallazgos.jsonl")}
+    conflict, repeated = found[("m1", "m2")], found[("p1", "p2")]
+    accepted = {"id": repeated, "estado": "aceptado", "motivo": "glosario", "aprobado_por": "revisora"}
+    (cleaning / "decisiones.json").write_text(json.dumps({"decisiones": [accepted]}), encoding="utf-8")
+    review = {"items": {}, "hallazgos": {conflict: {"lote": "vocabulario-redaccion", "motivo": "impreciso"}}}
+    review |= {"revisor": "p", "fecha": "f"}
+    (cleaning / "revision.json").write_text(json.dumps(review), encoding="utf-8")
+    advice = {"hallazgo": conflict, "recomendacion": "reescribir", "motivo": "precisar", "items": ["m1"]}
+    (cleaning / "dudas.json").write_text(json.dumps({"dudas": [advice]}), encoding="utf-8")
+    (cleaning / "correcciones.json").write_text(json.dumps({"correcciones": rows}), encoding="utf-8")
+    report(nucleo, datasets, tmp_path / "limpieza.md")
+    write_core(folder, simulate(entities, rows), info | {"commit_fuente": "nuevo"})
+
+    assert mark_applied(nucleo, datasets) == (3, 0, 1, 1)
+
+    [withdrawn] = read_jsonl(cleaning / "retiradas.jsonl")
+    assert withdrawn == accepted | {"retirada_en": "nuevo"}
+    assert report(nucleo, datasets, tmp_path / "limpieza.md") == []
+    assert proposals_report(nucleo, tmp_path / "propuestas.md") == []
+    lots = {p["id"]: (p["lote"], p["estado"]) for p in read_jsonl(cleaning / "propuestas.jsonl")}
+    assert lots[conflict] == ("texto-aplicado", "resuelto")
+    assert lots[repeated] == ("duplicado-glosario", "pendiente")
+    assert "la regla sigue señalando: 1." in (tmp_path / "limpieza.md").read_text(encoding="utf-8")
+
+
+def test_a_vanished_finding_keeps_its_decision_and_judgement_in_the_archive(tmp_path: Path):
+    nucleo, datasets, path = apply_in_source(tmp_path)
+    folder = path.parent
+    [first, *_] = [f["id"] for f in read_jsonl(folder / "hallazgos.jsonl") if f["entidades"] == ["a"]]
+    decision = {"id": first, "estado": "aceptado", "motivo": "leído", "aprobado_por": "revisora"}
+    (folder / "decisiones.json").write_text(json.dumps({"decisiones": [decision]}), encoding="utf-8")
+    review = {"items": {}, "hallazgos": {first: {"lote": "enunciado-comprension", "motivo": "copia"}}}
+    (folder / "revision.json").write_text(json.dumps(review), encoding="utf-8")
+    mark_applied(nucleo, datasets)
+    [record] = [f for f in read_jsonl(folder / "resueltos.jsonl") if f["id"] == first]
+    assert record["decision"] == decision and record["juicio"]["motivo"] == "copia"
+    assert json.loads((folder / "decisiones.json").read_text(encoding="utf-8")) == {"decisiones": []}
+    assert json.loads((folder / "revision.json").read_text(encoding="utf-8"))["hallazgos"] == {}
+    assert report(nucleo, datasets, tmp_path / "limpieza.md") == []

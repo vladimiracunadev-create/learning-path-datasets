@@ -60,7 +60,7 @@ lpdatasets clean-proposals
 lpdatasets clean-corrections
 ```
 
-`clean-mark-applied` va antes de `clean-report`: compara con los hallazgos anteriores, marca las correcciones presentes, archiva lo resuelto en `limpieza/resueltos.jsonl` y retira los juicios sobre textos que ya no existen. Se detiene ante un texto inesperado o un hallazgo que desaparece sin explicación.
+`clean-mark-applied` va antes de `clean-report`: compara con los hallazgos anteriores y marca las correcciones presentes. Lo que dejó de aparecer se archiva en `limpieza/resueltos.jsonl` con su decisión; lo que sigue señalado y tiene aplicados todos los textos de su duda queda `resuelto`; una aceptación que cubría un texto cambiado se retira a `limpieza/retiradas.jsonl`. También retira los juicios sobre textos que ya no existen. Se detiene ante un texto inesperado o un hallazgo que desaparece sin explicación.
 
 La aprobación de correcciones omite las que tienen una duda abierta, salvo que se nombren con `--incluir`, y queda ligada al texto: si la redacción cambia, deja de valer.
 
@@ -133,6 +133,7 @@ Las reglas encuentran problemas de forma; los errores pedagógicos requieren un 
 - 2026-11-26: los cruces del dataset v1.0 se corrigen al construir la versión siguiente (L08).
 - 2026-11-26: una corrección de contenido se aplica en la fuente y regenera el núcleo y el dataset v1.0; no se editan sus archivos.
 - 2026-11-26: los hallazgos resueltos se archivan con el commit; un hallazgo nuevo no hereda la aprobación de otro.
+- 2026-11-26: una aceptación no sobrevive al cambio de un texto que cubre; se retira y se vuelve a decidir.
 - 2026-11-26: el titular aprobó los 15 hallazgos que quedaron proponiendo aceptar tras la reexportación (11 nuevos y 4 que cambiaron de lote).
 - 2026-11-26: el titular aprobó todas las recomendaciones sobre dudas, incluidos los tres textos con observación de la segunda lectura.
 - 2026-11-26: las decisiones se aprueban por lote; los lotes de corrección siguen pendientes hasta aplicar el cambio.

@@ -105,6 +105,12 @@ LOTS: dict[str, tuple[str, str, str, str]] = {
         "partir por OA y sacar de evaluación toda entrada presente en entrenamiento",
     ),
     "etiquetas": (FIX, "línea L03", "faltan habilidades o dificultad", "etiquetar con criterio y verificador"),
+    "texto-aplicado": (
+        ACCEPT,
+        "ninguno",
+        "se aplicaron textos aprobados y la regla lo sigue señalando por su forma",
+        "nada pendiente; la decisión cita el commit",
+    ),
     "sin-revisar": (ASK, "por definir", "necesita lectura y nadie la ha hecho", "leer antes de proponer"),
 }
 WORDS = re.compile(r"\w+")
@@ -200,7 +206,9 @@ def propose(findings: list[dict[str, Any]], entities: list[Entity], review: dict
     for f in findings:
         rule, reading, targets, note = f["regla"], "regla", [], None
         judged = review["hallazgos"].get(f["id"])
-        if judged:
+        if f["estado"] == "resuelto":
+            lot = "texto-aplicado"
+        elif judged:
             lot, reading, note = judged["lote"], "individual", judged.get("motivo")
         elif rule == "solucion_en_enunciado":
             lot, reading, targets = _statement_lot(f, items, review)
