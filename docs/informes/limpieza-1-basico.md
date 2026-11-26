@@ -2,26 +2,28 @@
 
 Generado con `lpdatasets clean-report`; no se edita a mano. Propone cambios y **no modifica los datos**.
 
-- Núcleo: 18926 entidades, 16386 ítems, commit de la fuente `3fd976d50bb2`.
+- Núcleo: 18926 entidades, 16386 ítems, commit de la fuente `b3647111142b`.
 - Dataset v1.0 revisado como línea base: 16386 registros.
-- Hallazgos: 1135; pendientes: 67.
+- Hallazgos: 1131; pendientes: 46.
 
 | Regla | Severidad | Hallazgos | Afectados | Pendientes |
 |---|---|---:|---:|---:|
 | `clase_incompleta` | error | 0 | 0 | 0 |
 | `cruce_identico` | error | 9 | 27 | 9 |
 | `cruce_por_entrada` | revisar | 10 | 203 | 10 |
-| `duplicado_exacto` | revisar | 151 | 348 | 0 |
-| `respuestas_en_conflicto` | revisar | 328 | 856 | 16 |
+| `duplicado_exacto` | revisar | 152 | 350 | 2 |
+| `respuestas_en_conflicto` | revisar | 327 | 854 | 0 |
 | `recurso_ausente` | revisar | 0 | 0 | 0 |
-| `solucion_en_enunciado` | revisar | 445 | 1559 | 7 |
-| `solucion_en_cuaderno` | revisar | 160 | 195 | 5 |
+| `solucion_en_enunciado` | revisar | 445 | 1555 | 4 |
+| `solucion_en_cuaderno` | revisar | 156 | 190 | 1 |
 | `texto_oficial` | revisar | 12 | 12 | 0 |
 | `sin_habilidades` | info | 12 | 16386 | 12 |
 | `sin_dificultad` | info | 8 | 8518 | 8 |
 
 «Afectados» cuenta entidades o registros dentro de cada regla; una misma entidad puede aparecer en varias.
 Las reglas son comprobaciones de forma: un hallazgo «revisar» puede ser legítimo.
+
+Resueltos con textos aprobados que la regla sigue señalando: 19.
 
 ## Resueltos
 
@@ -31,6 +33,9 @@ Hallazgos que dejaron de aparecer al aplicar correcciones. Se conservan en `limp
 |---|---|---:|---:|
 | `3fd976d50bb2` | `solucion_en_cuaderno` | 6 | 9 |
 | `3fd976d50bb2` | `solucion_en_enunciado` | 10 | 51 |
+| `b3647111142b` | `respuestas_en_conflicto` | 1 | 2 |
+| `b3647111142b` | `solucion_en_cuaderno` | 5 | 6 |
+| `b3647111142b` | `solucion_en_enunciado` | 4 | 19 |
 
 ## `clase_incompleta`
 
@@ -66,7 +71,7 @@ Detecta: ítems de una asignatura con el mismo enunciado y la misma respuesta. P
 
 Detecta: mismo enunciado, asignatura y tipo con respuestas distintas. Propuesta: decidir si falta contexto en el enunciado o si ambas respuestas son válidas.
 
-- `respuestas_en_conflicto:25ca145d512f` (9): matematica: «comprobar» → «calcular los dos lados» / «contar para ver qué tan cerca estuve» / «revisar con otra operación» / «revisar con una suma» / «revisar que el orden sea correcto» / «revisar que encaja» / «revisar que la respuesta cumple todas las pistas» / «revisar que todo coincida» / «revis
+- `respuestas_en_conflicto:25ca145d512f` (9): matematica: «comprobar» → «contar para ver qué tan cerca estuve» / «revisar calculando los dos lados» / «revisar con otra operación» / «revisar con una suma» / «revisar que el orden sea correcto» / «revisar que encaja» / «revisar que la respuesta cumple todas las pistas» / «revisar que todo coincida
 - `respuestas_en_conflicto:053a4c1eda9c` (7): matematica: «diferencia» → «cuánto aumenta» / «cuánto más duró uno que otro» / «cuántos más tiene una que otra» / «lo que falta para igualar» / «lo que separa dos números» / «lo que separa dos números; se calcula restando el menor al mayor» / «lo que sobra al emparejar»
 - `respuestas_en_conflicto:66c46ff39d40` (7): lenguaje-comunicacion: «detalle» → «dato pequeño» / «dato pequeño que da imagen» / «dato pequeño que da información» / «dato que agrega información» / «parte pequeña del dibujo» / «una parte pequeña del texto» / «una parte pequeña pero importante»
 

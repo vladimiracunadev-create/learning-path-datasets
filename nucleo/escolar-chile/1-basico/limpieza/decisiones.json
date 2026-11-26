@@ -769,12 +769,6 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
-   "id": "duplicado_exacto:d589cc46a2de",
-   "estado": "aceptado",
-   "motivo": "lote duplicado-glosario: la misma palabra con la misma definición en el glosario de varias clases",
-   "aprobado_por": "vladimiracunadev-create"
-  },
-  {
    "id": "duplicado_exacto:da76c517ab13",
    "estado": "aceptado",
    "motivo": "lote duplicado-glosario: la misma palabra con la misma definición en el glosario de varias clases",
@@ -979,6 +973,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "respuestas_en_conflicto:0b0fab4a1bac",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "respuestas_en_conflicto:0b1770835ca2",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
@@ -988,6 +988,12 @@
    "id": "respuestas_en_conflicto:0b8956f2334a",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "respuestas_en_conflicto:0b9017921eab",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -1093,6 +1099,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "respuestas_en_conflicto:18367484efab",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "respuestas_en_conflicto:189fd4bdce14",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
@@ -1126,6 +1138,12 @@
    "id": "respuestas_en_conflicto:1cc5d3339764",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "respuestas_en_conflicto:1ceb62b948d5",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -1201,9 +1219,21 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "respuestas_en_conflicto:25ca145d512f",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "respuestas_en_conflicto:260b2577517d",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "respuestas_en_conflicto:27dc831f9895",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -1399,15 +1429,33 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "respuestas_en_conflicto:4855254e7dd4",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "respuestas_en_conflicto:493501ff1fb6",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "respuestas_en_conflicto:4993c127d4fc",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "respuestas_en_conflicto:49bce7f23502",
    "estado": "aceptado",
    "motivo": "lote vocabulario-acepciones: la palabra tiene sentidos distintos según la clase",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "respuestas_en_conflicto:4b3d5f381649",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -1492,6 +1540,12 @@
    "id": "respuestas_en_conflicto:5812244c2242",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "respuestas_en_conflicto:5a3b3c2996c6",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -1675,6 +1729,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "respuestas_en_conflicto:6d53b9c147bb",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "respuestas_en_conflicto:6dd69af74b0c",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
@@ -1786,6 +1846,12 @@
    "id": "respuestas_en_conflicto:7f81a1a70d9f",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "respuestas_en_conflicto:7f926afc505c",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -2089,6 +2155,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "respuestas_en_conflicto:a38d3eadd73f",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "respuestas_en_conflicto:a3a374d339a2",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
@@ -2116,6 +2188,12 @@
    "id": "respuestas_en_conflicto:a6a89cddb57b",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "respuestas_en_conflicto:a6f663882921",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -2590,6 +2668,12 @@
    "id": "respuestas_en_conflicto:e706925bec91",
    "estado": "aceptado",
    "motivo": "lote vocabulario-variantes: la misma idea redactada de otra forma según la clase",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "respuestas_en_conflicto:e8307ecff340",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -4141,6 +4225,12 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
+   "id": "solucion_en_enunciado:2bc06ead4e26",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
    "id": "solucion_en_enunciado:2ca6cd008acd",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
@@ -4336,6 +4426,12 @@
    "id": "solucion_en_enunciado:3dac3156c469",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "solucion_en_enunciado:3e03805dc611",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: comprueba el modo de ubicar un país y no repite datos de los ejemplos",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -5041,12 +5137,6 @@
    "aprobado_por": "vladimiracunadev-create"
   },
   {
-   "id": "solucion_en_enunciado:83cacc1a6b18",
-   "estado": "aceptado",
-   "motivo": "lote enunciado-comprension: copia, comprensión o inferencia sobre un texto dado",
-   "aprobado_por": "vladimiracunadev-create"
-  },
-  {
    "id": "solucion_en_enunciado:84169ed9644d",
    "estado": "aceptado",
    "motivo": "lote enunciado-comprension: copia, comprensión o inferencia sobre un texto dado",
@@ -5194,6 +5284,12 @@
    "id": "solucion_en_enunciado:97097d905bd3",
    "estado": "aceptado",
    "motivo": "lote enunciado-comprension: copia, comprensión o inferencia sobre un texto dado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "solucion_en_enunciado:9757581acc18",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {
@@ -5350,6 +5446,12 @@
    "id": "solucion_en_enunciado:acfe9a004e14",
    "estado": "aceptado",
    "motivo": "lote enunciado-opciones: pregunta de elección, lista o lectura donde la respuesta debe estar en el enunciado",
+   "aprobado_por": "vladimiracunadev-create"
+  },
+  {
+   "id": "solucion_en_enunciado:ad81963ba2cc",
+   "estado": "resuelto",
+   "motivo": "textos aprobados y aplicados en el commit b3647111142b de la fuente: ver el texto propuesto",
    "aprobado_por": "vladimiracunadev-create"
   },
   {

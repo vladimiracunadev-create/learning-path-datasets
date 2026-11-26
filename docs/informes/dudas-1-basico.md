@@ -173,7 +173,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:0b0fab4a1bac`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -183,7 +183,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:0b9017921eab`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -191,7 +191,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:18367484efab`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -202,7 +202,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:1ceb62b948d5`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -211,7 +211,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:25ca145d512f`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -219,7 +219,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:27dc831f9895`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -227,7 +227,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:4855254e7dd4`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -235,7 +235,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:4993c127d4fc`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -245,7 +245,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:4b3d5f381649`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -253,7 +253,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:5a3b3c2996c6`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -264,7 +264,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:5ab83c4506ca`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -272,7 +272,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:6d53b9c147bb`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -280,7 +280,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:7f926afc505c`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -288,7 +288,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:a38d3eadd73f`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -297,7 +297,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:a6f663882921`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -305,7 +305,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `respuestas_en_conflicto:e8307ecff340`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -313,7 +313,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_cuaderno:085d6df5df79`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -321,7 +321,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_cuaderno:45ec869f8781`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -329,7 +329,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_cuaderno:a15bbe7b20eb`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -337,7 +337,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_cuaderno:b7156da197ba`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -345,7 +345,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_enunciado:2bc06ead4e26`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -353,7 +353,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_enunciado:9757581acc18`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -361,7 +361,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_enunciado:ad81963ba2cc`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -370,7 +370,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_enunciado:c010f43661ae`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -378,7 +378,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_enunciado:fff31c91c57b`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 | Ítem | Antes | Propuesto |
 |---|---|---|
@@ -388,7 +388,7 @@ Motivo: practica expresar una duración con su unidad, que es la meta.
 
 ### `solucion_en_cuaderno:25f73f0c734b`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 Motivo: pide describir lo que se oyó con palabras propias.
 
@@ -398,7 +398,7 @@ Motivo: pide describir lo que se oyó con palabras propias.
 
 ### `solucion_en_enunciado:1d3cad303c2a`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 Motivo: para 1.º básico, aplicar los dos conceptos a nombres nuevos es suficiente.
 
@@ -410,7 +410,7 @@ Motivo: para 1.º básico, aplicar los dos conceptos a nombres nuevos es suficie
 
 ### `solucion_en_enunciado:3e03805dc611`
 
-**Decisión:** textos aprobados por vladimiracunadev-create; sin aplicar.
+**Decisión:** textos aprobados por vladimiracunadev-create; aplicados en la fuente.
 
 Motivo: comprueba el modo de ubicar un país y no repite datos de los ejemplos.
 

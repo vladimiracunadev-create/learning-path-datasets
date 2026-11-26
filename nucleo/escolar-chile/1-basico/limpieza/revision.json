@@ -76,19 +76,11 @@
   "respuestas_en_conflicto:0a5918832130": {
    "lote": "vocabulario-variantes"
   },
-  "respuestas_en_conflicto:0b0fab4a1bac": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«ritmo»: «la velocidad de los sonidos o pasos» describe más bien el tempo"
-  },
   "respuestas_en_conflicto:0b1770835ca2": {
    "lote": "vocabulario-variantes"
   },
   "respuestas_en_conflicto:0b8956f2334a": {
    "lote": "vocabulario-variantes"
-  },
-  "respuestas_en_conflicto:0b9017921eab": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«repetir»: las definiciones describen acciones de ejercicios distintos"
   },
   "respuestas_en_conflicto:0b9a649f95fe": {
    "lote": "vocabulario-variantes"
@@ -141,10 +133,6 @@
   "respuestas_en_conflicto:17fc26ea2bd6": {
    "lote": "vocabulario-variantes"
   },
-  "respuestas_en_conflicto:18367484efab": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«sentido»: «que se entiende» no define sentido"
-  },
   "respuestas_en_conflicto:189fd4bdce14": {
    "lote": "vocabulario-variantes"
   },
@@ -162,10 +150,6 @@
   },
   "respuestas_en_conflicto:1cc5d3339764": {
    "lote": "vocabulario-variantes"
-  },
-  "respuestas_en_conflicto:1ceb62b948d5": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«permiso»: las definiciones describen una frase o un acto previo, no qué es un permiso"
   },
   "respuestas_en_conflicto:1e2bbe891a76": {
    "lote": "vocabulario-variantes"
@@ -203,16 +187,8 @@
   "respuestas_en_conflicto:2572247de8f9": {
    "lote": "vocabulario-variantes"
   },
-  "respuestas_en_conflicto:25ca145d512f": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«comprobar»: varias definiciones son pasos de un ejercicio concreto"
-  },
   "respuestas_en_conflicto:260b2577517d": {
    "lote": "vocabulario-variantes"
-  },
-  "respuestas_en_conflicto:27dc831f9895": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«clasificar»: «ordenar según un criterio» confunde clasificar con ordenar"
   },
   "respuestas_en_conflicto:27ff78ccee1c": {
    "lote": "vocabulario-variantes"
@@ -310,23 +286,11 @@
   "respuestas_en_conflicto:44a66b1ee060": {
    "lote": "vocabulario-variantes"
   },
-  "respuestas_en_conflicto:4855254e7dd4": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«cero»: «el número más pequeño al contar» puede confundir, porque contar suele empezar en uno"
-  },
   "respuestas_en_conflicto:493501ff1fb6": {
    "lote": "vocabulario-variantes"
   },
-  "respuestas_en_conflicto:4993c127d4fc": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«dato»: las definiciones usan criterios distintos; un dato no tiene que ser importante"
-  },
   "respuestas_en_conflicto:49bce7f23502": {
    "lote": "vocabulario-acepciones"
-  },
-  "respuestas_en_conflicto:4b3d5f381649": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«orden»: una definición describe cómo contar, no qué es orden"
   },
   "respuestas_en_conflicto:4c074249e044": {
    "lote": "vocabulario-variantes"
@@ -371,16 +335,8 @@
   "respuestas_en_conflicto:5812244c2242": {
    "lote": "vocabulario-variantes"
   },
-  "respuestas_en_conflicto:5a3b3c2996c6": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«no convencional»: define un adjetivo sin decir de qué: instrumento o notación"
-  },
   "respuestas_en_conflicto:5a750bb8eadc": {
    "lote": "vocabulario-variantes"
-  },
-  "respuestas_en_conflicto:5ab83c4506ca": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«vigoroso»: define el esfuerzo solo por la forma de hablar"
   },
   "respuestas_en_conflicto:5ad4e86b388e": {
    "lote": "vocabulario-acepciones"
@@ -469,10 +425,6 @@
   "respuestas_en_conflicto:6cfdd1f9410c": {
    "lote": "vocabulario-variantes"
   },
-  "respuestas_en_conflicto:6d53b9c147bb": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«palabra»: «sílabas que dicen algo» es impreciso"
-  },
   "respuestas_en_conflicto:6dd69af74b0c": {
    "lote": "vocabulario-variantes"
   },
@@ -529,10 +481,6 @@
   },
   "respuestas_en_conflicto:7f81a1a70d9f": {
    "lote": "vocabulario-variantes"
-  },
-  "respuestas_en_conflicto:7f926afc505c": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«sílaba»: «letras que suenan juntas» es impreciso"
   },
   "respuestas_en_conflicto:7ffea515f8bc": {
    "lote": "vocabulario-variantes"
@@ -685,10 +633,6 @@
   "respuestas_en_conflicto:a35bc2a3bf08": {
    "lote": "vocabulario-variantes"
   },
-  "respuestas_en_conflicto:a38d3eadd73f": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«leer»: limita leer a decir en voz alta"
-  },
   "respuestas_en_conflicto:a3a374d339a2": {
    "lote": "vocabulario-variantes"
   },
@@ -703,10 +647,6 @@
   },
   "respuestas_en_conflicto:a6a89cddb57b": {
    "lote": "vocabulario-variantes"
-  },
-  "respuestas_en_conflicto:a6f663882921": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«restar»: «bajar con la regla» solo se entiende en una actividad concreta"
   },
   "respuestas_en_conflicto:aa0fa1ab8f9e": {
    "lote": "conflicto-contexto"
@@ -946,10 +886,6 @@
   "respuestas_en_conflicto:e706925bec91": {
    "lote": "vocabulario-variantes"
   },
-  "respuestas_en_conflicto:e8307ecff340": {
-   "lote": "vocabulario-redaccion",
-   "motivo": "«fondo»: «se dibuja arriba y pequeño» no define fondo en general"
-  },
   "respuestas_en_conflicto:e8868233f5d6": {
    "lote": "vocabulario-variantes"
   },
@@ -1097,14 +1033,6 @@
    "escolar-chile:1-basico:ef01-oa-09:c01:ej-reason-02": {
     "veredicto": "ok"
    },
-   "escolar-chile:1-basico:hi01-oa-01:c01:ej-understand-01": {
-    "motivo": "el ejemplo recita el orden que se pide",
-    "veredicto": "decidir"
-   },
-   "escolar-chile:1-basico:hi01-oa-03:c02:ej-apply-01": {
-    "motivo": "el ejemplo resuelve el mismo orden con las mismas ciudades",
-    "veredicto": "corregir"
-   },
    "escolar-chile:1-basico:hi01-oa-07:c02:ej-reason-01": {
     "veredicto": "ok"
    },
@@ -1130,26 +1058,14 @@
    "escolar-chile:1-basico:le01-oa-17:c04:ej-understand-01": {
     "veredicto": "ok"
    },
-   "escolar-chile:1-basico:le01-oa-17:c05:ej-recovery-01": {
-    "motivo": "un ejemplo resume cómo terminó el cuento",
-    "veredicto": "decidir"
-   },
    "escolar-chile:1-basico:ma01-oa-12:c02:ej-understand-01": {
     "veredicto": "ok"
    },
    "escolar-chile:1-basico:ma01-oa-13:c02:ej-understand-01": {
     "veredicto": "ok"
    },
-   "escolar-chile:1-basico:ma01-oa-13:c04:ej-recovery-03": {
-    "motivo": "la pregunta es ambigua fuera del plano que enseña la clase",
-    "veredicto": "decidir"
-   },
    "escolar-chile:1-basico:mu01-oa-02:c02:ej-understand-01": {
     "veredicto": "ok"
-   },
-   "escolar-chile:1-basico:mu01-oa-06:c04:ej-apply-01": {
-    "motivo": "el ejemplo da exactamente el mismo comentario",
-    "veredicto": "corregir"
    },
    "escolar-chile:1-basico:mu01-oa-07:c02:ej-understand-03": {
     "veredicto": "ok"
@@ -1405,10 +1321,6 @@
    "escolar-chile:1-basico:hi01-oa-05:c05:ej-apply-02": {
     "veredicto": "ok"
    },
-   "escolar-chile:1-basico:hi01-oa-06:c02:ej-challenge-01": {
-    "motivo": "basta repetir un dato dicho en la misma frase",
-    "veredicto": "decidir"
-   },
    "escolar-chile:1-basico:hi01-oa-06:c04:ej-recovery-01": {
     "veredicto": "ok"
    },
@@ -1524,10 +1436,6 @@
    "escolar-chile:1-basico:hi01-oa-09:c01:ej-recovery-01": {
     "veredicto": "ok"
    },
-   "escolar-chile:1-basico:hi01-oa-09:c03:ej-apply-02": {
-    "motivo": "afirma que es una localidad y pregunta si es región o localidad",
-    "veredicto": "corregir"
-   },
    "escolar-chile:1-basico:hi01-oa-09:c03:ej-apply-03": {
     "veredicto": "ok"
    },
@@ -1542,10 +1450,6 @@
    },
    "escolar-chile:1-basico:hi01-oa-11:c03:ej-recovery-01": {
     "veredicto": "ok"
-   },
-   "escolar-chile:1-basico:hi01-oa-12:c01:ej-apply-03": {
-    "motivo": "dice que se va a Japón y pregunta qué país está al otro lado",
-    "veredicto": "corregir"
    },
    "escolar-chile:1-basico:hi01-oa-13:c05:ej-apply-02": {
     "veredicto": "ok"
@@ -1618,10 +1522,6 @@
    },
    "escolar-chile:1-basico:le01-oa-12:c02:ej-understand-02": {
     "veredicto": "ok"
-   },
-   "escolar-chile:1-basico:le01-oa-12:c04:ej-understand-01": {
-    "motivo": "basta repetir un dato dicho en la misma frase",
-    "veredicto": "decidir"
    },
    "escolar-chile:1-basico:le01-oa-13:c01:ej-challenge-02": {
     "motivo": "el ejemplo del enunciado es una respuesta válida; puede ser un apoyo",
@@ -1799,18 +1699,6 @@
    "escolar-chile:1-basico:ma01-oa-18:c03:auto-02": {
     "veredicto": "ok"
    },
-   "escolar-chile:1-basico:ma01-oa-18:c04:ej-recovery-01": {
-    "motivo": "redacción confusa para 6 años",
-    "veredicto": "decidir"
-   },
-   "escolar-chile:1-basico:ma01-oa-18:c04:ej-recovery-02": {
-    "motivo": "redacción confusa para 6 años",
-    "veredicto": "decidir"
-   },
-   "escolar-chile:1-basico:mu01-oa-02:c03:ej-apply-02": {
-    "motivo": "el enunciado dice «sube» y pregunta si la línea sube o baja",
-    "veredicto": "decidir"
-   },
    "escolar-chile:1-basico:or01-oa-01:c02:ej-reason-02": {
     "veredicto": "ok"
    },
@@ -1884,10 +1772,6 @@
    },
    "escolar-chile:1-basico:te01-oa-05:c03:ej-recovery-01": {
     "veredicto": "ok"
-   },
-   "escolar-chile:1-basico:te01-oa-05:c03:ej-recovery-02": {
-    "motivo": "la respuesta repite el adjetivo del enunciado",
-    "veredicto": "decidir"
    },
    "escolar-chile:1-basico:te01-oa-05:c03:ej-recovery-03": {
     "veredicto": "ok"

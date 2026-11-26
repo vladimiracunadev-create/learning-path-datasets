@@ -2,16 +2,16 @@
   "archivos": {
     "eval.jsonl": {
       "registros": 1797,
-      "sha256": "7bf54e91b685f321a2f73f5344bfac6e4b716974e7ab6a5552281e3e05ef6cf9"
+      "sha256": "b3c06c4db53e02b5a58e21276109dd862edb994b5399f73d10ea55c51941d73e"
     },
     "train.jsonl": {
       "registros": 14589,
-      "sha256": "bff03efd8e8aee966f9f85e5a65f2f4ecebb124e413d0ddc5f4c672c05df9eb5"
+      "sha256": "3434fbf5bfbfbccb8f1f6ce9fa9c61acd7bf6c92e622441fe167915033d55274"
     }
   },
   "clases_eval": 64,
   "clases_train": 498,
-  "commit_fuente": "3fd976d50bb2176f0e31dfbe389b9422fc13274a",
+  "commit_fuente": "b3647111142be767140a9453671c145c5ff27317",
   "fuente": "vladimiracunadev-create/chilean-school-learning-path",
   "licencia": [
     "CC-BY-NC-SA-4.0"

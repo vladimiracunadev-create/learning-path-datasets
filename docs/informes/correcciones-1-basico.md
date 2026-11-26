@@ -3,7 +3,7 @@
 Generado con `lpdatasets clean-corrections`; no se edita a mano.
 
 - Redacción: asistente de IA; sin revisión humana (2026-11-26).
-- Estado: 59 de 59 aprobadas por vladimiracunadev-create; **24 de 59 aplicadas en la fuente**.
+- Estado: 59 de 59 aprobadas por vladimiracunadev-create; **59 de 59 aplicadas en la fuente**.
 - Textos (preguntas y definiciones): 59. Detectados al redactar, fuera de los hallazgos: 1.
 
 ## Segunda lectura
@@ -32,7 +32,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: definición de «fondo» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -127,7 +127,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: definición de «ritmo» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -140,7 +140,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «vigoroso» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -187,7 +187,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: días que ningún ejemplo ni nota del cuaderno da ya ordenados.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -199,7 +199,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: trabaja el respeto al preguntar por la procedencia, en vez de ordenar ciudades.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -211,7 +211,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «permiso» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -222,7 +222,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «permiso» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -245,7 +245,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: hay que comparar con otra fecha de la clase en vez de repetir el mes.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -281,7 +281,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: hay que aplicar los dos conceptos a nombres nuevos.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -295,7 +295,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: pregunta por el modo de ubicar un país, sin repetir los datos de los ejemplos.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -321,7 +321,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: definición de «sentido» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -332,7 +332,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «sílaba» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -343,7 +343,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «leer» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -354,7 +354,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «palabra» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -365,7 +365,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «sentido» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -376,7 +376,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: la pregunta ya no nombra al personaje; hay que deducirlo.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -388,7 +388,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «leer» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -399,7 +399,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «sentido» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -434,7 +434,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: definición de «sentido» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -457,7 +457,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: cuento nuevo, que ningún ejemplo resume.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -469,7 +469,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «dato» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -506,7 +506,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: definición de «orden» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -517,7 +517,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «restar» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -528,7 +528,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «cero» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -539,7 +539,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «comprobar» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -550,7 +550,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: la pregunta ahora dice de qué se está contando.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -562,7 +562,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «clasificar» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -585,7 +585,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: redacción más clara, con objetos distintos de los del ejemplo.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -597,7 +597,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: redacción más clara, con objetos distintos de los del ejemplo.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -611,7 +611,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: definición de «repetir» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -622,7 +622,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: definición de «no convencional» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -635,7 +635,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: el enunciado ya no dice «sube».
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -659,7 +659,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: definición de «no convencional» más precisa para su clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -670,7 +670,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: situación distinta de la del ejemplo y sin las frases dadas.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|
@@ -706,7 +706,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb
 
 Qué cambia: hay que comparar los objetos; el enunciado no dice cuál es grande.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142b`.
 
 | | Antes | Después |
 |---|---|---|

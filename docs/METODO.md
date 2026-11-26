@@ -120,6 +120,16 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Reutilizable:** ante cualquier cambio de datos ya decididos, preguntar por separado qué pasa con lo que desaparece, con lo que sigue y con lo ya aprobado.
 - **Límite:** un hallazgo resuelto así descansa en la aprobación del texto, no en una nueva lectura contra la regla.
 
+### 3.15 Aplicar los 35 textos y reexportar
+
+- **Qué:** con autorización del titular, los 35 textos (13 preguntas y 22 definiciones) se escribieron en 23 módulos de la fuente (commit `b3647111`) y aquí se regeneraron núcleo, dataset v1.0 e informes. Las 59 correcciones aprobadas quedan aplicadas.
+- **Cómo:** esta vez no bastaba buscar cada texto en toda la fuente, porque 5 definiciones se repiten en varias clases: cada una se buscó solo en el módulo que declara su clase y debía aparecer una vez. Una pregunta usa un cuento definido como constante del módulo y se localizó reconstruyendo esa plantilla. Nada se escribe si un solo texto no se localiza.
+- **Cómo se comprobó en la fuente:** 111 pruebas, validadores, 64 PDF y segunda generación sin diferencias; las 80 líneas cambiadas en 58 fichas se explican por las 35 correcciones y los 59 campos cambiados aparecen en el material; sus tres workflows terminaron bien.
+- **Cómo se comprobó aquí:** cambian exactamente 35 ítems del núcleo, iguales al texto aprobado; 32 cuadernos y 12 guías docentes, todos de clases corregidas; y 35 registros del dataset (33 de entrenamiento y 2 de evaluación). Clases, identificadores y totales no cambian.
+- **Efecto en la limpieza:** 1.131 hallazgos: 1.066 aceptados, 19 resueltos que la regla sigue señalando y 46 pendientes; 26 archivados en total. De los pendientes, 7 proponen aceptar y esperan aprobación: 6 son nuevos (grupos que perdieron la pregunta corregida o definiciones que ahora coinciden) y 1 es la aceptación retirada.
+- **Reutilizable:** la simulación previa solo reescribe el cuaderno; la guía docente repite respuestas y razones, así que al comparar una reexportación hay que revisar también las guías.
+- **Límite:** quedó sin aplicar una observación de lectura: algunas definiciones de «sentido» dicen «frase» y las clases suelen decir «oración». Nada de esto es revisión profesional.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -152,6 +162,8 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 | Sitios que bloquean la lectura automatizada | el CNED y un medio respondieron con rechazo | marcar «sin confirmar» y revisar a mano |
 | Aplicar un cambio altera la composición de los grupos | simulación antes de exportar | esperar identificadores nuevos y pedir su decisión; no heredar la anterior |
 | Regenerar un proyecto ajeno con otras versiones de librerías | comparación con sus versiones fijadas | usar el entorno del propio proyecto |
+| El mismo texto repetido en varias clases | búsqueda literal con más de una aparición | ubicar cada cambio por su clase y no escribir si algo no es único |
+| Textos armados desde una plantilla de la fuente | una pregunta no aparecía en la búsqueda literal | reconstruir la plantilla; nunca editar a mano lo no localizado |
 | Condiciones de uso contradictorias | política del sitio frente a la etiqueta de un recurso | registrarlo como no resuelto; decide quien tiene los derechos |
 
 ## 6. Cómo aplicarlo a otro tipo de datos
@@ -216,7 +228,7 @@ Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-
 ## 9. Lo que no está hecho
 
 - Ninguna persona ha revisado el contenido.
-- Quedan 67 hallazgos pendientes: 20 de etiquetas (L03), 19 cruces del dataset (L08) y 28 con texto aprobado (35 textos) sin aplicar en la fuente.
+- Quedan 46 hallazgos pendientes: 20 de etiquetas (L03), 19 cruces del dataset (L08) y 7 que proponen aceptar y esperan aprobación.
 - Líneas L03 a L09 sin implementación nueva; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.

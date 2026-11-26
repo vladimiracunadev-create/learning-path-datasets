@@ -58,6 +58,7 @@ lpdatasets clean-mark-applied
 lpdatasets clean-report
 lpdatasets clean-proposals
 lpdatasets clean-corrections
+lpdatasets clean-doubts
 ```
 
 `clean-mark-applied` va antes de `clean-report`: compara con los hallazgos anteriores y marca las correcciones presentes. Lo que dejó de aparecer se archiva en `limpieza/resueltos.jsonl` con su decisión; lo que sigue señalado y tiene aplicados todos los textos de su duda queda `resuelto`; una aceptación que cubría un texto cambiado se retira a `limpieza/retiradas.jsonl`. También retira los juicios sobre textos que ya no existen. Se detiene ante un texto inesperado o un hallazgo que desaparece sin explicación.
@@ -81,15 +82,15 @@ El agente [`limpiador-datos`](../../.claude/agents/limpiador-datos.md) prepara l
 
 ## Métricas
 
-Primer informe, 2026-11-26: 1.140 hallazgos (tabla siguiente). Tras aprobar los lotes y aplicar 24 correcciones ese día: **1.135 hallazgos, 1.068 aceptados y 67 pendientes**, más 16 resueltos. De los pendientes, 20 son de etiquetas (L03), 19 de cruces (L08) y 28 tienen texto aprobado que falta aplicar en la fuente.
+Primer informe, 2026-11-26: 1.140 hallazgos (tabla de reglas). Tras aprobar los lotes y aplicar las 59 correcciones aprobadas en dos tandas: **1.131 hallazgos, 1.066 aceptados, 19 resueltos que la regla sigue señalando y 46 pendientes**; 26 más dejaron de aparecer y están archivados.
 
 | Pendientes | Hallazgos |
 |---|---:|
 | Etiquetas (L03) | 20 |
 | Cruces del dataset (L08) | 19 |
-| Vocabulario por decidir | 19 |
-| Enunciado y cuaderno por decidir | 16 |
-| Por corregir, sobre las 4 correcciones sin aprobar | 4 |
+| Proponen aceptar y esperan aprobación (6 nuevos y 1 aceptación retirada) | 7 |
+
+Primer informe, por regla:
 
 | Regla | Hallazgos | Afectados |
 |---|---:|---:|
@@ -113,7 +114,7 @@ Propuestas del 2026-11-26:
 | corregir | 63 | pendientes: 24 sobre 27 preguntas, 19 de cruces del dataset (L08) y 20 de etiquetas (L03) |
 | decidir | 35 | pendientes: 19 de vocabulario, 11 de enunciado y 5 de cuaderno |
 
-Las [correcciones](../informes/correcciones-1-basico.md) de las 27 preguntas, más una detectada al redactar, están escritas. El titular aprobó el 2026-11-26 las 24 sin duda abierta, que se **aplicaron en la fuente** (commit `3fd976d5`) y llegaron al núcleo y al dataset al volver a exportar; quedan 4 sin aprobar. En una primera verificación ciega, 19 de 28 quedaron sin observaciones; las otras 9 se cambiaron y otro verificador dejó 5 sin observaciones, 1 por corregir (aplicada, sin otra lectura) y 3 dudas.
+Las [correcciones](../informes/correcciones-1-basico.md) de las 27 preguntas, más una detectada al redactar, están escritas. El titular aprobó el 2026-11-26 las 24 sin duda abierta, que se **aplicaron en la fuente** (commit `3fd976d5`) y llegaron al núcleo y al dataset al volver a exportar; quedaron 4 sin aprobar. Esas 4 y otros 31 textos se aprobaron después al resolver las dudas y se aplicaron en una segunda tanda (commit `b3647111`): las 59 correcciones están aplicadas. En una primera verificación ciega, 19 de 28 quedaron sin observaciones; las otras 9 se cambiaron y otro verificador dejó 5 sin observaciones, 1 por corregir (aplicada, sin otra lectura) y 3 dudas.
 
 Un segundo agente leyó a ciegas 136 casos: confirmó las 9 correcciones que se proponían entonces y objetó 15 de 116 casos que se proponía aceptar (3 defectos y 12 dudas). Esos 15 pasaron a `corregir` o `decidir`.
 
@@ -125,7 +126,7 @@ Hay un informe antes y después, cada hallazgo está resuelto o aceptado con mot
 
 Las 39 dudas se decidieron el 2026-11-26 (11 mantener, 25 reescribir y 3 aprobar). Las de «mantener» no tuvieron segunda lectura. En la primera ronda ciega se objetaron 18 de 34 textos nuevos, sobre todo definiciones: redactar glosarios sin criterio pedagógico es poco fiable. 
 
-Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. El informe «después» existe solo para las 24 correcciones aplicadas; quedan 67 pendientes. La regla del enunciado no ve una elección regalada con otro género o número (el texto dice «rígida» y se responde «Rígido»): se halló una al redactar y puede haber otras. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
+Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. El informe «después» cubre las 59 correcciones aplicadas; quedan 46 pendientes. Los 19 resueltos con textos que la regla sigue señalando descansan en la aprobación del texto, no en otra lectura contra la regla. Algunas definiciones de «sentido» dicen «frase» y las clases suelen decir «oración». La regla del enunciado no ve una elección regalada con otro género o número (el texto dice «rígida» y se responde «Rígido»): se halló una al redactar y puede haber otras. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
 
 ## Decisiones
 
@@ -136,6 +137,7 @@ Las reglas encuentran problemas de forma; los errores pedagógicos requieren un 
 - 2026-11-26: una aceptación no sobrevive al cambio de un texto que cubre; se retira y se vuelve a decidir.
 - 2026-11-26: el titular aprobó los 15 hallazgos que quedaron proponiendo aceptar tras la reexportación (11 nuevos y 4 que cambiaron de lote).
 - 2026-11-26: el titular aprobó todas las recomendaciones sobre dudas, incluidos los tres textos con observación de la segunda lectura.
+- 2026-11-26: el titular autorizó aplicar los 35 textos en la fuente.
 - 2026-11-26: las decisiones se aprueban por lote; los lotes de corrección siguen pendientes hasta aplicar el cambio.
 - 2026-11-26: las correcciones se redactan y revisan aquí; el contenido se cambia en la fuente, con autorización expresa, y se vuelve a exportar.
 - 2026-11-26: el titular (`vladimiracunadev-create`) aprobó los 10 lotes de aceptación, incluidas las 12 coincidencias breves con texto oficial.
