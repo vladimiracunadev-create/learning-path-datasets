@@ -22,7 +22,7 @@ Entrada: selección del núcleo por uso, público y marco. Salida: fragmentos po
 
 ## Contrato de datos
 
-Cada fragmento conserva el identificador de su entidad, marco, público y derechos.
+Cada fragmento conserva el identificador de su entidad, marco, público y derechos. Los ítems se entregan con su clase: la misma pregunta o palabra puede tener respuestas distintas y válidas según la clase ([propuestas de limpieza](../informes/propuestas-limpieza-1-basico.md)).
 
 ## Derechos
 

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -12,6 +13,7 @@ from .build import build, stats, validate_datasets
 from .cleaning import report
 from .core_build import validate_core
 from .core_escolar import export as export_core
+from .proposals import approve, proposals_report
 from .vector import build_index, search
 
 
@@ -51,6 +53,17 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--datasets", default="datasets")
     p.add_argument("--informe", default="docs/informes/limpieza-1-basico.md")
     p.add_argument("--check", action="store_true", help="falla si el informe está desactualizado")
+
+    p = sub.add_parser("clean-proposals", help="agrupa los hallazgos en lotes con una propuesta; no decide")
+    p.add_argument("--nucleo", default="nucleo")
+    p.add_argument("--informe", default="docs/informes/propuestas-limpieza-1-basico.md")
+    p.add_argument("--check", action="store_true", help="falla si las propuestas están desactualizadas")
+
+    p = sub.add_parser("clean-approve", help="registra como aceptados los lotes que una persona aprueba")
+    p.add_argument("--lote", action="append", default=[], help="repetible")
+    p.add_argument("--aprobado-por", required=True)
+    p.add_argument("--nucleo", default="nucleo")
+    p.add_argument("--datasets", default="datasets")
 
     p = sub.add_parser("validate", help="valida esquema, hashes y particiones")
     p.add_argument("--datasets", default="datasets")
@@ -94,6 +107,21 @@ def main(argv: list[str] | None = None) -> int:
         stale = report(Path(args.nucleo), Path(args.datasets), Path(args.informe), args.check)
         print("\n".join(stale) if stale else "OK: informe de limpieza al día")
         return 1 if stale else 0
+    if args.cmd == "clean-proposals":
+        stale = proposals_report(Path(args.nucleo), Path(args.informe), args.check)
+        print(os.linesep.join(stale) if stale else "OK: propuestas de limpieza al día")
+        return 1 if stale else 0
+    if args.cmd == "clean-approve":
+        count = approve(
+            Path(args.nucleo),
+            Path(args.datasets),
+            args.lote,
+            args.aprobado_por,
+            Path("docs/informes/limpieza-1-basico.md"),
+            Path("docs/informes/propuestas-limpieza-1-basico.md"),
+        )
+        print(f"Decisiones registradas: {count}")
+        return 0
     if args.cmd == "validate":
         problems = validate_datasets(Path(args.datasets))
         print("\n".join(problems[:50]) if problems else "OK: datasets válidos")

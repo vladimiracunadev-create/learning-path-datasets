@@ -68,7 +68,7 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | Tipos de conocimiento puro (`hecho`, `definicion`, `relacion`…) | `OPERATIVO` | esquema y [estándar](docs/KNOWLEDGE_STANDARD.md) |
 | 4 skills y 5 agentes generales para crear y limpiar datasets | `OPERATIVO` | `.claude/`, `scripts/verify_assets.py` y pruebas; estructura verificada, calidad no medida |
 | Núcleo de 1.º básico: 887 clases, 16.386 ítems y 1.653 recursos | `OPERATIVO` | `nucleo/`, `lpdatasets core-validate`; contrato [`nucleo-0.1`](docs/CORE_CONTRACT.md), aún experimental |
-| Informe de limpieza | `EXPERIMENTAL` | [1.140 hallazgos](docs/informes/limpieza-1-basico.md), pendientes de decisión |
+| Informe de limpieza | `EXPERIMENTAL` | [1.140 hallazgos](docs/informes/limpieza-1-basico.md) con [propuestas por lote](docs/informes/propuestas-limpieza-1-basico.md), pendientes de decisión |
 | Líneas de implementación documentadas | `OPERATIVO` | `scripts/verify_docs.py`; comprueba estructura, no la calidad del texto |
 | Otros niveles escolares y otros programas | `PLANIFICADO` | [hoja de ruta](ROADMAP.md) |
 

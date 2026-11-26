@@ -32,7 +32,7 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | Etiquetado de habilidades | `PLANIFICADO` | el campo `habilidades` está vacío |
 | Contrato del núcleo `nucleo-0.1` | `EXPERIMENTAL` | `src/lpdatasets/core.py`, `schema/core.schema.json`, `tests/test_core.py` |
 | Núcleo de 1.º básico | `OPERATIVO` | `nucleo/escolar-chile/1-basico/manifest.json`, `lpdatasets core-validate` |
-| Informe de limpieza | `EXPERIMENTAL` | `lpdatasets clean-report --check`; hallazgos sin decisión |
+| Informe y propuestas de limpieza | `EXPERIMENTAL` | `lpdatasets clean-report --check` y `clean-proposals --check`; hallazgos sin decisión |
 | Registro de modalidades | `EXPERIMENTAL` | `src/lpdatasets/modalities.py`, `tests/test_modalities.py`; ninguna modalidad real |
 | Líneas de implementación | ver cada una | [`docs/lineas/`](docs/lineas/README.md), `scripts/verify_docs.py` |
 | Revisión humana profesional | `NO REALIZADA` | todos los registros declaran `ia_asistida_sin_revision_humana` |
@@ -48,5 +48,6 @@ python scripts/verify_docs.py
 python scripts/docs_diagram.py --check
 lpdatasets core-validate
 lpdatasets clean-report --check
+lpdatasets clean-proposals --check
 lpdatasets validate
 ```

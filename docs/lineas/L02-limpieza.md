@@ -38,14 +38,17 @@ No cambia licencias ni procedencia. No eleva el estado de revisión sin una pers
 
 ```bash
 lpdatasets clean-report
-lpdatasets clean-report --check
+lpdatasets clean-proposals
+lpdatasets clean-approve --lote duplicado-glosario --aprobado-por "nombre"
 ```
+
+`clean-proposals` agrupa los hallazgos en lotes y escribe las [propuestas](../informes/propuestas-limpieza-1-basico.md). Combina reglas generales con los juicios de lectura guardados en `limpieza/revision.json`; lo que exige lectura y no la tiene queda en `sin-revisar`. `clean-approve` es el único paso que registra decisiones, solo admite lotes que proponen aceptar y exige el nombre de quien aprueba. Con `--check`, los dos informes se comprueban sin escribirse.
 
 El agente [`limpiador-datos`](../../.claude/agents/limpiador-datos.md) prepara las propuestas de decisión; las aprueba una persona.
 
 ## Pruebas
 
-`tests/test_cleaning.py` tiene un caso sintético por regla, comprueba el determinismo y rechaza decisiones incompletas u obsoletas. El CI comprueba que el informe publicado corresponda a los datos.
+`tests/test_cleaning.py` tiene un caso sintético por regla, comprueba el determinismo y rechaza decisiones incompletas u obsoletas. `tests/test_proposals.py` comprueba que lo no leído nunca se proponga aceptar y que la aprobación rechace lotes de corrección. El CI comprueba que el informe publicado corresponda a los datos.
 
 ## Métricas
 
@@ -65,15 +68,26 @@ Primer informe, 2026-11-26: 1.140 hallazgos, todos pendientes.
 
 Las cifras de duplicados y conflictos difieren de la medición del plan porque ahora se agrupa por asignatura y tipo.
 
+Propuestas del 2026-11-26, sin aprobar:
+
+| Veredicto propuesto | Hallazgos |
+|---|---:|
+| aceptar | 1.042 |
+| corregir | 63 |
+| decidir | 35 |
+
+Un segundo agente leyó a ciegas 136 casos: confirmó las 9 correcciones que se proponían entonces y objetó 15 de 116 casos que se proponía aceptar (3 defectos y 12 dudas). Esos 15 pasaron a `corregir` o `decidir`.
+
 ## Listo cuando
 
 Hay un informe antes y después, cada hallazgo está resuelto o aceptado con motivo y no queda ningún registro de evaluación idéntico a uno de entrenamiento.
 
 ## Límites
 
-Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Todavía no hay informe «después»: ninguna decisión está aprobada ni aplicada.
+Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Todavía no hay informe «después»: ninguna decisión está aprobada ni aplicada. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
 
 ## Decisiones
 
 - 2026-11-26: el agente `limpiador-datos` propone cambios y no borra sin registro.
 - 2026-11-26: el dataset v1.0 no se modifica; sus cruces se corrigen al construir la versión siguiente (L08).
+- 2026-11-26: las decisiones se aprueban por lote; los lotes de corrección siguen pendientes hasta aplicar el cambio.

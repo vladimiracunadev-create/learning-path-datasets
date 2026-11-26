@@ -22,7 +22,7 @@ Entrada: selección del núcleo. Salida: JSONL por formato, manifiesto con SHA-2
 
 ## Contrato de datos
 
-El [esquema de registros v1.0](../DATASET_SCHEMA.md) sigue vigente. La partición pasa a decidirse por OA y se agrega el formato `messages`.
+El [esquema de registros v1.0](../DATASET_SCHEMA.md) sigue vigente. La partición pasa a decidirse por OA y se agrega el formato `messages`. Además, se saca de evaluación toda entrada presente en entrenamiento, se conserva una sola copia de los duplicados exactos y los pares repetidos entre clases llevan el contexto de su clase ([propuestas de limpieza](../informes/propuestas-limpieza-1-basico.md)).
 
 ## Derechos
 

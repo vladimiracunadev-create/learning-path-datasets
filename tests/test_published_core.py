@@ -10,6 +10,7 @@ from lpdatasets.build import read_jsonl
 from lpdatasets.cleaning import HIDDEN_TYPES, report
 from lpdatasets.core import load_marcos, select
 from lpdatasets.core_build import read_core, validate_core
+from lpdatasets.proposals import proposals_report
 from tests.conftest import ROOT
 
 NUCLEO = ROOT / "nucleo"
@@ -58,3 +59,13 @@ def test_commercial_use_is_not_allowed_without_authorization(entities):
 def test_cleaning_report_is_up_to_date():
     doc = ROOT / "docs" / "informes" / "limpieza-1-basico.md"
     assert report(NUCLEO, ROOT / "datasets", doc, check=True) == []
+
+
+def test_cleaning_proposals_cover_every_finding_and_are_up_to_date():
+    folder = FOLDER / "limpieza"
+    findings = [f["id"] for f in read_jsonl(folder / "hallazgos.jsonl")]
+    proposals = read_jsonl(folder / "propuestas.jsonl")
+    assert [p["id"] for p in proposals] == findings
+    assert not [p for p in proposals if p["lote"] == "sin-revisar"]
+    doc = ROOT / "docs" / "informes" / "propuestas-limpieza-1-basico.md"
+    assert proposals_report(NUCLEO, doc, check=True) == []
