@@ -218,6 +218,14 @@ Este repositorio no solo deriva datos: lo que la limpieza encuentra mejora el pr
 | 122 correcciones de Matemática | fuente, tras aprobación | redactado |
 | 60 etiquetas de habilidades | `aportes/` de este repositorio | aprobado; la fuente no se toca |
 
+### 3.26 Prompt maestro, skill y agentes para revisar contenidos
+
+- **Qué:** a pedido del titular, la skill `contenido-revisar` (prompt maestro, catálogo de defectos y un perfil del repositorio escolar) y los agentes `auditor-contenidos` y `corrector-contenidos`, genéricos y en `.claude/`. `install_claude_assets.py` pasó a copiar la carpeta completa de cada skill.
+- **Por qué:** los defectos hallados mostraron que validar la forma y releer sin método no basta; el procedimiento recoge lo que sí funcionó y los fallos propios.
+- **Cómo se probó:** otro agente recibió el texto anterior de 10 clases, el prompt y el catálogo, sin la lista de 25 defectos ya conocidos en ellas. Encontró 23, 20 como seguros, y señaló 64 piezas más, 18 como seguras, que no se han comprobado una por una.
+- **Qué falló:** informó nueve ambigüedades, entre ellas que las respuestas iban junto al enunciado y no se podía resolver a ciegas. Se corrigieron después de la prueba y **esos ajustes no se han probado**.
+- **Límite:** el catálogo salió de la misma asignatura, así que la prueba es favorable; no mide otras materias ni cuántos de los 64 son defectos.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -332,7 +340,7 @@ Resolver esto es el primer trabajo antes de sumar datos de otro tipo.
 | `lpdatasets contrib-approve` | una persona aprueba piezas verificadas |
 | `lpdatasets contrib-export` | escribe el núcleo combinado con las piezas aprobadas |
 
-Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar` y `dataset-pack-nuevo`. Agentes: `extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos`, `limpiador-datos` y `vigia-curricular`, este último propio del contenido educativo chileno y aún sin probarse como agente. En este trabajo, las lecturas ciegas las hizo `verificador-independiente`; las propuestas se prepararon sin delegar en `limpiador-datos`, que sigue sin probarse en un lote real.
+Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar`, `dataset-pack-nuevo` y `contenido-revisar`. Para revisar contenidos: `auditor-contenidos` y `corrector-contenidos`. Agentes: `extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos`, `limpiador-datos` y `vigia-curricular`, este último propio del contenido educativo chileno y aún sin probarse como agente. En este trabajo, las lecturas ciegas las hizo `verificador-independiente`; las propuestas se prepararon sin delegar en `limpiador-datos`, que sigue sin probarse en un lote real.
 
 ## 9. Lo que no está hecho
 

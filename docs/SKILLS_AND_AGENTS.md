@@ -27,6 +27,18 @@ Además, un agente **propio del contenido escolar chileno**:
 |---|---|
 | `vigia-curricular` | ejecuta el vigía, explica qué cambió y qué debe revisar una persona; no cambia contenido ([L04](lineas/L04-vigia-curricular.md)) |
 
+## Revisar y corregir contenidos
+
+Generales: sirven para cualquier materia y nivel, no solo para datasets.
+
+| Pieza | Rol |
+|---|---|
+| skill `contenido-revisar` | el procedimiento, con su [prompt maestro](../.claude/skills/contenido-revisar/prompt-maestro.md), un [catálogo de defectos](../.claude/skills/contenido-revisar/catalogo-defectos.md) y un [perfil](../.claude/skills/contenido-revisar/perfil-trayectoria-escolar-chile.md) del repositorio escolar como ejemplo |
+| agente `auditor-contenidos` | entiende el repositorio y busca defectos; no edita |
+| agente `corrector-contenidos` | redacta correcciones y aplica solo las aprobadas y autorizadas |
+
+Verifica `verificador-independiente`, en un contexto distinto al del corrector.
+
 ## Ciclo recomendado
 
 ```mermaid

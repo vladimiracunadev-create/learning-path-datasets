@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import importlib.util
+import re
 from pathlib import Path
 
 import pytest
@@ -29,6 +30,7 @@ def test_expected_skills_and_agents_exist():
         "dataset-verificar",
         "dataset-construir-publicar",
         "dataset-pack-nuevo",
+        "contenido-revisar",
     }
     assert agents == {
         "extractor-conocimiento",
@@ -37,6 +39,8 @@ def test_expected_skills_and_agents_exist():
         "auditor-derechos-datos",
         "limpiador-datos",
         "vigia-curricular",
+        "auditor-contenidos",
+        "corrector-contenidos",
     }
 
 
@@ -58,3 +62,23 @@ def test_installer_copies_without_overwriting_different_files(tmp_path: Path):
     assert target.read_text(encoding="utf-8") == "otra cosa"
     assert installer.main(["--dest", str(tmp_path), "--force"]) == 0
     assert target.with_name(target.name + ".bak").read_text(encoding="utf-8") == "otra cosa"
+
+
+def test_the_installer_copies_the_whole_skill_folder(tmp_path: Path):
+    installer = load("install_claude_assets")
+    assert installer.main(["--dest", str(tmp_path)]) == 0
+    folder = tmp_path / "skills" / "contenido-revisar"
+    assert {p.name for p in folder.iterdir()} == {
+        "SKILL.md",
+        "prompt-maestro.md",
+        "catalogo-defectos.md",
+        "perfil-trayectoria-escolar-chile.md",
+    }
+    assert installer.main(["--dest", str(tmp_path)]) == 0
+
+
+def test_the_review_skill_links_only_to_files_it_ships():
+    folder = ROOT / ".claude" / "skills" / "contenido-revisar"
+    linked = set(re.findall(r"\]\(([\w-]+\.md)\)", (folder / "SKILL.md").read_text(encoding="utf-8")))
+    assert linked == {"prompt-maestro.md", "catalogo-defectos.md", "perfil-trayectoria-escolar-chile.md"}
+    assert all((folder / name).is_file() for name in linked)

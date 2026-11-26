@@ -23,8 +23,11 @@ def same(a: Path, b: Path) -> bool:
 
 def plan(dest: Path) -> list[tuple[Path, Path]]:
     pairs: list[tuple[Path, Path]] = []
-    for src in sorted((ROOT / ".claude" / "skills").glob("*/SKILL.md")):
-        pairs.append((src, dest / "skills" / src.parent.name / "SKILL.md"))
+    skills = ROOT / ".claude" / "skills"
+    for skill in sorted(skills.glob("*/SKILL.md")):
+        # Una skill puede traer documentos de apoyo junto a su SKILL.md: se instala la carpeta completa.
+        for src in sorted(p for p in skill.parent.rglob("*") if p.is_file() and "__pycache__" not in p.parts):
+            pairs.append((src, dest / "skills" / src.relative_to(skills)))
     for src in sorted((ROOT / ".claude" / "agents").glob("*.md")):
         pairs.append((src, dest / "agents" / src.name))
     return pairs
