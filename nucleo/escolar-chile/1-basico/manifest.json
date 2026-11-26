@@ -2,15 +2,15 @@
   "archivos": {
     "clases.jsonl": {
       "entidades": 887,
-      "sha256": "ddbae9999032c0a2a7c94e72a5dd5483e3a8be7af94d3c115f818bc9be6debad"
+      "sha256": "e119486c757390e100aaf5a952a1288fad22efcae92ff772a39e8fdf90b7c628"
     },
     "items.jsonl": {
       "entidades": 16386,
-      "sha256": "69b5826dd17e256eab4bfeac6c10572b9d994ec3360dca00851c692e9eb6e41e"
+      "sha256": "938354dacd7de27a2ceb9909f23c32b9cc78d7e61cb069b697030f9bc4defa8b"
     },
     "recursos.jsonl": {
       "entidades": 1653,
-      "sha256": "2f2638c8aab75c01de748357b4fdf90d14940d594dd02f032dea05772c499cef"
+      "sha256": "07dd95194a4e7d2ef1cd2346d7a0bf032c1dd233aea33f0c8160463c0ccc30e3"
     }
   },
   "cobertura": {
@@ -30,7 +30,7 @@
     },
     "representadas": 887
   },
-  "commit_fuente": "668559a6525427021f2c18ebf472e2ea4be3f3b0",
+  "commit_fuente": "3fd976d50bb2176f0e31dfbe389b9422fc13274a",
   "contrato": "nucleo-0.1",
   "fuente": "vladimiracunadev-create/chilean-school-learning-path",
   "licencia": [

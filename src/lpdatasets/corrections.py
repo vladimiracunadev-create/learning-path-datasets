@@ -15,8 +15,8 @@ from collections.abc import Collection
 from pathlib import Path
 from typing import Any
 
-from .build import read_jsonl
-from .cleaning import core_findings, normalize
+from .build import dumps, read_jsonl
+from .cleaning import all_findings, core_findings, dataset_records, normalize
 from .core import Entity
 from .core_build import core_folders, read_core
 from .proposals import WORKED, statement_kind
@@ -58,12 +58,16 @@ def check_corrections(
     flagged = {
         ident: p["id"] for p in proposals if p["veredicto"] == "corregir" for ident in p.get("items_a_cambiar", [])
     }
-    problems = [
-        f"{i}: se pide corregir y no tiene redacción"
-        for i in sorted(set(flagged))
-        if i not in {c["item"] for c in corrections}
-    ]
+    drafted = {c["item"] for c in corrections}
+    problems = [f"{i}: se pide corregir y no tiene redacción" for i in sorted(set(flagged) - drafted)]
     seen: set[str] = set()
+    for c in (c for c in corrections if c.get("aplicada")):
+        current = items.get(c["item"], {}).get("contenido")
+        if current != c["despues"]:
+            problems.append(f"{c['item']}: figura como aplicada y el núcleo tiene otro texto")
+        if (c.get("aprobacion") or {}).get("huella") != fingerprint(c["despues"]):
+            problems.append(f"{c['item']}: figura como aplicada sin una aprobación de ese texto")
+    corrections = [c for c in corrections if not c.get("aplicada")]
     for c in corrections:
         ident = c["item"]
         if ident not in items:
@@ -129,13 +133,15 @@ def render(document: dict[str, Any]) -> str:
     approved = [r for r in rows if r.get("aprobacion")]
     people = ", ".join(sorted({r["aprobacion"]["por"] for r in approved}))
     state = f"{len(approved)} de {len(rows)} aprobadas por {people}" if approved else "**sin aprobar**"
+    applied = sum(bool(r.get("aplicada")) for r in rows)
+    where = f"{applied} de {len(rows)} aplicadas en la fuente" if applied else "ninguna aplicada"
     out = [
         "# Correcciones propuestas · 1.º básico",
         "",
         "Generado con `lpdatasets clean-corrections`; no se edita a mano.",
         "",
         f"- Redacción: {document['redactor']} ({document['fecha']}).",
-        f"- Estado: {state}. **No están aplicadas**: el núcleo y la fuente siguen igual.",
+        f"- Estado: {state}; **{where}**.",
         f"- {len(rows)} preguntas. Detectadas al redactar, fuera de los hallazgos: "
         f"{sum(r['hallazgo'] is None for r in rows)}.",
     ]
@@ -153,7 +159,7 @@ def render(document: dict[str, Any]) -> str:
             "",
             f"Qué cambia: {row['cambio']}.",
             "",
-            f"Estado: aprobada por {row['aprobacion']['por']}." if row.get("aprobacion") else "Estado: sin aprobar.",
+            _state(row),
             "",
             "| | Antes | Después |",
             "|---|---|---|",
@@ -167,6 +173,13 @@ def render(document: dict[str, Any]) -> str:
         if choice:
             out += ["", "La respuesta nueva figura en el enunciado: confirmar que exige pensarla."]
     return "\n".join(out) + "\n"
+
+
+def _state(row: dict[str, Any]) -> str:
+    if not row.get("aprobacion"):
+        return "Estado: sin aprobar."
+    applied = f" Aplicada en el commit `{row['aplicada'][:12]}`." if row.get("aplicada") else ""
+    return f"Estado: aprobada por {row['aprobacion']['por']}.{applied}"
 
 
 def _cell(text: str) -> str:
@@ -220,3 +233,51 @@ def approve_corrections(nucleo: Path, doc: Path, approver: str, include: Collect
     path.write_text(text, encoding="utf-8", newline=chr(10))
     corrections_report(nucleo, doc)
     return len(new)
+
+
+def mark_applied(nucleo: Path, datasets: Path) -> tuple[int, int]:
+    """Tras volver a exportar, marca como aplicadas las correcciones aprobadas cuyo texto ya está en el núcleo.
+
+    Archiva los hallazgos que dejaron de aparecer y retira los juicios de lectura sobre textos que ya no existen.
+    Debe ejecutarse antes de `clean-report`, que reescribe los hallazgos. Devuelve (correcciones, resueltos).
+    """
+    folder = core_folders(nucleo)[0]
+    cleaning = folder / "limpieza"
+    manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+    commit = manifest["commit_fuente"]
+    entities = read_core(folder)
+    contents = {e["id"]: e["contenido"] for e in entities if e["entidad"] == "item"}
+    document = json.loads((cleaning / "correcciones.json").read_text(encoding="utf-8"))
+    applied = []
+    for row in (r for r in document["correcciones"] if r.get("aprobacion") and not r.get("aplicada")):
+        current = contents.get(row["item"])
+        if current == row["despues"]:
+            applied.append(row)
+        elif current != row["antes"]:
+            raise SystemExit(f"{row['item']}: el núcleo no tiene ni el texto anterior ni el aprobado")
+    if not applied:
+        raise SystemExit("ninguna corrección aprobada está en el núcleo")
+    ids = {r["item"] for r in applied}
+    current_ids = {f["id"] for f in all_findings(entities, dataset_records(datasets, manifest))}
+    gone = [f for f in read_jsonl(cleaning / "hallazgos.jsonl") if f["id"] not in current_ids]
+    unexplained = [f["id"] for f in gone if not ids & set(f["entidades"])]
+    if unexplained:
+        raise SystemExit("desaparecen hallazgos que ninguna corrección explica: " + ", ".join(unexplained))
+    archive = cleaning / "resueltos.jsonl"
+    previous = read_jsonl(archive) if archive.exists() else []
+    resolved = previous + [f | {"resuelto_en": commit} for f in gone]
+    archive.write_text("".join(dumps(f) + "\n" for f in resolved), encoding="utf-8", newline="\n")
+    for row in applied:
+        row["aplicada"] = commit
+    _save(cleaning / "correcciones.json", document, indent=1)
+    review = json.loads((cleaning / "revision.json").read_text(encoding="utf-8"))
+    review["items"] = {
+        rule: {i: j for i, j in table.items() if i not in ids} for rule, table in review["items"].items()
+    }
+    _save(cleaning / "revision.json", review, indent=1, sort_keys=True)
+    return len(applied), len(gone)
+
+
+def _save(path: Path, document: dict[str, Any], **options: Any) -> None:
+    text = json.dumps(document, ensure_ascii=False, **options) + "\n"
+    path.write_text(text, encoding="utf-8", newline="\n")

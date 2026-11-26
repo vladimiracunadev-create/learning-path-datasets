@@ -222,7 +222,28 @@ def apply_decisions(findings: list[dict[str, Any]], path: Path) -> list[dict[str
     return findings
 
 
-def render(findings: list[dict[str, Any]], core_manifest: dict[str, Any], items: int, records: int) -> str:
+def dataset_records(datasets: Path, core_manifest: dict[str, Any]) -> list[dict[str, Any]]:
+    """Registros del dataset de pares que corresponde al mismo programa y nivel del núcleo."""
+    return [
+        r
+        for m in manifests(datasets)
+        if m.parent.parent.name == core_manifest["pack"] and m.parent.name == core_manifest["nivel"]
+        for name in json.loads(m.read_text(encoding="utf-8"))["archivos"]
+        for r in read_jsonl(m.parent / name)
+    ]
+
+
+def all_findings(entities: list[Entity], records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    return sorted(core_findings(entities) + dataset_findings(records), key=lambda f: f["id"])
+
+
+def render(
+    findings: list[dict[str, Any]],
+    core_manifest: dict[str, Any],
+    items: int,
+    records: int,
+    resolved: list[dict[str, Any]] | None = None,
+) -> str:
     out = [
         f"# Informe de limpieza · {core_manifest['pack']} · {core_manifest['nivel']}",
         "",
@@ -246,6 +267,19 @@ def render(findings: list[dict[str, Any]], core_manifest: dict[str, Any], items:
         "«Afectados» cuenta entidades o registros dentro de cada regla; una misma entidad puede aparecer en varias.",
         "Las reglas son comprobaciones de forma: un hallazgo «revisar» puede ser legítimo.",
     ]
+    if resolved:
+        out += [
+            "",
+            "## Resueltos",
+            "",
+            "Hallazgos que dejaron de aparecer al aplicar correcciones. Se conservan en `limpieza/resueltos.jsonl`.",
+            "",
+            "| Commit de la fuente | Regla | Hallazgos | Afectados |",
+            "|---|---|---:|---:|",
+        ]
+        for commit, rule in sorted({(f["resuelto_en"], f["regla"]) for f in resolved}):
+            group = [f for f in resolved if (f["resuelto_en"], f["regla"]) == (commit, rule)]
+            out.append(f"| `{commit[:12]}` | `{rule}` | {len(group)} | {sum(f['total'] for f in group)} |")
     for rule, group in grouped.items():
         _, what, action, _ = RULES[rule]
         out += ["", f"## `{rule}`", "", f"Detecta: {what}. Propuesta: {action}.", ""]
@@ -264,19 +298,15 @@ def report(nucleo: Path, datasets: Path, doc: Path, check: bool = False) -> list
     folder = folders[0]
     entities = read_core(folder)
     manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
-    records = [
-        r
-        for m in manifests(datasets)
-        if m.parent.parent.name == manifest["pack"] and m.parent.name == manifest["nivel"]
-        for name in json.loads(m.read_text(encoding="utf-8"))["archivos"]
-        for r in read_jsonl(m.parent / name)
-    ]
-    findings = sorted(core_findings(entities) + dataset_findings(records), key=lambda f: f["id"])
+    records = dataset_records(datasets, manifest)
+    findings = all_findings(entities, records)
     apply_decisions(findings, folder / "limpieza" / "decisiones.json")
     items = sum(e["entidad"] == "item" for e in entities)
+    archive = folder / "limpieza" / "resueltos.jsonl"
+    resolved = read_jsonl(archive) if archive.exists() else []
     outputs = {
         folder / "limpieza" / "hallazgos.jsonl": "".join(dumps(f) + "\n" for f in findings),
-        doc: render(findings, manifest, items, len(records)),
+        doc: render(findings, manifest, items, len(records), resolved),
     }
     stale = []
     for path, text in outputs.items():

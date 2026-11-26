@@ -13,7 +13,7 @@ from .build import build, stats, validate_datasets
 from .cleaning import report
 from .core_build import validate_core
 from .core_escolar import export as export_core
-from .corrections import approve_corrections, corrections_report
+from .corrections import approve_corrections, corrections_report, mark_applied
 from .proposals import approve, proposals_report
 from .vector import build_index, search
 
@@ -75,6 +75,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--aprobado-por", required=True)
     p.add_argument("--incluir", action="append", default=[], help="corrección con duda que también se aprueba")
     p.add_argument("--nucleo", default="nucleo")
+
+    p = sub.add_parser("clean-mark-applied", help="tras reexportar, registra las correcciones ya aplicadas")
+    p.add_argument("--nucleo", default="nucleo")
+    p.add_argument("--datasets", default="datasets")
 
     p = sub.add_parser("validate", help="valida esquema, hashes y particiones")
     p.add_argument("--datasets", default="datasets")
@@ -141,6 +145,10 @@ def main(argv: list[str] | None = None) -> int:
         report_file = Path("docs/informes/correcciones-1-basico.md")
         count = approve_corrections(Path(args.nucleo), report_file, args.aprobado_por, args.incluir)
         print(f"Correcciones aprobadas: {count}")
+        return 0
+    if args.cmd == "clean-mark-applied":
+        applied, resolved = mark_applied(Path(args.nucleo), Path(args.datasets))
+        print(f"Correcciones aplicadas: {applied}; hallazgos resueltos: {resolved}")
         return 0
     if args.cmd == "validate":
         problems = validate_datasets(Path(args.datasets))

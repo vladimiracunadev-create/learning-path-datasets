@@ -6,11 +6,14 @@ from pathlib import Path
 
 import pytest
 
+from lpdatasets.build import read_jsonl
+from lpdatasets.cleaning import report
 from lpdatasets.core_build import write_core
 from lpdatasets.corrections import (
     approve_corrections,
     check_corrections,
     corrections_report,
+    mark_applied,
     render,
     simulate,
 )
@@ -74,7 +77,7 @@ def test_every_item_to_fix_needs_a_text():
 def test_report_states_that_nothing_is_approved_or_applied():
     document = {"redactor": "prueba", "fecha": "2026-01-01", "correcciones": [correction()]}
     text = render(document)
-    assert "sin aprobar" in text and "No están aplicadas" in text and OLD in text
+    assert "sin aprobar" in text and "ninguna aplicada" in text and OLD in text
     assert "Para tu criterio" not in text
     document["correcciones"] = [correction(duda="puede ser fácil")]
     assert "**Para tu criterio:** puede ser fácil." in render(document)
@@ -84,9 +87,12 @@ def publish(tmp_path: Path, rows: list[dict]) -> tuple[Path, Path, Path]:
     nucleo = tmp_path / "nucleo"
     folder = nucleo / "demo" / "1-basico"
     coverage = {"catalogo": 1, "representadas": 1, "excluidas": []}
-    write_core(folder, ENTITIES, {"cobertura": coverage})
+    info = {"pack": "demo", "nivel": "1-basico", "commit_fuente": "viejo", "cobertura": coverage}
+    write_core(folder, ENTITIES, info)
     (folder / "limpieza").mkdir()
     (folder / "limpieza" / "propuestas.jsonl").write_text(json.dumps(PROPOSALS[0]), encoding="utf-8")
+    review = {"items": {"r": {"a": {"veredicto": "corregir"}}}, "hallazgos": {}}
+    (folder / "limpieza" / "revision.json").write_text(json.dumps(review), encoding="utf-8")
     path = folder / "limpieza" / "correcciones.json"
     document = {"redactor": "prueba", "fecha": "2026-01-01", "correcciones": rows}
     path.write_text(json.dumps(document), encoding="utf-8")
@@ -122,3 +128,47 @@ def test_corrections_approval_is_refused(tmp_path: Path, approver: str, include:
     with pytest.raises(SystemExit):
         approve_corrections(nucleo, doc, approver, include)
     assert "aprobacion" not in saved(path)
+
+
+SOLVED = "Una llave que abre una puerta, ¿de qué material es?"
+
+
+def apply_in_source(tmp_path: Path) -> tuple[Path, Path, Path]:
+    """Publica el núcleo, aprueba la corrección y vuelve a «exportar» con el texto nuevo."""
+    row = correction(question=SOLVED)
+    nucleo, doc, path = publish(tmp_path, [row])
+    datasets = tmp_path / "datasets"
+    datasets.mkdir()
+    report(nucleo, datasets, tmp_path / "limpieza.md")
+    assert approve_corrections(nucleo, doc, "revisora") == 1
+    coverage = {"catalogo": 1, "representadas": 1, "excluidas": []}
+    info = {"pack": "demo", "nivel": "1-basico", "commit_fuente": "nuevo", "cobertura": coverage}
+    write_core(nucleo / "demo" / "1-basico", simulate(ENTITIES, [row]), info)
+    return nucleo, datasets, path
+
+
+def test_applied_corrections_archive_the_findings_they_solve(tmp_path: Path):
+    nucleo, datasets, path = apply_in_source(tmp_path)
+    folder = path.parent
+    before = {f["id"] for f in read_jsonl(folder / "hallazgos.jsonl") if "a" in f["entidades"]}
+    applied, resolved = mark_applied(nucleo, datasets)
+    assert applied == 1 and resolved >= 1
+    assert saved(path)["aplicada"] == "nuevo"
+    assert {f["id"] for f in read_jsonl(folder / "resueltos.jsonl")} <= before
+    assert "a" not in json.loads((folder / "revision.json").read_text(encoding="utf-8"))["items"]["r"]
+    report(nucleo, datasets, tmp_path / "limpieza.md")
+    assert "## Resueltos" in (tmp_path / "limpieza.md").read_text(encoding="utf-8")
+    assert corrections_report(nucleo, tmp_path / "correcciones.md") == []
+    with pytest.raises(SystemExit, match="ninguna"):
+        mark_applied(nucleo, datasets)
+
+
+def test_unexpected_text_stops_the_registration(tmp_path: Path):
+    nucleo, datasets, path = apply_in_source(tmp_path)
+    other = correction(question="Texto que nadie aprobó, ¿sí o no?")
+    coverage = {"catalogo": 1, "representadas": 1, "excluidas": []}
+    info = {"pack": "demo", "nivel": "1-basico", "commit_fuente": "otro", "cobertura": coverage}
+    write_core(nucleo / "demo" / "1-basico", simulate(ENTITIES, [other]), info)
+    with pytest.raises(SystemExit, match="ni el texto anterior"):
+        mark_applied(nucleo, datasets)
+    assert "aplicada" not in saved(path)

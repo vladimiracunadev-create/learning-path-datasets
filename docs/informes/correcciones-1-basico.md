@@ -3,7 +3,7 @@
 Generado con `lpdatasets clean-corrections`; no se edita a mano.
 
 - Redacción: asistente de IA; sin revisión humana (2026-11-26).
-- Estado: 24 de 28 aprobadas por vladimiracunadev-create. **No están aplicadas**: el núcleo y la fuente siguen igual.
+- Estado: 24 de 28 aprobadas por vladimiracunadev-create; **24 de 28 aplicadas en la fuente**.
 - 28 preguntas. Detectadas al redactar, fuera de los hallazgos: 1.
 
 ## Segunda lectura
@@ -18,7 +18,7 @@ Dos agentes de IA distintos resolvieron las preguntas sin ver las respuestas pro
 
 Qué cambia: ahora hay que separar la forma del color en vez de repetir «redonda».
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -30,7 +30,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: cambia el foco de la raíz al transporte por el tallo, que no está respondido en un ejemplo.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -42,7 +42,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: hay que reconocer el material por sus pistas; otro ejercicio cercano nombra la madera.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -54,7 +54,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: la pregunta ya no nombra el material como un dato.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -66,7 +66,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: la pregunta ya no nombra el material como un dato.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -78,7 +78,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: la pista es lo que le pasa al objeto, no el nombre del grupo.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -90,7 +90,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: la pista es lo que se observa, con un material que otro ejercicio no nombra.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -102,7 +102,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: el enunciado actual dice «rígida» y pregunta si es flexible o rígido.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -114,7 +114,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: situación nueva sin la respuesta incluida.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -126,7 +126,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: datos distintos de los ejemplos y del modelo.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -138,7 +138,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: las tarjetas ahora vienen desordenadas.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -164,7 +164,7 @@ Estado: sin aprobar.
 
 Qué cambia: hay que comparar dos fechas dentro del año en vez de recordar un mes dicho en la actividad.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -176,7 +176,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: una voz inventada nueva, distinta de la del ejemplo.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -188,7 +188,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: recorrido distinto del que explica la clase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -228,7 +228,7 @@ Estado: sin aprobar.
 
 Qué cambia: hay una sola respuesta y exige revisar la frase.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -240,7 +240,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: se quita el ejemplo del enunciado y se cambia el sujeto, porque la explicación usa «el niño».
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -252,7 +252,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: se quita el ejemplo del enunciado.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -264,7 +264,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: se quita el ejemplo del enunciado.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -276,7 +276,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: situación distinta de la del ejemplo.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -288,7 +288,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: aplica la forma a un caso; otro ejercicio ya no entrega la respuesta completa.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -300,7 +300,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: hay que distinguir día y mes en una fecha nueva.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -312,7 +312,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: hay que nombrar las cualidades a partir de lo que ocurre.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -338,7 +338,7 @@ Estado: sin aprobar.
 
 Qué cambia: las cualidades se deducen, no vienen dichas.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|
@@ -350,7 +350,7 @@ Estado: aprobada por vladimiracunadev-create.
 
 Qué cambia: se cambia una frase vaga en un criterio, sin que el enunciado lo entregue.
 
-Estado: aprobada por vladimiracunadev-create.
+Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `3fd976d50bb2`.
 
 | | Antes | Después |
 |---|---|---|

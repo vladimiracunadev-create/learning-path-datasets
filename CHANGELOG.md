@@ -7,7 +7,8 @@
 - Informe de limpieza (`clean-report`) con 1.140 hallazgos pendientes y agente `limpiador-datos`.
 - Propuestas de limpieza por lote (`clean-proposals`) y registro de aprobaciones (`clean-approve`).
 - Aprobados por el titular los 10 lotes de aceptación: 1.042 hallazgos aceptados y 98 pendientes. El contenido no cambia.
-- Correcciones propuestas para 28 preguntas (`clean-corrections`), con dos rondas de verificación ciega. El titular aprobó 24; ninguna está aplicada.
+- Correcciones propuestas para 28 preguntas (`clean-corrections`), con dos rondas de verificación ciega. El titular aprobó 24.
+- Las 24 se aplicaron en la fuente (commit `3fd976d5`) y se volvieron a exportar el núcleo y el dataset v1.0: cambian esos 24 registros y el commit de origen. 16 hallazgos quedan resueltos y archivados; 15 (11 nuevos y 4 que cambiaron de lote) esperan aprobación y hay 93 pendientes. Orden `clean-mark-applied`.
 - Documento de método (`docs/METODO.md`): lo realizado, sus fundamentos, cambios de criterio y cómo reutilizarlo; el CI exige que nombre cada módulo, script, orden, skill y agente.
 - Campo opcional `idioma` en el contrato `nucleo-0.1`.
 - El lector de la fuente busca el archivo de cada OA una sola vez; el dataset v1.0 no cambia.

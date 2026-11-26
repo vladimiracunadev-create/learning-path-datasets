@@ -79,11 +79,19 @@ El titular aprobó los 10 lotes de aceptación: 1.042 hallazgos aceptados y 98 p
 - **Lecturas ciegas:** primera ronda, 19 sin observaciones, 6 por corregir y 3 dudas; segunda, sobre las 9 cambiadas, 5 sin observaciones, 1 por corregir y 3 dudas. La última corrección aplicada no tuvo otra lectura.
 - **Descartado:** seguir iterando sin fin; lo que quedó discutible se entrega a la persona marcado como duda.
 
-### 3.9 Aprobación de correcciones
+### 3.9 Aprobación de correcciones (commit `797d7e2`)
 
 - **Qué:** `clean-approve-corrections` registró 24 aprobadas por el titular; 4 con duda abierta quedan sin aprobar.
 - **Por qué por fila y con huella:** si un texto aprobado cambia, la aprobación deja de valer.
-- **Estado:** ninguna aplicada. El contenido nace en la fuente (módulos `student_content_*.py`; las 24 se ubican en 17 archivos), así que aplicarlas exige autorización para ese repositorio, regenerar, volver a exportar y actualizar los informes.
+- **Dónde se cambia:** el contenido nace en la fuente (módulos `student_content_*.py`), así que aplicar exige autorización para ese repositorio.
+
+### 3.10 Aplicación en la fuente y reexportación
+
+- **Qué:** con autorización del titular, las 24 se escribieron en 17 módulos de la fuente (commit `3fd976d5`) y aquí se regeneraron núcleo, dataset v1.0 e informes.
+- **Cómo:** se localizó cada terna pregunta, respuesta y razón y se exigió que apareciera una sola vez antes de escribir; se usó el entorno del propio proyecto, con sus versiones fijadas; se regeneró y validó en el orden de su CI.
+- **Cómo se comprobó:** en la fuente, 111 pruebas, 64 PDF, segunda generación sin diferencias y las 46 líneas cambiadas en las fichas explicadas por las correcciones; sus tres workflows terminaron bien. Aquí, el dataset cambia exactamente en esos 24 registros (además del commit de origen) y coincide con el núcleo.
+- **Efecto en la limpieza:** 16 hallazgos resueltos, 11 nuevos (el resto de grupos anteriores) y 4 que cambiaron de lote porque su grupo conserva la pregunta corregida; los 15 proponen aceptar y esperan aprobación. Se simuló antes de exportar para saber si alguna aprobación quedaba huérfana: ninguna.
+- **Límite:** el cambio en la fuente no es revisión profesional.
 
 ## 4. Cambios de criterio en el camino
 
@@ -99,6 +107,8 @@ El titular aprobó los 10 lotes de aceptación: 1.042 hallazgos aceptados y 98 p
 | Juicios por ítem compartidos entre reglas | un juicio por regla e ítem | un defecto de enunciado no es un defecto de cuaderno |
 | Aprobación única del documento de correcciones | aprobación por fila ligada al texto | permitir aprobar una parte |
 | La respuesta nueva no puede aparecer en el cuaderno | puede estar en su propio enunciado | las preguntas de elección la contienen |
+| El dataset v1.0 no se modifica | se regenera cuando cambia el contenido de la fuente | publicar defectos ya corregidos no tiene sentido; los cruces siguen para la versión siguiente |
+| Un hallazgo corregido simplemente desaparece | se archiva con el commit que lo resolvió | permite mostrar antes y después |
 
 ## 5. Trampas encontradas y qué hacer con datos nuevos
 
@@ -112,6 +122,8 @@ El titular aprobó los 10 lotes de aceptación: 1.042 hallazgos aceptados y 98 p
 | Cruces entre entrenamiento y evaluación pese a partir por clase | comparar entradas entre particiones | partir por una unidad mayor y filtrar entradas compartidas |
 | Misma palabra con definiciones distintas | regla de conflictos y lectura | entregar siempre la pieza con su contexto |
 | Sitios que bloquean la lectura automatizada | el CNED y un medio respondieron con rechazo | marcar «sin confirmar» y revisar a mano |
+| Aplicar un cambio altera la composición de los grupos | simulación antes de exportar | esperar identificadores nuevos y pedir su decisión; no heredar la anterior |
+| Regenerar un proyecto ajeno con otras versiones de librerías | comparación con sus versiones fijadas | usar el entorno del propio proyecto |
 | Condiciones de uso contradictorias | política del sitio frente a la etiqueta de un recurso | registrarlo como no resuelto; decide quien tiene los derechos |
 
 ## 6. Cómo aplicarlo a otro tipo de datos
@@ -126,7 +138,7 @@ El titular aprobó los 10 lotes de aceptación: 1.042 hallazgos aceptados y 98 p
 | 6. Limpieza | hallazgos | duplicados, conflictos, cruces, etiquetas | reglas propias del contenido e idioma |
 | 7. Lectura | juicios y muestra ciega | formato de revisión y protocolo | criterios de calidad y muestra declarada |
 | 8. Propuestas y aprobación | lotes y decisiones | mecanismo de aprobación | textos y lotes del dominio |
-| 9. Correcciones | antes y después aprobados | simulación y huella | comprobaciones del dominio |
+| 9. Correcciones | antes y después aprobados y aplicados | simulación, huella y registro de lo aplicado | comprobaciones del dominio y cómo se cambia la fuente |
 | 10. Modalidades | salidas | `run()` | la modalidad y su documento de línea |
 
 Protocolo de lectura ciega usado: archivo solo con las preguntas y su contexto; el lector resuelve y guarda sus respuestas antes de abrir las propuestas; veredicto por caso; se mezclan casos con defecto conocido como control, y por eso las tasas de la muestra no se extrapolan.
@@ -167,13 +179,14 @@ Resolver esto es el primer trabajo antes de sumar datos de otro tipo.
 | `lpdatasets core-export`, `core-validate` | núcleo |
 | `lpdatasets clean-report`, `clean-proposals`, `clean-corrections` | hallazgos, lotes y redacciones; con `--check` no escriben |
 | `lpdatasets clean-approve`, `clean-approve-corrections` | únicas que registran aprobaciones |
+| `lpdatasets clean-mark-applied` | tras reexportar, registra lo aplicado y archiva lo resuelto |
 
 Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar` y `dataset-pack-nuevo`. Agentes: `extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos` y `limpiador-datos`. En este trabajo, las lecturas ciegas las hizo `verificador-independiente`; las propuestas se prepararon sin delegar en `limpiador-datos`, que sigue sin probarse en un lote real.
 
 ## 9. Lo que no está hecho
 
 - Ninguna persona ha revisado el contenido.
-- Quedan 98 hallazgos pendientes, 4 correcciones sin aprobar y ninguna aplicada.
+- Quedan 93 hallazgos pendientes y 4 correcciones sin aprobar.
 - Líneas L03 a L09 sin implementación nueva; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.

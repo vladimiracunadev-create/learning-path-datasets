@@ -2,9 +2,9 @@
 
 Generado con `lpdatasets clean-report`; no se edita a mano. Propone cambios y **no modifica los datos**.
 
-- Núcleo: 18926 entidades, 16386 ítems, commit de la fuente `668559a65254`.
+- Núcleo: 18926 entidades, 16386 ítems, commit de la fuente `3fd976d50bb2`.
 - Dataset v1.0 revisado como línea base: 16386 registros.
-- Hallazgos: 1140; pendientes: 98.
+- Hallazgos: 1135; pendientes: 93.
 
 | Regla | Severidad | Hallazgos | Afectados | Pendientes |
 |---|---|---:|---:|---:|
@@ -14,14 +14,23 @@ Generado con `lpdatasets clean-report`; no se edita a mano. Propone cambios y **
 | `duplicado_exacto` | revisar | 151 | 348 | 0 |
 | `respuestas_en_conflicto` | revisar | 328 | 856 | 19 |
 | `recurso_ausente` | revisar | 0 | 0 | 0 |
-| `solucion_en_enunciado` | revisar | 445 | 1569 | 26 |
-| `solucion_en_cuaderno` | revisar | 165 | 201 | 14 |
+| `solucion_en_enunciado` | revisar | 445 | 1559 | 26 |
+| `solucion_en_cuaderno` | revisar | 160 | 195 | 9 |
 | `texto_oficial` | revisar | 12 | 12 | 0 |
 | `sin_habilidades` | info | 12 | 16386 | 12 |
 | `sin_dificultad` | info | 8 | 8518 | 8 |
 
 «Afectados» cuenta entidades o registros dentro de cada regla; una misma entidad puede aparecer en varias.
 Las reglas son comprobaciones de forma: un hallazgo «revisar» puede ser legítimo.
+
+## Resueltos
+
+Hallazgos que dejaron de aparecer al aplicar correcciones. Se conservan en `limpieza/resueltos.jsonl`.
+
+| Commit de la fuente | Regla | Hallazgos | Afectados |
+|---|---|---:|---:|
+| `3fd976d50bb2` | `solucion_en_cuaderno` | 6 | 9 |
+| `3fd976d50bb2` | `solucion_en_enunciado` | 10 | 51 |
 
 ## `clase_incompleta`
 
@@ -79,9 +88,9 @@ Detecta: ejercicio con solución oculta cuyo enunciado contiene la respuesta. Pr
 
 Detecta: respuesta larga de un ejercicio que aparece literal en el cuaderno de su clase. Propuesta: confirmar si es parte de la explicación o si regala la respuesta.
 
-- `solucion_en_cuaderno:0877f8d172b8` (4): escolar-chile:1-basico:te01-oa-04:c01: «Se mantiene en su lugar al dar vuelta el libro»
 - `solucion_en_cuaderno:0fcce8bb5c71` (3): escolar-chile:1-basico:te01-oa-01:c03: «12 cm de largo y 6 cm de ancho»
 - `solucion_en_cuaderno:2b42041ef191` (3): escolar-chile:1-basico:or01-oa-02:c03: ««Me enojé porque se rompió mi dibujo»»
+- `solucion_en_cuaderno:4546f51cd8aa` (3): escolar-chile:1-basico:le01-oa-10:c03: «Muchas plantas no tendrían frutos»
 
 ## `texto_oficial`
 

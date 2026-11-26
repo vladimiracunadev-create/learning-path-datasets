@@ -60,7 +60,7 @@ La exportación carga los cuadernos desde la fuente y puede tardar varios minuto
 
 ## Métricas
 
-887 de 1.034 entradas representadas y 147 excluidas con motivo; 0 entidades inválidas; dos exportaciones del commit `668559a65254` produjeron bytes idénticos (comprobado el 2026-11-26).
+887 de 1.034 entradas representadas y 147 excluidas con motivo; 0 entidades inválidas; dos exportaciones del commit `668559a65254` produjeron bytes idénticos (comprobado el 2026-11-26). El núcleo actual proviene del commit `3fd976d50bb2`, con las mismas cifras de cobertura.
 
 ## Listo cuando
 

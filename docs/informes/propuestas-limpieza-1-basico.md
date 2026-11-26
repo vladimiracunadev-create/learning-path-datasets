@@ -6,8 +6,8 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 
 | Veredicto propuesto | Lotes | Hallazgos | Pendientes |
 |---|---:|---:|---:|
-| aceptar | 10 | 1042 | 0 |
-| corregir | 4 | 63 | 63 |
+| aceptar | 10 | 1057 | 15 |
+| corregir | 4 | 43 | 43 |
 | decidir | 3 | 35 | 35 |
 
 ## Lotes
@@ -20,13 +20,13 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 | `vocabulario-acepciones` | aceptar | 30 | 73 | leído | 0 |
 | `vocabulario-redaccion` | decidir | 19 | 69 | leído | 19 |
 | `conflicto-contexto` | aceptar | 13 | 26 | leído | 0 |
-| `enunciado-opciones` | aceptar | 307 | 962 | por regla | 0 |
-| `enunciado-comprension` | aceptar | 112 | 488 | leído | 0 |
+| `enunciado-opciones` | aceptar | 317 | 1003 | por regla | 10 |
+| `enunciado-comprension` | aceptar | 115 | 497 | leído | 3 |
 | `enunciado-decidir` | decidir | 11 | 52 | leído | 11 |
-| `enunciado-corregir` | corregir | 15 | 67 | leído | 15 |
+| `enunciado-corregir` | corregir | 2 | 7 | leído | 2 |
 | `cuaderno-propio-enunciado` | aceptar | 25 | 28 | por regla | 0 |
-| `cuaderno-ensenanza` | aceptar | 126 | 153 | leído y por regla | 0 |
-| `cuaderno-corregir` | corregir | 9 | 13 | leído | 9 |
+| `cuaderno-ensenanza` | aceptar | 128 | 158 | leído y por regla | 2 |
+| `cuaderno-corregir` | corregir | 2 | 2 | leído | 2 |
 | `cuaderno-decidir` | decidir | 5 | 7 | leído | 5 |
 | `texto-oficial-fragmento` | aceptar | 12 | 12 | leído | 0 |
 | `cruces-dataset` | corregir | 19 | 230 | por regla | 19 |
@@ -149,24 +149,8 @@ Ejemplos: `solucion_en_enunciado:01bd1353b0ca`, `solucion_en_enunciado:02e7aeda9
 
 | Ítem | Enunciado | Respuesta | Motivo |
 |---|---|---|---|
-| `ma01-oa-17:c04:auto-01` | ¿Qué mes es el 1 de enero? | Enero | pregunta el mes de una fecha que ya nombra el mes |
-| `le01-oa-17:c03:ej-apply-03` | Completa con una rima de «luna»: «Brilla la luna / en la ___.» (por ejemplo, laguna) | Por ejemplo: laguna | el ejemplo del enunciado es la respuesta: basta copiarlo |
-| `le01-oa-16:c04:ej-apply-01` | Completa con una palabra: «La torta estaba ___.» (por ejemplo, rica) | Por ejemplo: rica | el ejemplo del enunciado es la respuesta: basta copiarlo |
 | `hi01-oa-09:c03:ej-apply-02` | Puerto Natales es una localidad de Magallanes y de la Antártica Chilena. ¿Es una región o una localidad? | Una localidad | afirma que es una localidad y pregunta si es región o localidad |
 | `hi01-oa-12:c01:ej-apply-03` | Para llegar desde Chile a Japón por mar se cruza el océano Pacífico. ¿Qué país de la lista está al otro lado de ese océano: Noruega o Japón? | Japón | dice que se va a Japón y pregunta qué país está al otro lado |
-| `le01-oa-14:c02:ej-apply-02` | Completa con qué hace: «El niño ____.» (por ejemplo, juega) | Por ejemplo: juega | el ejemplo del enunciado es la respuesta: basta copiarlo |
-| `cn01-oa-08:c03:ej-recovery-01` | Tabla: la pelota es flexible. ¿A qué grupo va: flexible o rígido? | Flexible | afirma que la pelota es flexible y pregunta si es flexible o rígida |
-| `cn01-oa-08:c03:ej-recovery-02` | Tabla: el vaso es transparente. ¿A qué grupo va: transparente u opaco? | Transparente | afirma que el vaso es transparente y pregunta si lo es |
-| `mu01-oa-03:c01:ej-apply-01` | Un adulto toca una pandereta rápida y fuerte. Escribe qué observarías sobre su rapidez y su fuerza. | Rápida y fuerte | el enunciado dice la rapidez y la fuerza que pide observar |
-| `ar01-oa-01:c01:ej-recovery-01` | Una concha es redonda, tiene rayitas que salen desde un punto y es de color crema. ¿Qué forma tiene? | Redonda | la descripción ya nombra lo que se pregunta |
-| `en01-oa-13:c03:ej-recovery-01` | Ordena: I / like / red. Escribe la oración. | I like red. | pide ordenar palabras que ya vienen en el orden correcto |
-| `hi01-oa-05:c03:ej-recovery-03` | ¿En qué mes es el 12 de octubre? | octubre | pregunta el mes de una fecha que ya nombra el mes |
-| `mu01-oa-07:c03:ej-apply-02` | Describe una lluvia que sonaba suave y larga con dos cualidades. | Suave y larga | el enunciado dice las dos cualidades que pide describir |
-| `hi01-oa-13:c05:auto-02` | Escribe una parte que debe tener: qué, quién o cuándo. | Qué, quién o cuándo | pide una parte y la respuesta enumera las tres opciones que da el enunciado |
-| `ef01-oa-09:c05:ej-challenge-02` | Haces tu propia alternativa: sin agua para tomar en la plaza. Respuesta posible: avisar a un adulto y pedir agua segura. ¿A quién avisas? | A un adulto | el enunciado incluye la respuesta posible y luego la pregunta |
-| `cn01-oa-08:c01:auto-03` | ¿De qué material es un vaso de vidrio? | Vidrio | la pregunta nombra la respuesta: «un vaso de vidrio» y pide el material |
-| `cn01-oa-08:c01:ej-recovery-01` | Una botella de vidrio. ¿Cuál es el material? | Vidrio | la descripción ya nombra lo que se pregunta |
-| `cn01-oa-08:c01:ej-recovery-03` | Una pelota de goma. ¿Cuál es el material? | Goma | la descripción ya nombra lo que se pregunta |
 
 ## `cuaderno-propio-enunciado`
 
@@ -186,15 +170,8 @@ Ejemplos: `solucion_en_cuaderno:01fea5ddc6d9`, `solucion_en_cuaderno:03ad553d117
 
 | Ítem | Enunciado | Respuesta | Motivo |
 |---|---|---|---|
-| `cn01-oa-03:c02:ej-understand-01` | ¿Qué dos trabajos hace la raíz? | Sujeta la planta y absorbe agua | un ejemplo resuelto responde esta misma pregunta |
-| `te01-oa-04:c01:ej-apply-03` | Un portalápices debe quedar derecho. Escribe un criterio observable. | Queda derecho al poner 5 lápices | la actividad abierta del cuaderno da esa respuesta |
 | `mu01-oa-06:c04:ej-apply-01` | Completa: Me gustó que ___ porque se oyó ___. Usa «tocaste suave» y «el silencio». | Me gustó que tocaras suave porque se oyó el silencio | el ejemplo da exactamente el mismo comentario |
 | `hi01-oa-03:c02:ej-apply-01` | Arica está al norte, Valparaíso al centro y Punta Arenas al sur. Ordena de norte a sur: Valparaíso, Arica, Punta Arenas. | Arica, Valparaíso, Punta Arenas | el ejemplo resuelve el mismo orden con las mismas ciudades |
-| `hi01-oa-08:c04:ej-contexto-01` | Un niño nuevo llega a la entrada (A3) y debe llegar a la sala (C1). La profesora le da un papel con el plano. ¿Qué recorrido escribe ella? | Sube 2 casillas y avanza 2 a la derecha | el ejemplo resuelve el mismo recorrido |
-| `le01-oa-24:c02:ej-understand-03` | ¿Qué tres partes tiene una buena explicación de una palabra? | Palabra, significado y ejemplo | el ejercicio A1 nombra la respuesta de C3 |
-| `hi01-oa-06:c04:ej-apply-01` | Reescribe bien: «Todos hacen mingas». Usa «según Elena». | Según Elena, en Chiloé se hacen mingas | el ejemplo reescribe la misma frase |
-| `le01-oa-21:c03:ej-recovery-01` | Ana dijo: «Me gusta el patio». ¿Qué frase muestra que escuché: «Tú dijiste que te gusta el patio» o «Yo tengo un perro»? | Tú dijiste que te gusta el patio | el ejemplo responde la misma situación |
-| `en01-oa-11:c04:ej-challenge-02` | Escribe en inglés la presentación completa de tu pelota roja con el nombre Tom: saludo, nombre, objeto, color y agradecimiento. | Hello! I am Tom. This is my ball. It is red. Thank you! | el ejemplo usa el mismo modelo y la misma respuesta |
 
 ## `cuaderno-decidir`
 
