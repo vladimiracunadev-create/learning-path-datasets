@@ -15,11 +15,15 @@ from pathlib import Path
 from typing import Any
 
 from .build import dumps, manifests, read_jsonl
+from .contributions import combined
 from .core import Entity
-from .core_build import core_folders, read_core
+from .core_build import core_folders
 
 HIDDEN_TYPES = ("ejercicio_cerrado", "autoevaluacion", "actividad_abierta")
 TASK_TYPES = (*HIDDEN_TYPES, "ejemplo_resuelto")
+# A qué piezas corresponde cada etiqueta. En las demás, su falta se informa aparte para que una persona la acepte.
+# Habilidades: lo que un estudiante hace. Dificultad: lo que la fuente gradúa de 1 a 5.
+APPLIES = {"habilidades": TASK_TYPES, "dificultad": ("ejercicio_cerrado",)}
 DECIDED = ("aceptado", "resuelto")
 SAMPLE = 20  # identificadores que guarda un hallazgo agregado
 NEEDS_MEDIA = re.compile(
@@ -138,7 +142,7 @@ def core_findings(entities: list[Entity]) -> list[dict[str, Any]]:
     media: dict[str, list[Entity]] = defaultdict(list)
     given: dict[str, list[Entity]] = defaultdict(list)
     revealed: dict[str, list[Entity]] = defaultdict(list)
-    no_skills: dict[str, list[str]] = defaultdict(list)
+    no_skills: dict[tuple[str, bool], list[str]] = defaultdict(list)
     no_level: dict[str, list[str]] = defaultdict(list)
     for i in items:
         question, answer = i["contenido"]["enunciado"], i["contenido"].get("respuesta", "")
@@ -154,7 +158,7 @@ def core_findings(entities: list[Entity]) -> list[dict[str, Any]]:
             if len(answer) >= 30 and normalize(answer) in normalize(notebook):
                 revealed[group].append(i)
         if not i.get("habilidades"):
-            no_skills[i["asignatura"]].append(i["id"])
+            no_skills[(i["asignatura"], i["tipo"] in APPLIES["habilidades"])].append(i["id"])
         if i.get("dificultad") is None:
             no_level[i["tipo"]].append(i["id"])
 
@@ -178,9 +182,11 @@ def core_findings(entities: list[Entity]) -> list[dict[str, Any]]:
         code = e.get("extra", {}).get("coincide_texto_oficial")
         if code:
             found.append(finding("texto_oficial", "nucleo", [e["id"]], f"coincide con la redacción de {code}"))
-    for rule, groups in (("sin_habilidades", no_skills), ("sin_dificultad", no_level)):
-        for name, ids in groups.items():
-            found.append(finding(rule, "nucleo", ids, f"{name}: {len(ids)} ítems"))
+    for (subject, is_task), ids in no_skills.items():
+        what = "ítems de tarea" if is_task else "ítems que no son tareas"
+        found.append(finding("sin_habilidades", "nucleo", ids, f"{subject}: {len(ids)} {what}"))
+    for name, ids in no_level.items():
+        found.append(finding("sin_dificultad", "nucleo", ids, f"{name}: {len(ids)} ítems"))
     return found
 
 
@@ -275,14 +281,17 @@ def render(
             "",
             "## Resueltos",
             "",
-            "Hallazgos que dejaron de aparecer al aplicar correcciones. Se conservan en `limpieza/resueltos.jsonl`.",
+            "Hallazgos que dejaron de aparecer al aplicar correcciones en la fuente o aportes. Se conservan en "
+            "`limpieza/resueltos.jsonl`.",
             "",
-            "| Commit de la fuente | Regla | Hallazgos | Afectados |",
+            "| Resuelto en | Regla | Hallazgos | Afectados |",
             "|---|---|---:|---:|",
         ]
         for commit, rule in sorted({(f["resuelto_en"], f["regla"]) for f in resolved}):
             group = [f for f in resolved if (f["resuelto_en"], f["regla"]) == (commit, rule)]
-            out.append(f"| `{commit[:12]}` | `{rule}` | {len(group)} | {sum(f['total'] for f in group)} |")
+            origin = commit if commit == "aportes" else commit[:12]
+            affected = sum(f["total"] for f in group)
+            out.append(f"| `{origin}` | `{rule}` | {len(group)} | {affected} |")
     for rule, group in grouped.items():
         _, what, action, _ = RULES[rule]
         out += ["", f"## `{rule}`", "", f"Detecta: {what}. Propuesta: {action}.", ""]
@@ -299,7 +308,7 @@ def report(nucleo: Path, datasets: Path, doc: Path, check: bool = False) -> list
     if len(folders) != 1:
         raise SystemExit(f"se esperaba un solo núcleo en {nucleo} y hay {len(folders)}")
     folder = folders[0]
-    entities = read_core(folder)
+    entities = combined(nucleo)
     manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
     records = dataset_records(datasets, manifest)
     findings = all_findings(entities, records)

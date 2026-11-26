@@ -9,9 +9,13 @@ from pathlib import Path
 import pytest
 
 from lpdatasets.build import read_jsonl
+from lpdatasets.cleaning import APPLIES
+from lpdatasets.cleaning import report as clean_report
 from lpdatasets.contributions import approve, check_pieces, compose, export, report, verify
 from lpdatasets.core import select
 from lpdatasets.core_build import read_core, validate_core, write_core
+from lpdatasets.corrections import mark_contributed
+from lpdatasets.proposals import proposals_report
 from tests.test_cleaning import item
 from tests.test_core import CLASS
 
@@ -232,3 +236,71 @@ def test_the_published_core_cannot_be_the_output(tmp_path: Path):
     with pytest.raises(SystemExit, match="núcleo publicado"):
         export(layer.nucleo, layer.aportes, layer.nucleo)
     assert compose(BASE, {}) == sorted(BASE, key=lambda e: e["id"])
+
+
+def cleaning(layer: Layer, root: Path) -> tuple[Path, dict[str, tuple[str, str]]]:
+    """Informe y propuestas de limpieza sobre el núcleo combinado: {evidencia: (identificador, lote)}."""
+    datasets = root / "datasets"
+    datasets.mkdir(exist_ok=True)
+    folder = layer.core / "limpieza"
+    folder.mkdir(exist_ok=True)
+    if not (folder / "revision.json").exists():
+        review = {"revisor": "p", "fecha": "f", "items": {}, "hallazgos": {}}
+        (folder / "revision.json").write_text(json.dumps(review), encoding="utf-8")
+    clean_report(layer.nucleo, datasets, root / "limpieza.md")
+    proposals_report(layer.nucleo, root / "propuestas.md")
+    evidence = {f["id"]: f["evidencia"] for f in read_jsonl(folder / "hallazgos.jsonl")}
+    lots = {p["id"]: p["lote"] for p in read_jsonl(folder / "propuestas.jsonl")}
+    tagged = {evidence[i]: (i, lot) for i, lot in lots.items() if i.startswith("sin_")}
+    return datasets, tagged
+
+
+def test_each_label_is_only_asked_where_it_applies(tmp_path: Path):
+    assert "ejercicio_cerrado" in APPLIES["habilidades"] and APPLIES["dificultad"] == ("ejercicio_cerrado",)
+    _, tagged = cleaning(Layer(tmp_path), tmp_path)
+    assert {evidence: lot for evidence, (_, lot) in tagged.items()} == {
+        "matematica: 1 ítems de tarea": "etiquetas",
+        "matematica: 1 ítems que no son tareas": "etiqueta-no-aplica",
+        "ejercicio_cerrado: 1 ítems": "etiquetas",
+        "vocabulario: 1 ítems": "etiqueta-no-aplica",
+    }
+
+
+def test_an_approved_label_resolves_its_finding_and_keeps_the_history(tmp_path: Path):
+    layer = Layer(tmp_path, label(tipos=["ejercicio_cerrado"]))
+    datasets, before = cleaning(layer, tmp_path)
+    target, _ = before["matematica: 1 ítems de tarea"]
+    layer.verify("habilidad")
+    assert mark_contributed(layer.nucleo, datasets) == 0  # verificada no basta
+    layer.approve()
+    assert mark_contributed(layer.nucleo, datasets) == 1
+    _, after = cleaning(layer, tmp_path)
+    assert "matematica: 1 ítems de tarea" not in after
+    [record] = read_jsonl(layer.core / "limpieza" / "resueltos.jsonl")
+    assert record["id"] == target and record["aportes"] == [PREFIX + "habilidad"]
+    assert "| `aportes` |" in (tmp_path / "limpieza.md").read_text(encoding="utf-8")
+    assert layer.bytes(layer.core) == layer.published
+
+
+def test_a_finding_that_no_piece_explains_stops_the_archive(tmp_path: Path):
+    layer = Layer(tmp_path)
+    datasets, _ = cleaning(layer, tmp_path)
+    write_core(layer.core, [CLASS, exercise("a", habilidades=["x"], dificultad=1)], layer.info)
+    with pytest.raises(SystemExit, match="ningún aporte explica"):
+        mark_contributed(layer.nucleo, datasets)
+
+
+def test_a_label_outside_the_sample_of_a_finding_is_still_explained(tmp_path: Path):
+    other = CLASS | {"id": "demo:clase:2", "numero": 2}
+    many = [exercise(f"a{n:02d}") for n in range(25)] + [exercise("z", clase_id=other["id"])]
+    layer = Layer(tmp_path)
+    layer.info["cobertura"] = {"catalogo": 2, "representadas": 2, "excluidas": []}
+    write_core(layer.core, [CLASS, other, *many], layer.info)
+    layer.write(label("segunda", clase=other["id"], tipos=["ejercicio_cerrado"]), label("primera"))
+    datasets, _ = cleaning(layer, tmp_path)
+    for name in ("segunda", "primera"):  # dos aprobaciones sucesivas sobre el mismo grupo
+        layer.verify(name)
+        approve(layer.nucleo, layer.aportes, layer.doc, "revisora", [PREFIX + name])
+        assert mark_contributed(layer.nucleo, datasets) == 1
+        cleaning(layer, tmp_path)
+    assert len(read_jsonl(layer.core / "limpieza" / "resueltos.jsonl")) == 2

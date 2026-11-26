@@ -17,10 +17,12 @@ from typing import Any, NamedTuple
 
 from .build import dumps, read_jsonl
 from .cleaning import all_findings, core_findings, dataset_records, normalize
+from .contributions import combined
 from .core import Entity
 from .core_build import core_folders, read_core
 from .proposals import WORKED, statement_kind
 
+LABEL_RULES = ("sin_habilidades", "sin_dificultad")
 FIELDS = ("enunciado", "respuesta", "razon")
 BLOCKING = ("duplicado_exacto", "respuestas_en_conflicto", "recurso_ausente")
 SHORT = 12  # una respuesta más corta puede aparecer en un ejemplo por casualidad
@@ -217,7 +219,7 @@ def corrections_report(nucleo: Path, doc: Path, check: bool = False) -> list[str
     folder = folders[0] / "limpieza"
     document = json.loads((folder / "correcciones.json").read_text(encoding="utf-8"))
     problems = check_corrections(
-        read_core(folders[0]),
+        combined(nucleo),
         read_jsonl(folder / "propuestas.jsonl"),
         document["correcciones"],
         read_jsonl(folder / "hallazgos.jsonl"),
@@ -283,7 +285,7 @@ def mark_applied(nucleo: Path, datasets: Path) -> Applied:
     cleaning = folder / "limpieza"
     manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
     commit = manifest["commit_fuente"]
-    entities = read_core(folder)
+    entities = combined(nucleo)
     contents = {e["id"]: e["contenido"] for e in entities if e["entidad"] == "item"}
     document = _load(cleaning / "correcciones.json")
     applied = []
@@ -351,6 +353,53 @@ def mark_applied(nucleo: Path, datasets: Path) -> Applied:
     }
     _save(cleaning / "revision.json", review, indent=1, sort_keys=True)
     return Applied(len(applied), len(archived), closed, len(withdrawn))
+
+
+def mark_contributed(nucleo: Path, datasets: Path) -> int:
+    """Tras aprobar aportes, archiva los hallazgos que dejaron de aparecer, con su decisión y su juicio.
+
+    Debe ejecutarse antes de `clean-report`. Falla si desaparece un hallazgo que ningún aporte explica.
+    """
+    folder = core_folders(nucleo)[0]
+    cleaning = folder / "limpieza"
+    manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
+    entities = combined(nucleo)
+    records = dataset_records(datasets, manifest)
+    labelled = {p for e in entities for p in e.get("extra", {}).get("aportes", [])}
+    touched = {e["id"] for e in entities if e.get("extra", {}).get("aportes")}
+    added = {e["id"] for e in entities} - {e["id"] for e in read_core(folder)}
+    current = {f["id"] for f in all_findings(entities, records)}
+    gone = [f for f in read_jsonl(cleaning / "hallazgos.jsonl") if f["id"] not in current]
+    if not gone:
+        return 0
+    base = {f["id"] for f in all_findings(read_core(folder), records)}
+    # Un hallazgo de etiquetas guarda solo una muestra de sus ítems, así que la muestra no basta para explicarlo.
+    unexplained = [
+        f["id"]
+        for f in gone
+        if f["id"] not in base
+        and not (labelled and f["regla"] in LABEL_RULES)
+        and not (touched | added) & set(f["entidades"])
+    ]
+    if unexplained:
+        raise SystemExit("desaparecen hallazgos que ningún aporte explica: " + ", ".join(unexplained))
+    pieces = sorted(labelled | added)
+    listed = _load(cleaning / "decisiones.json", {"decisiones": []})["decisiones"]
+    decisions = {d["id"]: d for d in listed}
+    review = _load(cleaning / "revision.json")
+    archived = []
+    for f in gone:
+        history = {"resuelto_en": "aportes", "aportes": pieces}
+        if f["id"] in decisions:
+            history["decision"] = decisions.pop(f["id"])
+        if f["id"] in review["hallazgos"]:
+            history["juicio"] = review["hallazgos"].pop(f["id"])
+        archived.append(f | history)
+    _append(cleaning / "resueltos.jsonl", archived)
+    if listed:
+        _save(cleaning / "decisiones.json", {"decisiones": [decisions[k] for k in sorted(decisions)]}, indent=1)
+    _save(cleaning / "revision.json", review, indent=1, sort_keys=True)
+    return len(archived)
 
 
 def _load(path: Path, default: Any = None) -> Any:

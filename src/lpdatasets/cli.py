@@ -19,7 +19,7 @@ from .contributions import verify as contrib_verify
 from .core import load_marcos
 from .core_build import validate_core
 from .core_escolar import export as export_core
-from .corrections import approve_corrections, corrections_report, mark_applied
+from .corrections import approve_corrections, corrections_report, mark_applied, mark_contributed
 from .doubts import Docs, doubts_report, resolve_doubts
 from .proposals import approve, proposals_report
 from .vector import build_index, search
@@ -89,6 +89,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--nucleo", default="nucleo")
 
     p = sub.add_parser("clean-mark-applied", help="tras reexportar, registra las correcciones ya aplicadas")
+    p.add_argument("--nucleo", default="nucleo")
+    p.add_argument("--datasets", default="datasets")
+
+    p = sub.add_parser("clean-mark-contributed", help="tras aprobar aportes, archiva los hallazgos que resuelven")
     p.add_argument("--nucleo", default="nucleo")
     p.add_argument("--datasets", default="datasets")
 
@@ -229,6 +233,10 @@ def main(argv: list[str] | None = None) -> int:
             f"Correcciones aplicadas: {done.corrections}; hallazgos que dejaron de aparecer: {done.gone}; "
             f"resueltos que la regla sigue señalando: {done.closed}; aceptaciones retiradas: {done.withdrawn}"
         )
+        return 0
+    if args.cmd == "clean-mark-contributed":
+        count = mark_contributed(Path(args.nucleo), Path(args.datasets))
+        print(f"Hallazgos archivados por aportes: {count}")
         return 0
     if args.cmd == "clean-doubts":
         found = doubts_report(Path(args.nucleo), Path(args.informe), args.check)

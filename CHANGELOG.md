@@ -20,6 +20,7 @@
 - Plan de la fase 2 aprobado. Vigía curricular (paso 2.1): órdenes `watch-baseline`, `watch` y `watch-report`, agente `vigia-curricular`; primera revisión con 237 objetivos sin cambios.
 - Vigía curricular (paso 2.2): páginas sin objetivos, órdenes `watch-record` y `watch-accept`, comprobación de marcos vigentes; 15 de 19 fuentes leídas. L04 pasa a operativo.
 - Capa de aportes (paso 2.3): órdenes `contrib-report`, `contrib-verify`, `contrib-approve` y `contrib-export`; vocabulario de 21 habilidades oficiales. Sin piezas todavía.
+- Paso 2.4 (por aprobar): habilidades solo en tareas y dificultad solo en ejercicios cerrados; la limpieza lee los aportes; orden `clean-mark-contributed`; 82 etiquetas de Matemática, 60 verificadas por doble lectura. 49 hallazgos pendientes.
 - Documento de método (`docs/METODO.md`): lo realizado, sus fundamentos, cambios de criterio y cómo reutilizarlo; el CI exige que nombre cada módulo, script, orden, skill y agente.
 - Campo opcional `idioma` en el contrato `nucleo-0.1`.
 - El lector de la fuente busca el archivo de cada OA una sola vez; el dataset v1.0 no cambia.

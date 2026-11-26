@@ -285,6 +285,12 @@ def _checked(nucleo: Path, root: Path) -> tuple[list[Entity], dict[str, Any], Pa
     return entities, manifest, folder, files
 
 
+def combined(nucleo: Path, root: Path | None = None) -> list[Entity]:
+    """El núcleo con las piezas aprobadas, en memoria; la carpeta de aportes está junto al núcleo."""
+    entities, _, _, files = _checked(nucleo, root or nucleo.parent / "aportes")
+    return compose(entities, files)
+
+
 def export(nucleo: Path, root: Path, out: Path) -> int:
     """Escribe en `out` el núcleo combinado con las piezas aprobadas y devuelve cuántas entraron."""
     entities, manifest, folder, files = _checked(nucleo, root)

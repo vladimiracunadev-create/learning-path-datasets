@@ -4,7 +4,7 @@ Generado con `lpdatasets clean-report`; no se edita a mano. Propone cambios y **
 
 - Núcleo: 18926 entidades, 16386 ítems, commit de la fuente `b3647111142b`.
 - Dataset v1.0 revisado como línea base: 16386 registros.
-- Hallazgos: 1131; pendientes: 39.
+- Hallazgos: 1141; pendientes: 49.
 
 | Regla | Severidad | Hallazgos | Afectados | Pendientes |
 |---|---|---:|---:|---:|
@@ -17,7 +17,7 @@ Generado con `lpdatasets clean-report`; no se edita a mano. Propone cambios y **
 | `solucion_en_enunciado` | revisar | 445 | 1555 | 0 |
 | `solucion_en_cuaderno` | revisar | 156 | 190 | 0 |
 | `texto_oficial` | revisar | 12 | 12 | 0 |
-| `sin_habilidades` | info | 12 | 16386 | 12 |
+| `sin_habilidades` | info | 22 | 16386 | 22 |
 | `sin_dificultad` | info | 8 | 8518 | 8 |
 
 «Afectados» cuenta entidades o registros dentro de cada regla; una misma entidad puede aparecer en varias.
@@ -27,9 +27,9 @@ Resueltos con textos aprobados que la regla sigue señalando: 19.
 
 ## Resueltos
 
-Hallazgos que dejaron de aparecer al aplicar correcciones. Se conservan en `limpieza/resueltos.jsonl`.
+Hallazgos que dejaron de aparecer al aplicar correcciones en la fuente o aportes. Se conservan en `limpieza/resueltos.jsonl`.
 
-| Commit de la fuente | Regla | Hallazgos | Afectados |
+| Resuelto en | Regla | Hallazgos | Afectados |
 |---|---|---:|---:|
 | `3fd976d50bb2` | `solucion_en_cuaderno` | 6 | 9 |
 | `3fd976d50bb2` | `solucion_en_enunciado` | 10 | 51 |
@@ -109,9 +109,9 @@ Detecta: tramo de ocho o más palabras que coincide con la redacción oficial de
 
 Detecta: ítems sin habilidades etiquetadas. Propuesta: etiquetar desde OA e indicadores (L03).
 
-- `sin_habilidades:64cc736cf1b2` (3668): lenguaje-comunicacion: 3668 ítems
-- `sin_habilidades:0d663a2324e1` (2324): matematica: 2324 ítems
-- `sin_habilidades:c80c95b9c8f1` (2004): ingles-propuesta: 2004 ítems
+- `sin_habilidades:b393baf10ef0` (2620): lenguaje-comunicacion: 2620 ítems de tarea
+- `sin_habilidades:b16385ddf462` (1660): matematica: 1660 ítems de tarea
+- `sin_habilidades:789012cd68cc` (1380): ingles-propuesta: 1380 ítems de tarea
 
 ## `sin_dificultad`
 

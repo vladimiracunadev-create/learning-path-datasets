@@ -21,7 +21,7 @@ Encontrar lo que falta para 1.º básico, buscar información confiable y crear 
 
 ## Entradas y salidas
 
-Entrada: vacíos medidos sobre el núcleo y fuentes con licencia conocida; además, 20 hallazgos de etiquetas que [L02](L02-limpieza.md) le asignó (12 de ítems sin habilidades y 8 sin dificultad). Salida: recursos, ítems y etiquetas nuevas, más una ficha de cada fuente consultada.
+Entrada: vacíos medidos sobre el núcleo y fuentes con licencia conocida; además, los hallazgos de etiquetas que [L02](L02-limpieza.md) le asignó: 10 de tareas sin habilidades, uno por asignatura. Salida: recursos, ítems y etiquetas nuevas, más una ficha de cada fuente consultada.
 
 ## Contrato de datos
 
@@ -56,7 +56,7 @@ lpdatasets contrib-approve --aporte ID --aprobado-por "nombre"
 lpdatasets contrib-export --out .nucleo-compuesto
 ```
 
-`contrib-export` escribe una copia del núcleo combinada con las piezas aprobadas; sin ninguna, es idéntica byte a byte al publicado. Su [informe](../informes/aportes-1-basico.md) lista cada pieza: hoy no hay ninguna.
+`contrib-export` escribe una copia del núcleo combinada con las piezas aprobadas; sin ninguna, es idéntica byte a byte al publicado. Su [informe](../informes/aportes-1-basico.md) lista cada pieza: 82 etiquetas de habilidades de Matemática, ninguna aprobada todavía.
 
 Falta crear contenido: las skills y agentes previstos son `investigador-fuentes`, `autor-contenido`, `extractor-conocimiento` y `verificador-independiente`. Vacíos medidos y pasos: [plan de la fase 2](../PLAN_FASE_2.md), aprobado.
 
@@ -68,6 +68,17 @@ Exigidas para el contenido (pasos 2.4 a 2.6): los ítems calculables se resuelve
 
 ## Métricas
 
+Piloto de habilidades en Matemática, 2026-11-26. Dos lectores de IA asignaron por separado de 0 a 3 de los 10 objetivos de habilidad a cada una de las 83 clases; se fijó antes de comparar que solo entra lo que ambos asignaron. Criterio: la mayoría de las tareas de la clase, o su actividad central, exigen ejercerla.
+
+| Resultado | Clases |
+|---|---:|
+| Asignaron lo mismo | 41 |
+| Coinciden en parte | 19 |
+| No coinciden (pieza observada, no entra) | 22 |
+| Ninguno asignó | 1 |
+
+Quedan 60 piezas verificadas. Si se aprueban, 1.200 de las 1.660 tareas tendrían habilidades. Habilidades que entran, por clases: modelar con sumas, restas y orden (g) 29, representar (i) 15, describir con lenguaje matemático (d) 11, comunicar relaciones (e) 6, a 3, h 3, j 1; b, c y f no entran en ninguna.
+
 Clases con sus recursos disponibles sobre clases que los piden; OA con ítems de evaluación sobre 237; porcentaje revisado por una persona.
 
 ## Listo cuando
@@ -75,6 +86,8 @@ Clases con sus recursos disponibles sobre clases que los piden; OA con ítems de
 Cada vacío del [plan](../PLAN_1_BASICO.md) y cada hallazgo de etiquetas recibido está cubierto o declarado como no cubierto, y cada pieza nueva tiene autor, fuente y verificación.
 
 ## Límites
+
+En el piloto, el autor leyó una muestra de cada clase (unas 8 de sus 20 tareas) y el verificador, todas: la regla de coincidencia protege contra asignar de más, no contra omitir. Son dos lecturas de IA que pueden compartir errores; ninguna persona revisó las etiquetas. Se asignan por clase, así que no cada tarea ejercita cada habilidad listada. Los dos lectores contaron como «modelar» (g) el cálculo sin situación; con un criterio más estricto, varias de esas clases quedarían sin etiqueta.
 
 La capa comprueba forma, derechos y trazabilidad, **no si el contenido es correcto**: eso depende de quien verifica y de quien aprueba, y los nombres anotados no se autentican. La limpieza y las modalidades todavía leen el núcleo publicado, no el combinado.
 

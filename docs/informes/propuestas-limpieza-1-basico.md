@@ -6,8 +6,8 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 
 | Veredicto propuesto | Lotes | Hallazgos | Pendientes |
 |---|---:|---:|---:|
-| aceptar | 11 | 1081 | 0 |
-| corregir | 2 | 39 | 39 |
+| aceptar | 12 | 1101 | 20 |
+| corregir | 2 | 29 | 29 |
 | decidir | 3 | 11 | 0 |
 
 ## Lotes
@@ -28,7 +28,8 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 | `cuaderno-decidir` | decidir | 2 | 3 | leído | 0 |
 | `texto-oficial-fragmento` | aceptar | 12 | 12 | leído | 0 |
 | `cruces-dataset` | corregir | 19 | 230 | por regla | 19 |
-| `etiquetas` | corregir | 20 | 24904 | por regla | 20 |
+| `etiquetas` | corregir | 10 | 11247 | por regla | 10 |
+| `etiqueta-no-aplica` | aceptar | 20 | 13657 | por regla | 20 |
 | `texto-aplicado` | aceptar | 19 | 66 | por regla | 0 |
 
 ## Segunda lectura
@@ -156,6 +157,12 @@ Ejemplos: `cruce_identico:244803a8a228`, `cruce_identico:2a12ff5844f1`, `cruce_i
 ## `etiquetas`
 
 **corregir** · faltan habilidades o dificultad. Propuesta: etiquetar con criterio y verificador. Se aplica en: línea L03.
+
+Ejemplos: `sin_habilidades:0adb2707c442`, `sin_habilidades:21ea1decab2e`, `sin_habilidades:64969f4600cd`.
+
+## `etiqueta-no-aplica`
+
+**aceptar** · a ese tipo de pieza no le corresponde la etiqueta: la habilidad es de las tareas y la fuente solo gradúa los ejercicios cerrados. Propuesta: conservar sin la etiqueta. Se aplica en: ninguno.
 
 Ejemplos: `sin_dificultad:1eb2fc264b85`, `sin_dificultad:238ffdf94471`, `sin_dificultad:28547402e89c`.
 

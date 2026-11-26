@@ -30,6 +30,10 @@ Cada hallazgo guarda `id` estable, `regla`, `severidad`, `ambito`, `total`, `ent
 
 Si las entidades de un hallazgo cambian, su identificador cambia y la decisión antigua se rechaza.
 
+Las etiquetas no se piden a todo: las **habilidades**, a las tareas (ejercicios, autoevaluaciones, actividades y ejemplos resueltos); la **dificultad**, a los ejercicios cerrados, que son lo que la fuente gradúa de 1 a 5. Lo que falta en otros tipos se informa en el lote `etiqueta-no-aplica`, que una persona debe aprobar.
+
+La limpieza lee el núcleo combinado con los [aportes](L03-vacios-creacion.md) aprobados. Tras aprobar aportes, `clean-mark-contributed` archiva los hallazgos que resuelven, antes de `clean-report`.
+
 ## Derechos
 
 No cambia licencias ni procedencia. No eleva el estado de revisión sin una persona identificable que haya revisado.
@@ -82,11 +86,12 @@ El agente [`limpiador-datos`](../../.claude/agents/limpiador-datos.md) prepara l
 
 ## Métricas
 
-Primer informe, 2026-11-26: 1.140 hallazgos (tabla de reglas). Tras aprobar los lotes y aplicar las 59 correcciones aprobadas en dos tandas: **1.131 hallazgos, 1.073 aceptados, 19 resueltos que la regla sigue señalando y 39 pendientes**; 26 más dejaron de aparecer y están archivados.
+Primer informe, 2026-11-26: 1.140 hallazgos (tabla de reglas). Tras aplicar las 59 correcciones aprobadas y precisar a qué se pide cada etiqueta: **1.141 hallazgos, 1.073 aceptados, 19 resueltos que la regla sigue señalando y 49 pendientes**; 26 más dejaron de aparecer y están archivados.
 
 | Pendientes | Hallazgos |
 |---|---:|
-| Etiquetas (L03) | 20 |
+| Tareas sin habilidades (L03), una por asignatura | 10 |
+| Etiqueta que no corresponde, por aprobar | 20 |
 | Cruces del dataset (L08) | 19 |
 
 Primer informe, por regla:
@@ -121,13 +126,13 @@ Un segundo agente leyó a ciegas 136 casos: confirmó las 9 correcciones que se 
 
 Hay un informe antes y después; cada hallazgo está resuelto, aceptado con motivo o asignado a la línea que lo corregirá; y una persona identificable revisó una muestra de lo aceptado y lo corregido.
 
-Al 2026-11-26 se cumplen las dos primeras condiciones: los 39 pendientes están asignados a [L03](L03-vacios-creacion.md) (20 de etiquetas) y a [L08](L08-dataset.md) (19 cruces). Falta la revisión por una persona, por eso la línea sigue `EXPERIMENTAL`.
+Al 2026-11-26 se cumplen las dos primeras condiciones: los pendientes están asignados a [L03](L03-vacios-creacion.md) (10 de tareas sin habilidades) y a [L08](L08-dataset.md) (19 cruces), salvo 20 de «no aplica» que esperan aprobación. Falta la revisión por una persona, por eso la línea sigue `EXPERIMENTAL`.
 
 ## Límites
 
 Las 39 dudas se decidieron el 2026-11-26 (11 mantener, 25 reescribir y 3 aprobar). Las de «mantener» no tuvieron segunda lectura. En la primera ronda ciega se objetaron 18 de 34 textos nuevos, sobre todo definiciones: redactar glosarios sin criterio pedagógico es poco fiable. 
 
-Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. El informe «después» cubre las 59 correcciones aplicadas; quedan 39 pendientes, que dependen de las líneas L03 y L08. Los 19 resueltos con textos que la regla sigue señalando descansan en la aprobación del texto, no en otra lectura contra la regla. Algunas definiciones de «sentido» dicen «frase» y las clases suelen decir «oración». La regla del enunciado no ve una elección regalada con otro género o número (el texto dice «rígida» y se responde «Rígido»): se halló una al redactar y puede haber otras. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
+Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. El informe «después» cubre las 59 correcciones aplicadas; quedan 49 pendientes: 29 dependen de las líneas L03 y L08 y 20 esperan una aprobación. Una lectura de Matemática halló [defectos que las reglas no detectan](../defectos-matematica-1-basico.md). Los 19 resueltos con textos que la regla sigue señalando descansan en la aprobación del texto, no en otra lectura contra la regla. Algunas definiciones de «sentido» dicen «frase» y las clases suelen decir «oración». La regla del enunciado no ve una elección regalada con otro género o número (el texto dice «rígida» y se responde «Rígido»): se halló una al redactar y puede haber otras. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
 
 ## Decisiones
 
@@ -141,6 +146,7 @@ Las reglas encuentran problemas de forma; los errores pedagógicos requieren un 
 - 2026-11-26: el titular autorizó aplicar los 35 textos en la fuente.
 - 2026-11-26: el titular cerró la fase 1. El criterio «ningún registro de evaluación idéntico a uno de entrenamiento» pasa a L08, que construye el dataset siguiente; L02 asigna los pendientes y exige una muestra revisada por una persona.
 - 2026-11-26: el titular aprobó los 7 hallazgos que quedaron proponiendo aceptar (6 nuevos y la aceptación retirada).
+- 2026-11-26: las habilidades se piden a las tareas y la dificultad a los ejercicios cerrados; falta que el titular apruebe los casos que quedan fuera.
 - 2026-11-26: las decisiones se aprueban por lote; los lotes de corrección siguen pendientes hasta aplicar el cambio.
 - 2026-11-26: las correcciones se redactan y revisan aquí; el contenido se cambia en la fuente, con autorización expresa, y se vuelve a exportar.
 - 2026-11-26: el titular (`vladimiracunadev-create`) aprobó los 10 lotes de aceptación, incluidas las 12 coincidencias breves con texto oficial.

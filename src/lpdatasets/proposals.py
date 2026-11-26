@@ -16,9 +16,10 @@ from pathlib import Path
 from typing import Any
 
 from .build import dumps, read_jsonl
-from .cleaning import normalize, report
+from .cleaning import APPLIES, normalize, report
+from .contributions import combined
 from .core import Entity
-from .core_build import core_folders, read_core
+from .core_build import core_folders
 
 ACCEPT, FIX, ASK = "aceptar", "corregir", "decidir"
 # lote: (veredicto, dónde se aplica, por qué, qué se haría)
@@ -105,6 +106,13 @@ LOTS: dict[str, tuple[str, str, str, str]] = {
         "partir por OA y sacar de evaluación toda entrada presente en entrenamiento",
     ),
     "etiquetas": (FIX, "línea L03", "faltan habilidades o dificultad", "etiquetar con criterio y verificador"),
+    "etiqueta-no-aplica": (
+        ACCEPT,
+        "ninguno",
+        "a ese tipo de pieza no le corresponde la etiqueta: la habilidad es de las tareas y la fuente solo gradúa los "
+        "ejercicios cerrados",
+        "conservar sin la etiqueta",
+    ),
     "texto-aplicado": (
         ACCEPT,
         "ninguno",
@@ -219,7 +227,8 @@ def propose(findings: list[dict[str, Any]], entities: list[Entity], review: dict
         elif rule in ("cruce_identico", "cruce_por_entrada"):
             lot = "cruces-dataset"
         elif rule in ("sin_habilidades", "sin_dificultad"):
-            lot = "etiquetas"
+            kinds = APPLIES[rule.removeprefix("sin_")]
+            lot = "etiquetas" if items[f["entidades"][0]]["tipo"] in kinds else "etiqueta-no-aplica"
         else:
             lot = "sin-revisar"
         if lot not in LOTS:
@@ -322,7 +331,7 @@ def proposals_report(nucleo: Path, doc: Path, check: bool = False) -> list[str]:
     """Escribe las propuestas y su informe; con `check` no escribe y devuelve lo que esté desactualizado."""
     folder = _folder(nucleo)
     review = json.loads((folder / "limpieza" / "revision.json").read_text(encoding="utf-8"))
-    entities = read_core(folder)
+    entities = combined(nucleo)
     proposals = propose(read_jsonl(folder / "limpieza" / "hallazgos.jsonl"), entities, review)
     outputs = {
         folder / "limpieza" / "propuestas.jsonl": "".join(dumps(p) + "\n" for p in proposals),

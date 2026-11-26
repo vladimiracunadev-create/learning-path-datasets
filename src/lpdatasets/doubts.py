@@ -14,7 +14,8 @@ from typing import Any, NamedTuple
 
 from .build import read_jsonl
 from .cleaning import report
-from .core_build import core_folders, read_core
+from .contributions import combined
+from .core_build import core_folders
 from .corrections import corrections_report, fingerprint
 from .proposals import proposals_report
 
@@ -156,7 +157,7 @@ def doubts_report(nucleo: Path, doc: Path, check: bool = False) -> list[str]:
     problems = check_doubts(read_jsonl(cleaning / "propuestas.jsonl"), doubts["dudas"], corrections, resolved)
     if problems:
         return problems
-    items = {e["id"]: e["contenido"] for e in read_core(folder) if e["entidad"] == "item"}
+    items = {e["id"]: e["contenido"] for e in combined(nucleo) if e["entidad"] == "item"}
     findings = {f["id"]: f["entidades"] for f in read_jsonl(cleaning / "hallazgos.jsonl")}
     asked = {d["hallazgo"] for d in doubts["dudas"] if d["recomendacion"] == "mantener"}
     decisions = {

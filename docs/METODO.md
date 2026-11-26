@@ -180,6 +180,16 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Reutilizable:** sirve para cualquier contenido que cumpla el contrato; el vocabulario y la carpeta son lo propio de cada conjunto.
 - **Límite:** no juzga si el contenido es correcto ni autentica los nombres; la limpieza y las modalidades aún no leen la combinación, que se conecta en el paso 2.4.
 
+### 3.22 Paso 2.4: etiquetas de dificultad y habilidades
+
+- **Qué:** se precisó a qué piezas se pide cada etiqueta (`APPLIES` en `cleaning.py`); la limpieza pasó a leer el núcleo combinado, con `clean-mark-contributed` para archivar lo que un aporte resuelve; y se redactaron 82 etiquetas de habilidades de Matemática, 60 verificadas. **Nada aprobado todavía.**
+- **Por qué así:** pedir dificultad a un vocabulario obligaría a inventarla. Como lo excluido sigue apareciendo en un lote que una persona acepta, la regla no hace desaparecer hallazgos por sí sola.
+- **Doble lectura:** el autor anotó sus 83 asignaciones antes de conocer las del segundo agente, que recibió solo las tareas y las 10 habilidades. La regla de unión (la intersección) quedó escrita en código antes de comparar. Coincidencia exacta en 41 de 83 clases y al menos parcial en 60.
+- **Aprendizaje:** la coincidencia fue alta en sumas y restas y baja en habilidades de argumentar o resolver problemas; un criterio de una frase no basta para separarlas. Con otro contenido, acordar ejemplos por categoría antes de leer.
+- **Error hallado y corregido:** para explicar un hallazgo que desaparece se miraba su muestra de 20 ítems; un grupo grande etiquetado en parte habría detenido la orden. Hay una prueba con dos aprobaciones sucesivas.
+- **Cómo se comprobó:** pruebas sintéticas y un ensayo sobre una copia de lo que ocurriría al aprobar: 60 piezas, 20 hallazgos aceptados, 1 archivado y 29 pendientes, con el núcleo publicado intacto.
+- **Hallazgo lateral:** el segundo lector reportó [defectos de contenido](defectos-matematica-1-basico.md) que ninguna regla detecta.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -198,6 +208,7 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 | Un hallazgo corregido simplemente desaparece | se archiva con el commit que lo resolvió | permite mostrar antes y después |
 | L02 terminaba solo sin cruces entre entrenamiento y evaluación | ese criterio es de L08 y L02 exige asignar cada pendiente | los cruces se corrigen al construir el dataset siguiente |
 | L04 terminaba con un informe fechado que declara lo no leído | además comprueba cada fuente que admite lectura | con solo los objetivos ya habría figurado operativa |
+| Toda pieza necesita habilidades y dificultad | habilidades en tareas, dificultad en ejercicios cerrados | exigirlas a todo obligaba a inventarlas |
 | Una aceptación vale mientras el hallazgo tenga el mismo identificador | se retira si cambia un texto que cubre | se aceptó el texto anterior, no el nuevo |
 
 ## 5. Trampas encontradas y qué hacer con datos nuevos
@@ -218,6 +229,7 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 | Textos armados desde una plantilla de la fuente | una pregunta no aparecía en la búsqueda literal | reconstruir la plantilla; nunca editar a mano lo no localizado |
 | Una página que cambia de diseño parece «todo quitado» o «sin cambios» | pruebas con páginas rotas | exigir los códigos esperados y declarar `ilegible` |
 | Una página mezcla su contenido con bloques que rotan | dos lecturas y lectura del texto | comparar entre marcas o solo los documentos |
+| Un grupo resumido por una muestra parece no tocado por un cambio | revisión del caso parcial | explicar los cambios con el grupo completo, no con la muestra |
 | Condiciones de uso contradictorias | política del sitio frente a la etiqueta de un recurso | registrarlo como no resuelto; decide quien tiene los derechos |
 
 ## 6. Cómo aplicarlo a otro tipo de datos
@@ -278,6 +290,7 @@ Resolver esto es el primer trabajo antes de sumar datos de otro tipo.
 | `lpdatasets clean-report`, `clean-proposals`, `clean-corrections` | hallazgos, lotes y redacciones; con `--check` no escriben |
 | `lpdatasets clean-approve`, `clean-approve-corrections` | aprobaciones de lotes y de correcciones |
 | `lpdatasets clean-mark-applied` | tras reexportar, registra lo aplicado, archiva o cierra lo resuelto y retira aceptaciones sobre textos cambiados |
+| `lpdatasets clean-mark-contributed` | tras aprobar aportes, archiva los hallazgos que resuelven |
 | `lpdatasets clean-doubts` | hoja de decisión de las dudas; con `--check` no escribe |
 | `lpdatasets clean-resolve-doubts` | registra la aprobación de las recomendaciones, sin aplicar |
 | `lpdatasets watch-baseline` | línea base de huellas desde la instantánea de la fuente |
@@ -295,7 +308,7 @@ Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-
 ## 9. Lo que no está hecho
 
 - Ninguna persona ha revisado el contenido.
-- Quedan 39 hallazgos pendientes: 20 de etiquetas (L03) y 19 cruces del dataset (L08).
-- L03 tiene la capa de aportes sin ninguna pieza; líneas L05 a L09 sin implementación nueva; L04 opera a pedido y sus 4 fuentes manuales no se han revisado; ninguna modalidad real.
+- Quedan 49 hallazgos pendientes: 10 de habilidades (L03), 19 cruces del dataset (L08) y 20 que proponen «no aplica» y esperan aprobación.
+- L03 tiene 60 etiquetas verificadas sin aprobar y ningún contenido nuevo; líneas L05 a L09 sin implementación nueva; L04 opera a pedido y sus 4 fuentes manuales no se han revisado; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.
