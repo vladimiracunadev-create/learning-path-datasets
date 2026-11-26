@@ -6,7 +6,7 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 
 | Veredicto propuesto | Lotes | Hallazgos | Pendientes |
 |---|---:|---:|---:|
-| aceptar | 10 | 1042 | 1042 |
+| aceptar | 10 | 1042 | 0 |
 | corregir | 4 | 63 | 63 |
 | decidir | 3 | 35 | 35 |
 
@@ -14,21 +14,21 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 
 | Lote | Veredicto | Hallazgos | Afectados | Cómo se clasificó | Pendientes |
 |---|---|---:|---:|---|---:|
-| `duplicado-glosario` | aceptar | 138 | 322 | por regla | 138 |
-| `duplicado-repaso` | aceptar | 13 | 26 | leído | 13 |
-| `vocabulario-variantes` | aceptar | 266 | 688 | leído | 266 |
-| `vocabulario-acepciones` | aceptar | 30 | 73 | leído | 30 |
+| `duplicado-glosario` | aceptar | 138 | 322 | por regla | 0 |
+| `duplicado-repaso` | aceptar | 13 | 26 | leído | 0 |
+| `vocabulario-variantes` | aceptar | 266 | 688 | leído | 0 |
+| `vocabulario-acepciones` | aceptar | 30 | 73 | leído | 0 |
 | `vocabulario-redaccion` | decidir | 19 | 69 | leído | 19 |
-| `conflicto-contexto` | aceptar | 13 | 26 | leído | 13 |
-| `enunciado-opciones` | aceptar | 307 | 962 | por regla | 307 |
-| `enunciado-comprension` | aceptar | 112 | 488 | leído | 112 |
+| `conflicto-contexto` | aceptar | 13 | 26 | leído | 0 |
+| `enunciado-opciones` | aceptar | 307 | 962 | por regla | 0 |
+| `enunciado-comprension` | aceptar | 112 | 488 | leído | 0 |
 | `enunciado-decidir` | decidir | 11 | 52 | leído | 11 |
 | `enunciado-corregir` | corregir | 15 | 67 | leído | 15 |
-| `cuaderno-propio-enunciado` | aceptar | 25 | 28 | por regla | 25 |
-| `cuaderno-ensenanza` | aceptar | 126 | 153 | leído y por regla | 126 |
+| `cuaderno-propio-enunciado` | aceptar | 25 | 28 | por regla | 0 |
+| `cuaderno-ensenanza` | aceptar | 126 | 153 | leído y por regla | 0 |
 | `cuaderno-corregir` | corregir | 9 | 13 | leído | 9 |
 | `cuaderno-decidir` | decidir | 5 | 7 | leído | 5 |
-| `texto-oficial-fragmento` | aceptar | 12 | 12 | leído | 12 |
+| `texto-oficial-fragmento` | aceptar | 12 | 12 | leído | 0 |
 | `cruces-dataset` | corregir | 19 | 230 | por regla | 19 |
 | `etiquetas` | corregir | 20 | 24904 | por regla | 20 |
 

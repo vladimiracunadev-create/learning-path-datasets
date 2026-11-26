@@ -52,7 +52,7 @@ El agente [`limpiador-datos`](../../.claude/agents/limpiador-datos.md) prepara l
 
 ## Métricas
 
-Primer informe, 2026-11-26: 1.140 hallazgos, todos pendientes.
+Primer informe, 2026-11-26: 1.140 hallazgos. Desde la aprobación de ese día, 1.042 están aceptados y 98 pendientes.
 
 | Regla | Hallazgos | Afectados |
 |---|---:|---:|
@@ -68,13 +68,13 @@ Primer informe, 2026-11-26: 1.140 hallazgos, todos pendientes.
 
 Las cifras de duplicados y conflictos difieren de la medición del plan porque ahora se agrupa por asignatura y tipo.
 
-Propuestas del 2026-11-26, sin aprobar:
+Propuestas del 2026-11-26:
 
-| Veredicto propuesto | Hallazgos |
-|---|---:|
-| aceptar | 1.042 |
-| corregir | 63 |
-| decidir | 35 |
+| Veredicto propuesto | Hallazgos | Estado |
+|---|---:|---|
+| aceptar | 1.042 | aceptados |
+| corregir | 63 | pendientes: 24 sobre 27 preguntas, 19 de cruces del dataset (L08) y 20 de etiquetas (L03) |
+| decidir | 35 | pendientes: 19 de vocabulario, 11 de enunciado y 5 de cuaderno |
 
 Un segundo agente leyó a ciegas 136 casos: confirmó las 9 correcciones que se proponían entonces y objetó 15 de 116 casos que se proponía aceptar (3 defectos y 12 dudas). Esos 15 pasaron a `corregir` o `decidir`.
 
@@ -84,10 +84,11 @@ Hay un informe antes y después, cada hallazgo está resuelto o aceptado con mot
 
 ## Límites
 
-Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Todavía no hay informe «después»: ninguna decisión está aprobada ni aplicada. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
+Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. Quedan 98 pendientes y ningún cambio de contenido está aplicado. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
 
 ## Decisiones
 
 - 2026-11-26: el agente `limpiador-datos` propone cambios y no borra sin registro.
 - 2026-11-26: el dataset v1.0 no se modifica; sus cruces se corrigen al construir la versión siguiente (L08).
 - 2026-11-26: las decisiones se aprueban por lote; los lotes de corrección siguen pendientes hasta aplicar el cambio.
+- 2026-11-26: el titular (`vladimiracunadev-create`) aprobó los 10 lotes de aceptación, incluidas las 12 coincidencias breves con texto oficial.
