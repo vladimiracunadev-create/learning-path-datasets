@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1210" width="1200" height="1210" role="img" aria-labelledby="titulo descripcion" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title id="titulo">Qué se construye para 1.º básico</title>
+<desc id="descripcion">La fuente alimenta un núcleo de contenido; cada modalidad lee de él a través de una selección por uso, público y marco. Base documentada (fase 0): hecha; Núcleo y limpieza (fase 1): pendiente; Vigía y vacíos (fase 2): pendiente; RAG, MCP y agentes (fase 3): pendiente; Dataset y ajuste (fase 4): pendiente.</desc>
+<defs><marker id="punta" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#334155"/></marker></defs>
+<rect width="1200" height="1210" fill="#ffffff"/>
+<text x="600" y="42" font-size="28" font-weight="700" text-anchor="middle" fill="#0f172a">Qué se construye · 1.º básico</text>
+<text x="600" y="68" font-size="15" font-weight="400" text-anchor="middle" fill="#475569">Un solo núcleo de contenido y muchas formas de usarlo</text>
+<rect x="420" y="90" width="360" height="70" rx="10" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+<text x="600" y="119" font-size="16" font-weight="700" text-anchor="middle" fill="#0f172a">Fuente: chilean-school-learning-path</text>
+<text x="600" y="143" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">commit fijo</text>
+<path d="M600 160 V214" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M180 250 V294" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M320 350 H414" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M780 292 H874" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M880 328 H786" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M600 400 V444" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M220 510 V564" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M600 510 V564" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M980 510 V564" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M220 670 V704" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M220 810 V844" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<path d="M600 670 V704" fill="none" stroke="#334155" stroke-width="2" marker-end="url(#punta)"/>
+<text x="612" y="192" font-size="13" font-weight="400" text-anchor="start" fill="#334155">adaptadores</text>
+<text x="192" y="278" font-size="13" font-weight="400" text-anchor="start" fill="#334155">aprobación humana</text>
+<text x="367" y="340" font-size="13" font-weight="400" text-anchor="middle" fill="#334155">crea</text>
+<text x="830" y="282" font-size="13" font-weight="400" text-anchor="middle" fill="#334155">revisa</text>
+<text x="830" y="348" font-size="13" font-weight="400" text-anchor="middle" fill="#334155">corrige</text>
+<rect x="60" y="450" width="1080" height="60" rx="10" fill="#1e293b"/>
+<text x="600" y="476" font-size="17" font-weight="700" text-anchor="middle" fill="#ffffff">Selección: select()</text>
+<text x="600" y="498" font-size="14" font-weight="400" text-anchor="middle" fill="#e2e8f0">filtra por uso, público y marco curricular, y oculta las soluciones</text>
+<rect x="420" y="220" width="360" height="180" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+<text x="600" y="292" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L01 · Núcleo de contenido</text>
+<text x="600" y="317" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">clases · ítems · recursos</text>
+<text x="600" y="342" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 1 · experimental</text>
+<text x="600" y="372" font-size="13" font-weight="400" text-anchor="middle" fill="#334155">marco · derechos · revisión · procedencia</text>
+<rect x="880" y="260" width="280" height="100" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1020" y="292" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L02 · Limpieza</text>
+<text x="1020" y="317" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">duplicados y conflictos</text>
+<text x="1020" y="342" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 1 · planificado</text>
+<rect x="40" y="300" width="280" height="100" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="180" y="332" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L03 · Vacíos y creación</text>
+<text x="180" y="357" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">audio, imágenes, ítems</text>
+<text x="180" y="382" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 2 · planificado</text>
+<rect x="40" y="150" width="280" height="100" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="180" y="182" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L04 · Vigía curricular</text>
+<text x="180" y="207" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">cambios educativos en Chile</text>
+<text x="180" y="232" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 2 · planificado</text>
+<rect x="60" y="570" width="320" height="100" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="220" y="602" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L05 · Recuperación (RAG)</text>
+<text x="220" y="627" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">buscar y citar</text>
+<text x="220" y="652" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 3 · planificado</text>
+<rect x="60" y="710" width="320" height="100" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="220" y="742" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L06 · Servidor MCP</text>
+<text x="220" y="767" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">consulta desde asistentes</text>
+<text x="220" y="792" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 3 · planificado</text>
+<rect x="60" y="850" width="320" height="100" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="220" y="882" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L07 · Skills y agentes de uso</text>
+<text x="220" y="907" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">tutor, guías, evaluaciones</text>
+<text x="220" y="932" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 3 · planificado</text>
+<rect x="440" y="570" width="320" height="100" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="600" y="602" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L08 · Dataset</text>
+<text x="600" y="627" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">entrenar y evaluar</text>
+<text x="600" y="652" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 4 · planificado</text>
+<rect x="440" y="710" width="320" height="100" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="600" y="742" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L09 · Ajuste de modelos</text>
+<text x="600" y="767" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">estilo y nivel de 6 años</text>
+<text x="600" y="792" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 4 · planificado</text>
+<rect x="820" y="570" width="320" height="100" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+<text x="980" y="602" font-size="17" font-weight="700" text-anchor="middle" fill="#0f172a">L10 · Modalidad nueva</text>
+<text x="980" y="627" font-size="14" font-weight="400" text-anchor="middle" fill="#334155">fichas, audio, apps…</text>
+<text x="980" y="652" font-size="13" font-weight="400" text-anchor="middle" fill="#475569">Fase 0 · experimental</text>
+<text x="60" y="1026" font-size="17" font-weight="700" text-anchor="start" fill="#0f172a">Fases</text>
+<rect x="60" y="1040" width="204" height="74" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="162" y="1066" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Fase 0 · hecha</text>
+<text x="162" y="1092" font-size="13" font-weight="400" text-anchor="middle" fill="#334155">Base documentada</text>
+<rect x="278" y="1040" width="204" height="74" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="380" y="1066" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Fase 1 · pendiente</text>
+<text x="380" y="1092" font-size="13" font-weight="400" text-anchor="middle" fill="#334155">Núcleo y limpieza</text>
+<rect x="496" y="1040" width="204" height="74" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="598" y="1066" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Fase 2 · pendiente</text>
+<text x="598" y="1092" font-size="13" font-weight="400" text-anchor="middle" fill="#334155">Vigía y vacíos</text>
+<rect x="714" y="1040" width="204" height="74" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="816" y="1066" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Fase 3 · pendiente</text>
+<text x="816" y="1092" font-size="13" font-weight="400" text-anchor="middle" fill="#334155">RAG, MCP y agentes</text>
+<rect x="932" y="1040" width="204" height="74" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1034" y="1066" font-size="14" font-weight="700" text-anchor="middle" fill="#0f172a">Fase 4 · pendiente</text>
+<text x="1034" y="1092" font-size="13" font-weight="400" text-anchor="middle" fill="#334155">Dataset y ajuste</text>
+<rect x="60" y="1136" width="28" height="18" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="100" y="1150" font-size="13" font-weight="400" text-anchor="start" fill="#334155">operativo o hecho</text>
+<rect x="320" y="1136" width="28" height="18" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+<text x="360" y="1150" font-size="13" font-weight="400" text-anchor="start" fill="#334155">experimental o en curso</text>
+<rect x="580" y="1136" width="28" height="18" rx="10" fill="#f8fafc" stroke="#64748b" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="620" y="1150" font-size="13" font-weight="400" text-anchor="start" fill="#334155">pendiente</text>
+<text x="60" y="1188" font-size="13" font-weight="400" text-anchor="start" fill="#334155">Hoy siguen operativos, fuera de este flujo: el dataset v1.0 y su búsqueda léxica.</text>
+</svg>

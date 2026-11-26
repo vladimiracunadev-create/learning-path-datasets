@@ -19,6 +19,12 @@
 > [!IMPORTANT]
 > Este repositorio **prepara datos; no entrena modelos ni los distribuye**. El contenido fue elaborado con asistencia de IA y **no tiene revisión humana profesional**. Un dato publicado no es automáticamente correcto, representativo ni apto para cualquier uso. Lee [Límites y derechos](docs/LIMITS_AND_RIGHTS.md) antes de entrenar o redistribuir.
 
+## 🗺️ Qué se construye
+
+El foco actual es **1.º básico**: un solo núcleo de contenido y varias formas de usarlo. Los recuadros con borde discontinuo son **trabajo pendiente**; el dataset v1.0 y su búsqueda léxica, descritos más abajo, ya funcionan fuera de este flujo. Detalle en el [plan](docs/PLAN_1_BASICO.md).
+
+![Esquema de lo que se construye para 1.º básico: fuente, núcleo, selección, modalidades y fases](docs/img/plan-1-basico.svg)
+
 ## 🎯 Qué resuelve
 
 Los programas de aprendizaje abiertos tienen explicaciones, ejemplos, ejercicios con respuesta y glosarios, pero viven en Markdown o en código pensado para personas, no para modelos. Aquí se convierten a **un contrato común** que conserva de dónde viene cada ejemplo y bajo qué licencia, y que separa desde el inicio lo que se usa para entrenar de lo que se reserva para evaluar.

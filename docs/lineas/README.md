@@ -15,6 +15,12 @@ Cada línea del [plan de 1.º básico](../PLAN_1_BASICO.md) se documenta aquí. 
 | L09 | [Ajuste de modelos](L09-fine-tuning.md) |
 | L10 | [Modalidad nueva](L10-modalidad-nueva.md) |
 
+Al avanzar, actualiza en `lineas.json` el estado de la línea y de su fase (`hecha`, `en curso` o `pendiente`) y regenera el [esquema](../img/plan-1-basico.svg):
+
+```bash
+python scripts/docs_diagram.py --write
+```
+
 Comprobación:
 
 ```bash

@@ -43,5 +43,6 @@ pytest
 python scripts/smoke.py
 python scripts/docs_stats.py --check
 python scripts/verify_docs.py
+python scripts/docs_diagram.py --check
 lpdatasets validate
 ```

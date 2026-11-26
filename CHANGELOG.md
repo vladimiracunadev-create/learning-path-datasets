@@ -5,6 +5,7 @@
 - Plan de implementación de 1.º básico (`docs/PLAN_1_BASICO.md`) y un documento por línea (L01 a L10) con plantilla común; `scripts/verify_docs.py` y el CI los comprueban.
 - Contrato del núcleo `nucleo-0.1` (clases, ítems y recursos) con derechos, marco curricular y selección por uso, público y marco que oculta soluciones. Experimental y sin contenido exportado.
 - Registro de marcos curriculares y registro de modalidades.
+- Esquema SVG de lo que se construye, generado desde `lineas.json` y comprobado en el CI.
 - Corrección: la tarjeta y los límites describían `ingles-propuesta` como propuesta propia; el programa de origen la marca como propuesta del Mineduc.
 - El esquema de registros v1.0 y los datos publicados no cambian.
 

@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+import json
 import shutil
 from pathlib import Path
+from xml.etree import ElementTree
 
 import pytest
 
@@ -9,6 +11,7 @@ from tests.conftest import ROOT
 from tests.test_assets import load
 
 verify = load("verify_docs")
+diagram = load("docs_diagram")
 
 
 @pytest.fixture()
@@ -54,3 +57,25 @@ def test_missing_and_unregistered_documents_are_detected(docs_copy: Path):
 
 def test_modality_pointing_to_unknown_line_is_detected():
     assert any("L99" in p for p in verify.check(modality_lines={"x": "L99"}))
+
+
+def test_diagram_is_up_to_date_and_well_formed():
+    assert diagram.main(["--check"]) == 0
+    root = ElementTree.fromstring(diagram.render())
+    words = " ".join(root.itertext())
+    registry = json.loads((ROOT / "docs" / "lineas" / "lineas.json").read_text(encoding="utf-8"))
+    for line in registry["lineas"]:
+        assert f"{line['id']} · " in words
+
+
+def test_diagram_follows_progress_and_accepts_new_lines(docs_copy: Path):
+    path = docs_copy / "docs" / "lineas" / "lineas.json"
+    registry = json.loads(path.read_text(encoding="utf-8"))
+    registry["lineas"].append({"id": "L11", "titulo": "Fichas <A4>", "estado": "PLANIFICADO", "fase": 4})
+    path.write_text(json.dumps(registry, ensure_ascii=False), encoding="utf-8")
+    assert diagram.main(["--check"], docs_copy) == 1
+    assert diagram.main(["--write"], docs_copy) == 0
+    assert diagram.main(["--check"], docs_copy) == 0
+    drawing = (docs_copy / diagram.OUTPUT).read_text(encoding="utf-8")
+    assert "L11 · Fichas &lt;A4&gt;" in drawing
+    ElementTree.fromstring(drawing)

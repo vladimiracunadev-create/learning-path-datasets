@@ -51,17 +51,9 @@ Esto no es asesoría legal.
 
 ## Arquitectura
 
-```mermaid
-flowchart LR
-    F[Fuentes] --> A[Adaptadores]
-    A --> N[(Núcleo<br/>clases · ítems · recursos<br/>marco · derechos · revisión)]
-    N --> S{selección por<br/>uso · público · marco}
-    S --> R[RAG]
-    S --> M[MCP]
-    S --> D[Dataset]
-    S --> G[Agentes]
-    S --> X[Modalidad futura]
-```
+![Esquema de lo que se construye: la fuente alimenta un núcleo y cada modalidad lee de él](img/plan-1-basico.svg)
+
+El dibujo se genera desde [`lineas.json`](lineas/lineas.json) con `python scripts/docs_diagram.py --write`: muestra la fase y el estado de cada línea.
 
 Reglas de escalamiento:
 
@@ -102,13 +94,15 @@ Flujo: vigía → informe → **aprobación humana** → autor → verificador �
 
 ## Orden
 
-| Fase | Contenido | Estado |
-|---|---|---|
-| 0 | plantilla de documentación, contrato del núcleo y marcos curriculares | hecha |
-| 1 | L01 y L02 | pendiente |
-| 2 | L04 y L03, temprano por el posible cambio curricular | pendiente |
-| 3 | L05, L06 y L07 | pendiente |
-| 4 | L08 y L09 | pendiente |
+| Fase | Contenido |
+|---|---|
+| 0 | plantilla de documentación, contrato del núcleo y marcos curriculares |
+| 1 | L01 y L02 |
+| 2 | L04 y L03, temprano por el posible cambio curricular |
+| 3 | L05, L06 y L07 |
+| 4 | L08 y L09 |
+
+El estado de cada fase está en `lineas.json` y se ve en el esquema.
 
 La prueba de escalamiento (una salida de ejemplo, como fichas imprimibles, sin tocar el núcleo) se hace cuando L01 produzca datos. En la fase 0 se probó el contrato con una modalidad ficticia dentro de las pruebas.
 
