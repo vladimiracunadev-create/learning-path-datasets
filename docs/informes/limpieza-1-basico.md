@@ -4,7 +4,7 @@ Generado con `lpdatasets clean-report`; no se edita a mano. Propone cambios y **
 
 - Núcleo: 18926 entidades, 16386 ítems, commit de la fuente `b3647111142b`.
 - Dataset v1.0 revisado como línea base: 16386 registros.
-- Hallazgos: 1141; pendientes: 49.
+- Hallazgos: 1141; pendientes: 29.
 
 | Regla | Severidad | Hallazgos | Afectados | Pendientes |
 |---|---|---:|---:|---:|
@@ -17,8 +17,8 @@ Generado con `lpdatasets clean-report`; no se edita a mano. Propone cambios y **
 | `solucion_en_enunciado` | revisar | 445 | 1555 | 0 |
 | `solucion_en_cuaderno` | revisar | 156 | 190 | 0 |
 | `texto_oficial` | revisar | 12 | 12 | 0 |
-| `sin_habilidades` | info | 22 | 16386 | 22 |
-| `sin_dificultad` | info | 8 | 8518 | 8 |
+| `sin_habilidades` | info | 22 | 15186 | 10 |
+| `sin_dificultad` | info | 8 | 8518 | 0 |
 
 «Afectados» cuenta entidades o registros dentro de cada regla; una misma entidad puede aparecer en varias.
 Las reglas son comprobaciones de forma: un hallazgo «revisar» puede ser legítimo.
@@ -33,6 +33,7 @@ Hallazgos que dejaron de aparecer al aplicar correcciones en la fuente o aportes
 |---|---|---:|---:|
 | `3fd976d50bb2` | `solucion_en_cuaderno` | 6 | 9 |
 | `3fd976d50bb2` | `solucion_en_enunciado` | 10 | 51 |
+| `aportes` | `sin_habilidades` | 1 | 1660 |
 | `b3647111142b` | `respuestas_en_conflicto` | 1 | 2 |
 | `b3647111142b` | `solucion_en_cuaderno` | 5 | 6 |
 | `b3647111142b` | `solucion_en_enunciado` | 4 | 19 |
@@ -110,8 +111,8 @@ Detecta: tramo de ocho o más palabras que coincide con la redacción oficial de
 Detecta: ítems sin habilidades etiquetadas. Propuesta: etiquetar desde OA e indicadores (L03).
 
 - `sin_habilidades:b393baf10ef0` (2620): lenguaje-comunicacion: 2620 ítems de tarea
-- `sin_habilidades:b16385ddf462` (1660): matematica: 1660 ítems de tarea
 - `sin_habilidades:789012cd68cc` (1380): ingles-propuesta: 1380 ítems de tarea
+- `sin_habilidades:64969f4600cd` (1360): historia-geografia-ciencias-sociales: 1360 ítems de tarea
 
 ## `sin_dificultad`
 

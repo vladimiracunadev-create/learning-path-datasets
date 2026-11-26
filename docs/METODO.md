@@ -190,6 +190,14 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Cómo se comprobó:** pruebas sintéticas y un ensayo sobre una copia de lo que ocurriría al aprobar: 60 piezas, 20 hallazgos aceptados, 1 archivado y 29 pendientes, con el núcleo publicado intacto.
 - **Hallazgo lateral:** el segundo lector reportó [defectos de contenido](defectos-matematica-1-basico.md) que ninguna regla detecta.
 
+### 3.23 Aprobación del paso 2.4
+
+- **Qué:** el titular aprobó las 60 etiquetas verificadas (`contrib-approve`) y el lote `etiqueta-no-aplica` (`clean-approve`). Después: 1.141 hallazgos, 1.093 aceptados, 19 resueltos y 29 pendientes.
+- **Orden:** aprobar aportes, `clean-mark-contributed`, `clean-report`, `clean-proposals`, aprobar el lote y comprobar correcciones y dudas. El archivo del hallazgo anterior va antes de reescribirlos.
+- **Cómo se comprobó:** se aprobaron exactamente las 60 piezas con verificación favorable y nada más cambió en ellas; 20 decisiones nuevas y ninguna anterior alterada; la copia combinada cambia 1.200 tareas de 60 clases de Matemática, solo en `habilidades` y la lista de aportes, sin tocar su texto ni su estado de revisión; el núcleo publicado no cambió.
+- **Quedan:** 10 hallazgos de tareas sin habilidades (en Matemática, 460 tareas de 23 clases) y 19 cruces del dataset.
+- **Límite:** aprobar las etiquetas no es una revisión pedagógica de cada clase.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -308,7 +316,7 @@ Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-
 ## 9. Lo que no está hecho
 
 - Ninguna persona ha revisado el contenido.
-- Quedan 49 hallazgos pendientes: 10 de habilidades (L03), 19 cruces del dataset (L08) y 20 que proponen «no aplica» y esperan aprobación.
-- L03 tiene 60 etiquetas verificadas sin aprobar y ningún contenido nuevo; líneas L05 a L09 sin implementación nueva; L04 opera a pedido y sus 4 fuentes manuales no se han revisado; ninguna modalidad real.
+- Quedan 29 hallazgos pendientes: 10 de tareas sin habilidades (L03) y 19 cruces del dataset (L08).
+- L03 tiene 60 etiquetas aprobadas, solo en Matemática, y ningún contenido nuevo; líneas L05 a L09 sin implementación nueva; L04 opera a pedido y sus 4 fuentes manuales no se han revisado; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.

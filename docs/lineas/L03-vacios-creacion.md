@@ -56,7 +56,7 @@ lpdatasets contrib-approve --aporte ID --aprobado-por "nombre"
 lpdatasets contrib-export --out .nucleo-compuesto
 ```
 
-`contrib-export` escribe una copia del núcleo combinada con las piezas aprobadas; sin ninguna, es idéntica byte a byte al publicado. Su [informe](../informes/aportes-1-basico.md) lista cada pieza: 82 etiquetas de habilidades de Matemática, ninguna aprobada todavía.
+`contrib-export` escribe una copia del núcleo combinada con las piezas aprobadas; sin ninguna, es idéntica byte a byte al publicado. Su [informe](../informes/aportes-1-basico.md) lista cada pieza: 82 etiquetas de habilidades de Matemática, 60 aprobadas y 22 observadas.
 
 Falta crear contenido: las skills y agentes previstos son `investigador-fuentes`, `autor-contenido`, `extractor-conocimiento` y `verificador-independiente`. Vacíos medidos y pasos: [plan de la fase 2](../PLAN_FASE_2.md), aprobado.
 
@@ -77,7 +77,7 @@ Piloto de habilidades en Matemática, 2026-11-26. Dos lectores de IA asignaron p
 | No coinciden (pieza observada, no entra) | 22 |
 | Ninguno asignó | 1 |
 
-Quedan 60 piezas verificadas. Si se aprueban, 1.200 de las 1.660 tareas tendrían habilidades. Habilidades que entran, por clases: modelar con sumas, restas y orden (g) 29, representar (i) 15, describir con lenguaje matemático (d) 11, comunicar relaciones (e) 6, a 3, h 3, j 1; b, c y f no entran en ninguna.
+El titular aprobó el 2026-11-26 las 60 piezas verificadas: 1.200 de las 1.660 tareas de Matemática tienen habilidades en la copia combinada. Habilidades que entran, por clases: modelar con sumas, restas y orden (g) 29, representar (i) 15, describir con lenguaje matemático (d) 11, comunicar relaciones (e) 6, a 3, h 3, j 1; b, c y f no entran en ninguna.
 
 Clases con sus recursos disponibles sobre clases que los piden; OA con ítems de evaluación sobre 237; porcentaje revisado por una persona.
 
@@ -97,6 +97,7 @@ El contenido creado con IA no tiene valor de revisión humana. No sustituye a do
 
 - 2026-11-26: al cerrar la fase 1, los hallazgos de etiquetas pasan a esta línea.
 - 2026-11-26: lo nuevo vive en una capa de aportes de este repositorio; la fuente no se toca para agregarlo.
+- 2026-11-26: el titular aprobó las 60 etiquetas en que coincidieron las dos lecturas; las 22 observadas no entran.
 - 2026-11-26: el piloto de etiquetas y creación es en Matemática.
 - 2026-11-26: las habilidades usan solo los objetivos de habilidad oficiales donde existen; en el resto se declaran sin cubrir.
 - 2026-11-26: el titular o un docente revisa una muestra de cada piloto.

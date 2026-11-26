@@ -6,7 +6,7 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 
 | Veredicto propuesto | Lotes | Hallazgos | Pendientes |
 |---|---:|---:|---:|
-| aceptar | 12 | 1101 | 20 |
+| aceptar | 12 | 1101 | 0 |
 | corregir | 2 | 29 | 29 |
 | decidir | 3 | 11 | 0 |
 
@@ -28,8 +28,8 @@ Primera lectura: asistente de IA; sin revisión humana (2026-11-26).
 | `cuaderno-decidir` | decidir | 2 | 3 | leído | 0 |
 | `texto-oficial-fragmento` | aceptar | 12 | 12 | leído | 0 |
 | `cruces-dataset` | corregir | 19 | 230 | por regla | 19 |
-| `etiquetas` | corregir | 10 | 11247 | por regla | 10 |
-| `etiqueta-no-aplica` | aceptar | 20 | 13657 | por regla | 20 |
+| `etiquetas` | corregir | 10 | 10047 | por regla | 10 |
+| `etiqueta-no-aplica` | aceptar | 20 | 13657 | por regla | 0 |
 | `texto-aplicado` | aceptar | 19 | 66 | por regla | 0 |
 
 ## Segunda lectura
