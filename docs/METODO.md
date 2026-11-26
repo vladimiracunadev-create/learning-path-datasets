@@ -154,6 +154,15 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Reutilizable:** antes de diseñar un vigilante, probar contra una línea base conocida que la fuente se puede leer y comparar; así «sin cambios» y «no se pudo leer» quedan distinguidos desde el diseño.
 - **Límite:** las mediciones y la prueba se hicieron con código temporal, que el paso 2.1 debe reemplazar por código con pruebas.
 
+### 3.19 Paso 2.1: vigía de objetivos
+
+- **Qué:** el titular aprobó el plan de la fase 2. Se construyeron `watch.py` (motor genérico: lectura, comparación, revisión e informe), `watch_escolar.py` (cómo leer las páginas oficiales y crear la línea base), el registro de fuentes en `vigia/`, las órdenes `watch-baseline`, `watch` y `watch-report`, y el agente `vigia-curricular`.
+- **Por qué así:** huellas en vez de texto, por derechos; cinco estados distintos para no confundir «no cambió» con «no se pudo saber»; el informe sale del registro, así el CI lo comprueba sin red; el adaptador separado permite vigilar otro tipo de fuente sin tocar el motor.
+- **Cuidados con sitios ajenos:** identificador genérico, pausa entre solicitudes, `robots.txt`, solo https, sin seguir a otro sitio y sin volver a un sitio que rechazó. Un código con forma inesperada no se copia al informe, para que el texto de una página no llegue a quien lo lee como instrucción.
+- **Cómo se comprobó:** pruebas sin red; primera revisión real con 237 de 237 objetivos sin cambios; sobre una página real, una línea base alterada produjo los cuatro tipos de cambio y tres alteraciones de diseño quedaron `ilegible`.
+- **Qué se aprendió:** la creación de la línea base se detuvo ante códigos de forma no prevista (`LC01 OA LF01`); conviene que un patrón que no cubre un dato real detenga el proceso en vez de omitirlo.
+- **Límite:** solo vigila códigos y textos de objetivos; la propuesta curricular en trámite no se vería hasta que cambien esas páginas.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -171,6 +180,7 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 | El dataset v1.0 no se modifica | se regenera cuando cambia el contenido de la fuente | publicar defectos ya corregidos no tiene sentido; los cruces siguen para la versión siguiente |
 | Un hallazgo corregido simplemente desaparece | se archiva con el commit que lo resolvió | permite mostrar antes y después |
 | L02 terminaba solo sin cruces entre entrenamiento y evaluación | ese criterio es de L08 y L02 exige asignar cada pendiente | los cruces se corrigen al construir el dataset siguiente |
+| L04 terminaba con un informe fechado que declara lo no leído | además comprueba cada fuente que admite lectura | con solo los objetivos ya habría figurado operativa |
 | Una aceptación vale mientras el hallazgo tenga el mismo identificador | se retira si cambia un texto que cubre | se aceptó el texto anterior, no el nuevo |
 
 ## 5. Trampas encontradas y qué hacer con datos nuevos
@@ -189,6 +199,7 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 | Regenerar un proyecto ajeno con otras versiones de librerías | comparación con sus versiones fijadas | usar el entorno del propio proyecto |
 | El mismo texto repetido en varias clases | búsqueda literal con más de una aparición | ubicar cada cambio por su clase y no escribir si algo no es único |
 | Textos armados desde una plantilla de la fuente | una pregunta no aparecía en la búsqueda literal | reconstruir la plantilla; nunca editar a mano lo no localizado |
+| Una página que cambia de diseño parece «todo quitado» o «sin cambios» | pruebas con páginas rotas | exigir los códigos esperados y declarar `ilegible` |
 | Condiciones de uso contradictorias | política del sitio frente a la etiqueta de un recurso | registrarlo como no resuelto; decide quien tiene los derechos |
 
 ## 6. Cómo aplicarlo a otro tipo de datos
@@ -221,6 +232,8 @@ Protocolo de lectura ciega usado: archivo solo con las preguntas y su contexto; 
 | `escolar_chile.py`, `core_escolar.py` | específicos | una fuente y, en el núcleo, solo 1.º básico |
 | `cleaning.py` | mixto | duplicados, conflictos, cruces y etiquetas son generales; las demás suponen cuadernos y español |
 | `proposals.py`, `corrections.py`, `doubts.py` | mecanismo genérico, reglas específicas | reconocen formas del español y los encabezados «Ejemplos resueltos» y «Ejercicios» |
+| `watch.py` | genérico | informe con título de 1.º básico |
+| `watch_escolar.py` | específico | páginas de objetivos de Currículum Nacional |
 | `cli.py` | genérico con valores por defecto | las rutas de informes apuntan a 1.º básico |
 | `verify_docs.py` | casi genérico | comprueba enlaces de documentos con nombre fijo |
 | `docs_diagram.py` | específico | título y posiciones del esquema de 1.º básico; las líneas nuevas se apilan solas |
@@ -247,13 +260,16 @@ Resolver esto es el primer trabajo antes de sumar datos de otro tipo.
 | `lpdatasets clean-mark-applied` | tras reexportar, registra lo aplicado, archiva o cierra lo resuelto y retira aceptaciones sobre textos cambiados |
 | `lpdatasets clean-doubts` | hoja de decisión de las dudas; con `--check` no escribe |
 | `lpdatasets clean-resolve-doubts` | registra la aprobación de las recomendaciones, sin aplicar |
+| `lpdatasets watch-baseline` | línea base de huellas desde la instantánea de la fuente |
+| `lpdatasets watch` | revisa las fuentes en línea; única orden que usa la red |
+| `lpdatasets watch-report` | informe de la última revisión; con `--check` no escribe |
 
-Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar` y `dataset-pack-nuevo`. Agentes: `extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos` y `limpiador-datos`. En este trabajo, las lecturas ciegas las hizo `verificador-independiente`; las propuestas se prepararon sin delegar en `limpiador-datos`, que sigue sin probarse en un lote real.
+Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar` y `dataset-pack-nuevo`. Agentes: `extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos`, `limpiador-datos` y `vigia-curricular`, este último propio del contenido educativo chileno y aún sin probarse como agente. En este trabajo, las lecturas ciegas las hizo `verificador-independiente`; las propuestas se prepararon sin delegar en `limpiador-datos`, que sigue sin probarse en un lote real.
 
 ## 9. Lo que no está hecho
 
 - Ninguna persona ha revisado el contenido.
 - Quedan 39 hallazgos pendientes: 20 de etiquetas (L03) y 19 cruces del dataset (L08).
-- Líneas L03 a L09 sin implementación nueva; ninguna modalidad real.
+- Líneas L03 y L05 a L09 sin implementación nueva; L04 solo vigila objetivos; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.

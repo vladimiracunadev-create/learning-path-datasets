@@ -102,7 +102,7 @@ Flujo: vigía → informe → **aprobación humana** → autor → verificador �
 | 3 | L05, L06 y L07 |
 | 4 | L08 y L09 |
 
-El estado de cada fase está en `lineas.json` y se ve en el esquema. El detalle propuesto para la siguiente está en el [plan de la fase 2](PLAN_FASE_2.md), pendiente de aprobación.
+El estado de cada fase está en `lineas.json` y se ve en el esquema. La fase 2 está en curso según su [plan](PLAN_FASE_2.md), aprobado el 2026-11-26.
 
 La fase 1 se cerró el 2026-11-26. L01 cumple su criterio. L02 dejó cada hallazgo resuelto, aceptado o asignado (20 a L03 y 19 a L08) y sigue `EXPERIMENTAL`: ninguna persona ha revisado el contenido. Cerrar una fase no cambia el estado de sus líneas.
 

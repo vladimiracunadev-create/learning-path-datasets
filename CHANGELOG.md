@@ -17,6 +17,7 @@
 - El titular aprobó esos 7: 1.073 hallazgos aceptados, 19 resueltos y 39 pendientes, todos de etiquetas (L03) o cruces (L08).
 - Fase 1 cerrada: el criterio sobre cruces pasa a L08 y las etiquetas quedan en L03. L02 sigue experimental, sin revisión humana.
 - Plan de la fase 2 (`docs/PLAN_FASE_2.md`), pendiente de aprobación; no incluye código nuevo.
+- Plan de la fase 2 aprobado. Vigía curricular (paso 2.1): órdenes `watch-baseline`, `watch` y `watch-report`, agente `vigia-curricular`; primera revisión con 237 objetivos sin cambios.
 - Documento de método (`docs/METODO.md`): lo realizado, sus fundamentos, cambios de criterio y cómo reutilizarlo; el CI exige que nombre cada módulo, script, orden, skill y agente.
 - Campo opcional `idioma` en el contrato `nucleo-0.1`.
 - El lector de la fuente busca el archivo de cada OA una sola vez; el dataset v1.0 no cambia.

@@ -33,7 +33,7 @@ Primero contenido propio. El material de terceros solo entra con licencia compat
 
 ## Cómo se ejecuta
 
-No implementado. Skills y agentes previstos: `investigador-fuentes`, `autor-contenido`, `extractor-conocimiento` y `verificador-independiente`. Vacíos medidos y pasos: [plan de la fase 2](../PLAN_FASE_2.md), pendiente de aprobación.
+No implementado. Skills y agentes previstos: `investigador-fuentes`, `autor-contenido`, `extractor-conocimiento` y `verificador-independiente`. Vacíos medidos y pasos: [plan de la fase 2](../PLAN_FASE_2.md), aprobado.
 
 ## Pruebas
 
@@ -54,5 +54,9 @@ El contenido creado con IA no tiene valor de revisión humana. No sustituye a do
 ## Decisiones
 
 - 2026-11-26: al cerrar la fase 1, los hallazgos de etiquetas pasan a esta línea.
+- 2026-11-26: lo nuevo vive en una capa de aportes de este repositorio; la fuente no se toca para agregarlo.
+- 2026-11-26: el piloto de etiquetas y creación es en Matemática.
+- 2026-11-26: las habilidades usan solo los objetivos de habilidad oficiales donde existen; en el resto se declaran sin cubrir.
+- 2026-11-26: el titular o un docente revisa una muestra de cada piloto.
 - 2026-11-26: quien verifica no es quien escribió.
 - 2026-11-26: las evaluaciones oficiales sirven de referencia; sus ítems no se copian.

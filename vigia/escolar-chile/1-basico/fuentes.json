@@ -1,0 +1,60 @@
+{
+ "fuentes": [
+  {
+   "id": "bases-1-6",
+   "titulo": "Bases Curriculares 1.º a 6.º básico",
+   "tipo": "oficial",
+   "metodo": "pagina",
+   "url": "https://www.curriculumnacional.cl/recursos/bases-curriculares-1-6-basico",
+   "nota": "respondió el 2026-11-26; su comprobación llega en el paso 2.2"
+  },
+  {
+   "id": "mineduc-noticias",
+   "titulo": "Noticias del Mineduc",
+   "tipo": "oficial",
+   "metodo": "canal",
+   "url": "https://www.mineduc.cl/feed/",
+   "nota": "el canal respondió el 2026-11-26 y su robots.txt respondió 403: confirmar condiciones antes de automatizar"
+  },
+  {
+   "id": "dia",
+   "titulo": "Diagnóstico Integral de Aprendizajes",
+   "tipo": "oficial",
+   "metodo": "pagina",
+   "url": "https://diagnosticointegral.agenciaeducacion.cl/",
+   "nota": "respondió el 2026-11-26; su comprobación llega en el paso 2.2"
+  },
+  {
+   "id": "ceppe",
+   "titulo": "CEPPE UC · actualización curricular",
+   "tipo": "academica",
+   "metodo": "pagina",
+   "url": "https://ceppe.uc.cl/index.php/inicio/noticias/1183-esto-no-es-un-fracaso-es-parte-del-proceso-actualizacion-curricular-sigue-su-curso-tras-observaciones-del-cned",
+   "nota": "contexto sobre la resolución de julio de 2025; no es fuente oficial"
+  },
+  {
+   "id": "cned",
+   "titulo": "Consejo Nacional de Educación",
+   "tipo": "oficial",
+   "metodo": "manual",
+   "url": "https://cned.cl/",
+   "nota": "rechazó la lectura automatizada el 2026-11-26"
+  },
+  {
+   "id": "ley-chile",
+   "titulo": "Biblioteca del Congreso Nacional · Ley Chile",
+   "tipo": "oficial",
+   "metodo": "manual",
+   "url": "https://www.bcn.cl/leychile/",
+   "nota": "sin confirmar cómo consultar normas de forma automatizada"
+  },
+  {
+   "id": "theclinic-2026-11-25",
+   "titulo": "The Clinic · propuesta de 1.º a 6.º (2026-11-25)",
+   "tipo": "prensa",
+   "metodo": "manual",
+   "url": "https://www.theclinic.cl/2026/11/25/desde-educacion-financiera-al-uso-de-ia-y-foco-en-fake-news-los-cambios-del-mineduc-para-actualizar-el-curriculum-escolar-de-1-a-6-basico/",
+   "nota": "rechazó la lectura automatizada el 2026-11-26"
+  }
+ ]
+}

@@ -1,0 +1,1294 @@
+{
+ "origen": {
+  "repo": "vladimiracunadev-create/chilean-school-learning-path",
+  "commit": "b3647111142be767140a9453671c145c5ff27317",
+  "ruta": "sources/mineduc-curriculum-snapshot.json",
+  "verificado": "2026-09-24"
+ },
+ "fuentes": [
+  {
+   "id": "oa:artes-visuales",
+   "titulo": "Objetivos · Artes Visuales",
+   "tipo": "oficial",
+   "asignatura": "artes-visuales",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/artes-visuales/1-basico",
+   "objetivos": [
+    {
+     "codigo": "AR01 OA 01",
+     "huella": "ebaaa83c64c83a6b",
+     "huella_sin_forma": "de21f714cafd2c52"
+    },
+    {
+     "codigo": "AR01 OA 02",
+     "huella": "7fffe109567ec71d",
+     "huella_sin_forma": "74040ee8e72cf619"
+    },
+    {
+     "codigo": "AR01 OA 03",
+     "huella": "05272a24b046662a",
+     "huella_sin_forma": "b6ff001777ade23b"
+    },
+    {
+     "codigo": "AR01 OA 04",
+     "huella": "0700801ac12318bf",
+     "huella_sin_forma": "62397e2d218e046a"
+    },
+    {
+     "codigo": "AR01 OA 05",
+     "huella": "8a791aa49b26c4e8",
+     "huella_sin_forma": "db6a4465f1c41a4e"
+    },
+    {
+     "codigo": "de Actitud AR01 OAA A",
+     "huella": "abe3d3970f48b589",
+     "huella_sin_forma": "590fb4d600e8452a"
+    },
+    {
+     "codigo": "de Actitud AR01 OAA B",
+     "huella": "5745bc84ad704f8f",
+     "huella_sin_forma": "d4c32a9a9532208e"
+    },
+    {
+     "codigo": "de Actitud AR01 OAA C",
+     "huella": "93158afddec98ef8",
+     "huella_sin_forma": "ac480602858807a2"
+    },
+    {
+     "codigo": "de Actitud AR01 OAA D",
+     "huella": "506a831bf55116a8",
+     "huella_sin_forma": "34af545871be6217"
+    },
+    {
+     "codigo": "de Actitud AR01 OAA E",
+     "huella": "8a3071b6d6fe690e",
+     "huella_sin_forma": "8f0dbd59e206e0cd"
+    },
+    {
+     "codigo": "de Actitud AR01 OAA F",
+     "huella": "a5eeb256fdc3554f",
+     "huella_sin_forma": "aa5ec57149fab379"
+    },
+    {
+     "codigo": "de Actitud AR01 OAA G",
+     "huella": "e55f5519ab5ee3b8",
+     "huella_sin_forma": "8d9021078960c9e9"
+    }
+   ]
+  },
+  {
+   "id": "oa:ciencias-naturales",
+   "titulo": "Objetivos · Ciencias Naturales",
+   "tipo": "oficial",
+   "asignatura": "ciencias-naturales",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/ciencias-naturales/1-basico",
+   "objetivos": [
+    {
+     "codigo": "CN01 OA 01",
+     "huella": "73cf8a71b42fb685",
+     "huella_sin_forma": "d75698b3b6b8071c"
+    },
+    {
+     "codigo": "CN01 OA 02",
+     "huella": "3ab0671b640afd57",
+     "huella_sin_forma": "3d6932d2bf8a7438"
+    },
+    {
+     "codigo": "CN01 OA 03",
+     "huella": "2890a1c38f440c41",
+     "huella_sin_forma": "0c95a020404a04df"
+    },
+    {
+     "codigo": "CN01 OA 04",
+     "huella": "a032091be8372d40",
+     "huella_sin_forma": "6a12068119521cfc"
+    },
+    {
+     "codigo": "CN01 OA 05",
+     "huella": "ba4b77ae0fbe0774",
+     "huella_sin_forma": "67825bcf679fba24"
+    },
+    {
+     "codigo": "CN01 OA 06",
+     "huella": "6b353ec7c24dbb67",
+     "huella_sin_forma": "abf60bf4b626ae81"
+    },
+    {
+     "codigo": "CN01 OA 07",
+     "huella": "6385f72248c58004",
+     "huella_sin_forma": "780b5a0a21e86ab6"
+    },
+    {
+     "codigo": "CN01 OA 08",
+     "huella": "3581354b1892c2cb",
+     "huella_sin_forma": "2553ed9d96484952"
+    },
+    {
+     "codigo": "CN01 OA 09",
+     "huella": "07b96dc3d52e2d26",
+     "huella_sin_forma": "30bae01d1a57f6c0"
+    },
+    {
+     "codigo": "CN01 OA 10",
+     "huella": "865d2d05022a41ca",
+     "huella_sin_forma": "4514b3262cc5b38e"
+    },
+    {
+     "codigo": "CN01 OA 11",
+     "huella": "d7908eedabc43571",
+     "huella_sin_forma": "ed3a94245376bffd"
+    },
+    {
+     "codigo": "CN01 OA 12",
+     "huella": "0d0b7a562411f10c",
+     "huella_sin_forma": "e9a9c0ae1ac613e1"
+    },
+    {
+     "codigo": "de Actitud CN01 OAA A",
+     "huella": "972e164c8e804a09",
+     "huella_sin_forma": "8efd60eba3420cd9"
+    },
+    {
+     "codigo": "de Actitud CN01 OAA B",
+     "huella": "fc32b281f8c19120",
+     "huella_sin_forma": "405639a1ef3640d2"
+    },
+    {
+     "codigo": "de Actitud CN01 OAA C",
+     "huella": "7e868eb67a8ea048",
+     "huella_sin_forma": "80e027582e35cca0"
+    },
+    {
+     "codigo": "de Actitud CN01 OAA D",
+     "huella": "ebe8b8838823cb7e",
+     "huella_sin_forma": "a6da345a435d1a83"
+    },
+    {
+     "codigo": "de Actitud CN01 OAA E",
+     "huella": "37e2374c40c64cf6",
+     "huella_sin_forma": "bb43e5c9e23dfda7"
+    },
+    {
+     "codigo": "de Actitud CN01 OAA F",
+     "huella": "4bdf6cc94a2cce6f",
+     "huella_sin_forma": "d98b60b5f0ae6d57"
+    },
+    {
+     "codigo": "de Habilidad CN01 OAH a",
+     "huella": "56fd3f3a4e1fe4f2",
+     "huella_sin_forma": "5e4d81b7cf4db553"
+    },
+    {
+     "codigo": "de Habilidad CN01 OAH b",
+     "huella": "b8bac19578df4316",
+     "huella_sin_forma": "683fb386c9d19d60"
+    },
+    {
+     "codigo": "de Habilidad CN01 OAH c",
+     "huella": "cb7a6d591c17cfef",
+     "huella_sin_forma": "d772ec37c6b13c3f"
+    },
+    {
+     "codigo": "de Habilidad CN01 OAH d",
+     "huella": "5d141c20b5dbeea6",
+     "huella_sin_forma": "7e7cc5c4645d9ce0"
+    }
+   ]
+  },
+  {
+   "id": "oa:educacion-fisica-salud",
+   "titulo": "Objetivos · Educación Física y Salud",
+   "tipo": "oficial",
+   "asignatura": "educacion-fisica-salud",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/educacion-fisica-salud/1-basico",
+   "objetivos": [
+    {
+     "codigo": "EF01 OA 01",
+     "huella": "267124826b0b9287",
+     "huella_sin_forma": "34612c4ca1d3756e"
+    },
+    {
+     "codigo": "EF01 OA 02",
+     "huella": "50414d6064e01815",
+     "huella_sin_forma": "275159cf52e5826a"
+    },
+    {
+     "codigo": "EF01 OA 03",
+     "huella": "63af53012f9e7654",
+     "huella_sin_forma": "37b871c7cafc6aee"
+    },
+    {
+     "codigo": "EF01 OA 04",
+     "huella": "cc10bb5b4e89555c",
+     "huella_sin_forma": "41ea74df2fb9a883"
+    },
+    {
+     "codigo": "EF01 OA 05",
+     "huella": "5d05554e6355a193",
+     "huella_sin_forma": "d26b7694e7c9b444"
+    },
+    {
+     "codigo": "EF01 OA 06",
+     "huella": "1936e3b8dcc206fa",
+     "huella_sin_forma": "9788d9ac4b4b2d45"
+    },
+    {
+     "codigo": "EF01 OA 07",
+     "huella": "cbafe241cbe8687a",
+     "huella_sin_forma": "d8586032a0803bd3"
+    },
+    {
+     "codigo": "EF01 OA 08",
+     "huella": "5c20c91736076918",
+     "huella_sin_forma": "3a01c8990a5269af"
+    },
+    {
+     "codigo": "EF01 OA 09",
+     "huella": "19177f4ebf334fe8",
+     "huella_sin_forma": "4f49e35184c5c62c"
+    },
+    {
+     "codigo": "EF01 OA 10",
+     "huella": "81ceff9b75dc705b",
+     "huella_sin_forma": "0d1dc286d65f910c"
+    },
+    {
+     "codigo": "EF01 OA 11",
+     "huella": "8dda5fb932535655",
+     "huella_sin_forma": "6e08f78293742a41"
+    },
+    {
+     "codigo": "de Actitud EF01 OAA A",
+     "huella": "e59afe4374723c45",
+     "huella_sin_forma": "929bf653b858ace0"
+    },
+    {
+     "codigo": "de Actitud EF01 OAA B",
+     "huella": "ffab235821a276f3",
+     "huella_sin_forma": "438926841a6ac3eb"
+    },
+    {
+     "codigo": "de Actitud EF01 OAA C",
+     "huella": "d63047f8df9352a7",
+     "huella_sin_forma": "2d71e746ea8db6af"
+    },
+    {
+     "codigo": "de Actitud EF01 OAA D",
+     "huella": "01aac7a312cf283d",
+     "huella_sin_forma": "84e3133f0ddc4568"
+    },
+    {
+     "codigo": "de Actitud EF01 OAA E",
+     "huella": "10fc29a66104cbb2",
+     "huella_sin_forma": "7bce89dcc492875a"
+    },
+    {
+     "codigo": "de Actitud EF01 OAA F",
+     "huella": "dbc045df993be575",
+     "huella_sin_forma": "62e1f9c6075cc394"
+    },
+    {
+     "codigo": "de Actitud EF01 OAA G",
+     "huella": "8a3071b6d6fe690e",
+     "huella_sin_forma": "8f0dbd59e206e0cd"
+    },
+    {
+     "codigo": "de Actitud EF01 OAA H",
+     "huella": "1cf746bfa9b5cd29",
+     "huella_sin_forma": "59c7c13e86e982f3"
+    }
+   ]
+  },
+  {
+   "id": "oa:historia-geografia-ciencias-sociales",
+   "titulo": "Objetivos · Historia, Geografía y Ciencias Sociales",
+   "tipo": "oficial",
+   "asignatura": "historia-geografia-ciencias-sociales",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/historia-geografia-ciencias-sociales/1-basico",
+   "objetivos": [
+    {
+     "codigo": "HI01 OA 01",
+     "huella": "0c13a3e68566edf9",
+     "huella_sin_forma": "5e93190a2a76d999"
+    },
+    {
+     "codigo": "HI01 OA 02",
+     "huella": "19f7ed7d215ab15d",
+     "huella_sin_forma": "94b0f5fbe2c59eba"
+    },
+    {
+     "codigo": "HI01 OA 03",
+     "huella": "9809fe2c41c23813",
+     "huella_sin_forma": "a7f9c460356b999e"
+    },
+    {
+     "codigo": "HI01 OA 04",
+     "huella": "55081f081170ec7f",
+     "huella_sin_forma": "5fab49e7410af753"
+    },
+    {
+     "codigo": "HI01 OA 05",
+     "huella": "b0362ff1ce6eb898",
+     "huella_sin_forma": "b69e9d6f8c3b5771"
+    },
+    {
+     "codigo": "HI01 OA 06",
+     "huella": "9201423cc24bb3f8",
+     "huella_sin_forma": "1e787011be7ce1fb"
+    },
+    {
+     "codigo": "HI01 OA 07",
+     "huella": "f43ab7b3519d7cf3",
+     "huella_sin_forma": "b5b28121a9b47a45"
+    },
+    {
+     "codigo": "HI01 OA 08",
+     "huella": "368327cebbfb3054",
+     "huella_sin_forma": "af17295e0eec9d8a"
+    },
+    {
+     "codigo": "HI01 OA 09",
+     "huella": "7b0cda89676b58a9",
+     "huella_sin_forma": "3fd52825868f5355"
+    },
+    {
+     "codigo": "HI01 OA 10",
+     "huella": "9c45cd9fdea2afd5",
+     "huella_sin_forma": "1c4f20e9405ad5d0"
+    },
+    {
+     "codigo": "HI01 OA 11",
+     "huella": "adee721809c3d994",
+     "huella_sin_forma": "5756d2783e7cb0f2"
+    },
+    {
+     "codigo": "HI01 OA 12",
+     "huella": "690f74907a8eb363",
+     "huella_sin_forma": "78ada13ecca0207c"
+    },
+    {
+     "codigo": "HI01 OA 13",
+     "huella": "9e5f13d09d1d2b4f",
+     "huella_sin_forma": "ce900899f19e82a0"
+    },
+    {
+     "codigo": "HI01 OA 14",
+     "huella": "25c0dde9243ae098",
+     "huella_sin_forma": "9173c3c9b321ccc1"
+    },
+    {
+     "codigo": "HI01 OA 15",
+     "huella": "67c8a3a8eb300a13",
+     "huella_sin_forma": "1b1deea6ff8b7fa7"
+    },
+    {
+     "codigo": "de Actitud HI01 OAA A",
+     "huella": "d23b388543c67566",
+     "huella_sin_forma": "573074b361dbafaf"
+    },
+    {
+     "codigo": "de Actitud HI01 OAA B",
+     "huella": "5ab79980a759626c",
+     "huella_sin_forma": "336775dca2ea28cb"
+    },
+    {
+     "codigo": "de Actitud HI01 OAA C",
+     "huella": "a16dc4f267847023",
+     "huella_sin_forma": "653d24fb8292dbf5"
+    },
+    {
+     "codigo": "de Actitud HI01 OAA D",
+     "huella": "990530ae54b136ec",
+     "huella_sin_forma": "9162a6c0d5ff92c5"
+    },
+    {
+     "codigo": "de Actitud HI01 OAA E",
+     "huella": "1601796e53ad57c2",
+     "huella_sin_forma": "03ce2453f5e34586"
+    },
+    {
+     "codigo": "de Actitud HI01 OAA F",
+     "huella": "b4991fad95c0e60c",
+     "huella_sin_forma": "52d3baff42dfd3f0"
+    },
+    {
+     "codigo": "de Actitud HI01 OAA G",
+     "huella": "755100e394db14ff",
+     "huella_sin_forma": "7fd6575a2acea386"
+    },
+    {
+     "codigo": "de Actitud HI01 OAA H",
+     "huella": "8ef89097e2fbcc90",
+     "huella_sin_forma": "ec1e02bc53e4ea3f"
+    },
+    {
+     "codigo": "de Actitud HI01 OAA I",
+     "huella": "e6984cae9dbabc74",
+     "huella_sin_forma": "b927f16c1d519a1f"
+    },
+    {
+     "codigo": "de Habilidad HI01 OAH a",
+     "huella": "c1c42bbc4d9c4a4e",
+     "huella_sin_forma": "3240b898cb6db757"
+    },
+    {
+     "codigo": "de Habilidad HI01 OAH b",
+     "huella": "2939bdabdafd2295",
+     "huella_sin_forma": "41f06995d428cc6d"
+    },
+    {
+     "codigo": "de Habilidad HI01 OAH c",
+     "huella": "c141c0a7558d59c3",
+     "huella_sin_forma": "dcd108276a4904db"
+    },
+    {
+     "codigo": "de Habilidad HI01 OAH d",
+     "huella": "dfe6acb67ab3e81e",
+     "huella_sin_forma": "19b2baba3dc7ccf2"
+    },
+    {
+     "codigo": "de Habilidad HI01 OAH e",
+     "huella": "462370b7e705dad2",
+     "huella_sin_forma": "b5379b5bf7fefd10"
+    },
+    {
+     "codigo": "de Habilidad HI01 OAH f",
+     "huella": "14eb6ec8745fc30c",
+     "huella_sin_forma": "d6acfb0be53dab62"
+    },
+    {
+     "codigo": "de Habilidad HI01 OAH g",
+     "huella": "c5664ae170f26e1b",
+     "huella_sin_forma": "a752e8e7bc07c960"
+    }
+   ]
+  },
+  {
+   "id": "oa:ingles-propuesta",
+   "titulo": "Objetivos · Inglés (Propuesta)",
+   "tipo": "oficial",
+   "asignatura": "ingles-propuesta",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/ingles-propuesta/1-basico",
+   "objetivos": [
+    {
+     "codigo": "EN01 OA 01",
+     "huella": "eeba727b242d2d1c",
+     "huella_sin_forma": "3d6ea083a2b0c317"
+    },
+    {
+     "codigo": "EN01 OA 02",
+     "huella": "92fc815074ed65d0",
+     "huella_sin_forma": "62fec3857c93df83"
+    },
+    {
+     "codigo": "EN01 OA 03",
+     "huella": "af6a5827812a0375",
+     "huella_sin_forma": "7fb9ab8f208c3182"
+    },
+    {
+     "codigo": "EN01 OA 04",
+     "huella": "02a8a8afa936e65e",
+     "huella_sin_forma": "b261d1868505cbb3"
+    },
+    {
+     "codigo": "EN01 OA 05",
+     "huella": "eb5dd9c324507e1a",
+     "huella_sin_forma": "3ebff3b483e34cb5"
+    },
+    {
+     "codigo": "EN01 OA 06",
+     "huella": "e8327dc575923797",
+     "huella_sin_forma": "ef77a450b271627b"
+    },
+    {
+     "codigo": "EN01 OA 07",
+     "huella": "d0e6b6e94a49fa7f",
+     "huella_sin_forma": "bfbb271de956ba45"
+    },
+    {
+     "codigo": "EN01 OA 08",
+     "huella": "1aaabd75167a822e",
+     "huella_sin_forma": "fb62961b8a3a54f7"
+    },
+    {
+     "codigo": "EN01 OA 09",
+     "huella": "70e4a162b860bcd4",
+     "huella_sin_forma": "2693970636b28e9c"
+    },
+    {
+     "codigo": "EN01 OA 10",
+     "huella": "73e050ea47dace96",
+     "huella_sin_forma": "d60c4b0e115daa0f"
+    },
+    {
+     "codigo": "EN01 OA 11",
+     "huella": "830dcaf0ea83091c",
+     "huella_sin_forma": "864c9febf3978f3a"
+    },
+    {
+     "codigo": "EN01 OA 12",
+     "huella": "ef926e6f4a26b240",
+     "huella_sin_forma": "9468f31704a4a31a"
+    },
+    {
+     "codigo": "EN01 OA 13",
+     "huella": "c7b7402a37442603",
+     "huella_sin_forma": "8859c177449cc727"
+    },
+    {
+     "codigo": "EN01 OA 14",
+     "huella": "d057a62ba6920f81",
+     "huella_sin_forma": "2aeb1ee111d12c10"
+    },
+    {
+     "codigo": "de Actitud EN01 OAA A",
+     "huella": "e245a4206aaa6e56",
+     "huella_sin_forma": "28455df07f4cee4c"
+    },
+    {
+     "codigo": "de Actitud EN01 OAA B",
+     "huella": "e042490e3c424705",
+     "huella_sin_forma": "62be6758072d9098"
+    },
+    {
+     "codigo": "de Actitud EN01 OAA C",
+     "huella": "6afe82e7e871c07c",
+     "huella_sin_forma": "9e3461fc01a7de85"
+    },
+    {
+     "codigo": "de Actitud EN01 OAA D",
+     "huella": "350e9a1e15201eac",
+     "huella_sin_forma": "6e7952af669374f0"
+    }
+   ]
+  },
+  {
+   "id": "oa:lengua-cultura-pueblos-originarios-ancestrales",
+   "titulo": "Objetivos · Lengua y Cultura de los Pueblos Originarios Ancestrales",
+   "tipo": "oficial",
+   "asignatura": "lengua-cultura-pueblos-originarios-ancestrales",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/lengua-cultura-pueblos-originarios-ancestrales/1-basico",
+   "objetivos": [
+    {
+     "codigo": "LC01 OA 07",
+     "huella": "1fef760eb47a893b",
+     "huella_sin_forma": "093132890ee8b5cf"
+    },
+    {
+     "codigo": "LC01 OA 08",
+     "huella": "c0a744c8f46d5ab6",
+     "huella_sin_forma": "628aea2c21ae0a83"
+    },
+    {
+     "codigo": "LC01 OA 09",
+     "huella": "9d414c7269abd897",
+     "huella_sin_forma": "2037fc32429fdc6f"
+    },
+    {
+     "codigo": "LC01 OA 10",
+     "huella": "700f8aa43b1da019",
+     "huella_sin_forma": "8d04f1e2f619c080"
+    },
+    {
+     "codigo": "LC01 OA 11",
+     "huella": "53f00486c1e922c1",
+     "huella_sin_forma": "308ca6ae685545f0"
+    },
+    {
+     "codigo": "LC01 OA 12",
+     "huella": "515082e7a277f836",
+     "huella_sin_forma": "6816793624bd641a"
+    },
+    {
+     "codigo": "LC01 OA 13",
+     "huella": "c3b4d19f22f5a05a",
+     "huella_sin_forma": "f519be17bfeef389"
+    },
+    {
+     "codigo": "LC01 OA 14",
+     "huella": "e8ae6e80d2b92a2e",
+     "huella_sin_forma": "eab1a84eb08922b9"
+    },
+    {
+     "codigo": "LC01 OA 15",
+     "huella": "c3b3f010409982b4",
+     "huella_sin_forma": "f40468a5bc67c0b1"
+    },
+    {
+     "codigo": "LC01 OA 16",
+     "huella": "c00f71cf79c053a4",
+     "huella_sin_forma": "1a3a61a5fe645b59"
+    },
+    {
+     "codigo": "LC01 OA 17",
+     "huella": "528823c5301d918f",
+     "huella_sin_forma": "a9aa514cc68d54ec"
+    },
+    {
+     "codigo": "LC01 OA LF01",
+     "huella": "d83384fd3eac2008",
+     "huella_sin_forma": "bf85ab65a5ef73bc"
+    },
+    {
+     "codigo": "LC01 OA LF02",
+     "huella": "c71e9dc6187375e8",
+     "huella_sin_forma": "85e4169a726c7237"
+    },
+    {
+     "codigo": "LC01 OA LF03",
+     "huella": "d9ce35e1137fc068",
+     "huella_sin_forma": "c594d366b777278c"
+    },
+    {
+     "codigo": "LC01 OA LF04",
+     "huella": "068503cca652b39c",
+     "huella_sin_forma": "4f5e8b1ca963db37"
+    },
+    {
+     "codigo": "LC01 OA LF05",
+     "huella": "a6e49e7cd4c5794f",
+     "huella_sin_forma": "0443c4acc350c581"
+    },
+    {
+     "codigo": "LC01 OA LF06",
+     "huella": "edc3e0993fc3597c",
+     "huella_sin_forma": "ac8bb6558a2ea550"
+    },
+    {
+     "codigo": "LC01 OA LR01",
+     "huella": "cf68fa204bae8bfc",
+     "huella_sin_forma": "01009a8ba2d5c6d4"
+    },
+    {
+     "codigo": "LC01 OA LR02",
+     "huella": "fa8da6f7e216c44d",
+     "huella_sin_forma": "c2cabde1e64a82ee"
+    },
+    {
+     "codigo": "LC01 OA LR03",
+     "huella": "e56631d408eabae5",
+     "huella_sin_forma": "496fd40dc992a582"
+    },
+    {
+     "codigo": "LC01 OA LR04",
+     "huella": "71b2246217e0940a",
+     "huella_sin_forma": "1c81140ae317856f"
+    },
+    {
+     "codigo": "LC01 OA LR05",
+     "huella": "a6e49e7cd4c5794f",
+     "huella_sin_forma": "0443c4acc350c581"
+    },
+    {
+     "codigo": "LC01 OA LR06",
+     "huella": "7a4797e29f50754f",
+     "huella_sin_forma": "261491baedb2785c"
+    },
+    {
+     "codigo": "LC01 OA LS01",
+     "huella": "957ee003b573c330",
+     "huella_sin_forma": "d7fcc88a252ab766"
+    },
+    {
+     "codigo": "LC01 OA LS02",
+     "huella": "5e2e0d3bfe59227c",
+     "huella_sin_forma": "88f8803db86eeb30"
+    },
+    {
+     "codigo": "LC01 OA LS03",
+     "huella": "6b694454bb0cacf6",
+     "huella_sin_forma": "007b55698f929551"
+    },
+    {
+     "codigo": "LC01 OA LS04",
+     "huella": "51d0a6e3ee11f1fd",
+     "huella_sin_forma": "95f2d1d6809c2089"
+    },
+    {
+     "codigo": "LC01 OA LS05",
+     "huella": "a6e49e7cd4c5794f",
+     "huella_sin_forma": "0443c4acc350c581"
+    },
+    {
+     "codigo": "LC01 OA LS06",
+     "huella": "6cb58fed299ff9fd",
+     "huella_sin_forma": "04e038a28b18d697"
+    },
+    {
+     "codigo": "de Actitud LC01 OAA A",
+     "huella": "04ed83128140a671",
+     "huella_sin_forma": "0b2727905ff9783e"
+    },
+    {
+     "codigo": "de Actitud LC01 OAA B",
+     "huella": "6cffbe7e1b350edc",
+     "huella_sin_forma": "46c6ee773690d13b"
+    },
+    {
+     "codigo": "de Actitud LC01 OAA C",
+     "huella": "90c5f3acb5e458ec",
+     "huella_sin_forma": "6d75e263f2703921"
+    },
+    {
+     "codigo": "de Actitud LC01 OAA D",
+     "huella": "96f2d0abaa300608",
+     "huella_sin_forma": "a7aa88b67503e056"
+    }
+   ]
+  },
+  {
+   "id": "oa:lenguaje-comunicacion",
+   "titulo": "Objetivos · Lenguaje y Comunicación",
+   "tipo": "oficial",
+   "asignatura": "lenguaje-comunicacion",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/lenguaje-comunicacion/1-basico",
+   "objetivos": [
+    {
+     "codigo": "LE01 OA 01",
+     "huella": "291e31e85f08c626",
+     "huella_sin_forma": "bccb7e0dde34063e"
+    },
+    {
+     "codigo": "LE01 OA 02",
+     "huella": "c027ea0d087d5458",
+     "huella_sin_forma": "5d90ac3cbbf2f70c"
+    },
+    {
+     "codigo": "LE01 OA 03",
+     "huella": "33d8bdf767a2c462",
+     "huella_sin_forma": "58c2a745113131b1"
+    },
+    {
+     "codigo": "LE01 OA 04",
+     "huella": "214cc1ab109ce70a",
+     "huella_sin_forma": "25cfe9756489026d"
+    },
+    {
+     "codigo": "LE01 OA 05",
+     "huella": "bbde620de38cd169",
+     "huella_sin_forma": "cb8fe493ce5e5dea"
+    },
+    {
+     "codigo": "LE01 OA 06",
+     "huella": "32104488f99d47f5",
+     "huella_sin_forma": "d07f696a6bb687a2"
+    },
+    {
+     "codigo": "LE01 OA 07",
+     "huella": "766ea67bc4b6f8ac",
+     "huella_sin_forma": "4c5fafac79816932"
+    },
+    {
+     "codigo": "LE01 OA 08",
+     "huella": "aa6ceecd88bf656d",
+     "huella_sin_forma": "6a1c419c44159b82"
+    },
+    {
+     "codigo": "LE01 OA 09",
+     "huella": "9df3cf96bd44e7d1",
+     "huella_sin_forma": "63e3de947855384f"
+    },
+    {
+     "codigo": "LE01 OA 10",
+     "huella": "c92323aaff6f580e",
+     "huella_sin_forma": "9c71545de3a00610"
+    },
+    {
+     "codigo": "LE01 OA 11",
+     "huella": "cb8e4c82f132033b",
+     "huella_sin_forma": "cf523c43f246202c"
+    },
+    {
+     "codigo": "LE01 OA 12",
+     "huella": "6da50f76f8ff1378",
+     "huella_sin_forma": "c7204f5c16114bd9"
+    },
+    {
+     "codigo": "LE01 OA 13",
+     "huella": "87bcea54939990bb",
+     "huella_sin_forma": "3ffc222c14e3c2f0"
+    },
+    {
+     "codigo": "LE01 OA 14",
+     "huella": "4ef6dc8a8b5a9c4b",
+     "huella_sin_forma": "8a6875f1ba2b1b56"
+    },
+    {
+     "codigo": "LE01 OA 15",
+     "huella": "c2be939997196fbb",
+     "huella_sin_forma": "9dda2420dc9606e8"
+    },
+    {
+     "codigo": "LE01 OA 16",
+     "huella": "0cb8be3f12eaccc1",
+     "huella_sin_forma": "d3cc8847c618c19c"
+    },
+    {
+     "codigo": "LE01 OA 17",
+     "huella": "464d521e77b49b1c",
+     "huella_sin_forma": "0e9020fdf83ef0a3"
+    },
+    {
+     "codigo": "LE01 OA 18",
+     "huella": "1a258d5136e48202",
+     "huella_sin_forma": "9f9eb6da92d5706b"
+    },
+    {
+     "codigo": "LE01 OA 19",
+     "huella": "015221b259d8ab4a",
+     "huella_sin_forma": "a925a486fe279d44"
+    },
+    {
+     "codigo": "LE01 OA 20",
+     "huella": "d3f859b476d4a898",
+     "huella_sin_forma": "81fbc85040907e68"
+    },
+    {
+     "codigo": "LE01 OA 21",
+     "huella": "8c9d04a99af072a5",
+     "huella_sin_forma": "087489873b1e4f2f"
+    },
+    {
+     "codigo": "LE01 OA 22",
+     "huella": "95b42bc3239427db",
+     "huella_sin_forma": "ac69eabff602a77a"
+    },
+    {
+     "codigo": "LE01 OA 23",
+     "huella": "24df30f2561637dc",
+     "huella_sin_forma": "e4aec0bdb1208328"
+    },
+    {
+     "codigo": "LE01 OA 24",
+     "huella": "22b0cac25a4b1c52",
+     "huella_sin_forma": "2ddd2f80102200dd"
+    },
+    {
+     "codigo": "LE01 OA 25",
+     "huella": "c261417902ba500e",
+     "huella_sin_forma": "13f718c65aeffcf8"
+    },
+    {
+     "codigo": "LE01 OA 26",
+     "huella": "43ae6f65969db30f",
+     "huella_sin_forma": "208f6fe8074c2324"
+    },
+    {
+     "codigo": "de Actitud LE01 OAA A",
+     "huella": "4cf0f65fdaee49b7",
+     "huella_sin_forma": "cd38edc07fdcb577"
+    },
+    {
+     "codigo": "de Actitud LE01 OAA B",
+     "huella": "f068550f9023307c",
+     "huella_sin_forma": "18a8a80372903060"
+    },
+    {
+     "codigo": "de Actitud LE01 OAA C",
+     "huella": "f44368003d90f405",
+     "huella_sin_forma": "957d32817761eb6b"
+    },
+    {
+     "codigo": "de Actitud LE01 OAA D",
+     "huella": "0de507de47ed55c3",
+     "huella_sin_forma": "2642db6492d77d25"
+    },
+    {
+     "codigo": "de Actitud LE01 OAA E",
+     "huella": "29561ca3ee540b33",
+     "huella_sin_forma": "29d70280c480a3a7"
+    },
+    {
+     "codigo": "de Actitud LE01 OAA F",
+     "huella": "644de56ade26ea60",
+     "huella_sin_forma": "0faef530dcf909c4"
+    },
+    {
+     "codigo": "de Actitud LE01 OAA G",
+     "huella": "797ba36f5349c84f",
+     "huella_sin_forma": "4447caf5fcec3fea"
+    }
+   ]
+  },
+  {
+   "id": "oa:matematica",
+   "titulo": "Objetivos · Matemática",
+   "tipo": "oficial",
+   "asignatura": "matematica",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/matematica/1-basico",
+   "objetivos": [
+    {
+     "codigo": "MA01 OA 01",
+     "huella": "1d3fc1a467d1bf74",
+     "huella_sin_forma": "2bc8393e35d5fc2c"
+    },
+    {
+     "codigo": "MA01 OA 02",
+     "huella": "1d8091f39d19d519",
+     "huella_sin_forma": "20e2a1b1a5630b26"
+    },
+    {
+     "codigo": "MA01 OA 03",
+     "huella": "c6f22301dddead0e",
+     "huella_sin_forma": "929f91f67d04c98d"
+    },
+    {
+     "codigo": "MA01 OA 04",
+     "huella": "4419ad161986f3d2",
+     "huella_sin_forma": "971d0b9bfa0cdbb4"
+    },
+    {
+     "codigo": "MA01 OA 05",
+     "huella": "54e527b82d9304c3",
+     "huella_sin_forma": "a1b41a739fabb50a"
+    },
+    {
+     "codigo": "MA01 OA 06",
+     "huella": "c7f8ff493e652e58",
+     "huella_sin_forma": "bac6603b21512ce7"
+    },
+    {
+     "codigo": "MA01 OA 07",
+     "huella": "b1c23a9ec1c78873",
+     "huella_sin_forma": "2d492f39634f125a"
+    },
+    {
+     "codigo": "MA01 OA 08",
+     "huella": "12bffc706956389f",
+     "huella_sin_forma": "38fef5d36b4009e0"
+    },
+    {
+     "codigo": "MA01 OA 09",
+     "huella": "b50f772f9a5c1882",
+     "huella_sin_forma": "79ac8ca0ad74d50b"
+    },
+    {
+     "codigo": "MA01 OA 10",
+     "huella": "d2110147ab867349",
+     "huella_sin_forma": "388fdef79c15101b"
+    },
+    {
+     "codigo": "MA01 OA 11",
+     "huella": "cfa08ce38c588365",
+     "huella_sin_forma": "c7f3423c28611acc"
+    },
+    {
+     "codigo": "MA01 OA 12",
+     "huella": "12371b334230796f",
+     "huella_sin_forma": "fbd37e94d09bee85"
+    },
+    {
+     "codigo": "MA01 OA 13",
+     "huella": "7c962e9ca051917c",
+     "huella_sin_forma": "01476387125b54e9"
+    },
+    {
+     "codigo": "MA01 OA 14",
+     "huella": "676d45ae800b9c73",
+     "huella_sin_forma": "031cda7f8eaa7ec6"
+    },
+    {
+     "codigo": "MA01 OA 15",
+     "huella": "09db3b1d3e0766a3",
+     "huella_sin_forma": "0a4c7c1563db12e0"
+    },
+    {
+     "codigo": "MA01 OA 16",
+     "huella": "9324b11645467c28",
+     "huella_sin_forma": "e713ca052ead6af8"
+    },
+    {
+     "codigo": "MA01 OA 17",
+     "huella": "2a6cb617c27eb19d",
+     "huella_sin_forma": "7d2c4f8a24846fe8"
+    },
+    {
+     "codigo": "MA01 OA 18",
+     "huella": "8bf34455dbbd4e74",
+     "huella_sin_forma": "f55e85768182d418"
+    },
+    {
+     "codigo": "MA01 OA 19",
+     "huella": "8b909a683a5433b8",
+     "huella_sin_forma": "80dccfc04bcb8280"
+    },
+    {
+     "codigo": "MA01 OA 20",
+     "huella": "8765c586d2c8a711",
+     "huella_sin_forma": "c10c7e495f5a6fc5"
+    },
+    {
+     "codigo": "de Actitud MA01 OAA A",
+     "huella": "589ce408a8e6058f",
+     "huella_sin_forma": "45ea40299e90635d"
+    },
+    {
+     "codigo": "de Actitud MA01 OAA B",
+     "huella": "b80de745fd07a9d7",
+     "huella_sin_forma": "092ca96cc4d08d97"
+    },
+    {
+     "codigo": "de Actitud MA01 OAA C",
+     "huella": "680a20184b170042",
+     "huella_sin_forma": "506f9297706a1c10"
+    },
+    {
+     "codigo": "de Actitud MA01 OAA D",
+     "huella": "16e0d20b38c3579d",
+     "huella_sin_forma": "f34efedc251ec36b"
+    },
+    {
+     "codigo": "de Actitud MA01 OAA E",
+     "huella": "fe6d707c8b656ded",
+     "huella_sin_forma": "e2a4ef6d00c4c63b"
+    },
+    {
+     "codigo": "de Actitud MA01 OAA F",
+     "huella": "c6d0e0a592a5e0d0",
+     "huella_sin_forma": "91091ef621db3653"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH a",
+     "huella": "c8c8229345053be6",
+     "huella_sin_forma": "5e06254484738a5b"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH b",
+     "huella": "7f488df8203e06cd",
+     "huella_sin_forma": "51fdf4b93b6d32fb"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH c",
+     "huella": "4eeca34e02f926be",
+     "huella_sin_forma": "73f4c6bf5c8ff8be"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH d",
+     "huella": "9b42e05c5506dc80",
+     "huella_sin_forma": "78d5e884a4985967"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH e",
+     "huella": "03b50af99efbd871",
+     "huella_sin_forma": "389c90d9035506d2"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH f",
+     "huella": "5d63c16b0695f71e",
+     "huella_sin_forma": "02c20500aeb48eb7"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH g",
+     "huella": "933080fb3d529d24",
+     "huella_sin_forma": "505782939161ecdc"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH h",
+     "huella": "6501cddd2d1f5944",
+     "huella_sin_forma": "793cb3a34b03e36e"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH i",
+     "huella": "bfea5689530e764d",
+     "huella_sin_forma": "18798dc45b914dc7"
+    },
+    {
+     "codigo": "de Habilidad MA01 OAH j",
+     "huella": "57832467b1f3f568",
+     "huella_sin_forma": "174152283b4cf8e0"
+    }
+   ]
+  },
+  {
+   "id": "oa:musica",
+   "titulo": "Objetivos · Música",
+   "tipo": "oficial",
+   "asignatura": "musica",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/musica/1-basico",
+   "objetivos": [
+    {
+     "codigo": "MU01 OA 01",
+     "huella": "074a8abaf9e9ac85",
+     "huella_sin_forma": "771986de1ab5c23b"
+    },
+    {
+     "codigo": "MU01 OA 02",
+     "huella": "e92591b977957e34",
+     "huella_sin_forma": "d51703649be32ad6"
+    },
+    {
+     "codigo": "MU01 OA 03",
+     "huella": "3bf1b081e6320679",
+     "huella_sin_forma": "26150d69b3bac486"
+    },
+    {
+     "codigo": "MU01 OA 04",
+     "huella": "927dde0b0ce72607",
+     "huella_sin_forma": "afef93ed39655195"
+    },
+    {
+     "codigo": "MU01 OA 05",
+     "huella": "13b713204a26d392",
+     "huella_sin_forma": "e00f9c87a98eede7"
+    },
+    {
+     "codigo": "MU01 OA 06",
+     "huella": "6ad72c18697f787f",
+     "huella_sin_forma": "081177547304b2c2"
+    },
+    {
+     "codigo": "MU01 OA 07",
+     "huella": "730f788431ae6982",
+     "huella_sin_forma": "b3cab62d14f5bc09"
+    },
+    {
+     "codigo": "de Actitud MU01 OAA A",
+     "huella": "f243640dc83b774e",
+     "huella_sin_forma": "cea740742296e65b"
+    },
+    {
+     "codigo": "de Actitud MU01 OAA B",
+     "huella": "9655f3ba592777c4",
+     "huella_sin_forma": "cffa13934e4bf3d2"
+    },
+    {
+     "codigo": "de Actitud MU01 OAA C",
+     "huella": "b80f272090ad1788",
+     "huella_sin_forma": "180a0aa267fe81e4"
+    },
+    {
+     "codigo": "de Actitud MU01 OAA D",
+     "huella": "b515b5a1a1fea16c",
+     "huella_sin_forma": "abb3ee6665a1965a"
+    },
+    {
+     "codigo": "de Actitud MU01 OAA E",
+     "huella": "28eb91758b408dad",
+     "huella_sin_forma": "48acead4b81496bf"
+    },
+    {
+     "codigo": "de Actitud MU01 OAA F",
+     "huella": "cbff95eb4a2164ba",
+     "huella_sin_forma": "9a0c662790b214a9"
+    },
+    {
+     "codigo": "de Actitud MU01 OAA G",
+     "huella": "4beb455a4f53a757",
+     "huella_sin_forma": "f70e84ddbc288b27"
+    }
+   ]
+  },
+  {
+   "id": "oa:orientacion",
+   "titulo": "Objetivos · Orientación",
+   "tipo": "oficial",
+   "asignatura": "orientacion",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/orientacion/1-basico",
+   "objetivos": [
+    {
+     "codigo": "OR01 OA 01",
+     "huella": "e5abda8378a0b6b6",
+     "huella_sin_forma": "887f4abbc4317bad"
+    },
+    {
+     "codigo": "OR01 OA 02",
+     "huella": "2e521167621598f6",
+     "huella_sin_forma": "f48218490d99e7c0"
+    },
+    {
+     "codigo": "OR01 OA 03",
+     "huella": "66aa102bcc89e2e3",
+     "huella_sin_forma": "bc262cfd251320fe"
+    },
+    {
+     "codigo": "OR01 OA 04",
+     "huella": "17faf062b6def70c",
+     "huella_sin_forma": "e8b665ac84d40858"
+    },
+    {
+     "codigo": "OR01 OA 05",
+     "huella": "62a7357eaf0464f0",
+     "huella_sin_forma": "9b8e45f2da65d25c"
+    },
+    {
+     "codigo": "OR01 OA 06",
+     "huella": "43b07d1d2a9cbb32",
+     "huella_sin_forma": "d48976aa5f16d12e"
+    },
+    {
+     "codigo": "OR01 OA 07",
+     "huella": "461306a8a1ce5abb",
+     "huella_sin_forma": "e9f7e538f56f427f"
+    },
+    {
+     "codigo": "OR01 OA 08",
+     "huella": "01508d892930d148",
+     "huella_sin_forma": "461b95b709267a45"
+    }
+   ]
+  },
+  {
+   "id": "oa:tecnologia",
+   "titulo": "Objetivos · Tecnología",
+   "tipo": "oficial",
+   "asignatura": "tecnologia",
+   "url": "https://www.curriculumnacional.cl/curriculum/1o-6o-basico/tecnologia/1-basico",
+   "objetivos": [
+    {
+     "codigo": "TE01 OA 01",
+     "huella": "03d5f482f8703451",
+     "huella_sin_forma": "47dd6d8b072c825c"
+    },
+    {
+     "codigo": "TE01 OA 02",
+     "huella": "4a65761747e84100",
+     "huella_sin_forma": "1be8e228c3dbe7df"
+    },
+    {
+     "codigo": "TE01 OA 03",
+     "huella": "4805b3e179e1f8f4",
+     "huella_sin_forma": "78e4937fc314ff15"
+    },
+    {
+     "codigo": "TE01 OA 04",
+     "huella": "7a424ae82e224583",
+     "huella_sin_forma": "59a9f4c90073e183"
+    },
+    {
+     "codigo": "TE01 OA 05",
+     "huella": "f714321b8b287606",
+     "huella_sin_forma": "b5143ac9b9d938ef"
+    },
+    {
+     "codigo": "TE01 OA 06",
+     "huella": "fa1ef12eb3b10904",
+     "huella_sin_forma": "9aa0dd7db5739f95"
+    },
+    {
+     "codigo": "de Actitud TE01 OAA A",
+     "huella": "614f314f29c96439",
+     "huella_sin_forma": "ae9b74530e766f58"
+    },
+    {
+     "codigo": "de Actitud TE01 OAA B",
+     "huella": "506a831bf55116a8",
+     "huella_sin_forma": "34af545871be6217"
+    },
+    {
+     "codigo": "de Actitud TE01 OAA C",
+     "huella": "26140f2e1d673eea",
+     "huella_sin_forma": "20e063703266325d"
+    },
+    {
+     "codigo": "de Actitud TE01 OAA D",
+     "huella": "8a3071b6d6fe690e",
+     "huella_sin_forma": "8f0dbd59e206e0cd"
+    },
+    {
+     "codigo": "de Actitud TE01 OAA E",
+     "huella": "d1421fa483be9c53",
+     "huella_sin_forma": "12411ee5655988f1"
+    }
+   ]
+  }
+ ]
+}

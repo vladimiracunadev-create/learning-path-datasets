@@ -36,6 +36,7 @@ def test_expected_skills_and_agents_exist():
         "curador-datasets",
         "auditor-derechos-datos",
         "limpiador-datos",
+        "vigia-curricular",
     }
 
 

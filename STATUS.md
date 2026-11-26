@@ -33,6 +33,7 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | Contrato del núcleo `nucleo-0.1` | `EXPERIMENTAL` | `src/lpdatasets/core.py`, `schema/core.schema.json`, `tests/test_core.py` |
 | Núcleo de 1.º básico | `OPERATIVO` | `nucleo/escolar-chile/1-basico/manifest.json`, `lpdatasets core-validate` |
 | Informe y propuestas de limpieza | `EXPERIMENTAL` | `lpdatasets clean-report --check` y `clean-proposals --check`; 1.073 hallazgos aceptados, 19 resueltos, 39 pendientes y 26 archivados |
+| Vigía curricular | `EXPERIMENTAL` | `lpdatasets watch-report --check`, `tests/test_watch.py`; solo objetivos oficiales, a pedido |
 | Registro de modalidades | `EXPERIMENTAL` | `src/lpdatasets/modalities.py`, `tests/test_modalities.py`; ninguna modalidad real |
 | Líneas de implementación | ver cada una | [`docs/lineas/`](docs/lineas/README.md), `scripts/verify_docs.py` |
 | Revisión humana profesional | `NO REALIZADA` | todos los registros declaran `ia_asistida_sin_revision_humana` |
@@ -51,5 +52,6 @@ lpdatasets clean-report --check
 lpdatasets clean-proposals --check
 lpdatasets clean-corrections --check
 lpdatasets clean-doubts --check
+lpdatasets watch-report --check
 lpdatasets validate
 ```

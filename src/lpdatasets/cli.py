@@ -1,4 +1,4 @@
-"""Línea de comandos: export, validate, stats, index, search y las órdenes del núcleo y de limpieza."""
+"""Línea de comandos: export, validate, stats, index, search y las órdenes del núcleo, de limpieza y del vigía."""
 
 from __future__ import annotations
 
@@ -17,6 +17,10 @@ from .corrections import approve_corrections, corrections_report, mark_applied
 from .doubts import Docs, doubts_report, resolve_doubts
 from .proposals import approve, proposals_report
 from .vector import build_index, search
+from .watch import report as watch_report
+from .watch import run as watch_run
+from .watch import summary
+from .watch_escolar import ADAPTER, affected_classes, write_baseline
 
 
 def _filters(args: argparse.Namespace) -> dict[str, str]:
@@ -91,6 +95,21 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--excluir", action="append", default=[], help="hallazgo que no se aprueba; repetible")
     p.add_argument("--nucleo", default="nucleo")
     p.add_argument("--datasets", default="datasets")
+
+    watched = argparse.ArgumentParser(add_help=False)
+    watched.add_argument("--vigia", default="vigia/escolar-chile/1-basico")
+    reported = argparse.ArgumentParser(add_help=False)
+    reported.add_argument("--informe", default="docs/informes/vigia-1-basico.md")
+
+    p = sub.add_parser("watch-baseline", parents=[watched], help="línea base de objetivos desde la fuente")
+    p.add_argument("--source", required=True, help="carpeta del programa de aprendizaje")
+    p.add_argument("--nivel", default="1-basico")
+
+    p = sub.add_parser("watch", parents=[watched, reported], help="revisa las fuentes en línea; no cambia contenido")
+    p.add_argument("--nucleo", default="nucleo")
+
+    p = sub.add_parser("watch-report", parents=[watched, reported], help="informe de la última revisión, sin red")
+    p.add_argument("--check", action="store_true", help="falla si el informe está desactualizado")
 
     p = sub.add_parser("validate", help="valida esquema, hashes y particiones")
     p.add_argument("--datasets", default="datasets")
@@ -180,6 +199,20 @@ def main(argv: list[str] | None = None) -> int:
         kept, texts = resolve_doubts(Path(args.nucleo), Path(args.datasets), args.aprobado_por, docs, args.excluir)
         print(f"Hallazgos mantenidos: {kept}; textos aprobados: {texts}")
         return 0
+    if args.cmd == "watch-baseline":
+        count = write_baseline(Path(args.source), Path(args.vigia), args.nivel)
+        print(f"Línea base escrita con {count} objetivos")
+        return 0
+    if args.cmd == "watch":
+        classes = affected_classes(Path(args.nucleo))
+        record = watch_run(Path(args.vigia), classes, ADAPTER, Path(args.informe))
+        text, code = summary(record)
+        print(text)
+        return code
+    if args.cmd == "watch-report":
+        found = watch_report(Path(args.vigia), Path(args.informe), args.check)
+        print(os.linesep.join(found) if found else "OK: informe del vigía al día")
+        return 1 if found else 0
     if args.cmd == "validate":
         problems = validate_datasets(Path(args.datasets))
         print("\n".join(problems[:50]) if problems else "OK: datasets válidos")

@@ -21,6 +21,12 @@ Cuatro skills y cinco agentes de Claude Code, **independientes del dominio**, qu
 | `auditor-derechos-datos` | licencias, texto de terceros, datos personales y contenido que exige un experto |
 | `limpiador-datos` | convierte los hallazgos de limpieza en propuestas; registra solo lo que una persona apruebe |
 
+Además, un agente **propio del contenido escolar chileno**:
+
+| Agente | Rol |
+|---|---|
+| `vigia-curricular` | ejecuta el vigía, explica qué cambió y qué debe revisar una persona; no cambia contenido ([L04](lineas/L04-vigia-curricular.md)) |
+
 ## Ciclo recomendado
 
 ```mermaid
