@@ -60,6 +60,10 @@ visibles = select(entidades, uso="educativo", publico="estudiante", marcos={"cl-
 
 `select` valida cada entidad, filtra por marco, uso y público y, si el público no figura en `publico_solucion`, quita `respuesta`, `razon` y `extra`. La ocultación solo actúa sobre los ítems: el enunciado, el `extra` de las clases y el texto de los recursos no se revisan. Un recurso con soluciones debe limitar su `publico`, y un enunciado que revele la respuesta se corrige en la limpieza.
 
+## Aportes
+
+Lo que se crea en este repositorio no se escribe en `nucleo/`. Vive en `aportes/` y `lpdatasets contrib-export` lo combina en una copia válida del núcleo (ver [L03](lineas/L03-vacios-creacion.md)). En una entidad aportada, `procedencia.repo` es este repositorio, `procedencia.ruta` es su archivo y `procedencia.commit` es `huella:<huella de la pieza>`, porque una pieza no puede citar el commit que la contiene. Un ítem etiquetado lista las piezas en `extra.aportes`. El manifiesto combinado agrega `aportes` con la cantidad y una huella.
+
 ## Cambiar el contrato
 
 Un campo nuevo opcional o un tipo MIME nuevo no rompe nada. Quitar o redefinir un campo exige una versión nueva del contrato y una nota en el [CHANGELOG](../CHANGELOG.md).

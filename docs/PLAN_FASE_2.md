@@ -1,6 +1,6 @@
 # Plan de la fase 2 · vigía curricular y vacíos de 1.º básico
 
-Fecha de corte: **2026-11-26**. Alcance: **exclusivamente 1.º básico**. El titular lo **aprobó el 2026-11-26** con sus recomendaciones. Están construidos los **pasos 2.1 y 2.2**; la fase figura `en curso` en [`lineas.json`](lineas/lineas.json).
+Fecha de corte: **2026-11-26**. Alcance: **exclusivamente 1.º básico**. El titular lo **aprobó el 2026-11-26** con sus recomendaciones. Están construidos los **pasos 2.1 a 2.3**; la fase figura `en curso` en [`lineas.json`](lineas/lineas.json).
 
 Comprende [L04 · Vigía curricular](lineas/L04-vigia-curricular.md) y [L03 · Vacíos y creación](lineas/L03-vacios-creacion.md), en ese orden.
 
@@ -50,7 +50,7 @@ El marco `cl-bases-1-6-propuesta-2026` se mantiene como `propuesta_sin_confirmar
 |---|---|---|---|
 | 2.1 | L04 | **Hecho** ([informe](informes/vigia-1-basico.md)). Registro de fuentes; comparador de OA contra una línea base de **huellas** (sin copiar el texto oficial); informe fechado con OA y clases afectadas; agente `vigia-curricular` | pruebas sin red con páginas sintéticas: un cambio introducido se detecta y una página ilegible se declara, no se toma como «sin cambios»; primera ejecución real |
 | 2.2 | L04 | **Hecho.** Páginas sin OA (se sumó la política del sitio) y registro de revisión manual. El canal del Mineduc quedó manual: su `robots.txt` rechaza la lectura | rechaza un registro sin URL o fecha y una noticia que marque un marco como `vigente` |
-| 2.3 | L03 | capa de aportes en el núcleo, con autor, fuente, derechos y verificación por pieza | exportar dos veces da los mismos bytes; sin aportes, el núcleo no cambia |
+| 2.3 | L03 | **Hecho** ([informe](informes/aportes-1-basico.md), sin piezas todavía). Capa de aportes en el núcleo, con autor, fuente, derechos y verificación por pieza | exportar dos veces da los mismos bytes; sin aportes, el núcleo no cambia |
 | 2.4 | L03 | dificultad: declarar a qué tipos aplica; habilidades: piloto en Matemática por clase, con los OA de habilidad oficiales | lectura ciega de una muestra; la persona aprueba antes de registrar |
 | 2.5 | L03 | inventario leído, clase por clase, del medio o apoyo que pide cada una | muestra releída por otro agente; matriz de vacíos |
 | 2.6 | L03 | piloto de creación en una unidad: imagen propia, guía para el adulto, ítems de evaluación separados; agentes `investigador-fuentes` y `autor-contenido` | quien verifica no escribió; lo calculable se resuelve por cálculo; se informa la tasa de defectos |

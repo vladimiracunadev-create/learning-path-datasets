@@ -172,6 +172,14 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Desvíos del plan:** no se construyó lectura de canales, porque la única fuente de ese tipo rechaza su `robots.txt`; se sumó la política del sitio, caso ya descrito en L04.
 - **Límite:** las fuentes que anunciarían primero un cambio de bases siguen dependiendo de una persona.
 
+### 3.21 Paso 2.3: capa de aportes
+
+- **Qué:** `contributions.py` define piezas con autor, fuentes, derechos, verificación y aprobación, y las órdenes `contrib-report`, `contrib-verify`, `contrib-approve` y `contrib-export`. Se registró como vocabulario de habilidades los 21 objetivos de habilidad oficiales presentes en el núcleo. No se creó contenido.
+- **Por qué así:** combinar en una copia mantiene el núcleo publicado como reflejo exacto de la fuente: reexportar no borra aportes y quitarlos no exige deshacer nada. La huella sobre la pieza y sobre su materia evita que una aprobación sobreviva a un cambio, la misma regla aprendida en la limpieza.
+- **Cómo se comprobó:** sin piezas, el núcleo combinado es idéntico byte a byte al publicado; pruebas sintéticas de cada rechazo.
+- **Reutilizable:** sirve para cualquier contenido que cumpla el contrato; el vocabulario y la carpeta son lo propio de cada conjunto.
+- **Límite:** no juzga si el contenido es correcto ni autentica los nombres; la limpieza y las modalidades aún no leen la combinación, que se conecta en el paso 2.4.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -245,6 +253,7 @@ Protocolo de lectura ciega usado: archivo solo con las preguntas y su contexto; 
 | `watch.py` | genérico | informe con título de 1.º básico |
 | `watch_escolar.py` | específico | páginas de objetivos de Currículum Nacional |
 | `watch_pages.py`, `watch_manual.py` | genéricos | las fuentes concretas están en `vigia/`; los estados de marco son los del registro curricular |
+| `contributions.py` | genérico | títulos de 1.º básico en el informe; supone un solo núcleo |
 | `cli.py` | genérico con valores por defecto | las rutas de informes apuntan a 1.º básico |
 | `verify_docs.py` | casi genérico | comprueba enlaces de documentos con nombre fijo |
 | `docs_diagram.py` | específico | título y posiciones del esquema de 1.º básico; las líneas nuevas se apilan solas |
@@ -276,6 +285,10 @@ Resolver esto es el primer trabajo antes de sumar datos de otro tipo.
 | `lpdatasets watch-report` | informe de la última revisión; con `--check` no escribe |
 | `lpdatasets watch-record` | registra lo que una persona revisó a mano |
 | `lpdatasets watch-accept` | una persona acepta la lectura actual de una página como referencia |
+| `lpdatasets contrib-report` | comprueba los aportes y escribe su informe; con `--check` no escribe |
+| `lpdatasets contrib-verify` | anota la verificación de una pieza por alguien distinto del autor |
+| `lpdatasets contrib-approve` | una persona aprueba piezas verificadas |
+| `lpdatasets contrib-export` | escribe el núcleo combinado con las piezas aprobadas |
 
 Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar` y `dataset-pack-nuevo`. Agentes: `extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos`, `limpiador-datos` y `vigia-curricular`, este último propio del contenido educativo chileno y aún sin probarse como agente. En este trabajo, las lecturas ciegas las hizo `verificador-independiente`; las propuestas se prepararon sin delegar en `limpiador-datos`, que sigue sin probarse en un lote real.
 
@@ -283,6 +296,6 @@ Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-
 
 - Ninguna persona ha revisado el contenido.
 - Quedan 39 hallazgos pendientes: 20 de etiquetas (L03) y 19 cruces del dataset (L08).
-- Líneas L03 y L05 a L09 sin implementación nueva; L04 opera a pedido y sus 4 fuentes manuales no se han revisado; ninguna modalidad real.
+- L03 tiene la capa de aportes sin ninguna pieza; líneas L05 a L09 sin implementación nueva; L04 opera a pedido y sus 4 fuentes manuales no se han revisado; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.

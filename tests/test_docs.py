@@ -39,7 +39,7 @@ def test_repository_lines_are_documented():
     ("old", "new", "message"),
     [
         ("## Métricas", "## Otra cosa", "Métricas"),
-        ("`PLANIFICADO`", "`OPERATIVO`", "estado"),
+        ("`EXPERIMENTAL`", "`OPERATIVO`", "estado"),
         ("## Límites", "<!-- completar -->\n\n## Límites", "completar"),
         ("(../PLAN_1_BASICO.md)", "(../NO_EXISTE.md)", "enlace local roto"),
     ],

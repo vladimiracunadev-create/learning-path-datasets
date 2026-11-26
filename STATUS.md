@@ -34,6 +34,7 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | Núcleo de 1.º básico | `OPERATIVO` | `nucleo/escolar-chile/1-basico/manifest.json`, `lpdatasets core-validate` |
 | Informe y propuestas de limpieza | `EXPERIMENTAL` | `lpdatasets clean-report --check` y `clean-proposals --check`; 1.073 hallazgos aceptados, 19 resueltos, 39 pendientes y 26 archivados |
 | Vigía curricular | `OPERATIVO` | `lpdatasets watch-report --check`, `tests/test_watch.py`, `tests/test_watch_pages.py`; a pedido, 4 fuentes manuales sin revisar |
+| Capa de aportes | `EXPERIMENTAL` | `lpdatasets contrib-report --check`, `tests/test_contributions.py`; ninguna pieza todavía |
 | Registro de modalidades | `EXPERIMENTAL` | `src/lpdatasets/modalities.py`, `tests/test_modalities.py`; ninguna modalidad real |
 | Líneas de implementación | ver cada una | [`docs/lineas/`](docs/lineas/README.md), `scripts/verify_docs.py` |
 | Revisión humana profesional | `NO REALIZADA` | todos los registros declaran `ia_asistida_sin_revision_humana` |
@@ -53,5 +54,6 @@ lpdatasets clean-proposals --check
 lpdatasets clean-corrections --check
 lpdatasets clean-doubts --check
 lpdatasets watch-report --check
+lpdatasets contrib-report --check
 lpdatasets validate
 ```

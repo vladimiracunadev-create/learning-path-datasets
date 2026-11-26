@@ -1,6 +1,6 @@
 # L03 · Vacíos y creación de contenido
 
-- **Estado:** `PLANIFICADO`
+- **Estado:** `EXPERIMENTAL`
 - **Depende de:** L01 y L04
 
 ## Propósito
@@ -27,17 +27,44 @@ Entrada: vacíos medidos sobre el núcleo y fuentes con licencia conocida; adem�
 
 Entidades `recurso` e `item` del núcleo. Todo recurso que no sea texto lleva `descripcion` como texto alternativo.
 
+Lo nuevo vive en la **capa de aportes**, `aportes/<pack>/<nivel>/*.jsonl`, una pieza por línea. El núcleo publicado no se modifica.
+
+| Campo | Contenido |
+|---|---|
+| `id` | `aporte:<pack>:<nivel>:<nombre>` |
+| `tipo` | `entidad` (ítem o recurso nuevo) o `etiqueta` |
+| `autor` | `nombre` y `tipo` (`ia` o `persona`) |
+| `fuentes` | al menos una: `ref`, `uso` (`derivado` o `consulta`) y, si es derivado, `licencia` |
+| `derechos` | como en el núcleo; no pueden permitir más usos que las fuentes derivadas |
+| `pieza` | en entidades: la clase a la que pertenece y los campos propios; marco, nivel, asignatura, revisión y procedencia los pone la combinación |
+| `clase` o `item`, `campo`, `valor`, `tipos` | en etiquetas: a qué ítems, qué campo (`habilidades` o `dificultad`) y con qué valor |
+| `verificacion` | `por` (distinto del autor), `tipo`, `veredicto`, `nota`, `fecha` y huellas |
+| `aprobacion` | `por`: la persona que aprueba, y las mismas huellas |
+
+Estados: `borrador`, `verificada`, `observada`, `aprobada` y `caducada`. **Solo entra lo aprobado.** Las huellas cubren la pieza y el texto de la fuente al que se refiere: si cualquiera cambia, la pieza caduca. Una etiqueta solo llena campos que la fuente dejó vacíos, y las habilidades salen de [`vocabulario.json`](../../aportes/escolar-chile/1-basico/vocabulario.json) (los 21 objetivos de habilidad oficiales de Matemática, Historia y Ciencias Naturales). Un archivo que no es texto se guarda dentro de la carpeta de aportes y se declara con su `sha256`.
+
 ## Derechos
 
 Primero contenido propio. El material de terceros solo entra con licencia compatible y registrada; si la licencia es desconocida, la entidad queda sin usos permitidos. Un enlace no concede permiso para copiar.
 
 ## Cómo se ejecuta
 
-No implementado. Skills y agentes previstos: `investigador-fuentes`, `autor-contenido`, `extractor-conocimiento` y `verificador-independiente`. Vacíos medidos y pasos: [plan de la fase 2](../PLAN_FASE_2.md), aprobado.
+```bash
+lpdatasets contrib-report
+lpdatasets contrib-verify --aporte ID --por "quién" --tipo ia --veredicto aprobado --nota "qué se comprobó"
+lpdatasets contrib-approve --aporte ID --aprobado-por "nombre"
+lpdatasets contrib-export --out .nucleo-compuesto
+```
+
+`contrib-export` escribe una copia del núcleo combinada con las piezas aprobadas; sin ninguna, es idéntica byte a byte al publicado. Su [informe](../informes/aportes-1-basico.md) lista cada pieza: hoy no hay ninguna.
+
+Falta crear contenido: las skills y agentes previstos son `investigador-fuentes`, `autor-contenido`, `extractor-conocimiento` y `verificador-independiente`. Vacíos medidos y pasos: [plan de la fase 2](../PLAN_FASE_2.md), aprobado.
 
 ## Pruebas
 
-Exigidas: ninguna pieza sin fuente, derechos y verificación; los ítems calculables se resuelven por cálculo.
+`tests/test_contributions.py`: nada entra sin verificación y aprobación; quien escribe no verifica; un cambio en la pieza o en la fuente la hace caducar; las licencias no pueden ampliar usos; las etiquetas no sobrescriben la fuente ni se pisan; las respuestas ocultas siguen ocultas; los archivos conservan su huella y no salen de la carpeta; dos combinaciones dan los mismos bytes. `tests/test_published_contributions.py` comprueba lo publicado y que el núcleo no cambie.
+
+Exigidas para el contenido (pasos 2.4 a 2.6): los ítems calculables se resuelven por cálculo.
 
 ## Métricas
 
@@ -49,6 +76,8 @@ Cada vacío del [plan](../PLAN_1_BASICO.md) y cada hallazgo de etiquetas recibid
 
 ## Límites
 
+La capa comprueba forma, derechos y trazabilidad, **no si el contenido es correcto**: eso depende de quien verifica y de quien aprueba, y los nombres anotados no se autentican. La limpieza y las modalidades todavía leen el núcleo publicado, no el combinado.
+
 El contenido creado con IA no tiene valor de revisión humana. No sustituye a docentes ni a educadores tradicionales.
 
 ## Decisiones
@@ -58,5 +87,7 @@ El contenido creado con IA no tiene valor de revisión humana. No sustituye a do
 - 2026-11-26: el piloto de etiquetas y creación es en Matemática.
 - 2026-11-26: las habilidades usan solo los objetivos de habilidad oficiales donde existen; en el resto se declaran sin cubrir.
 - 2026-11-26: el titular o un docente revisa una muestra de cada piloto.
+- 2026-11-26: los aportes se combinan en una copia; el núcleo publicado sigue siendo solo lo que vino de la fuente.
+- 2026-11-26: solo entra una pieza verificada y aprobada por una persona sobre el texto actual.
 - 2026-11-26: quien verifica no es quien escribió.
 - 2026-11-26: las evaluaciones oficiales sirven de referencia; sus ítems no se copian.

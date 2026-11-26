@@ -1,0 +1,31 @@
+{
+ "habilidades": {
+  "ciencias-naturales": [
+   "de Habilidad CN01 OAH a",
+   "de Habilidad CN01 OAH b",
+   "de Habilidad CN01 OAH c",
+   "de Habilidad CN01 OAH d"
+  ],
+  "historia-geografia-ciencias-sociales": [
+   "de Habilidad HI01 OAH a",
+   "de Habilidad HI01 OAH b",
+   "de Habilidad HI01 OAH c",
+   "de Habilidad HI01 OAH d",
+   "de Habilidad HI01 OAH e",
+   "de Habilidad HI01 OAH f",
+   "de Habilidad HI01 OAH g"
+  ],
+  "matematica": [
+   "de Habilidad MA01 OAH a",
+   "de Habilidad MA01 OAH b",
+   "de Habilidad MA01 OAH c",
+   "de Habilidad MA01 OAH d",
+   "de Habilidad MA01 OAH e",
+   "de Habilidad MA01 OAH f",
+   "de Habilidad MA01 OAH g",
+   "de Habilidad MA01 OAH h",
+   "de Habilidad MA01 OAH i",
+   "de Habilidad MA01 OAH j"
+  ]
+ }
+}

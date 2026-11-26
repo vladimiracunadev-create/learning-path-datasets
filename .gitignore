@@ -13,3 +13,4 @@ build/
 work/
 .claude/worktrees/
 .claude/settings.local.json
+.nucleo-compuesto/

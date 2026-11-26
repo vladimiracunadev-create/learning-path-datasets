@@ -18,6 +18,7 @@ lpdatasets clean-proposals --check
 lpdatasets clean-corrections --check
 lpdatasets clean-doubts --check
 lpdatasets watch-report --check
+lpdatasets contrib-report --check
 lpdatasets validate
 ```
 

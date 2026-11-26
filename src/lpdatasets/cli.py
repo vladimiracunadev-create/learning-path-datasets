@@ -12,6 +12,10 @@ from pathlib import Path
 from . import __version__
 from .build import build, stats, validate_datasets
 from .cleaning import report
+from .contributions import approve as contrib_approve
+from .contributions import export as contrib_export
+from .contributions import report as contrib_report
+from .contributions import verify as contrib_verify
 from .core import load_marcos
 from .core_build import validate_core
 from .core_escolar import export as export_core
@@ -127,6 +131,31 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--fecha", help="AAAA-MM-DD; hoy si se omite")
     p.add_argument("--marco", help="marco curricular sobre el que se propone un estado")
     p.add_argument("--estado-marco", help="estado propuesto; no se aplica solo")
+
+    layered = argparse.ArgumentParser(add_help=False)
+    layered.add_argument("--nucleo", default="nucleo")
+    layered.add_argument("--aportes", default="aportes")
+    noted = argparse.ArgumentParser(add_help=False)
+    noted.add_argument("--informe", default="docs/informes/aportes-1-basico.md")
+
+    p = sub.add_parser("contrib-report", parents=[layered, noted], help="comprueba los aportes y escribe su informe")
+    p.add_argument("--check", action="store_true", help="falla si el informe está desactualizado")
+
+    p = sub.add_parser("contrib-verify", parents=[layered, noted], help="anota la verificación de una pieza")
+    p.add_argument("--aporte", required=True)
+    p.add_argument("--por", required=True, help="quien verifica; no puede ser quien escribió")
+    p.add_argument("--tipo", required=True, choices=("ia", "persona"))
+    p.add_argument("--veredicto", required=True, choices=("aprobado", "observado"))
+    p.add_argument("--nota", required=True, help="qué se comprobó")
+
+    p = sub.add_parser("contrib-approve", parents=[layered, noted], help="una persona aprueba piezas verificadas")
+    p.add_argument("--aprobado-por", required=True)
+    chosen = p.add_mutually_exclusive_group(required=True)
+    chosen.add_argument("--aporte", action="append", help="repetible")
+    chosen.add_argument("--todas", action="store_true", help="todas las verificadas")
+
+    p = sub.add_parser("contrib-export", parents=[layered], help="escribe el núcleo combinado con los aportes")
+    p.add_argument("--out", default=".nucleo-compuesto")
 
     p = sub.add_parser("validate", help="valida esquema, hashes y particiones")
     p.add_argument("--datasets", default="datasets")
@@ -247,6 +276,25 @@ def main(argv: list[str] | None = None) -> int:
         }
         add_manual(Path(args.vigia), Path(args.informe), entry, load_marcos())
         print(f"Revisión manual registrada: {args.fuente}")
+        return 0
+    if args.cmd == "contrib-report":
+        found = contrib_report(Path(args.nucleo), Path(args.aportes), Path(args.informe), args.check)
+        print(os.linesep.join(found) if found else "OK: informe de aportes al día")
+        return 1 if found else 0
+    if args.cmd == "contrib-verify":
+        record = {"por": args.por, "tipo": args.tipo, "veredicto": args.veredicto, "nota": args.nota}
+        contrib_verify(Path(args.nucleo), Path(args.aportes), Path(args.informe), args.aporte, record)
+        print(f"Verificación anotada: {args.aporte}")
+        return 0
+    if args.cmd == "contrib-approve":
+        count = contrib_approve(
+            Path(args.nucleo), Path(args.aportes), Path(args.informe), args.aprobado_por, args.aporte or ()
+        )
+        print(f"Piezas aprobadas: {count}")
+        return 0
+    if args.cmd == "contrib-export":
+        count = contrib_export(Path(args.nucleo), Path(args.aportes), Path(args.out))
+        print(f"Núcleo compuesto en {args.out} con {count} piezas aprobadas")
         return 0
     if args.cmd == "validate":
         problems = validate_datasets(Path(args.datasets))
