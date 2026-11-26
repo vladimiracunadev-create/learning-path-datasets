@@ -18,7 +18,7 @@ Producir desde el núcleo datos para entrenar y evaluar, en varios formatos. Hoy
 
 ## Entradas y salidas
 
-Entrada: selección del núcleo. Salida: JSONL por formato, manifiesto con SHA-256 y tarjeta del dataset.
+Entrada: selección del núcleo y 19 hallazgos que [L02](L02-limpieza.md) le asignó sobre el dataset v1.0 (9 de registros de evaluación idénticos a uno de entrenamiento y 10 con la misma entrada). Salida: JSONL por formato, manifiesto con SHA-256 y tarjeta del dataset.
 
 ## Contrato de datos
 
@@ -47,7 +47,7 @@ Cruces entre particiones (objetivo: 0); cobertura de OA; registros por tipo.
 
 ## Listo cuando
 
-No hay cruces entre entrenamiento y evaluación y cada formato tiene manifiesto, tarjeta y validación en CI.
+No queda ningún registro de evaluación idéntico a uno de entrenamiento ni con su misma entrada, y cada formato tiene manifiesto, tarjeta y validación en CI.
 
 ## Límites
 
@@ -55,4 +55,5 @@ El volumen de 1.º básico (unos 0,6 millones de tokens estimados a 4 caracteres
 
 ## Decisiones
 
-- 2026-11-26: reemplazar v1.0 solo cuando la nueva versión esté validada.
+- 2026-11-26: al cerrar la fase 1, la eliminación de los cruces es criterio de término de esta línea.
+- 2026-11-26: reemplazar v1.0 solo cuando la nueva versión esté validada. Hasta entonces v1.0 conserva sus cruces y no sirve para medir un modelo.

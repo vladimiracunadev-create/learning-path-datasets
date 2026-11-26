@@ -15,6 +15,7 @@
 - `clean-mark-applied` cierra lo resuelto, archiva decisiones con sus hallazgos y retira aceptaciones sobre textos cambiados; lote `texto-aplicado`.
 - Los 35 textos se aplicaron en la fuente (commit `b3647111`) y se volvieron a exportar el núcleo y el dataset v1.0: cambian esos 35 registros y el commit de origen. 1.131 hallazgos: 1.066 aceptados, 19 resueltos y 46 pendientes, 7 de ellos por aprobar.
 - El titular aprobó esos 7: 1.073 hallazgos aceptados, 19 resueltos y 39 pendientes, todos de etiquetas (L03) o cruces (L08).
+- Fase 1 cerrada: el criterio sobre cruces pasa a L08 y las etiquetas quedan en L03. L02 sigue experimental, sin revisión humana.
 - Documento de método (`docs/METODO.md`): lo realizado, sus fundamentos, cambios de criterio y cómo reutilizarlo; el CI exige que nombre cada módulo, script, orden, skill y agente.
 - Campo opcional `idioma` en el contrato `nucleo-0.1`.
 - El lector de la fuente busca el archivo de cada OA una sola vez; el dataset v1.0 no cambia.

@@ -137,6 +137,14 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Qué queda:** los 39 pendientes son 20 de etiquetas (línea L03) y 19 cruces entre entrenamiento y evaluación (línea L08). Ninguno se resuelve aprobando: necesitan construir esas líneas. Por eso L02 no cumple todavía su criterio de término.
 - **Límite:** esos 7 se clasificaron por regla o con la lectura anterior, sin una lectura ciega nueva. La definición aceptada de «sentido» conserva la observación sobre «frase» y «oración».
 
+### 3.17 Cierre de la fase 1
+
+- **Qué:** el titular cerró la fase 1 (núcleo y limpieza). El criterio sobre cruces pasó de L02 a L08, las etiquetas quedaron a cargo de L03 y L02 sigue `EXPERIMENTAL`. A su criterio se sumó que una persona identificable revise una muestra: sin esa condición figuraría operativa sin que nadie hubiera revisado el contenido.
+- **Por qué:** L02 exigía algo que solo L08 puede cumplir, dos fases más adelante; la fase habría quedado abierta sin trabajo propio por hacer.
+- **Cómo se comprobó:** 887 entradas representadas y 147 excluidas con motivo (1.034); dos exportaciones del commit `b3647111142b` iguales entre sí y a lo publicado; los 39 pendientes pertenecen solo a los lotes `etiquetas` y `cruces-dataset`.
+- **Reutilizable:** el criterio de término de una etapa debe depender solo de lo que esa etapa puede hacer; lo demás se asigna por escrito a la que sí puede, con sus cifras.
+- **Límite:** cerrar la fase no es declarar limpio el contenido. Ninguna persona lo ha revisado y el dataset v1.0 conserva sus cruces.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -153,6 +161,7 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 | La respuesta nueva no puede aparecer en el cuaderno | puede estar en su propio enunciado | las preguntas de elección la contienen |
 | El dataset v1.0 no se modifica | se regenera cuando cambia el contenido de la fuente | publicar defectos ya corregidos no tiene sentido; los cruces siguen para la versión siguiente |
 | Un hallazgo corregido simplemente desaparece | se archiva con el commit que lo resolvió | permite mostrar antes y después |
+| L02 terminaba solo sin cruces entre entrenamiento y evaluación | ese criterio es de L08 y L02 exige asignar cada pendiente | los cruces se corrigen al construir el dataset siguiente |
 | Una aceptación vale mientras el hallazgo tenga el mismo identificador | se retira si cambia un texto que cubre | se aceptó el texto anterior, no el nuevo |
 
 ## 5. Trampas encontradas y qué hacer con datos nuevos

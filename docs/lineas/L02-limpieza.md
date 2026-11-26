@@ -119,7 +119,9 @@ Un segundo agente leyó a ciegas 136 casos: confirmó las 9 correcciones que se 
 
 ## Listo cuando
 
-Hay un informe antes y después, cada hallazgo está resuelto o aceptado con motivo y no queda ningún registro de evaluación idéntico a uno de entrenamiento.
+Hay un informe antes y después; cada hallazgo está resuelto, aceptado con motivo o asignado a la línea que lo corregirá; y una persona identificable revisó una muestra de lo aceptado y lo corregido.
+
+Al 2026-11-26 se cumplen las dos primeras condiciones: los 39 pendientes están asignados a [L03](L03-vacios-creacion.md) (20 de etiquetas) y a [L08](L08-dataset.md) (19 cruces). Falta la revisión por una persona, por eso la línea sigue `EXPERIMENTAL`.
 
 ## Límites
 
@@ -137,6 +139,7 @@ Las reglas encuentran problemas de forma; los errores pedagógicos requieren un 
 - 2026-11-26: el titular aprobó los 15 hallazgos que quedaron proponiendo aceptar tras la reexportación (11 nuevos y 4 que cambiaron de lote).
 - 2026-11-26: el titular aprobó todas las recomendaciones sobre dudas, incluidos los tres textos con observación de la segunda lectura.
 - 2026-11-26: el titular autorizó aplicar los 35 textos en la fuente.
+- 2026-11-26: el titular cerró la fase 1. El criterio «ningún registro de evaluación idéntico a uno de entrenamiento» pasa a L08, que construye el dataset siguiente; L02 asigna los pendientes y exige una muestra revisada por una persona.
 - 2026-11-26: el titular aprobó los 7 hallazgos que quedaron proponiendo aceptar (6 nuevos y la aceptación retirada).
 - 2026-11-26: las decisiones se aprueban por lote; los lotes de corrección siguen pendientes hasta aplicar el cambio.
 - 2026-11-26: las correcciones se redactan y revisan aquí; el contenido se cambia en la fuente, con autorización expresa, y se vuelve a exportar.

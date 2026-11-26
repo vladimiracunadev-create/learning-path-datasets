@@ -1,7 +1,7 @@
 {
   "fases": [
     {"fase": 0, "titulo": "Base documentada", "estado": "hecha"},
-    {"fase": 1, "titulo": "Núcleo y limpieza", "estado": "en curso"},
+    {"fase": 1, "titulo": "Núcleo y limpieza", "estado": "hecha"},
     {"fase": 2, "titulo": "Vigía y vacíos", "estado": "pendiente"},
     {"fase": 3, "titulo": "RAG, MCP y agentes", "estado": "pendiente"},
     {"fase": 4, "titulo": "Dataset y ajuste", "estado": "pendiente"}

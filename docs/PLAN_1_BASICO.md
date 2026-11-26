@@ -104,6 +104,8 @@ Flujo: vigía → informe → **aprobación humana** → autor → verificador �
 
 El estado de cada fase está en `lineas.json` y se ve en el esquema.
 
+La fase 1 se cerró el 2026-11-26. L01 cumple su criterio. L02 dejó cada hallazgo resuelto, aceptado o asignado (20 a L03 y 19 a L08) y sigue `EXPERIMENTAL`: ninguna persona ha revisado el contenido. Cerrar una fase no cambia el estado de sus líneas.
+
 La prueba de escalamiento (una salida de ejemplo, como fichas imprimibles, sin tocar el núcleo) sigue pendiente; L01 ya produce los datos que necesita. En la fase 0 se probó el contrato con una modalidad ficticia dentro de las pruebas.
 
 ## Decisiones pendientes
