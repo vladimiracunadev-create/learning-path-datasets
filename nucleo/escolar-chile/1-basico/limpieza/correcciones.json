@@ -1,7 +1,6 @@
 {
  "redactor": "asistente de IA; sin revisión humana",
  "fecha": "2026-11-26",
- "aprobado_por": null,
  "correcciones": [
   {
    "item": "escolar-chile:1-basico:ar01-oa-01:c01:ej-recovery-01",
@@ -16,7 +15,11 @@
     "respuesta": "Que es larga y que termina en punta",
     "razon": "El largo y la punta dicen cómo es su contorno; verde es el color."
    },
-   "cambio": "ahora hay que separar la forma del color en vez de repetir «redonda»"
+   "cambio": "ahora hay que separar la forma del color en vez de repetir «redonda»",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3883cdfa0153"
+   }
   },
   {
    "item": "escolar-chile:1-basico:cn01-oa-03:c02:ej-understand-01",
@@ -31,7 +34,11 @@
     "respuesta": "Porque el agua con color todavía no sube por el tallo hasta las hojas; hay que esperar",
     "razon": "El tallo lleva el agua hasta las hojas y eso toma tiempo."
    },
-   "cambio": "cambia el foco de la raíz al transporte por el tallo, que no está respondido en un ejemplo"
+   "cambio": "cambia el foco de la raíz al transporte por el tallo, que no está respondido en un ejemplo",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "1c42f90ef547"
+   }
   },
   {
    "item": "escolar-chile:1-basico:cn01-oa-08:c01:auto-03",
@@ -46,7 +53,11 @@
     "respuesta": "La madera",
     "razon": "La madera viene de los árboles."
    },
-   "cambio": "hay que reconocer el material por sus pistas; otro ejercicio cercano nombra la madera"
+   "cambio": "hay que reconocer el material por sus pistas; otro ejercicio cercano nombra la madera",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "258e87ffa5ff"
+   }
   },
   {
    "item": "escolar-chile:1-basico:cn01-oa-08:c01:ej-recovery-01",
@@ -61,7 +72,11 @@
     "respuesta": "De metal",
     "razon": "La llave es dura y fría, como el metal."
    },
-   "cambio": "la pregunta ya no nombra el material como un dato"
+   "cambio": "la pregunta ya no nombra el material como un dato",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "01a8c4336e1f"
+   }
   },
   {
    "item": "escolar-chile:1-basico:cn01-oa-08:c01:ej-recovery-03",
@@ -76,7 +91,11 @@
     "respuesta": "De tela",
     "razon": "La tela es blanda y se puede doblar para poner el pie."
    },
-   "cambio": "la pregunta ya no nombra el material como un dato"
+   "cambio": "la pregunta ya no nombra el material como un dato",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "7339db3e824f"
+   }
   },
   {
    "item": "escolar-chile:1-basico:cn01-oa-08:c03:ej-recovery-01",
@@ -91,7 +110,11 @@
     "respuesta": "Rígido",
     "razon": "Lo que no se dobla es rígido."
    },
-   "cambio": "la pista es lo que le pasa al objeto, no el nombre del grupo"
+   "cambio": "la pista es lo que le pasa al objeto, no el nombre del grupo",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "22ac8b498997"
+   }
   },
   {
    "item": "escolar-chile:1-basico:cn01-oa-08:c03:ej-recovery-02",
@@ -106,7 +129,11 @@
     "respuesta": "Opaco",
     "razon": "Si no se ve a través, es opaco."
    },
-   "cambio": "la pista es lo que se observa, con un material que otro ejercicio no nombra"
+   "cambio": "la pista es lo que se observa, con un material que otro ejercicio no nombra",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "085a1f9cfaba"
+   }
   },
   {
    "item": "escolar-chile:1-basico:cn01-oa-08:c03:ej-recovery-03",
@@ -121,7 +148,11 @@
     "respuesta": "Flexible",
     "razon": "Lo que se dobla sin romperse es flexible."
    },
-   "cambio": "el enunciado actual dice «rígida» y pregunta si es flexible o rígido"
+   "cambio": "el enunciado actual dice «rígida» y pregunta si es flexible o rígido",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "95c98adf826e"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ef01-oa-09:c05:ej-challenge-02",
@@ -136,7 +167,11 @@
     "respuesta": "Por ejemplo: juego en la sombra y le pido ayuda a un adulto",
     "razon": "Es algo que se puede hacer, cuida la salud e incluye pedir ayuda."
    },
-   "cambio": "situación nueva sin la respuesta incluida"
+   "cambio": "situación nueva sin la respuesta incluida",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "85142f399b8c"
+   }
   },
   {
    "item": "escolar-chile:1-basico:en01-oa-11:c04:ej-challenge-02",
@@ -151,7 +186,11 @@
     "respuesta": "Hello! I am Leo. This is my pencil. It is yellow. Thank you!",
     "razon": "Se usan las cinco frases del modelo en orden y se cambian el nombre, el objeto y el color."
    },
-   "cambio": "datos distintos de los ejemplos y del modelo"
+   "cambio": "datos distintos de los ejemplos y del modelo",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "eadc3cce976b"
+   }
   },
   {
    "item": "escolar-chile:1-basico:en01-oa-13:c03:ej-recovery-01",
@@ -166,7 +205,11 @@
     "respuesta": "I like red.",
     "razon": "Primero va quién, luego lo que hace y al final con qué."
    },
-   "cambio": "las tarjetas ahora vienen desordenadas"
+   "cambio": "las tarjetas ahora vienen desordenadas",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "dedbc71f2349"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-03:c02:ej-apply-01",
@@ -197,7 +240,11 @@
     "respuesta": "El Combate Naval de Iquique",
     "razon": "Se recuerda en mayo y las Fiestas Patrias en septiembre."
    },
-   "cambio": "hay que comparar dos fechas dentro del año en vez de recordar un mes dicho en la actividad"
+   "cambio": "hay que comparar dos fechas dentro del año en vez de recordar un mes dicho en la actividad",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "38e5a6a70ada"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-06:c04:ej-apply-01",
@@ -212,7 +259,11 @@
     "respuesta": "Según Rosa, en su barrio de Valdivia hacen una feria",
     "razon": "Dice quién lo contó y no habla por todos."
    },
-   "cambio": "una voz inventada nueva, distinta de la del ejemplo"
+   "cambio": "una voz inventada nueva, distinta de la del ejemplo",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "c08e8beecbbf"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-08:c04:ej-contexto-01",
@@ -227,7 +278,11 @@
     "respuesta": "Avanza 1 casilla a la izquierda y sube 2 casillas",
     "razon": "Desde D3 se llega a C3 y desde ahí se sube hasta C1. También vale subir 2 y avanzar 1 a la izquierda."
    },
-   "cambio": "recorrido distinto del que explica la clase"
+   "cambio": "recorrido distinto del que explica la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "6a48bbabc88c"
+   }
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-09:c03:ej-apply-02",
@@ -274,7 +329,11 @@
     "respuesta": "Cuándo lo hará",
     "razon": "La frase dice qué hará, pero no el día ni el momento."
    },
-   "cambio": "hay una sola respuesta y exige revisar la frase"
+   "cambio": "hay una sola respuesta y exige revisar la frase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "62c0abbf0665"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-14:c02:ej-apply-02",
@@ -289,7 +348,11 @@
     "respuesta": "Por ejemplo: corre",
     "razon": "La palabra debe ser una acción que el caballo pueda hacer."
    },
-   "cambio": "se quita el ejemplo del enunciado y se cambia el sujeto, porque la explicación usa «el niño»"
+   "cambio": "se quita el ejemplo del enunciado y se cambia el sujeto, porque la explicación usa «el niño»",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "4f79b1495cd0"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-16:c04:ej-apply-01",
@@ -304,7 +367,11 @@
     "respuesta": "Por ejemplo: rica",
     "razon": "La palabra debe describir una torta."
    },
-   "cambio": "se quita el ejemplo del enunciado"
+   "cambio": "se quita el ejemplo del enunciado",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "53b2dfa497ee"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-17:c03:ej-apply-03",
@@ -319,7 +386,11 @@
     "respuesta": "Por ejemplo: laguna",
     "razon": "Debe terminar parecido a luna."
    },
-   "cambio": "se quita el ejemplo del enunciado"
+   "cambio": "se quita el ejemplo del enunciado",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "6c2d2fa65f4c"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-21:c03:ej-recovery-01",
@@ -334,7 +405,11 @@
     "respuesta": "Tú dijiste que comiste una manzana",
     "razon": "Repite lo que dijo Leo."
    },
-   "cambio": "situación distinta de la del ejemplo"
+   "cambio": "situación distinta de la del ejemplo",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "7e7b77484274"
+   }
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-24:c02:ej-understand-03",
@@ -349,7 +424,11 @@
     "respuesta": "Un ejemplo",
     "razon": "Una buena explicación dice la palabra, su significado y un ejemplo."
    },
-   "cambio": "aplica la forma a un caso; otro ejercicio ya no entrega la respuesta completa"
+   "cambio": "aplica la forma a un caso; otro ejercicio ya no entrega la respuesta completa",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "e0232c2ad8b0"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-17:c04:auto-01",
@@ -364,7 +443,11 @@
     "respuesta": "El día es 8 y el mes es agosto",
     "razon": "El número dice el día y el nombre dice el mes."
    },
-   "cambio": "hay que distinguir día y mes en una fecha nueva"
+   "cambio": "hay que distinguir día y mes en una fecha nueva",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "bed8b399c400"
+   }
   },
   {
    "item": "escolar-chile:1-basico:mu01-oa-03:c01:ej-apply-01",
@@ -379,7 +462,11 @@
     "respuesta": "Rápidos y fuertes",
     "razon": "Muchos golpes seguidos son rápidos y mucho ruido es fuerte."
    },
-   "cambio": "hay que nombrar las cualidades a partir de lo que ocurre"
+   "cambio": "hay que nombrar las cualidades a partir de lo que ocurre",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "f8e408978239"
+   }
   },
   {
    "item": "escolar-chile:1-basico:mu01-oa-06:c04:ej-apply-01",
@@ -410,7 +497,11 @@
     "respuesta": "Fue fuerte y corto",
     "razon": "Taparse los oídos muestra que fue fuerte; terminar enseguida, que fue corto."
    },
-   "cambio": "las cualidades se deducen, no vienen dichas"
+   "cambio": "las cualidades se deducen, no vienen dichas",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "36fd40e7d738"
+   }
   },
   {
    "item": "escolar-chile:1-basico:te01-oa-04:c01:ej-apply-03",
@@ -425,7 +516,11 @@
     "respuesta": "Por ejemplo: el puente sostiene 5 monedas sin caerse",
     "razon": "Se puede mirar si el puente se cae y contar las monedas. Vale cualquier número de monedas."
    },
-   "cambio": "se cambia una frase vaga en un criterio, sin que el enunciado lo entregue"
+   "cambio": "se cambia una frase vaga en un criterio, sin que el enunciado lo entregue",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "7f70d9da8371"
+   }
   }
  ],
  "segunda_lectura": [

@@ -88,7 +88,12 @@ def check(root: Path = ROOT, modality_lines: dict[str, str] | None = None) -> li
     ]
     missing = [t for t in SECTIONS if t not in sections((folder / "_PLANTILLA.md").read_text(encoding="utf-8"))]
     problems += [f"_PLANTILLA.md: falta la sección «{t}»" for t in missing]
-    for path in [*sorted(folder.glob("*.md")), root / "docs" / "PLAN_1_BASICO.md", root / "docs" / "CORE_CONTRACT.md"]:
+    for path in [
+        *sorted(folder.glob("*.md")),
+        root / "docs" / "PLAN_1_BASICO.md",
+        root / "docs" / "CORE_CONTRACT.md",
+        root / "docs" / "METODO.md",
+    ]:
         problems += broken_links(path)
     for name, line_id in sorted((modality_lines or {}).items()):
         if line_id not in ids:

@@ -2,13 +2,16 @@
 
 No cambia el núcleo. Comprueba cada propuesta simulando el cambio en una copia: la pregunta nueva no puede
 duplicar otra, entrar en conflicto con otra ni quedar respondida por el cuaderno de su clase. Que la redacción sea
-buena para un niño lo decide una persona.
+buena para un niño lo decide una persona, y su aprobación queda en cada fila, ligada al texto aprobado.
 """
 
 from __future__ import annotations
 
 import copy
+import hashlib
 import json
+import os
+from collections.abc import Collection
 from pathlib import Path
 from typing import Any
 
@@ -22,6 +25,11 @@ FIELDS = ("enunciado", "respuesta", "razon")
 BLOCKING = ("duplicado_exacto", "respuestas_en_conflicto", "recurso_ausente")
 SHORT = 12  # una respuesta más corta puede aparecer en un ejemplo por casualidad
 LONG = 30  # a partir de aquí, aparecer en cualquier otra parte del cuaderno ya la entrega
+
+
+def fingerprint(content: dict[str, str]) -> str:
+    """Huella del texto aprobado: si la redacción cambia, la aprobación deja de valer."""
+    return hashlib.sha256(json.dumps(content, ensure_ascii=False, sort_keys=True).encode("utf-8")).hexdigest()[:12]
 
 
 def simulate(entities: list[Entity], corrections: list[dict[str, Any]]) -> list[Entity]:
@@ -75,6 +83,12 @@ def check_corrections(
             problems.append(f"{ident}: el hallazgo declarado no corresponde")
         if not str(c.get("cambio", "")).strip():
             problems.append(f"{ident}: falta explicar qué cambia")
+        approval = c.get("aprobacion")
+        if approval is not None:
+            if not str(approval.get("por", "")).strip():
+                problems.append(f"{ident}: la aprobación no dice quién aprueba")
+            if approval.get("huella") != fingerprint(c["despues"]):
+                problems.append(f"{ident}: el texto cambió después de aprobarse")
     if problems:
         return problems
     changed = simulate(entities, corrections)
@@ -112,15 +126,16 @@ def check_corrections(
 
 def render(document: dict[str, Any]) -> str:
     rows = document["correcciones"]
-    approved = document.get("aprobado_por")
+    approved = [r for r in rows if r.get("aprobacion")]
+    people = ", ".join(sorted({r["aprobacion"]["por"] for r in approved}))
+    state = f"{len(approved)} de {len(rows)} aprobadas por {people}" if approved else "**sin aprobar**"
     out = [
         "# Correcciones propuestas · 1.º básico",
         "",
         "Generado con `lpdatasets clean-corrections`; no se edita a mano.",
         "",
         f"- Redacción: {document['redactor']} ({document['fecha']}).",
-        f"- Estado: {'aprobadas por ' + approved if approved else '**sin aprobar**'}. "
-        "**No están aplicadas**: el núcleo y la fuente siguen igual.",
+        f"- Estado: {state}. **No están aplicadas**: el núcleo y la fuente siguen igual.",
         f"- {len(rows)} preguntas. Detectadas al redactar, fuera de los hallazgos: "
         f"{sum(r['hallazgo'] is None for r in rows)}.",
     ]
@@ -137,6 +152,8 @@ def render(document: dict[str, Any]) -> str:
             f"## {number}. `{row['item'].split(':', 2)[-1]}`{mark}",
             "",
             f"Qué cambia: {row['cambio']}.",
+            "",
+            f"Estado: aprobada por {row['aprobacion']['por']}." if row.get("aprobacion") else "Estado: sin aprobar.",
             "",
             "| | Antes | Después |",
             "|---|---|---|",
@@ -175,3 +192,31 @@ def corrections_report(nucleo: Path, doc: Path, check: bool = False) -> list[str
     doc.parent.mkdir(parents=True, exist_ok=True)
     doc.write_text(text, encoding="utf-8", newline="\n")
     return []
+
+
+def approve_corrections(nucleo: Path, doc: Path, approver: str, include: Collection[str] = ()) -> int:
+    """Aprueba las correcciones sin duda abierta y las que se nombren en `include`; devuelve cuántas son nuevas.
+
+    Aprobar no aplica el cambio: el núcleo y los hallazgos siguen como estaban.
+    """
+    if not approver.strip():
+        raise SystemExit("falta el nombre de quien aprueba")
+    problems = corrections_report(nucleo, doc, check=True)
+    if problems:
+        raise SystemExit(os.linesep.join(problems))
+    path = core_folders(nucleo)[0] / "limpieza" / "correcciones.json"
+    document = json.loads(path.read_text(encoding="utf-8"))
+    rows = document["correcciones"]
+    named: set[str] = set()
+    for name in include:
+        found = [r["item"] for r in rows if r["item"] == name or r["item"].endswith(f":{name}")]
+        if len(found) != 1:
+            raise SystemExit(f"no se reconoce la corrección nombrada: {name}")
+        named.add(found[0])
+    new = [r for r in rows if not r.get("aprobacion") and (not r.get("duda") or r["item"] in named)]
+    for row in new:
+        row["aprobacion"] = {"por": approver.strip(), "huella": fingerprint(row["despues"])}
+    text = json.dumps(document, ensure_ascii=False, indent=1) + chr(10)
+    path.write_text(text, encoding="utf-8", newline=chr(10))
+    corrections_report(nucleo, doc)
+    return len(new)

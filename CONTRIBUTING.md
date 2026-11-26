@@ -21,6 +21,7 @@ lpdatasets validate
 
 ## Reglas para las líneas de implementación
 
+- Cada avance actualiza [`docs/METODO.md`](docs/METODO.md): qué se hizo, por qué, cómo se comprobó, qué cambió de criterio y qué es genérico o específico.
 - Toda línea tiene su documento en [`docs/lineas/`](docs/lineas/README.md), con las secciones de la plantilla. Actualízalo en el mismo cambio que modifica su comportamiento.
 - Una modalidad nueva recibe datos solo a través de `run()` o `select()`, que aplican derechos, público y marco curricular. Sigue [L10](docs/lineas/L10-modalidad-nueva.md).
 

@@ -3,7 +3,7 @@
 Generado con `lpdatasets clean-corrections`; no se edita a mano.
 
 - Redacción: asistente de IA; sin revisión humana (2026-11-26).
-- Estado: **sin aprobar**. **No están aplicadas**: el núcleo y la fuente siguen igual.
+- Estado: 24 de 28 aprobadas por vladimiracunadev-create. **No están aplicadas**: el núcleo y la fuente siguen igual.
 - 28 preguntas. Detectadas al redactar, fuera de los hallazgos: 1.
 
 ## Segunda lectura
@@ -18,6 +18,8 @@ Dos agentes de IA distintos resolvieron las preguntas sin ver las respuestas pro
 
 Qué cambia: ahora hay que separar la forma del color en vez de repetir «redonda».
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Una concha es redonda, tiene rayitas que salen desde un punto y es de color crema. ¿Qué forma tiene? | Observas una hoja: es larga, termina en punta y es verde. ¿Qué dos cosas de esa frase hablan de su forma? |
@@ -27,6 +29,8 @@ Qué cambia: ahora hay que separar la forma del color en vez de repetir «redond
 ## 2. `cn01-oa-03:c02:ej-understand-01`
 
 Qué cambia: cambia el foco de la raíz al transporte por el tallo, que no está respondido en un ejemplo.
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -38,6 +42,8 @@ Qué cambia: cambia el foco de la raíz al transporte por el tallo, que no está
 
 Qué cambia: hay que reconocer el material por sus pistas; otro ejercicio cercano nombra la madera.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | ¿De qué material es un vaso de vidrio? | Es un material duro que viene de los árboles. ¿Qué material es? |
@@ -47,6 +53,8 @@ Qué cambia: hay que reconocer el material por sus pistas; otro ejercicio cercan
 ## 4. `cn01-oa-08:c01:ej-recovery-01`
 
 Qué cambia: la pregunta ya no nombra el material como un dato.
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -58,6 +66,8 @@ Qué cambia: la pregunta ya no nombra el material como un dato.
 
 Qué cambia: la pregunta ya no nombra el material como un dato.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Una pelota de goma. ¿Cuál es el material? | Un calcetín, ¿está hecho de tela o de madera? |
@@ -67,6 +77,8 @@ Qué cambia: la pregunta ya no nombra el material como un dato.
 ## 6. `cn01-oa-08:c03:ej-recovery-01`
 
 Qué cambia: la pista es lo que le pasa al objeto, no el nombre del grupo.
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -78,6 +90,8 @@ Qué cambia: la pista es lo que le pasa al objeto, no el nombre del grupo.
 
 Qué cambia: la pista es lo que se observa, con un material que otro ejercicio no nombra.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Tabla: el vaso es transparente. ¿A qué grupo va: transparente u opaco? | Miras una caja de cartón cerrada y no ves lo que hay dentro. ¿El cartón es transparente u opaco? |
@@ -87,6 +101,8 @@ Qué cambia: la pista es lo que se observa, con un material que otro ejercicio n
 ## 8. `cn01-oa-08:c03:ej-recovery-03` · detectada al redactar
 
 Qué cambia: el enunciado actual dice «rígida» y pregunta si es flexible o rígido.
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -98,6 +114,8 @@ Qué cambia: el enunciado actual dice «rígida» y pregunta si es flexible o r�
 
 Qué cambia: situación nueva sin la respuesta incluida.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Haces tu propia alternativa: sin agua para tomar en la plaza. Respuesta posible: avisar a un adulto y pedir agua segura. ¿A quién avisas? | Vas a jugar con mucho sol y no tienes gorro. Propón una alternativa posible y segura, y di a quién pides ayuda. |
@@ -107,6 +125,8 @@ Qué cambia: situación nueva sin la respuesta incluida.
 ## 10. `en01-oa-11:c04:ej-challenge-02`
 
 Qué cambia: datos distintos de los ejemplos y del modelo.
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -118,6 +138,8 @@ Qué cambia: datos distintos de los ejemplos y del modelo.
 
 Qué cambia: las tarjetas ahora vienen desordenadas.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Ordena: I / like / red. Escribe la oración. | Ordena: red / I / like. Escribe la oración. |
@@ -127,6 +149,8 @@ Qué cambia: las tarjetas ahora vienen desordenadas.
 ## 12. `hi01-oa-03:c02:ej-apply-01`
 
 Qué cambia: ciudades distintas de las del ejemplo y presentadas en desorden.
+
+Estado: sin aprobar.
 
 | | Antes | Después |
 |---|---|---|
@@ -140,6 +164,8 @@ Qué cambia: ciudades distintas de las del ejemplo y presentadas en desorden.
 
 Qué cambia: hay que comparar dos fechas dentro del año en vez de recordar un mes dicho en la actividad.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | ¿En qué mes es el 12 de octubre? | En un mismo año, ¿qué se conmemora primero: el Combate Naval de Iquique o las Fiestas Patrias? |
@@ -149,6 +175,8 @@ Qué cambia: hay que comparar dos fechas dentro del año en vez de recordar un m
 ## 14. `hi01-oa-06:c04:ej-apply-01`
 
 Qué cambia: una voz inventada nueva, distinta de la del ejemplo.
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -160,6 +188,8 @@ Qué cambia: una voz inventada nueva, distinta de la del ejemplo.
 
 Qué cambia: recorrido distinto del que explica la clase.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Un niño nuevo llega a la entrada (A3) y debe llegar a la sala (C1). La profesora le da un papel con el plano. ¿Qué recorrido escribe ella? | Plano de la escuela: entrada A3, patio B2, sala C1, baño D3. Un niño sale del baño y quiere volver a la sala. Escribe su recorrido. |
@@ -169,6 +199,8 @@ Qué cambia: recorrido distinto del que explica la clase.
 ## 16. `hi01-oa-09:c03:ej-apply-02`
 
 Qué cambia: hay que aplicar los dos conceptos a nombres nuevos.
+
+Estado: sin aprobar.
 
 | | Antes | Después |
 |---|---|---|
@@ -182,6 +214,8 @@ Qué cambia: hay que aplicar los dos conceptos a nombres nuevos.
 
 Qué cambia: pregunta por el modo de ubicar un país, sin repetir los datos de los ejemplos.
 
+Estado: sin aprobar.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Para llegar desde Chile a Japón por mar se cruza el océano Pacífico. ¿Qué país de la lista está al otro lado de ese océano: Noruega o Japón? | Quieres encontrar un país en el globo terráqueo. ¿Qué buscas primero: el continente o el país? |
@@ -194,6 +228,8 @@ Qué cambia: pregunta por el modo de ubicar un país, sin repetir los datos de l
 
 Qué cambia: hay una sola respuesta y exige revisar la frase.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Escribe una parte que debe tener: qué, quién o cuándo. | A la frase «Voy a regar la planta» le falta una parte. ¿Le falta decir qué hará o cuándo lo hará? |
@@ -203,6 +239,8 @@ Qué cambia: hay una sola respuesta y exige revisar la frase.
 ## 19. `le01-oa-14:c02:ej-apply-02`
 
 Qué cambia: se quita el ejemplo del enunciado y se cambia el sujeto, porque la explicación usa «el niño».
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -214,6 +252,8 @@ Qué cambia: se quita el ejemplo del enunciado y se cambia el sujeto, porque la 
 
 Qué cambia: se quita el ejemplo del enunciado.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Completa con una palabra: «La torta estaba ___.» (por ejemplo, rica) | Completa con una palabra que calce: «La torta estaba ___.» |
@@ -223,6 +263,8 @@ Qué cambia: se quita el ejemplo del enunciado.
 ## 21. `le01-oa-17:c03:ej-apply-03`
 
 Qué cambia: se quita el ejemplo del enunciado.
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -234,6 +276,8 @@ Qué cambia: se quita el ejemplo del enunciado.
 
 Qué cambia: situación distinta de la del ejemplo.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Ana dijo: «Me gusta el patio». ¿Qué frase muestra que escuché: «Tú dijiste que te gusta el patio» o «Yo tengo un perro»? | Leo dijo: «Hoy comí una manzana». ¿Qué frase muestra que escuché: «Tú dijiste que comiste una manzana» o «Me gusta pintar»? |
@@ -243,6 +287,8 @@ Qué cambia: situación distinta de la del ejemplo.
 ## 23. `le01-oa-24:c02:ej-understand-03`
 
 Qué cambia: aplica la forma a un caso; otro ejercicio ya no entrega la respuesta completa.
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -254,6 +300,8 @@ Qué cambia: aplica la forma a un caso; otro ejercicio ya no entrega la respuest
 
 Qué cambia: hay que distinguir día y mes en una fecha nueva.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | ¿Qué mes es el 1 de enero? | En la fecha «8 de agosto», ¿cuál es el día y cuál es el mes? |
@@ -264,6 +312,8 @@ Qué cambia: hay que distinguir día y mes en una fecha nueva.
 
 Qué cambia: hay que nombrar las cualidades a partir de lo que ocurre.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Un adulto toca una pandereta rápida y fuerte. Escribe qué observarías sobre su rapidez y su fuerza. | Un adulto golpea la mesa: da muchos golpes muy seguidos y hace mucho ruido. ¿Cómo son los golpes en rapidez y en fuerza? |
@@ -273,6 +323,8 @@ Qué cambia: hay que nombrar las cualidades a partir de lo que ocurre.
 ## 26. `mu01-oa-06:c04:ej-apply-01`
 
 Qué cambia: situación distinta de la del ejemplo y sin las frases dadas.
+
+Estado: sin aprobar.
 
 | | Antes | Después |
 |---|---|---|
@@ -286,6 +338,8 @@ Qué cambia: situación distinta de la del ejemplo y sin las frases dadas.
 
 Qué cambia: las cualidades se deducen, no vienen dichas.
 
+Estado: aprobada por vladimiracunadev-create.
+
 | | Antes | Después |
 |---|---|---|
 | Pregunta | Describe una lluvia que sonaba suave y larga con dos cualidades. | Un trueno sonó tanto que te tapaste los oídos, y terminó enseguida. Descríbelo: ¿cómo fue su fuerza y cuánto duró? |
@@ -295,6 +349,8 @@ Qué cambia: las cualidades se deducen, no vienen dichas.
 ## 28. `te01-oa-04:c01:ej-apply-03`
 
 Qué cambia: se cambia una frase vaga en un criterio, sin que el enunciado lo entregue.
+
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|

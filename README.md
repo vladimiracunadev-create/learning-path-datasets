@@ -14,7 +14,7 @@
 
 **learning-path-datasets** convierte programas de aprendizaje estructurados en datasets **multiconocimiento** para entrenar o evaluar modelos: cada ejemplo es una línea JSONL con su pregunta, respuesta, razón, dificultad, **procedencia** (repositorio, versión y archivo), **licencia**, **estado de revisión** y **partición** de entrenamiento o evaluación. Sobre esos mismos datos mantiene una **base vectorial local** para búsqueda y recuperación (RAG).
 
-[Plan de 1.º básico](docs/PLAN_1_BASICO.md) · [Líneas](docs/lineas/README.md) · [Núcleo](docs/CORE_CONTRACT.md) · [Esquema](docs/DATASET_SCHEMA.md) · [Arquitectura](docs/ARCHITECTURE.md) · [Base vectorial](docs/VECTOR_STORE.md) · [Tarjeta del dataset escolar](docs/DATASET_CARD_escolar-chile.md) · [Cómo sumar un programa](docs/ADDING_A_PACK.md) · [Conocimiento puro](docs/KNOWLEDGE_STANDARD.md) · [Skills y agentes](docs/SKILLS_AND_AGENTS.md) · [Límites y derechos](docs/LIMITS_AND_RIGHTS.md) · [Estado](STATUS.md) · [Hoja de ruta](ROADMAP.md)
+[Plan de 1.º básico](docs/PLAN_1_BASICO.md) · [Método y decisiones](docs/METODO.md) · [Líneas](docs/lineas/README.md) · [Núcleo](docs/CORE_CONTRACT.md) · [Esquema](docs/DATASET_SCHEMA.md) · [Arquitectura](docs/ARCHITECTURE.md) · [Base vectorial](docs/VECTOR_STORE.md) · [Tarjeta del dataset escolar](docs/DATASET_CARD_escolar-chile.md) · [Cómo sumar un programa](docs/ADDING_A_PACK.md) · [Conocimiento puro](docs/KNOWLEDGE_STANDARD.md) · [Skills y agentes](docs/SKILLS_AND_AGENTS.md) · [Límites y derechos](docs/LIMITS_AND_RIGHTS.md) · [Estado](STATUS.md) · [Hoja de ruta](ROADMAP.md)
 
 > [!IMPORTANT]
 > Este repositorio **prepara datos; no entrena modelos ni los distribuye**. El contenido fue elaborado con asistencia de IA y **no tiene revisión humana profesional**. Un dato publicado no es automáticamente correcto, representativo ni apto para cualquier uso. Lee [Límites y derechos](docs/LIMITS_AND_RIGHTS.md) antes de entrenar o redistribuir.
@@ -68,7 +68,7 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | Tipos de conocimiento puro (`hecho`, `definicion`, `relacion`…) | `OPERATIVO` | esquema y [estándar](docs/KNOWLEDGE_STANDARD.md) |
 | 4 skills y 5 agentes generales para crear y limpiar datasets | `OPERATIVO` | `.claude/`, `scripts/verify_assets.py` y pruebas; estructura verificada, calidad no medida |
 | Núcleo de 1.º básico: 887 clases, 16.386 ítems y 1.653 recursos | `OPERATIVO` | `nucleo/`, `lpdatasets core-validate`; contrato [`nucleo-0.1`](docs/CORE_CONTRACT.md), aún experimental |
-| Informe de limpieza | `EXPERIMENTAL` | [1.140 hallazgos](docs/informes/limpieza-1-basico.md) con [propuestas por lote](docs/informes/propuestas-limpieza-1-basico.md): 1.042 aceptados y 98 pendientes; [28 correcciones propuestas](docs/informes/correcciones-1-basico.md), sin aprobar |
+| Informe de limpieza | `EXPERIMENTAL` | [1.140 hallazgos](docs/informes/limpieza-1-basico.md) con [propuestas por lote](docs/informes/propuestas-limpieza-1-basico.md): 1.042 aceptados y 98 pendientes; [28 correcciones propuestas](docs/informes/correcciones-1-basico.md): 24 aprobadas, ninguna aplicada |
 | Líneas de implementación documentadas | `OPERATIVO` | `scripts/verify_docs.py`; comprueba estructura, no la calidad del texto |
 | Otros niveles escolares y otros programas | `PLANIFICADO` | [hoja de ruta](ROADMAP.md) |
 

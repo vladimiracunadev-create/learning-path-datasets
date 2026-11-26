@@ -1,6 +1,6 @@
 # Líneas de implementación
 
-Cada línea del [plan de 1.º básico](../PLAN_1_BASICO.md) se documenta aquí. El registro es [`lineas.json`](lineas.json) y la forma la fija la [plantilla](_PLANTILLA.md).
+Cada línea del [plan de 1.º básico](../PLAN_1_BASICO.md) se documenta aquí; el recorrido completo, sus fundamentos y cómo reutilizarlo están en [Método](../METODO.md). El registro es [`lineas.json`](lineas.json) y la forma la fija la [plantilla](_PLANTILLA.md).
 
 | Línea | Documento |
 |---|---|

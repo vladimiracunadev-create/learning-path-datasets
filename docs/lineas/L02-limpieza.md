@@ -46,7 +46,10 @@ lpdatasets clean-approve --lote duplicado-glosario --aprobado-por "nombre"
 
 ```bash
 lpdatasets clean-corrections
+lpdatasets clean-approve-corrections --aprobado-por "nombre"
 ```
+
+La aprobación de correcciones omite las que tienen una duda abierta, salvo que se nombren con `--incluir`, y queda ligada al texto: si la redacción cambia, deja de valer.
 
 `clean-proposals` agrupa los hallazgos en lotes y escribe las [propuestas](../informes/propuestas-limpieza-1-basico.md). Combina reglas generales con los juicios de lectura guardados en `limpieza/revision.json`; lo que exige lectura y no la tiene queda en `sin-revisar`. `clean-approve` es el único paso que registra decisiones, solo admite lotes que proponen aceptar y exige el nombre de quien aprueba. Con `--check`, los dos informes se comprueban sin escribirse.
 
@@ -54,7 +57,7 @@ El agente [`limpiador-datos`](../../.claude/agents/limpiador-datos.md) prepara l
 
 ## Pruebas
 
-`tests/test_cleaning.py` tiene un caso sintético por regla, comprueba el determinismo y rechaza decisiones incompletas u obsoletas. `tests/test_proposals.py` comprueba que lo no leído nunca se proponga aceptar y que la aprobación rechace lotes de corrección. `tests/test_corrections.py` rechaza redacciones obsoletas, repetidas o respondidas por el cuaderno. El CI comprueba que el informe publicado corresponda a los datos.
+`tests/test_cleaning.py` tiene un caso sintético por regla, comprueba el determinismo y rechaza decisiones incompletas u obsoletas. `tests/test_proposals.py` comprueba que lo no leído nunca se proponga aceptar y que la aprobación rechace lotes de corrección. `tests/test_corrections.py` rechaza redacciones obsoletas, repetidas o respondidas por el cuaderno, y comprueba qué se aprueba y cuándo una aprobación deja de valer. El CI comprueba que el informe publicado corresponda a los datos.
 
 ## Métricas
 
@@ -82,7 +85,7 @@ Propuestas del 2026-11-26:
 | corregir | 63 | pendientes: 24 sobre 27 preguntas, 19 de cruces del dataset (L08) y 20 de etiquetas (L03) |
 | decidir | 35 | pendientes: 19 de vocabulario, 11 de enunciado y 5 de cuaderno |
 
-Las [correcciones](../informes/correcciones-1-basico.md) de las 27 preguntas, más una detectada al redactar, están escritas y **sin aprobar ni aplicar**. En una primera verificación ciega, 19 de 28 quedaron sin observaciones; las otras 9 se cambiaron y otro verificador dejó 5 sin observaciones, 1 por corregir (aplicada, sin otra lectura) y 3 dudas.
+Las [correcciones](../informes/correcciones-1-basico.md) de las 27 preguntas, más una detectada al redactar, están escritas. El titular aprobó el 2026-11-26 las 24 sin duda abierta; quedan 4 sin aprobar y **ninguna aplicada**. En una primera verificación ciega, 19 de 28 quedaron sin observaciones; las otras 9 se cambiaron y otro verificador dejó 5 sin observaciones, 1 por corregir (aplicada, sin otra lectura) y 3 dudas.
 
 Un segundo agente leyó a ciegas 136 casos: confirmó las 9 correcciones que se proponían entonces y objetó 15 de 116 casos que se proponía aceptar (3 defectos y 12 dudas). Esos 15 pasaron a `corregir` o `decidir`.
 
