@@ -6,20 +6,23 @@ import argparse
 import json
 import os
 import sys
+from datetime import date
 from pathlib import Path
 
 from . import __version__
 from .build import build, stats, validate_datasets
 from .cleaning import report
+from .core import load_marcos
 from .core_build import validate_core
 from .core_escolar import export as export_core
 from .corrections import approve_corrections, corrections_report, mark_applied
 from .doubts import Docs, doubts_report, resolve_doubts
 from .proposals import approve, proposals_report
 from .vector import build_index, search
+from .watch import accept as watch_accept
+from .watch import add_manual, summary
 from .watch import report as watch_report
 from .watch import run as watch_run
-from .watch import summary
 from .watch_escolar import ADAPTER, affected_classes, write_baseline
 
 
@@ -110,6 +113,20 @@ def main(argv: list[str] | None = None) -> int:
 
     p = sub.add_parser("watch-report", parents=[watched, reported], help="informe de la última revisión, sin red")
     p.add_argument("--check", action="store_true", help="falla si el informe está desactualizado")
+
+    p = sub.add_parser("watch-accept", parents=[watched], help="acepta la última lectura de una página")
+    p.add_argument("--fuente", required=True)
+    p.add_argument("--aprobado-por", required=True)
+
+    p = sub.add_parser("watch-record", parents=[watched, reported], help="registra una revisión hecha por una persona")
+    p.add_argument("--fuente", required=True)
+    p.add_argument("--revisado-por", required=True)
+    p.add_argument("--resultado", required=True, choices=("sin_novedad", "novedad"))
+    p.add_argument("--nota", required=True, help="qué se leyó, con palabras propias")
+    p.add_argument("--url", help="documento leído, del mismo sitio que la fuente")
+    p.add_argument("--fecha", help="AAAA-MM-DD; hoy si se omite")
+    p.add_argument("--marco", help="marco curricular sobre el que se propone un estado")
+    p.add_argument("--estado-marco", help="estado propuesto; no se aplica solo")
 
     p = sub.add_parser("validate", help="valida esquema, hashes y particiones")
     p.add_argument("--datasets", default="datasets")
@@ -210,9 +227,27 @@ def main(argv: list[str] | None = None) -> int:
         print(text)
         return code
     if args.cmd == "watch-report":
-        found = watch_report(Path(args.vigia), Path(args.informe), args.check)
+        found = watch_report(Path(args.vigia), Path(args.informe), args.check, load_marcos())
         print(os.linesep.join(found) if found else "OK: informe del vigía al día")
         return 1 if found else 0
+    if args.cmd == "watch-accept":
+        watch_accept(Path(args.vigia), args.fuente, args.aprobado_por)
+        print(f"Referencia aceptada: {args.fuente}")
+        return 0
+    if args.cmd == "watch-record":
+        entry = {
+            "fuente": args.fuente,
+            "fecha": args.fecha or date.today().isoformat(),
+            "revisado_por": args.revisado_por,
+            "resultado": args.resultado,
+            "nota": args.nota,
+            "url": args.url,
+            "marco": args.marco,
+            "estado_marco": args.estado_marco,
+        }
+        add_manual(Path(args.vigia), Path(args.informe), entry, load_marcos())
+        print(f"Revisión manual registrada: {args.fuente}")
+        return 0
     if args.cmd == "validate":
         problems = validate_datasets(Path(args.datasets))
         print("\n".join(problems[:50]) if problems else "OK: datasets válidos")

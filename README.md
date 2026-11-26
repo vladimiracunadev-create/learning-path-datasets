@@ -69,7 +69,7 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | 4 skills y 5 agentes generales para crear y limpiar datasets | `OPERATIVO` | `.claude/`, `scripts/verify_assets.py` y pruebas; estructura verificada, calidad no medida |
 | Núcleo de 1.º básico: 887 clases, 16.386 ítems y 1.653 recursos | `OPERATIVO` | `nucleo/`, `lpdatasets core-validate`; contrato [`nucleo-0.1`](docs/CORE_CONTRACT.md), aún experimental |
 | Informe de limpieza | `EXPERIMENTAL` | [1.131 hallazgos](docs/informes/limpieza-1-basico.md) con [propuestas por lote](docs/informes/propuestas-limpieza-1-basico.md): 1.073 aceptados, 19 resueltos y 39 pendientes (etiquetas y cruces); [correcciones](docs/informes/correcciones-1-basico.md): las 59 aprobadas están aplicadas; [39 dudas decididas](docs/informes/dudas-1-basico.md) |
-| Vigía curricular | `EXPERIMENTAL` | [última revisión](docs/informes/vigia-1-basico.md): compara los 237 objetivos oficiales de 1.º básico; las demás fuentes aún no se comprueban solas |
+| Vigía curricular | `OPERATIVO` | [última revisión](docs/informes/vigia-1-basico.md), a pedido: 15 fuentes automáticas (incluidos los 237 objetivos oficiales) y 4 de revisión manual |
 | Líneas de implementación documentadas | `OPERATIVO` | `scripts/verify_docs.py`; comprueba estructura, no la calidad del texto |
 | Otros niveles escolares y otros programas | `PLANIFICADO` | [hoja de ruta](ROADMAP.md) |
 

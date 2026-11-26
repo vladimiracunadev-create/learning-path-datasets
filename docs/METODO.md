@@ -163,6 +163,15 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Qué se aprendió:** la creación de la línea base se detuvo ante códigos de forma no prevista (`LC01 OA LF01`); conviene que un patrón que no cubre un dato real detenga el proceso en vez de omitirlo.
 - **Límite:** solo vigila códigos y textos de objetivos; la propuesta curricular en trámite no se vería hasta que cambien esas páginas.
 
+### 3.20 Paso 2.2: las demás fuentes y lo que se revisa a mano
+
+- **Qué:** `watch_pages.py` resume páginas sin objetivos (texto principal y documentos enlazados) y `watch_manual.py` registra lo que lee una persona y comprueba los marcos. Órdenes nuevas `watch-record` y `watch-accept`.
+- **Por qué:** una página sin estructura fija solo permite saber que cambió; por eso cada fuente declara qué se compara. La referencia la mueve una persona, para que un aviso no se pierda por no haber leído un informe.
+- **Cómo se comprobó:** antes de escribir, se leyó dos veces cada página para ver qué era estable; el artículo académico mostraba noticias que rotan, así que se compara entre marcas. Pruebas sin red y revisión real: 15 de 19 fuentes leídas.
+- **Qué falló:** la primera marca de término estaba en una zona que se descarta y la fuente quedó `ilegible`; el diseño evitó que se tomara como «sin cambios».
+- **Desvíos del plan:** no se construyó lectura de canales, porque la única fuente de ese tipo rechaza su `robots.txt`; se sumó la política del sitio, caso ya descrito en L04.
+- **Límite:** las fuentes que anunciarían primero un cambio de bases siguen dependiendo de una persona.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -200,6 +209,7 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 | El mismo texto repetido en varias clases | búsqueda literal con más de una aparición | ubicar cada cambio por su clase y no escribir si algo no es único |
 | Textos armados desde una plantilla de la fuente | una pregunta no aparecía en la búsqueda literal | reconstruir la plantilla; nunca editar a mano lo no localizado |
 | Una página que cambia de diseño parece «todo quitado» o «sin cambios» | pruebas con páginas rotas | exigir los códigos esperados y declarar `ilegible` |
+| Una página mezcla su contenido con bloques que rotan | dos lecturas y lectura del texto | comparar entre marcas o solo los documentos |
 | Condiciones de uso contradictorias | política del sitio frente a la etiqueta de un recurso | registrarlo como no resuelto; decide quien tiene los derechos |
 
 ## 6. Cómo aplicarlo a otro tipo de datos
@@ -234,6 +244,7 @@ Protocolo de lectura ciega usado: archivo solo con las preguntas y su contexto; 
 | `proposals.py`, `corrections.py`, `doubts.py` | mecanismo genérico, reglas específicas | reconocen formas del español y los encabezados «Ejemplos resueltos» y «Ejercicios» |
 | `watch.py` | genérico | informe con título de 1.º básico |
 | `watch_escolar.py` | específico | páginas de objetivos de Currículum Nacional |
+| `watch_pages.py`, `watch_manual.py` | genéricos | las fuentes concretas están en `vigia/`; los estados de marco son los del registro curricular |
 | `cli.py` | genérico con valores por defecto | las rutas de informes apuntan a 1.º básico |
 | `verify_docs.py` | casi genérico | comprueba enlaces de documentos con nombre fijo |
 | `docs_diagram.py` | específico | título y posiciones del esquema de 1.º básico; las líneas nuevas se apilan solas |
@@ -263,6 +274,8 @@ Resolver esto es el primer trabajo antes de sumar datos de otro tipo.
 | `lpdatasets watch-baseline` | línea base de huellas desde la instantánea de la fuente |
 | `lpdatasets watch` | revisa las fuentes en línea; única orden que usa la red |
 | `lpdatasets watch-report` | informe de la última revisión; con `--check` no escribe |
+| `lpdatasets watch-record` | registra lo que una persona revisó a mano |
+| `lpdatasets watch-accept` | una persona acepta la lectura actual de una página como referencia |
 
 Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar` y `dataset-pack-nuevo`. Agentes: `extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos`, `limpiador-datos` y `vigia-curricular`, este último propio del contenido educativo chileno y aún sin probarse como agente. En este trabajo, las lecturas ciegas las hizo `verificador-independiente`; las propuestas se prepararon sin delegar en `limpiador-datos`, que sigue sin probarse en un lote real.
 
@@ -270,6 +283,6 @@ Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-
 
 - Ninguna persona ha revisado el contenido.
 - Quedan 39 hallazgos pendientes: 20 de etiquetas (L03) y 19 cruces del dataset (L08).
-- Líneas L03 y L05 a L09 sin implementación nueva; L04 solo vigila objetivos; ninguna modalidad real.
+- Líneas L03 y L05 a L09 sin implementación nueva; L04 opera a pedido y sus 4 fuentes manuales no se han revisado; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.
 - Las condiciones de reutilización de los textos oficiales necesitan una respuesta de su titular; esto no es asesoría legal.

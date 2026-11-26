@@ -164,15 +164,22 @@ def test_unreadable_sources_are_declared(tmp_path: Path, url: str, answer: Page)
         assert FIRST not in web.asked
 
 
-def test_manual_and_pending_sources_are_listed_and_never_requested(tmp_path: Path):
+def test_manual_sources_are_listed_and_never_requested(tmp_path: Path):
     manual = {"id": "m", "titulo": "Cerrada", "tipo": "prensa", "metodo": "manual", "url": "https://cerrado.example/n"}
-    later = {"id": "p", "titulo": "Canal", "tipo": "oficial", "metodo": "canal", "url": "https://canal.example/f"}
-    folder, doc = setup(tmp_path, [manual, later])
+    folder, doc = setup(tmp_path, [manual])
     web = unchanged()
     results = watch(folder, doc, web)
-    assert (results["m"]["estado"], results["p"]["estado"]) == ("manual", "pendiente")
-    assert not [url for url in web.asked if "cerrado" in url or "canal" in url]
-    assert "Revisión manual por una persona" in doc.read_text(encoding="utf-8")
+    assert results["m"]["estado"] == "manual" and summary(results["_"])[1] == 0
+    assert not [url for url in web.asked if "cerrado" in url]
+    written = doc.read_text(encoding="utf-8")
+    assert "Revisión manual por una persona" in written and "sin revisar" in written
+
+
+def test_an_unknown_method_is_refused(tmp_path: Path):
+    odd = {"id": "p", "titulo": "Canal", "tipo": "oficial", "metodo": "canal", "url": "https://canal.example/f"}
+    folder, doc = setup(tmp_path, [odd])
+    with pytest.raises(SystemExit, match="método desconocido"):
+        watch(folder, doc, unchanged())
 
 
 @pytest.mark.parametrize(

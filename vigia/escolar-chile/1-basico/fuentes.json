@@ -6,15 +6,17 @@
    "tipo": "oficial",
    "metodo": "pagina",
    "url": "https://www.curriculumnacional.cl/recursos/bases-curriculares-1-6-basico",
-   "nota": "respondió el 2026-11-26; su comprobación llega en el paso 2.2"
+   "compara": ["texto", "documentos"],
+   "esperado": ["Bases Curriculares"],
+   "nota": "avisa si cambia la ficha o el documento que enlaza"
   },
   {
    "id": "mineduc-noticias",
    "titulo": "Noticias del Mineduc",
    "tipo": "oficial",
-   "metodo": "canal",
+   "metodo": "manual",
    "url": "https://www.mineduc.cl/feed/",
-   "nota": "el canal respondió el 2026-11-26 y su robots.txt respondió 403: confirmar condiciones antes de automatizar"
+   "nota": "robots.txt respondió 403 el 2026-11-26; revisar noticias sobre actualización curricular o priorización"
   },
   {
    "id": "dia",
@@ -22,7 +24,19 @@
    "tipo": "oficial",
    "metodo": "pagina",
    "url": "https://diagnosticointegral.agenciaeducacion.cl/",
-   "nota": "respondió el 2026-11-26; su comprobación llega en el paso 2.2"
+   "compara": ["documentos"],
+   "esperado": ["Diagnóstico"],
+   "nota": "avisa de documentos nuevos o retirados; el texto de la portada no se compara"
+  },
+  {
+   "id": "condiciones-de-uso",
+   "titulo": "Currículum Nacional · política del sitio",
+   "tipo": "oficial",
+   "metodo": "pagina",
+   "url": "https://www.curriculumnacional.cl/politica-privacidad",
+   "compara": ["texto"],
+   "esperado": ["comercial"],
+   "nota": "avisa si cambian las condiciones de reutilización"
   },
   {
    "id": "ceppe",
@@ -30,6 +44,10 @@
    "tipo": "academica",
    "metodo": "pagina",
    "url": "https://ceppe.uc.cl/index.php/inicio/noticias/1183-esto-no-es-un-fracaso-es-parte-del-proceso-actualizacion-curricular-sigue-su-curso-tras-observaciones-del-cned",
+   "compara": ["texto"],
+   "desde": "Publicado:",
+   "hasta": "También te puede interesar",
+   "esperado": ["CNED"],
    "nota": "contexto sobre la resolución de julio de 2025; no es fuente oficial"
   },
   {
@@ -38,7 +56,7 @@
    "tipo": "oficial",
    "metodo": "manual",
    "url": "https://cned.cl/",
-   "nota": "rechazó la lectura automatizada el 2026-11-26"
+   "nota": "rechazó la lectura el 2026-11-26; revisar actas y resoluciones sobre Bases de 1.º a 6.º"
   },
   {
    "id": "ley-chile",
@@ -46,7 +64,7 @@
    "tipo": "oficial",
    "metodo": "manual",
    "url": "https://www.bcn.cl/leychile/",
-   "nota": "sin confirmar cómo consultar normas de forma automatizada"
+   "nota": "sin forma automatizada confirmada; revisar decretos que aprueben o modifiquen las Bases de básica"
   },
   {
    "id": "theclinic-2026-11-25",
