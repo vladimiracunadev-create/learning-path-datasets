@@ -40,4 +40,5 @@ jobs:
       - run: lpdatasets core-validate
       - run: lpdatasets clean-report --check
       - run: lpdatasets clean-proposals --check
+      - run: lpdatasets clean-corrections --check
       - run: python -m pip wheel --no-deps -w dist .

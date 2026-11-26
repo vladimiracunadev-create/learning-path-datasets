@@ -13,6 +13,7 @@ from .build import build, stats, validate_datasets
 from .cleaning import report
 from .core_build import validate_core
 from .core_escolar import export as export_core
+from .corrections import corrections_report
 from .proposals import approve, proposals_report
 from .vector import build_index, search
 
@@ -64,6 +65,11 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--aprobado-por", required=True)
     p.add_argument("--nucleo", default="nucleo")
     p.add_argument("--datasets", default="datasets")
+
+    p = sub.add_parser("clean-corrections", help="comprueba las correcciones propuestas; no las aplica")
+    p.add_argument("--nucleo", default="nucleo")
+    p.add_argument("--informe", default="docs/informes/correcciones-1-basico.md")
+    p.add_argument("--check", action="store_true", help="falla si el informe está desactualizado")
 
     p = sub.add_parser("validate", help="valida esquema, hashes y particiones")
     p.add_argument("--datasets", default="datasets")
@@ -122,6 +128,10 @@ def main(argv: list[str] | None = None) -> int:
         )
         print(f"Decisiones registradas: {count}")
         return 0
+    if args.cmd == "clean-corrections":
+        found = corrections_report(Path(args.nucleo), Path(args.informe), args.check)
+        print(os.linesep.join(found) if found else "OK: correcciones comprobadas")
+        return 1 if found else 0
     if args.cmd == "validate":
         problems = validate_datasets(Path(args.datasets))
         print("\n".join(problems[:50]) if problems else "OK: datasets válidos")

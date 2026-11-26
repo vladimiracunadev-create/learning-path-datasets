@@ -1,0 +1,438 @@
+{
+ "redactor": "asistente de IA; sin revisión humana",
+ "fecha": "2026-11-26",
+ "aprobado_por": null,
+ "correcciones": [
+  {
+   "item": "escolar-chile:1-basico:ar01-oa-01:c01:ej-recovery-01",
+   "hallazgo": "solucion_en_enunciado:4dc5363f88c1",
+   "antes": {
+    "enunciado": "Una concha es redonda, tiene rayitas que salen desde un punto y es de color crema. ¿Qué forma tiene?",
+    "razon": "La descripción dice que es redonda.",
+    "respuesta": "Redonda"
+   },
+   "despues": {
+    "enunciado": "Observas una hoja: es larga, termina en punta y es verde. ¿Qué dos cosas de esa frase hablan de su forma?",
+    "respuesta": "Que es larga y que termina en punta",
+    "razon": "El largo y la punta dicen cómo es su contorno; verde es el color."
+   },
+   "cambio": "ahora hay que separar la forma del color en vez de repetir «redonda»"
+  },
+  {
+   "item": "escolar-chile:1-basico:cn01-oa-03:c02:ej-understand-01",
+   "hallazgo": "solucion_en_cuaderno:00c0643f64b5",
+   "antes": {
+    "enunciado": "¿Qué dos trabajos hace la raíz?",
+    "razon": "Son sus dos funciones.",
+    "respuesta": "Sujeta la planta y absorbe agua"
+   },
+   "despues": {
+    "enunciado": "Ana acaba de poner un apio en agua con colorante. Todavía no ve hojas con color. ¿Por qué?",
+    "respuesta": "Porque el agua con color todavía no sube por el tallo hasta las hojas; hay que esperar",
+    "razon": "El tallo lleva el agua hasta las hojas y eso toma tiempo."
+   },
+   "cambio": "cambia el foco de la raíz al transporte por el tallo, que no está respondido en un ejemplo"
+  },
+  {
+   "item": "escolar-chile:1-basico:cn01-oa-08:c01:auto-03",
+   "hallazgo": "solucion_en_enunciado:e58d2b07384e",
+   "antes": {
+    "enunciado": "¿De qué material es un vaso de vidrio?",
+    "razon": "Es lo que lo forma.",
+    "respuesta": "Vidrio"
+   },
+   "despues": {
+    "enunciado": "Es un material duro que viene de los árboles. ¿Qué material es?",
+    "respuesta": "La madera",
+    "razon": "La madera viene de los árboles."
+   },
+   "cambio": "hay que reconocer el material por sus pistas; otro ejercicio cercano nombra la madera"
+  },
+  {
+   "item": "escolar-chile:1-basico:cn01-oa-08:c01:ej-recovery-01",
+   "hallazgo": "solucion_en_enunciado:e58d2b07384e",
+   "antes": {
+    "enunciado": "Una botella de vidrio. ¿Cuál es el material?",
+    "razon": "Es de lo que está hecha.",
+    "respuesta": "Vidrio"
+   },
+   "despues": {
+    "enunciado": "Una llave que abre una puerta, ¿está hecha de metal o de tela?",
+    "respuesta": "De metal",
+    "razon": "La llave es dura y fría, como el metal."
+   },
+   "cambio": "la pregunta ya no nombra el material como un dato"
+  },
+  {
+   "item": "escolar-chile:1-basico:cn01-oa-08:c01:ej-recovery-03",
+   "hallazgo": "solucion_en_enunciado:e58d2b07384e",
+   "antes": {
+    "enunciado": "Una pelota de goma. ¿Cuál es el material?",
+    "razon": "Es lo que la forma.",
+    "respuesta": "Goma"
+   },
+   "despues": {
+    "enunciado": "Un calcetín, ¿está hecho de tela o de madera?",
+    "respuesta": "De tela",
+    "razon": "La tela es blanda y se puede doblar para poner el pie."
+   },
+   "cambio": "la pregunta ya no nombra el material como un dato"
+  },
+  {
+   "item": "escolar-chile:1-basico:cn01-oa-08:c03:ej-recovery-01",
+   "hallazgo": "solucion_en_enunciado:43fc9e3d7ead",
+   "antes": {
+    "enunciado": "Tabla: la pelota es flexible. ¿A qué grupo va: flexible o rígido?",
+    "razon": "La pelota se dobla sin quebrarse.",
+    "respuesta": "Flexible"
+   },
+   "despues": {
+    "enunciado": "Un lápiz de madera no se dobla con la mano. ¿A qué grupo va: flexible o rígido?",
+    "respuesta": "Rígido",
+    "razon": "Lo que no se dobla es rígido."
+   },
+   "cambio": "la pista es lo que le pasa al objeto, no el nombre del grupo"
+  },
+  {
+   "item": "escolar-chile:1-basico:cn01-oa-08:c03:ej-recovery-02",
+   "hallazgo": "solucion_en_enunciado:43fc9e3d7ead",
+   "antes": {
+    "enunciado": "Tabla: el vaso es transparente. ¿A qué grupo va: transparente u opaco?",
+    "razon": "Se ve a través.",
+    "respuesta": "Transparente"
+   },
+   "despues": {
+    "enunciado": "Miras una caja de cartón cerrada y no ves lo que hay dentro. ¿El cartón es transparente u opaco?",
+    "respuesta": "Opaco",
+    "razon": "Si no se ve a través, es opaco."
+   },
+   "cambio": "la pista es lo que se observa, con un material que otro ejercicio no nombra"
+  },
+  {
+   "item": "escolar-chile:1-basico:cn01-oa-08:c03:ej-recovery-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Tabla: la mesa es rígida. ¿A qué grupo va: flexible o rígido?",
+    "razon": "No se dobla.",
+    "respuesta": "Rígido"
+   },
+   "despues": {
+    "enunciado": "La plastilina se dobla sin romperse. ¿A qué grupo va: flexible o rígido?",
+    "respuesta": "Flexible",
+    "razon": "Lo que se dobla sin romperse es flexible."
+   },
+   "cambio": "el enunciado actual dice «rígida» y pregunta si es flexible o rígido"
+  },
+  {
+   "item": "escolar-chile:1-basico:ef01-oa-09:c05:ej-challenge-02",
+   "hallazgo": "solucion_en_enunciado:ce3175dc6fdd",
+   "antes": {
+    "enunciado": "Haces tu propia alternativa: sin agua para tomar en la plaza. Respuesta posible: avisar a un adulto y pedir agua segura. ¿A quién avisas?",
+    "razon": "Es quien puede conseguirla.",
+    "respuesta": "A un adulto"
+   },
+   "despues": {
+    "enunciado": "Vas a jugar con mucho sol y no tienes gorro. Propón una alternativa posible y segura, y di a quién pides ayuda.",
+    "respuesta": "Por ejemplo: juego en la sombra y le pido ayuda a un adulto",
+    "razon": "Es algo que se puede hacer, cuida la salud e incluye pedir ayuda."
+   },
+   "cambio": "situación nueva sin la respuesta incluida"
+  },
+  {
+   "item": "escolar-chile:1-basico:en01-oa-11:c04:ej-challenge-02",
+   "hallazgo": "solucion_en_cuaderno:fa6891e61a00",
+   "antes": {
+    "enunciado": "Escribe en inglés la presentación completa de tu pelota roja con el nombre Tom: saludo, nombre, objeto, color y agradecimiento.",
+    "razon": "Se usan las cinco frases del modelo en orden.",
+    "respuesta": "Hello! I am Tom. This is my ball. It is red. Thank you!"
+   },
+   "despues": {
+    "enunciado": "Escribe en inglés una presentación de cinco frases: te llamas Leo y muestras tu lápiz (pencil) amarillo (yellow).",
+    "respuesta": "Hello! I am Leo. This is my pencil. It is yellow. Thank you!",
+    "razon": "Se usan las cinco frases del modelo en orden y se cambian el nombre, el objeto y el color."
+   },
+   "cambio": "datos distintos de los ejemplos y del modelo"
+  },
+  {
+   "item": "escolar-chile:1-basico:en01-oa-13:c03:ej-recovery-01",
+   "hallazgo": "solucion_en_enunciado:59fefa49dc4a",
+   "antes": {
+    "enunciado": "Ordena: I / like / red. Escribe la oración.",
+    "razon": "I like red es el orden correcto.",
+    "respuesta": "I like red."
+   },
+   "despues": {
+    "enunciado": "Ordena: red / I / like. Escribe la oración.",
+    "respuesta": "I like red.",
+    "razon": "Primero va quién, luego lo que hace y al final con qué."
+   },
+   "cambio": "las tarjetas ahora vienen desordenadas"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-03:c02:ej-apply-01",
+   "hallazgo": "solucion_en_cuaderno:45ec869f8781",
+   "antes": {
+    "enunciado": "Arica está al norte, Valparaíso al centro y Punta Arenas al sur. Ordena de norte a sur: Valparaíso, Arica, Punta Arenas.",
+    "razon": "El norte va primero y el sur último.",
+    "respuesta": "Arica, Valparaíso, Punta Arenas"
+   },
+   "despues": {
+    "enunciado": "Puerto Montt está en el sur, Iquique en el norte y Santiago en el centro. Ordena de norte a sur: Santiago, Puerto Montt, Iquique.",
+    "respuesta": "Iquique, Santiago, Puerto Montt",
+    "razon": "El norte va primero, después el centro y al final el sur."
+   },
+   "cambio": "ciudades distintas de las del ejemplo y presentadas en desorden",
+   "duda": "repite el procedimiento de un ejemplo, es casi igual al ejercicio A3 y practica orientación más que procedencia"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-05:c03:ej-recovery-03",
+   "hallazgo": "solucion_en_enunciado:5ecdc9cee517",
+   "antes": {
+    "enunciado": "¿En qué mes es el 12 de octubre?",
+    "razon": "El mes aparece en el nombre de la fecha.",
+    "respuesta": "octubre"
+   },
+   "despues": {
+    "enunciado": "En un mismo año, ¿qué se conmemora primero: el Combate Naval de Iquique o las Fiestas Patrias?",
+    "respuesta": "El Combate Naval de Iquique",
+    "razon": "Se recuerda en mayo y las Fiestas Patrias en septiembre."
+   },
+   "cambio": "hay que comparar dos fechas dentro del año en vez de recordar un mes dicho en la actividad"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-06:c04:ej-apply-01",
+   "hallazgo": "solucion_en_cuaderno:95373759531a",
+   "antes": {
+    "enunciado": "Reescribe bien: «Todos hacen mingas». Usa «según Elena».",
+    "razon": "Se cita la fuente y el lugar.",
+    "respuesta": "Según Elena, en Chiloé se hacen mingas"
+   },
+   "despues": {
+    "enunciado": "Rosa, de Valdivia, cuenta: «En mi barrio hacemos una feria». Reescribe bien la frase «Todos hacen ferias». Usa «según Rosa».",
+    "respuesta": "Según Rosa, en su barrio de Valdivia hacen una feria",
+    "razon": "Dice quién lo contó y no habla por todos."
+   },
+   "cambio": "una voz inventada nueva, distinta de la del ejemplo"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-08:c04:ej-contexto-01",
+   "hallazgo": "solucion_en_cuaderno:5f61a1e1744b",
+   "antes": {
+    "enunciado": "Un niño nuevo llega a la entrada (A3) y debe llegar a la sala (C1). La profesora le da un papel con el plano. ¿Qué recorrido escribe ella?",
+    "razon": "A3 a A1 y luego C1.",
+    "respuesta": "Sube 2 casillas y avanza 2 a la derecha"
+   },
+   "despues": {
+    "enunciado": "Plano de la escuela: entrada A3, patio B2, sala C1, baño D3. Un niño sale del baño y quiere volver a la sala. Escribe su recorrido.",
+    "respuesta": "Avanza 1 casilla a la izquierda y sube 2 casillas",
+    "razon": "Desde D3 se llega a C3 y desde ahí se sube hasta C1. También vale subir 2 y avanzar 1 a la izquierda."
+   },
+   "cambio": "recorrido distinto del que explica la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-09:c03:ej-apply-02",
+   "hallazgo": "solucion_en_enunciado:1d3cad303c2a",
+   "antes": {
+    "enunciado": "Puerto Natales es una localidad de Magallanes y de la Antártica Chilena. ¿Es una región o una localidad?",
+    "razon": "Es un lugar con casas y personas dentro de la región.",
+    "respuesta": "Una localidad"
+   },
+   "despues": {
+    "enunciado": "Copiapó está dentro de Atacama. Completa con «localidad» o «región»: Atacama es una ___ y Copiapó es una ___.",
+    "respuesta": "región; localidad",
+    "razon": "La localidad es el lugar donde viven personas y está dentro de una región, que es una parte grande del país."
+   },
+   "cambio": "hay que aplicar los dos conceptos a nombres nuevos",
+   "duda": "se parece al ejemplo resuelto con otros nombres y puede ser fácil para su dificultad; se invirtió el orden de los espacios después de la última lectura"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-12:c01:ej-apply-03",
+   "hallazgo": "solucion_en_enunciado:3e03805dc611",
+   "antes": {
+    "enunciado": "Para llegar desde Chile a Japón por mar se cruza el océano Pacífico. ¿Qué país de la lista está al otro lado de ese océano: Noruega o Japón?",
+    "razon": "Japón está al otro lado del Pacífico.",
+    "respuesta": "Japón"
+   },
+   "despues": {
+    "enunciado": "Quieres encontrar un país en el globo terráqueo. ¿Qué buscas primero: el continente o el país?",
+    "respuesta": "Primero el continente",
+    "razon": "Primero se busca el continente y después el país dentro de él."
+   },
+   "cambio": "pregunta por el modo de ubicar un país, sin repetir los datos de los ejemplos",
+   "duda": "es recuerdo de la explicación más que aplicación; podría bajarse la dificultad"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-13:c05:auto-02",
+   "hallazgo": "solucion_en_enunciado:c4808621f32f",
+   "antes": {
+    "enunciado": "Escribe una parte que debe tener: qué, quién o cuándo.",
+    "razon": "Son partes de un compromiso concreto.",
+    "respuesta": "Qué, quién o cuándo"
+   },
+   "despues": {
+    "enunciado": "A la frase «Voy a regar la planta» le falta una parte. ¿Le falta decir qué hará o cuándo lo hará?",
+    "respuesta": "Cuándo lo hará",
+    "razon": "La frase dice qué hará, pero no el día ni el momento."
+   },
+   "cambio": "hay una sola respuesta y exige revisar la frase"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-14:c02:ej-apply-02",
+   "hallazgo": "solucion_en_enunciado:3e91f6c650ab",
+   "antes": {
+    "enunciado": "Completa con qué hace: «El niño ____.» (por ejemplo, juega)",
+    "razon": "Debe ser una acción.",
+    "respuesta": "Por ejemplo: juega"
+   },
+   "despues": {
+    "enunciado": "Completa con qué hace: «El caballo ____.»",
+    "respuesta": "Por ejemplo: corre",
+    "razon": "La palabra debe ser una acción que el caballo pueda hacer."
+   },
+   "cambio": "se quita el ejemplo del enunciado y se cambia el sujeto, porque la explicación usa «el niño»"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-16:c04:ej-apply-01",
+   "hallazgo": "solucion_en_enunciado:1a2084d092b6",
+   "antes": {
+    "enunciado": "Completa con una palabra: «La torta estaba ___.» (por ejemplo, rica)",
+    "razon": "La palabra debe describir una torta.",
+    "respuesta": "Por ejemplo: rica"
+   },
+   "despues": {
+    "enunciado": "Completa con una palabra que calce: «La torta estaba ___.»",
+    "respuesta": "Por ejemplo: rica",
+    "razon": "La palabra debe describir una torta."
+   },
+   "cambio": "se quita el ejemplo del enunciado"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-17:c03:ej-apply-03",
+   "hallazgo": "solucion_en_enunciado:14ddbe1f092a",
+   "antes": {
+    "enunciado": "Completa con una rima de «luna»: «Brilla la luna / en la ___.» (por ejemplo, laguna)",
+    "razon": "Debe terminar parecido a luna.",
+    "respuesta": "Por ejemplo: laguna"
+   },
+   "despues": {
+    "enunciado": "Completa con una rima de «luna»: «Brilla la luna / en la ___.»",
+    "respuesta": "Por ejemplo: laguna",
+    "razon": "Debe terminar parecido a luna."
+   },
+   "cambio": "se quita el ejemplo del enunciado"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-21:c03:ej-recovery-01",
+   "hallazgo": "solucion_en_cuaderno:e8de9f6cf270",
+   "antes": {
+    "enunciado": "Ana dijo: «Me gusta el patio». ¿Qué frase muestra que escuché: «Tú dijiste que te gusta el patio» o «Yo tengo un perro»?",
+    "razon": "Repite lo que dijo Ana.",
+    "respuesta": "Tú dijiste que te gusta el patio"
+   },
+   "despues": {
+    "enunciado": "Leo dijo: «Hoy comí una manzana». ¿Qué frase muestra que escuché: «Tú dijiste que comiste una manzana» o «Me gusta pintar»?",
+    "respuesta": "Tú dijiste que comiste una manzana",
+    "razon": "Repite lo que dijo Leo."
+   },
+   "cambio": "situación distinta de la del ejemplo"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-24:c02:ej-understand-03",
+   "hallazgo": "solucion_en_cuaderno:7402ed61994b",
+   "antes": {
+    "enunciado": "¿Qué tres partes tiene una buena explicación de una palabra?",
+    "razon": "Es una forma clara de explicar.",
+    "respuesta": "Palabra, significado y ejemplo"
+   },
+   "despues": {
+    "enunciado": "Luz dice: «La palabra es valiente y significa que actúa aunque tenga miedo». ¿Qué parte le falta a su explicación?",
+    "respuesta": "Un ejemplo",
+    "razon": "Una buena explicación dice la palabra, su significado y un ejemplo."
+   },
+   "cambio": "aplica la forma a un caso; otro ejercicio ya no entrega la respuesta completa"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-17:c04:auto-01",
+   "hallazgo": "solucion_en_enunciado:051cf7508e61",
+   "antes": {
+    "enunciado": "¿Qué mes es el 1 de enero?",
+    "razon": "Es el primer mes.",
+    "respuesta": "Enero"
+   },
+   "despues": {
+    "enunciado": "En la fecha «8 de agosto», ¿cuál es el día y cuál es el mes?",
+    "respuesta": "El día es 8 y el mes es agosto",
+    "razon": "El número dice el día y el nombre dice el mes."
+   },
+   "cambio": "hay que distinguir día y mes en una fecha nueva"
+  },
+  {
+   "item": "escolar-chile:1-basico:mu01-oa-03:c01:ej-apply-01",
+   "hallazgo": "solucion_en_enunciado:469a4ac3619c",
+   "antes": {
+    "enunciado": "Un adulto toca una pandereta rápida y fuerte. Escribe qué observarías sobre su rapidez y su fuerza.",
+    "razon": "Esas son dos pistas que se pueden oír.",
+    "respuesta": "Rápida y fuerte"
+   },
+   "despues": {
+    "enunciado": "Un adulto golpea la mesa: da muchos golpes muy seguidos y hace mucho ruido. ¿Cómo son los golpes en rapidez y en fuerza?",
+    "respuesta": "Rápidos y fuertes",
+    "razon": "Muchos golpes seguidos son rápidos y mucho ruido es fuerte."
+   },
+   "cambio": "hay que nombrar las cualidades a partir de lo que ocurre"
+  },
+  {
+   "item": "escolar-chile:1-basico:mu01-oa-06:c04:ej-apply-01",
+   "hallazgo": "solucion_en_cuaderno:25f73f0c734b",
+   "antes": {
+    "enunciado": "Completa: Me gustó que ___ porque se oyó ___. Usa «tocaste suave» y «el silencio».",
+    "razon": "Une lo que gustó con la pista.",
+    "respuesta": "Me gustó que tocaras suave porque se oyó el silencio"
+   },
+   "despues": {
+    "enunciado": "Tu compañera cantó muy rápido al comienzo y lento al final. Completa con tus palabras: «Me gustó cuando ___ porque se oyó ___».",
+    "respuesta": "Por ejemplo: Me gustó cuando cantaste lento al final porque se oyó cada palabra",
+    "razon": "Dice qué gustó y qué se oyó, sin juzgar a la persona. Valen otras frases que cumplan eso."
+   },
+   "cambio": "situación distinta de la del ejemplo y sin las frases dadas",
+   "duda": "es el texto que propuso el segundo verificador; nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:mu01-oa-07:c03:ej-apply-02",
+   "hallazgo": "solucion_en_enunciado:82ba65c5fcc8",
+   "antes": {
+    "enunciado": "Describe una lluvia que sonaba suave y larga con dos cualidades.",
+    "razon": "Intensidad y duración.",
+    "respuesta": "Suave y larga"
+   },
+   "despues": {
+    "enunciado": "Un trueno sonó tanto que te tapaste los oídos, y terminó enseguida. Descríbelo: ¿cómo fue su fuerza y cuánto duró?",
+    "respuesta": "Fue fuerte y corto",
+    "razon": "Taparse los oídos muestra que fue fuerte; terminar enseguida, que fue corto."
+   },
+   "cambio": "las cualidades se deducen, no vienen dichas"
+  },
+  {
+   "item": "escolar-chile:1-basico:te01-oa-04:c01:ej-apply-03",
+   "hallazgo": "solucion_en_cuaderno:0877f8d172b8",
+   "antes": {
+    "enunciado": "Un portalápices debe quedar derecho. Escribe un criterio observable.",
+    "razon": "Se puede mirar.",
+    "respuesta": "Queda derecho al poner 5 lápices"
+   },
+   "despues": {
+    "enunciado": "Pía dice: «Mi puente de papel funciona bien». Cambia esa frase por un criterio que se pueda mirar y contar. Usa monedas.",
+    "respuesta": "Por ejemplo: el puente sostiene 5 monedas sin caerse",
+    "razon": "Se puede mirar si el puente se cae y contar las monedas. Vale cualquier número de monedas."
+   },
+   "cambio": "se cambia una frase vaga en un criterio, sin que el enunciado lo entregue"
+  }
+ ],
+ "segunda_lectura": [
+  "Dos agentes de IA distintos resolvieron las preguntas sin ver las respuestas propuestas.",
+  "",
+  "- Primera ronda, 28 preguntas: 19 sin observaciones, 6 por corregir y 3 dudas. Se cambiaron esas 9.",
+  "- Segunda ronda, las 9 cambiadas: 5 sin observaciones, 1 por corregir y 3 dudas; ninguna respuesta errónea.",
+  "- La corrección pedida en la segunda ronda está aplicada y **no tiene otra lectura**. Las preguntas marcadas con «Para tu criterio» siguen abiertas."
+ ]
+}

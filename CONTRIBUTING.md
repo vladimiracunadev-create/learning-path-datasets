@@ -15,6 +15,7 @@ python scripts/docs_diagram.py --check
 lpdatasets core-validate
 lpdatasets clean-report --check
 lpdatasets clean-proposals --check
+lpdatasets clean-corrections --check
 lpdatasets validate
 ```
 

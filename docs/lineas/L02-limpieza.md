@@ -42,13 +42,19 @@ lpdatasets clean-proposals
 lpdatasets clean-approve --lote duplicado-glosario --aprobado-por "nombre"
 ```
 
+`clean-corrections` comprueba las redacciones nuevas de `limpieza/correcciones.json` simulando el cambio en una copia (no duplicar, no contradecir otra respuesta y no quedar respondidas por el cuaderno) y escribe las [correcciones propuestas](../informes/correcciones-1-basico.md). No las aplica.
+
+```bash
+lpdatasets clean-corrections
+```
+
 `clean-proposals` agrupa los hallazgos en lotes y escribe las [propuestas](../informes/propuestas-limpieza-1-basico.md). Combina reglas generales con los juicios de lectura guardados en `limpieza/revision.json`; lo que exige lectura y no la tiene queda en `sin-revisar`. `clean-approve` es el único paso que registra decisiones, solo admite lotes que proponen aceptar y exige el nombre de quien aprueba. Con `--check`, los dos informes se comprueban sin escribirse.
 
 El agente [`limpiador-datos`](../../.claude/agents/limpiador-datos.md) prepara las propuestas de decisión; las aprueba una persona.
 
 ## Pruebas
 
-`tests/test_cleaning.py` tiene un caso sintético por regla, comprueba el determinismo y rechaza decisiones incompletas u obsoletas. `tests/test_proposals.py` comprueba que lo no leído nunca se proponga aceptar y que la aprobación rechace lotes de corrección. El CI comprueba que el informe publicado corresponda a los datos.
+`tests/test_cleaning.py` tiene un caso sintético por regla, comprueba el determinismo y rechaza decisiones incompletas u obsoletas. `tests/test_proposals.py` comprueba que lo no leído nunca se proponga aceptar y que la aprobación rechace lotes de corrección. `tests/test_corrections.py` rechaza redacciones obsoletas, repetidas o respondidas por el cuaderno. El CI comprueba que el informe publicado corresponda a los datos.
 
 ## Métricas
 
@@ -76,6 +82,8 @@ Propuestas del 2026-11-26:
 | corregir | 63 | pendientes: 24 sobre 27 preguntas, 19 de cruces del dataset (L08) y 20 de etiquetas (L03) |
 | decidir | 35 | pendientes: 19 de vocabulario, 11 de enunciado y 5 de cuaderno |
 
+Las [correcciones](../informes/correcciones-1-basico.md) de las 27 preguntas, más una detectada al redactar, están escritas y **sin aprobar ni aplicar**. En una primera verificación ciega, 19 de 28 quedaron sin observaciones; las otras 9 se cambiaron y otro verificador dejó 5 sin observaciones, 1 por corregir (aplicada, sin otra lectura) y 3 dudas.
+
 Un segundo agente leyó a ciegas 136 casos: confirmó las 9 correcciones que se proponían entonces y objetó 15 de 116 casos que se proponía aceptar (3 defectos y 12 dudas). Esos 15 pasaron a `corregir` o `decidir`.
 
 ## Listo cuando
@@ -84,11 +92,12 @@ Hay un informe antes y después, cada hallazgo está resuelto o aceptado con mot
 
 ## Límites
 
-Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. Quedan 98 pendientes y ningún cambio de contenido está aplicado. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
+Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. Quedan 98 pendientes y ningún cambio de contenido está aplicado. La regla del enunciado no ve una elección regalada con otro género o número (el texto dice «rígida» y se responde «Rígido»): se halló una al redactar y puede haber otras. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
 
 ## Decisiones
 
 - 2026-11-26: el agente `limpiador-datos` propone cambios y no borra sin registro.
 - 2026-11-26: el dataset v1.0 no se modifica; sus cruces se corrigen al construir la versión siguiente (L08).
 - 2026-11-26: las decisiones se aprueban por lote; los lotes de corrección siguen pendientes hasta aplicar el cambio.
+- 2026-11-26: las correcciones se redactan y revisan aquí; el contenido se cambia en la fuente, con autorización expresa, y se vuelve a exportar.
 - 2026-11-26: el titular (`vladimiracunadev-create`) aprobó los 10 lotes de aceptación, incluidas las 12 coincidencias breves con texto oficial.
