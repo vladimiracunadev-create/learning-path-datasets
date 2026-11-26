@@ -11,6 +11,7 @@ from lpdatasets.cleaning import HIDDEN_TYPES, report
 from lpdatasets.core import load_marcos, select
 from lpdatasets.core_build import read_core, validate_core
 from lpdatasets.corrections import corrections_report
+from lpdatasets.doubts import doubts_report
 from lpdatasets.proposals import proposals_report
 from tests.conftest import ROOT
 
@@ -75,3 +76,8 @@ def test_cleaning_proposals_cover_every_finding_and_are_up_to_date():
 def test_proposed_corrections_pass_the_checks_and_are_up_to_date():
     doc = ROOT / "docs" / "informes" / "correcciones-1-basico.md"
     assert corrections_report(NUCLEO, doc, check=True) == []
+
+
+def test_open_doubts_have_a_recommendation_and_the_sheet_is_up_to_date():
+    doc = ROOT / "docs" / "informes" / "dudas-1-basico.md"
+    assert doubts_report(NUCLEO, doc, check=True) == []

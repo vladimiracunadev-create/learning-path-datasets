@@ -64,6 +64,12 @@ lpdatasets clean-corrections
 
 La aprobación de correcciones omite las que tienen una duda abierta, salvo que se nombren con `--incluir`, y queda ligada al texto: si la redacción cambia, deja de valer.
 
+`clean-doubts` genera la [hoja de dudas](../informes/dudas-1-basico.md): una recomendación (mantener, reescribir o aprobar la redacción) por cada hallazgo que espera criterio, desde `limpieza/dudas.json`. No decide nada. Excluye etiquetas y cruces, que dependen de líneas posteriores.
+
+```bash
+lpdatasets clean-doubts
+```
+
 `clean-proposals` agrupa los hallazgos en lotes y escribe las [propuestas](../informes/propuestas-limpieza-1-basico.md). Combina reglas generales con los juicios de lectura guardados en `limpieza/revision.json`; lo que exige lectura y no la tiene queda en `sin-revisar`. `clean-approve` es el único paso que registra decisiones, solo admite lotes que proponen aceptar y exige el nombre de quien aprueba. Con `--check`, los dos informes se comprueban sin escribirse.
 
 El agente [`limpiador-datos`](../../.claude/agents/limpiador-datos.md) prepara las propuestas de decisión; las aprueba una persona.
@@ -115,6 +121,8 @@ Un segundo agente leyó a ciegas 136 casos: confirmó las 9 correcciones que se 
 Hay un informe antes y después, cada hallazgo está resuelto o aceptado con motivo y no queda ningún registro de evaluación idéntico a uno de entrenamiento.
 
 ## Límites
+
+Las 39 dudas abiertas tienen recomendación desde el 2026-11-26 (11 mantener, 25 reescribir y 3 aprobar), sin decisión todavía. En la primera ronda ciega se objetaron 18 de 34 textos nuevos, sobre todo definiciones: redactar glosarios sin criterio pedagógico es poco fiable. 
 
 Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Los aceptados se aprobaron por lote, no revisando caso a caso, y aceptar significa conservar el contenido: no es una revisión pedagógica. El informe «después» existe solo para las 24 correcciones aplicadas; quedan 78 pendientes. La regla del enunciado no ve una elección regalada con otro género o número (el texto dice «rígida» y se responde «Rígido»): se halló una al redactar y puede haber otras. Las propuestas son de agentes de IA, sin revisión humana ni una tercera lectura; la segunda lectura fue una muestra y los lotes clasificados por regla pueden contener defectos.
 

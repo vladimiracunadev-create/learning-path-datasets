@@ -1,0 +1,310 @@
+{
+ "redactor": "asistente de IA; sin revisión humana",
+ "fecha": "2026-11-26",
+ "dudas": [
+  {
+   "hallazgo": "respuestas_en_conflicto:0b0fab4a1bac",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ef01-oa-02:c05:vocab-03"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:0b9017921eab",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ma01-oa-19:c02:vocab-05"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:18367484efab",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:le01-oa-02:c03:vocab-03",
+    "escolar-chile:1-basico:le01-oa-04:c05:vocab-02",
+    "escolar-chile:1-basico:le01-oa-14:c01:vocab-05",
+    "escolar-chile:1-basico:le01-oa-16:c04:vocab-05"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:1ceb62b948d5",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:hi01-oa-04:c02:vocab-04",
+    "escolar-chile:1-basico:hi01-oa-04:c05:vocab-01"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:25ca145d512f",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ma01-oa-12:c03:vocab-05"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:27dc831f9895",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ma01-oa-15:c02:vocab-05"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:4855254e7dd4",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ma01-oa-11:c04:vocab-04"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:4993c127d4fc",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:le01-oa-18:c01:vocab-03"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:4b3d5f381649",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ma01-oa-06:c04:vocab-04"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:50631ae00456",
+   "recomendacion": "mantener",
+   "motivo": "son sentidos correctos y propios de cada clase: patrón e instrumento",
+   "items": []
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:5a3b3c2996c6",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:mu01-oa-01:c04:vocab-04",
+    "escolar-chile:1-basico:mu01-oa-04:c03:vocab-03"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:5ab83c4506ca",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ef01-oa-06:c03:vocab-02"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:6d53b9c147bb",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:le01-oa-04:c02:vocab-05"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:7f926afc505c",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:le01-oa-04:c01:vocab-04"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:939bfa6fcbfe",
+   "recomendacion": "mantener",
+   "motivo": "en las dos clases se usa para hablar de ideas sobre grupos; ahí la definición es correcta",
+   "items": []
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:a38d3eadd73f",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:le01-oa-04:c01:vocab-05",
+    "escolar-chile:1-basico:le01-oa-13:c01:vocab-05"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:a6f663882921",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ma01-oa-11:c04:vocab-02"
+   ]
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:e0983b929fd0",
+   "recomendacion": "mantener",
+   "motivo": "las definiciones son correctas en el contexto de cada clase",
+   "items": []
+  },
+  {
+   "hallazgo": "respuestas_en_conflicto:e8307ecff340",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ar01-oa-01:c02:vocab-04"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_cuaderno:085d6df5df79",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:hi01-oa-01:c01:ej-understand-01"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_cuaderno:25f73f0c734b",
+   "recomendacion": "aprobar redacción",
+   "motivo": "pide describir lo que se oyó con palabras propias",
+   "items": [
+    "escolar-chile:1-basico:mu01-oa-06:c04:ej-apply-01"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_cuaderno:45ec869f8781",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:hi01-oa-03:c02:ej-apply-01"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_cuaderno:655ed42c64cb",
+   "recomendacion": "mantener",
+   "motivo": "practica completar una frase citando un dato",
+   "items": []
+  },
+  {
+   "hallazgo": "solucion_en_cuaderno:a15bbe7b20eb",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ma01-oa-13:c04:ej-recovery-03"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_cuaderno:b7156da197ba",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:le01-oa-17:c05:ej-recovery-01"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_cuaderno:d88020692d02",
+   "recomendacion": "mantener",
+   "motivo": "aplica el criterio de seguridad a un caso nuevo",
+   "items": []
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:1d3cad303c2a",
+   "recomendacion": "aprobar redacción",
+   "motivo": "para 1.º básico, aplicar los dos conceptos a nombres nuevos es suficiente",
+   "items": [
+    "escolar-chile:1-basico:hi01-oa-09:c03:ej-apply-02"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:2bc06ead4e26",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:mu01-oa-02:c03:ej-apply-02"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:3405c8832472",
+   "recomendacion": "mantener",
+   "motivo": "para elegir hay que saber qué es textura",
+   "items": []
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:3e03805dc611",
+   "recomendacion": "aprobar redacción",
+   "motivo": "comprueba el modo de ubicar un país y no repite datos de los ejemplos",
+   "items": [
+    "escolar-chile:1-basico:hi01-oa-12:c01:ej-apply-03"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:45eeb3473364",
+   "recomendacion": "mantener",
+   "motivo": "tarea abierta: el ejemplo es un apoyo y la respuesta depende de la mesa de cada niño",
+   "items": []
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:7081ecefafb9",
+   "recomendacion": "mantener",
+   "motivo": "practica anotar medidas con su unidad en un dibujo",
+   "items": []
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:954cc1ca52e5",
+   "recomendacion": "mantener",
+   "motivo": "reconocer el mes dentro de un testimonio es adecuado para recuerdo",
+   "items": []
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:9757581acc18",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:hi01-oa-06:c02:ej-challenge-01"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:ad81963ba2cc",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:ma01-oa-18:c04:ej-recovery-01",
+    "escolar-chile:1-basico:ma01-oa-18:c04:ej-recovery-02"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:bd25d1e312b6",
+   "recomendacion": "mantener",
+   "motivo": "recuerdo de nivel inicial: comprueba la expresión «lugar de nacimiento»",
+   "items": []
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:c010f43661ae",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:te01-oa-05:c03:ej-recovery-02"
+   ]
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:d1e42cb13db2",
+   "recomendacion": "mantener",
+   "motivo": "practica expresar una duración con su unidad, que es la meta",
+   "items": []
+  },
+  {
+   "hallazgo": "solucion_en_enunciado:fff31c91c57b",
+   "recomendacion": "reescribir",
+   "motivo": "ver el texto propuesto",
+   "items": [
+    "escolar-chile:1-basico:le01-oa-12:c04:ej-understand-01"
+   ]
+  }
+ ],
+ "segunda_lectura": [
+  "Agentes de IA distintos revisaron a ciegas los textos nuevos; las recomendaciones de mantener no tuvieron una lectura adicional.",
+  "",
+  "- Primera ronda, 34 textos. Ejercicios (11): 7 sin observaciones y 4 por corregir. Definiciones (23): 8 sin observaciones, 14 por corregir y 1 duda.",
+  "- Segunda ronda, los 17 cambiados: 15 sin observaciones, 1 por corregir y 1 duda.",
+  "- La última corrección está aplicada y **no tiene otra lectura**. Observación menor sin aplicar: algunas definiciones de «sentido» dicen «frase» y las clases suelen decir «oración»."
+ ]
+}

@@ -14,6 +14,7 @@ from .cleaning import report
 from .core_build import validate_core
 from .core_escolar import export as export_core
 from .corrections import approve_corrections, corrections_report, mark_applied
+from .doubts import doubts_report
 from .proposals import approve, proposals_report
 from .vector import build_index, search
 
@@ -79,6 +80,11 @@ def main(argv: list[str] | None = None) -> int:
     p = sub.add_parser("clean-mark-applied", help="tras reexportar, registra las correcciones ya aplicadas")
     p.add_argument("--nucleo", default="nucleo")
     p.add_argument("--datasets", default="datasets")
+
+    p = sub.add_parser("clean-doubts", help="hoja de decisión de las dudas abiertas; no decide")
+    p.add_argument("--nucleo", default="nucleo")
+    p.add_argument("--informe", default="docs/informes/dudas-1-basico.md")
+    p.add_argument("--check", action="store_true", help="falla si la hoja está desactualizada")
 
     p = sub.add_parser("validate", help="valida esquema, hashes y particiones")
     p.add_argument("--datasets", default="datasets")
@@ -150,6 +156,10 @@ def main(argv: list[str] | None = None) -> int:
         applied, resolved = mark_applied(Path(args.nucleo), Path(args.datasets))
         print(f"Correcciones aplicadas: {applied}; hallazgos resueltos: {resolved}")
         return 0
+    if args.cmd == "clean-doubts":
+        found = doubts_report(Path(args.nucleo), Path(args.informe), args.check)
+        print(os.linesep.join(found) if found else "OK: dudas con recomendación")
+        return 1 if found else 0
     if args.cmd == "validate":
         problems = validate_datasets(Path(args.datasets))
         print("\n".join(problems[:50]) if problems else "OK: datasets válidos")

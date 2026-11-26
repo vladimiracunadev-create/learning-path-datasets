@@ -45,13 +45,21 @@ def simulate(entities: list[Entity], corrections: list[dict[str, Any]]) -> list[
         item = by_id[c["item"]]
         item["contenido"] = dict(c["despues"])
         notebook = notebooks.get(item.get("clase_id"))
-        if notebook:
-            notebook["texto"] = notebook["texto"].replace(c["antes"]["enunciado"], c["despues"]["enunciado"])
+        if not notebook:
+            continue
+        if item["tipo"] == "vocabulario":
+            old, new = (f"| {x['enunciado']} | {x['respuesta']} |" for x in (c["antes"], c["despues"]))
+        else:
+            old, new = c["antes"]["enunciado"], c["despues"]["enunciado"]
+        notebook["texto"] = notebook["texto"].replace(old, new)
     return result
 
 
 def check_corrections(
-    entities: list[Entity], proposals: list[dict[str, Any]], corrections: list[dict[str, Any]]
+    entities: list[Entity],
+    proposals: list[dict[str, Any]],
+    corrections: list[dict[str, Any]],
+    findings: list[dict[str, Any]],
 ) -> list[str]:
     """Problemas que impiden presentar las correcciones; vacío si todas pasan las comprobaciones de forma."""
     items = {e["id"]: e for e in entities if e["entidad"] == "item"}
@@ -59,6 +67,8 @@ def check_corrections(
         ident: p["id"] for p in proposals if p["veredicto"] == "corregir" for ident in p.get("items_a_cambiar", [])
     }
     drafted = {c["item"] for c in corrections}
+    still_open = {p["id"] for p in proposals if p["veredicto"] != "aceptar"}
+    members = {f["id"]: set(f["entidades"]) for f in findings if f["id"] in still_open}
     problems = [f"{i}: se pide corregir y no tiene redacción" for i in sorted(set(flagged) - drafted)]
     seen: set[str] = set()
     for c in (c for c in corrections if c.get("aplicada")):
@@ -79,11 +89,17 @@ def check_corrections(
         if c["antes"] != items[ident]["contenido"]:
             problems.append(f"{ident}: «antes» ya no coincide con el núcleo")
         new = c["despues"]
-        if set(new) != set(FIELDS) or not all(isinstance(v, str) and v.strip() for v in new.values()):
-            problems.append(f"{ident}: «despues» necesita {', '.join(FIELDS)}")
-        elif normalize(new["enunciado"]) == normalize(c["antes"].get("enunciado", "")):
+        wanted = set(items[ident]["contenido"])
+        if set(new) != wanted or not all(isinstance(v, str) and v.strip() for v in new.values()):
+            problems.append(f"{ident}: «despues» necesita {', '.join(k for k in FIELDS if k in wanted)}")
+        elif all(normalize(new[k]) == normalize(c["antes"].get(k, "")) for k in new):
+            problems.append(f"{ident}: no cambia nada")
+        elif items[ident]["tipo"] != "vocabulario" and normalize(new["enunciado"]) == normalize(
+            c["antes"].get("enunciado", "")
+        ):
             problems.append(f"{ident}: el enunciado no cambia")
-        if c.get("hallazgo") != flagged.get(ident):
+        declared = c.get("hallazgo")
+        if (declared is None and ident in flagged) or (declared and ident not in members.get(declared, ())):
             problems.append(f"{ident}: el hallazgo declarado no corresponde")
         if not str(c.get("cambio", "")).strip():
             problems.append(f"{ident}: falta explicar qué cambia")
@@ -96,9 +112,13 @@ def check_corrections(
     if problems:
         return problems
     changed = simulate(entities, corrections)
+    # Un glosario repite palabras y definiciones entre clases; esas reglas solo bloquean ejercicios.
+    exercises = {i for i in seen if items[i]["tipo"] != "vocabulario"}
     for found in core_findings(changed):
         if found["regla"] in BLOCKING:
-            problems += [f"{i}: la redacción nueva activa {found['regla']}" for i in found["entidades"] if i in seen]
+            problems += [
+                f"{i}: la redacción nueva activa {found['regla']}" for i in found["entidades"] if i in exercises
+            ]
     statements: dict[str, list[str]] = {}
     for e in changed:
         if e["entidad"] == "item" and "estudiante" not in e["publico_solucion"]:
@@ -115,7 +135,7 @@ def check_corrections(
         for e in changed
         if e["entidad"] == "recurso" and e.get("extra", {}).get("rol") == "cuaderno_estudiante"
     }
-    for c in corrections:
+    for c in (c for c in corrections if c["item"] in exercises):
         answer = normalize(c["despues"]["respuesta"])
         notebook = normalize(notebooks.get(items[c["item"]].get("clase_id"), ""))
         # La respuesta puede estar en el propio enunciado (una elección); no en el resto del cuaderno.
@@ -142,7 +162,7 @@ def render(document: dict[str, Any]) -> str:
         "",
         f"- Redacción: {document['redactor']} ({document['fecha']}).",
         f"- Estado: {state}; **{where}**.",
-        f"- {len(rows)} preguntas. Detectadas al redactar, fuera de los hallazgos: "
+        f"- Textos (preguntas y definiciones): {len(rows)}. Detectados al redactar, fuera de los hallazgos: "
         f"{sum(r['hallazgo'] is None for r in rows)}.",
     ]
     if document.get("segunda_lectura"):
@@ -150,8 +170,10 @@ def render(document: dict[str, Any]) -> str:
     for number, row in enumerate(rows, 1):
         before, after = row["antes"], row["despues"]
         mark = "" if row["hallazgo"] else " · detectada al redactar"
-        choice = statement_kind({"contenido": after}) == "otro" and normalize(after["respuesta"]) in normalize(
-            after["enunciado"]
+        choice = (
+            "razon" in after
+            and statement_kind({"contenido": after}) == "otro"
+            and normalize(after["respuesta"]) in normalize(after["enunciado"])
         )
         out += [
             "",
@@ -166,6 +188,7 @@ def render(document: dict[str, Any]) -> str:
             *(
                 f"| {label} | {_cell(before.get(key, ''))} | {_cell(after[key])} |"
                 for key, label in zip(FIELDS, ("Pregunta", "Respuesta", "Razón"), strict=True)
+                if key in after
             ),
         ]
         if row.get("duda"):
@@ -194,7 +217,10 @@ def corrections_report(nucleo: Path, doc: Path, check: bool = False) -> list[str
     folder = folders[0] / "limpieza"
     document = json.loads((folder / "correcciones.json").read_text(encoding="utf-8"))
     problems = check_corrections(
-        read_core(folders[0]), read_jsonl(folder / "propuestas.jsonl"), document["correcciones"]
+        read_core(folders[0]),
+        read_jsonl(folder / "propuestas.jsonl"),
+        document["correcciones"],
+        read_jsonl(folder / "hallazgos.jsonl"),
     )
     if problems:
         return problems

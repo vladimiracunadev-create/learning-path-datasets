@@ -23,12 +23,14 @@ from tests.test_proposals import text_resource
 
 OLD = "¿De qué material es un vaso de vidrio?"
 GLASS = item("a", OLD, "Vidrio", clase_id=CLASS["id"])
+GLASS["contenido"]["razon"] = "Es lo que lo forma."
 NOTEBOOK = text_resource("cuaderno_estudiante") | {
     "texto": f"**Ejemplos resueltos** Respuesta: la madera de los árboles. **Ejercicios** - {OLD}"
 }
 OTHER = item("b", "¿Qué es un objeto?", "Una cosa que se puede tocar", clase_id=CLASS["id"])
 ENTITIES = [CLASS, NOTEBOOK, GLASS, OTHER]
 PROPOSALS = [{"id": "h1", "veredicto": "corregir", "items_a_cambiar": ["a"]}]
+FINDINGS = [{"id": "h1", "regla": "solucion_en_enunciado", "total": 1, "entidades": ["a"]}]
 
 
 def correction(question: str = "Una llave, ¿es de metal o de tela?", answer: str = "De metal", **values) -> dict:
@@ -42,7 +44,7 @@ def correction(question: str = "Una llave, ¿es de metal o de tela?", answer: st
 
 
 def problems(*rows: dict) -> list[str]:
-    return check_corrections(ENTITIES, PROPOSALS, list(rows))
+    return check_corrections(ENTITIES, PROPOSALS, list(rows), FINDINGS)
 
 
 def test_valid_correction_passes_and_leaves_the_core_untouched():
@@ -93,6 +95,7 @@ def publish(tmp_path: Path, rows: list[dict]) -> tuple[Path, Path, Path]:
     (folder / "limpieza" / "propuestas.jsonl").write_text(json.dumps(PROPOSALS[0]), encoding="utf-8")
     review = {"items": {"r": {"a": {"veredicto": "corregir"}}}, "hallazgos": {}}
     (folder / "limpieza" / "revision.json").write_text(json.dumps(review), encoding="utf-8")
+    (folder / "limpieza" / "hallazgos.jsonl").write_text(json.dumps(FINDINGS[0]), encoding="utf-8")
     path = folder / "limpieza" / "correcciones.json"
     document = {"redactor": "prueba", "fecha": "2026-01-01", "correcciones": rows}
     path.write_text(json.dumps(document), encoding="utf-8")
@@ -139,8 +142,8 @@ def apply_in_source(tmp_path: Path) -> tuple[Path, Path, Path]:
     nucleo, doc, path = publish(tmp_path, [row])
     datasets = tmp_path / "datasets"
     datasets.mkdir()
-    report(nucleo, datasets, tmp_path / "limpieza.md")
     assert approve_corrections(nucleo, doc, "revisora") == 1
+    report(nucleo, datasets, tmp_path / "limpieza.md")  # los hallazgos anteriores al cambio
     coverage = {"catalogo": 1, "representadas": 1, "excluidas": []}
     info = {"pack": "demo", "nivel": "1-basico", "commit_fuente": "nuevo", "cobertura": coverage}
     write_core(nucleo / "demo" / "1-basico", simulate(ENTITIES, [row]), info)
@@ -172,3 +175,23 @@ def test_unexpected_text_stops_the_registration(tmp_path: Path):
     with pytest.raises(SystemExit, match="ni el texto anterior"):
         mark_applied(nucleo, datasets)
     assert "aplicada" not in saved(path)
+
+
+def test_a_glossary_definition_can_change_without_changing_the_word():
+    word = item("v", "madera", "palo", tipo="vocabulario", publico_solucion=["estudiante", "docente"])
+    word["contenido"] = {"enunciado": "madera", "respuesta": "palo"}
+    word["clase_id"] = CLASS["id"]
+    notebook = NOTEBOOK | {"texto": "| madera | palo |"}
+    row = {
+        "item": "v",
+        "hallazgo": "h9",
+        "antes": dict(word["contenido"]),
+        "despues": {"enunciado": "madera", "respuesta": "material que viene de los árboles"},
+        "cambio": "definición más precisa",
+    }
+    proposals = [{"id": "h9", "veredicto": "decidir", "items_a_cambiar": []}]
+    findings = [{"id": "h9", "entidades": ["v"]}]
+    entities = [CLASS, notebook, word]
+    assert check_corrections(entities, proposals, [row], findings) == []
+    assert "| madera | material que viene de los árboles |" in simulate(entities, [row])[1]["texto"]
+    assert "Razón" not in render({"redactor": "p", "fecha": "f", "correcciones": [row]})

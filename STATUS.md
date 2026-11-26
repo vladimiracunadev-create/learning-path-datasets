@@ -50,5 +50,6 @@ lpdatasets core-validate
 lpdatasets clean-report --check
 lpdatasets clean-proposals --check
 lpdatasets clean-corrections --check
+lpdatasets clean-doubts --check
 lpdatasets validate
 ```

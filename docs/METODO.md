@@ -97,6 +97,15 @@ El titular aprobó los 10 lotes de aceptación: 1.042 hallazgos aceptados y 98 p
 
 El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 78 pendientes. La aprobación por lote solo registra lo que seguía pendiente, así que las decisiones anteriores no se reescriben.
 
+### 3.12 Preparar las dudas para decidir
+
+- **Qué:** los 39 hallazgos que esperaban criterio recibieron una recomendación y, cuando pide cambiar, un texto. `clean-doubts` arma la hoja de decisión (`doubts.py`).
+- **Por qué:** «decidir» sin una propuesta traslada todo el trabajo a la persona; con propuesta y motivo, decide más rápido y puede discrepar.
+- **Cómo:** leer la clase completa antes de recomendar; mantener cuando la forma del ejercicio es su propósito; en un glosario, cambiar solo la definición de la clase afectada. Las comprobaciones se ampliaron: una definición puede cambiar sin cambiar la palabra, y repetir definiciones entre clases no bloquea.
+- **Lecturas ciegas:** primera ronda, 18 de 34 textos objetados (4 de 11 ejercicios y 14 de 23 definiciones, más 1 duda aparte); segunda, sobre 17 cambiados, 1 objeción y 1 duda.
+- **Aprendizaje:** las definiciones para 6 años fallaron mucho más que los ejercicios (términos abstractos, sílabas de una letra, contradicciones con los ejemplos de la clase). Con datos nuevos, verificar siempre un glosario contra los ejemplos de su unidad.
+- **Estado:** nada decidido ni aplicado.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -159,7 +168,7 @@ Protocolo de lectura ciega usado: archivo solo con las preguntas y su contexto; 
 | `markdown_course.py` | genérico, experimental | adaptador de Markdown al dataset, no al núcleo |
 | `escolar_chile.py`, `core_escolar.py` | específicos | una fuente y, en el núcleo, solo 1.º básico |
 | `cleaning.py` | mixto | duplicados, conflictos, cruces y etiquetas son generales; las demás suponen cuadernos y español |
-| `proposals.py`, `corrections.py` | mecanismo genérico, reglas específicas | reconocen formas del español y los encabezados «Ejemplos resueltos» y «Ejercicios» |
+| `proposals.py`, `corrections.py`, `doubts.py` | mecanismo genérico, reglas específicas | reconocen formas del español y los encabezados «Ejemplos resueltos» y «Ejercicios» |
 | `cli.py` | genérico con valores por defecto | las rutas de informes apuntan a 1.º básico |
 | `verify_docs.py` | casi genérico | comprueba enlaces de documentos con nombre fijo |
 | `docs_diagram.py` | específico | título y posiciones del esquema de 1.º básico; las líneas nuevas se apilan solas |
@@ -184,6 +193,7 @@ Resolver esto es el primer trabajo antes de sumar datos de otro tipo.
 | `lpdatasets clean-report`, `clean-proposals`, `clean-corrections` | hallazgos, lotes y redacciones; con `--check` no escriben |
 | `lpdatasets clean-approve`, `clean-approve-corrections` | únicas que registran aprobaciones |
 | `lpdatasets clean-mark-applied` | tras reexportar, registra lo aplicado y archiva lo resuelto |
+| `lpdatasets clean-doubts` | hoja de decisión de las dudas; con `--check` no escribe |
 
 Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar` y `dataset-pack-nuevo`. Agentes: `extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos` y `limpiador-datos`. En este trabajo, las lecturas ciegas las hizo `verificador-independiente`; las propuestas se prepararon sin delegar en `limpiador-datos`, que sigue sin probarse en un lote real.
 

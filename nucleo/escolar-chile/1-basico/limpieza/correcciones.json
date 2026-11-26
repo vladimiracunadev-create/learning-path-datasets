@@ -23,6 +23,19 @@
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
   },
   {
+   "item": "escolar-chile:1-basico:ar01-oa-01:c02:vocab-04",
+   "hallazgo": "respuestas_en_conflicto:e8307ecff340",
+   "antes": {
+    "enunciado": "fondo",
+    "respuesta": "lo que está lejos y se dibuja arriba y pequeño"
+   },
+   "despues": {
+    "enunciado": "fondo",
+    "respuesta": "lo que está lejos, atrás, y se dibuja arriba y pequeño"
+   },
+   "cambio": "definición de «fondo» más precisa para su clase"
+  },
+  {
    "item": "escolar-chile:1-basico:cn01-oa-03:c02:ej-understand-01",
    "hallazgo": "solucion_en_cuaderno:00c0643f64b5",
    "antes": {
@@ -163,6 +176,33 @@
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
   },
   {
+   "item": "escolar-chile:1-basico:ef01-oa-02:c05:vocab-03",
+   "hallazgo": "respuestas_en_conflicto:0b0fab4a1bac",
+   "antes": {
+    "enunciado": "ritmo",
+    "respuesta": "la velocidad de los sonidos o pasos"
+   },
+   "despues": {
+    "enunciado": "ritmo",
+    "respuesta": "lo rápido o lento que van los sonidos o los pasos"
+   },
+   "cambio": "definición de «ritmo» más precisa para su clase",
+   "duda": "es el texto que propuso el segundo lector y nadie más lo ha leído; otra clase define ritmo como orden de sonidos"
+  },
+  {
+   "item": "escolar-chile:1-basico:ef01-oa-06:c03:vocab-02",
+   "hallazgo": "respuestas_en_conflicto:5ab83c4506ca",
+   "antes": {
+    "enunciado": "vigoroso",
+    "respuesta": "esfuerzo en que solo digo palabras sueltas"
+   },
+   "despues": {
+    "enunciado": "vigoroso",
+    "respuesta": "esfuerzo fuerte en que solo digo palabras sueltas"
+   },
+   "cambio": "definición de «vigoroso» más precisa para su clase"
+  },
+  {
    "item": "escolar-chile:1-basico:ef01-oa-09:c05:ej-challenge-02",
    "hallazgo": "solucion_en_enunciado:ce3175dc6fdd",
    "antes": {
@@ -223,6 +263,21 @@
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
   },
   {
+   "item": "escolar-chile:1-basico:hi01-oa-01:c01:ej-understand-01",
+   "hallazgo": "solucion_en_cuaderno:085d6df5df79",
+   "antes": {
+    "enunciado": "Ordena de primero a último: viernes, lunes, jueves, martes, miércoles.",
+    "razon": "Es el orden en que ocurren dentro de la semana.",
+    "respuesta": "lunes, martes, miércoles, jueves, viernes"
+   },
+   "despues": {
+    "enunciado": "Ordena de primero a último: domingo, jueves, sábado.",
+    "respuesta": "jueves, sábado, domingo",
+    "razon": "Así ocurren dentro de la semana."
+   },
+   "cambio": "días que ningún ejemplo ni nota del cuaderno da ya ordenados"
+  },
+  {
    "item": "escolar-chile:1-basico:hi01-oa-03:c02:ej-apply-01",
    "hallazgo": "solucion_en_cuaderno:45ec869f8781",
    "antes": {
@@ -231,12 +286,37 @@
     "respuesta": "Arica, Valparaíso, Punta Arenas"
    },
    "despues": {
-    "enunciado": "Puerto Montt está en el sur, Iquique en el norte y Santiago en el centro. Ordena de norte a sur: Santiago, Puerto Montt, Iquique.",
-    "respuesta": "Iquique, Santiago, Puerto Montt",
-    "razon": "El norte va primero, después el centro y al final el sur."
+    "enunciado": "Un compañero todavía no quiere contar de dónde viene su familia. ¿Quién decide si eso se cuenta?",
+    "respuesta": "El compañero",
+    "razon": "Cada persona decide qué quiere contar."
    },
-   "cambio": "ciudades distintas de las del ejemplo y presentadas en desorden",
-   "duda": "repite el procedimiento de un ejemplo, es casi igual al ejercicio A3 y practica orientación más que procedencia"
+   "cambio": "trabaja el respeto al preguntar por la procedencia, en vez de ordenar ciudades"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-04:c02:vocab-04",
+   "hallazgo": "respuestas_en_conflicto:1ceb62b948d5",
+   "antes": {
+    "enunciado": "permiso",
+    "respuesta": "decir primero «¿puedo preguntarte algo?»"
+   },
+   "despues": {
+    "enunciado": "permiso",
+    "respuesta": "el sí que pido antes de hacer preguntas"
+   },
+   "cambio": "definición de «permiso» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-04:c05:vocab-01",
+   "hallazgo": "respuestas_en_conflicto:1ceb62b948d5",
+   "antes": {
+    "enunciado": "permiso",
+    "respuesta": "decir primero si puedo contar algo de otra persona"
+   },
+   "despues": {
+    "enunciado": "permiso",
+    "respuesta": "el sí que pido antes de contar algo de otra persona"
+   },
+   "cambio": "definición de «permiso» más precisa para su clase"
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-05:c03:ej-recovery-03",
@@ -257,6 +337,21 @@
     "huella": "38e5a6a70ada"
    },
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
+  },
+  {
+   "item": "escolar-chile:1-basico:hi01-oa-06:c02:ej-challenge-01",
+   "hallazgo": "solucion_en_enunciado:9757581acc18",
+   "antes": {
+    "enunciado": "Santiago se fundó el 12 de febrero de 1541. Si la ciudad celebra su aniversario cada 12 de febrero, ¿en qué mes cae el aniversario?",
+    "razon": "El mes aparece en la fecha.",
+    "respuesta": "febrero"
+   },
+   "despues": {
+    "enunciado": "Santiago se fundó el 12 de febrero y ese día celebra su aniversario. ¿Qué se celebra antes en el año: el aniversario de Santiago o la Fiesta de San Pedro?",
+    "respuesta": "El aniversario de Santiago",
+    "razon": "Es en febrero y San Pedro es en junio."
+   },
+   "cambio": "hay que comparar con otra fecha de la clase en vez de repetir el mes"
   },
   {
    "item": "escolar-chile:1-basico:hi01-oa-06:c04:ej-apply-01",
@@ -351,6 +446,112 @@
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
   },
   {
+   "item": "escolar-chile:1-basico:le01-oa-02:c03:vocab-03",
+   "hallazgo": "respuestas_en_conflicto:18367484efab",
+   "antes": {
+    "enunciado": "sentido",
+    "respuesta": "que se entiende"
+   },
+   "despues": {
+    "enunciado": "sentido",
+    "respuesta": "lo que una frase quiere decir y se puede entender"
+   },
+   "cambio": "definición de «sentido» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-04:c01:vocab-04",
+   "hallazgo": "respuestas_en_conflicto:7f926afc505c",
+   "antes": {
+    "enunciado": "sílaba",
+    "respuesta": "letras que suenan juntas"
+   },
+   "despues": {
+    "enunciado": "sílaba",
+    "respuesta": "parte de una palabra que se dice en un solo golpe de voz"
+   },
+   "cambio": "definición de «sílaba» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-04:c01:vocab-05",
+   "hallazgo": "respuestas_en_conflicto:a38d3eadd73f",
+   "antes": {
+    "enunciado": "leer",
+    "respuesta": "decir las letras escritas con sus sonidos"
+   },
+   "despues": {
+    "enunciado": "leer",
+    "respuesta": "juntar los sonidos de las letras para entender lo escrito"
+   },
+   "cambio": "definición de «leer» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-04:c02:vocab-05",
+   "hallazgo": "respuestas_en_conflicto:6d53b9c147bb",
+   "antes": {
+    "enunciado": "palabra",
+    "respuesta": "sílabas que dicen algo"
+   },
+   "despues": {
+    "enunciado": "palabra",
+    "respuesta": "una o más sílabas que significan algo"
+   },
+   "cambio": "definición de «palabra» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-04:c05:vocab-02",
+   "hallazgo": "respuestas_en_conflicto:18367484efab",
+   "antes": {
+    "enunciado": "sentido",
+    "respuesta": "que se entiende"
+   },
+   "despues": {
+    "enunciado": "sentido",
+    "respuesta": "lo que una frase quiere decir y se puede entender"
+   },
+   "cambio": "definición de «sentido» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-12:c04:ej-understand-01",
+   "hallazgo": "solucion_en_enunciado:fff31c91c57b",
+   "antes": {
+    "enunciado": "Escuchaste el cuento de la hormiga. ¿Quién es el personaje?",
+    "razon": "Es quien hace la acción.",
+    "respuesta": "La hormiga"
+   },
+   "despues": {
+    "enunciado": "Un adulto lee: «Dio un salto a la laguna, se sentó en una hoja y cantó: croac, croac». ¿Qué animal es el personaje?",
+    "respuesta": "Una rana",
+    "razon": "Salta a la laguna y canta croac. También vale un sapo."
+   },
+   "cambio": "la pregunta ya no nombra al personaje; hay que deducirlo"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-13:c01:vocab-05",
+   "hallazgo": "respuestas_en_conflicto:a38d3eadd73f",
+   "antes": {
+    "enunciado": "leer",
+    "respuesta": "decir en voz alta lo que está escrito"
+   },
+   "despues": {
+    "enunciado": "leer",
+    "respuesta": "entender lo que está escrito, en voz alta o en silencio"
+   },
+   "cambio": "definición de «leer» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-14:c01:vocab-05",
+   "hallazgo": "respuestas_en_conflicto:18367484efab",
+   "antes": {
+    "enunciado": "sentido",
+    "respuesta": "que se entiende"
+   },
+   "despues": {
+    "enunciado": "sentido",
+    "respuesta": "lo que una frase quiere decir y se puede entender"
+   },
+   "cambio": "definición de «sentido» más precisa para su clase"
+  },
+  {
    "item": "escolar-chile:1-basico:le01-oa-14:c02:ej-apply-02",
    "hallazgo": "solucion_en_enunciado:3e91f6c650ab",
    "antes": {
@@ -391,6 +592,19 @@
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
   },
   {
+   "item": "escolar-chile:1-basico:le01-oa-16:c04:vocab-05",
+   "hallazgo": "respuestas_en_conflicto:18367484efab",
+   "antes": {
+    "enunciado": "sentido",
+    "respuesta": "que se entiende"
+   },
+   "despues": {
+    "enunciado": "sentido",
+    "respuesta": "lo que una frase quiere decir y se puede entender"
+   },
+   "cambio": "definición de «sentido» más precisa para su clase"
+  },
+  {
    "item": "escolar-chile:1-basico:le01-oa-17:c03:ej-apply-03",
    "hallazgo": "solucion_en_enunciado:14ddbe1f092a",
    "antes": {
@@ -409,6 +623,35 @@
     "huella": "6c2d2fa65f4c"
    },
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-17:c05:ej-recovery-01",
+   "hallazgo": "solucion_en_cuaderno:b7156da197ba",
+   "antes": {
+    "enunciado": "Escucha: El zorro y la luna. Una noche, un zorro vio la luna reflejada en un charco. Pensó que era un queso redondo y brillante. Saltó para atraparla y cayó en el agua fría. Salió mojado y con mucho frío. La luna seguía en el cielo, tranquila. Desde esa noche, el zorro miró dos veces antes de saltar. ¿Cómo terminó el cuento?",
+    "razon": "Es el final.",
+    "respuesta": "El zorro miró dos veces antes de saltar"
+   },
+   "despues": {
+    "enunciado": "Un adulto lee: «Un gato quiso atrapar una mariposa. Saltó, no la alcanzó y se quedó dormido en el pasto». ¿Cómo terminó el cuento?",
+    "respuesta": "El gato se quedó dormido en el pasto",
+    "razon": "Es lo último que pasa."
+   },
+   "cambio": "cuento nuevo, que ningún ejemplo resume"
+  },
+  {
+   "item": "escolar-chile:1-basico:le01-oa-18:c01:vocab-03",
+   "hallazgo": "respuestas_en_conflicto:4993c127d4fc",
+   "antes": {
+    "enunciado": "dato",
+    "respuesta": "información importante"
+   },
+   "despues": {
+    "enunciado": "dato",
+    "respuesta": "información que se escucha o se lee y se puede comprobar"
+   },
+   "cambio": "definición de «dato» más precisa para su clase",
+   "duda": "No contradice la clase, pero «se puede comprobar» no se trabaja aquí (comprobar es recordar); la clase usa datos como hora, lugar y cosas que llevar. La profesora decide entre unificar o usar: «información que necesito saber, como la hora o el lugar»"
   },
   {
    "item": "escolar-chile:1-basico:le01-oa-21:c03:ej-recovery-01",
@@ -451,6 +694,86 @@
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
   },
   {
+   "item": "escolar-chile:1-basico:ma01-oa-06:c04:vocab-04",
+   "hallazgo": "respuestas_en_conflicto:4b3d5f381649",
+   "antes": {
+    "enunciado": "orden",
+    "respuesta": "ir de a uno sin saltarse"
+   },
+   "despues": {
+    "enunciado": "orden",
+    "respuesta": "forma de avanzar uno por uno sin saltarse ninguno"
+   },
+   "cambio": "definición de «orden» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-11:c04:vocab-02",
+   "hallazgo": "respuestas_en_conflicto:a6f663882921",
+   "antes": {
+    "enunciado": "restar",
+    "respuesta": "bajar con la regla"
+   },
+   "despues": {
+    "enunciado": "restar",
+    "respuesta": "quitar una cantidad a un número"
+   },
+   "cambio": "definición de «restar» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-11:c04:vocab-04",
+   "hallazgo": "respuestas_en_conflicto:4855254e7dd4",
+   "antes": {
+    "enunciado": "cero",
+    "respuesta": "el número más pequeño al contar"
+   },
+   "despues": {
+    "enunciado": "cero",
+    "respuesta": "el número que dice que no queda ninguno"
+   },
+   "cambio": "definición de «cero» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-12:c03:vocab-05",
+   "hallazgo": "respuestas_en_conflicto:25ca145d512f",
+   "antes": {
+    "enunciado": "comprobar",
+    "respuesta": "calcular los dos lados"
+   },
+   "despues": {
+    "enunciado": "comprobar",
+    "respuesta": "revisar calculando los dos lados"
+   },
+   "cambio": "definición de «comprobar» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-13:c04:ej-recovery-03",
+   "hallazgo": "solucion_en_cuaderno:a15bbe7b20eb",
+   "antes": {
+    "enunciado": "¿Desde dónde parto a contar?",
+    "razon": "Es el inicio acordado.",
+    "respuesta": "Desde la esquina de arriba a la izquierda"
+   },
+   "despues": {
+    "enunciado": "Un plano tiene 3 filas. La estrella está en la fila de más abajo. ¿Qué número tiene esa fila?",
+    "respuesta": "La fila 3",
+    "razon": "Las filas se cuentan desde arriba."
+   },
+   "cambio": "la pregunta ahora dice de qué se está contando"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-15:c02:vocab-05",
+   "hallazgo": "respuestas_en_conflicto:27dc831f9895",
+   "antes": {
+    "enunciado": "clasificar",
+    "respuesta": "ordenar según un criterio"
+   },
+   "despues": {
+    "enunciado": "clasificar",
+    "respuesta": "formar grupos con las cosas que se parecen en algo"
+   },
+   "cambio": "definición de «clasificar» más precisa para su clase"
+  },
+  {
    "item": "escolar-chile:1-basico:ma01-oa-17:c04:auto-01",
    "hallazgo": "solucion_en_enunciado:051cf7508e61",
    "antes": {
@@ -469,6 +792,78 @@
     "huella": "bed8b399c400"
    },
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-18:c04:ej-recovery-01",
+   "hallazgo": "solucion_en_enunciado:ad81963ba2cc",
+   "antes": {
+    "enunciado": "La cinta marcada con la puerta sobra al llegar a la mesa. ¿Cuál es más corto?",
+    "razon": "La cinta cubre más que la mesa.",
+    "respuesta": "La mesa"
+   },
+   "despues": {
+    "enunciado": "Marcas en un cordel el largo de tu cama. Al ponerlo junto al estante, sobra cordel. ¿Qué es más corto: la cama o el estante?",
+    "respuesta": "El estante",
+    "razon": "Si el cordel sobra, el segundo objeto es más corto."
+   },
+   "cambio": "redacción más clara, con objetos distintos de los del ejemplo"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-18:c04:ej-recovery-02",
+   "hallazgo": "solucion_en_enunciado:ad81963ba2cc",
+   "antes": {
+    "enunciado": "La cinta marcada con la puerta falta al llegar a la ventana. ¿Cuál mide más, la puerta o la ventana?",
+    "razon": "Necesita más cinta.",
+    "respuesta": "La ventana"
+   },
+   "despues": {
+    "enunciado": "Marcas en una cinta el ancho de un cuadro. Al ponerla en la ventana, la cinta no alcanza. ¿Qué es más ancho: el cuadro o la ventana?",
+    "respuesta": "La ventana",
+    "razon": "Si la cinta no alcanza, el segundo objeto es más ancho."
+   },
+   "cambio": "redacción más clara, con objetos distintos de los del ejemplo"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-19:c02:vocab-05",
+   "hallazgo": "respuestas_en_conflicto:0b9017921eab",
+   "antes": {
+    "enunciado": "repetir",
+    "respuesta": "contar dos veces la misma respuesta"
+   },
+   "despues": {
+    "enunciado": "repetir",
+    "respuesta": "anotar dos veces la respuesta de una misma persona"
+   },
+   "cambio": "definición de «repetir» más precisa para su clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:mu01-oa-01:c04:vocab-04",
+   "hallazgo": "respuestas_en_conflicto:5a3b3c2996c6",
+   "antes": {
+    "enunciado": "no convencional",
+    "respuesta": "inventada y explicada por uno mismo"
+   },
+   "despues": {
+    "enunciado": "no convencional",
+    "respuesta": "hecha a mi manera, con símbolos que invento y explico"
+   },
+   "cambio": "definición de «no convencional» más precisa para su clase",
+   "duda": "la clase entrega los tres símbolos que se usan, así que no los inventa el niño; alternativa: «que usa símbolos propios en vez de notas, y explica qué significan»"
+  },
+  {
+   "item": "escolar-chile:1-basico:mu01-oa-02:c03:ej-apply-02",
+   "hallazgo": "solucion_en_enunciado:2bc06ead4e26",
+   "antes": {
+    "enunciado": "Suena una nota que sube de grave a aguda. ¿Cómo es tu línea: sube o baja?",
+    "razon": "Agudo se dibuja arriba.",
+    "respuesta": "Sube"
+   },
+   "despues": {
+    "enunciado": "Un sonido empieza grave y termina agudo. Si lo dibujas con una línea, ¿la línea sube o baja?",
+    "respuesta": "Sube",
+    "razon": "Lo agudo se dibuja arriba."
+   },
+   "cambio": "el enunciado ya no dice «sube»"
   },
   {
    "item": "escolar-chile:1-basico:mu01-oa-03:c01:ej-apply-01",
@@ -491,6 +886,19 @@
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
   },
   {
+   "item": "escolar-chile:1-basico:mu01-oa-04:c03:vocab-03",
+   "hallazgo": "respuestas_en_conflicto:5a3b3c2996c6",
+   "antes": {
+    "enunciado": "no convencional",
+    "respuesta": "objeto cotidiano que uso para sonar"
+   },
+   "despues": {
+    "enunciado": "no convencional",
+    "respuesta": "que no fue hecho para hacer música, como un tarro que hago sonar"
+   },
+   "cambio": "definición de «no convencional» más precisa para su clase"
+  },
+  {
    "item": "escolar-chile:1-basico:mu01-oa-06:c04:ej-apply-01",
    "hallazgo": "solucion_en_cuaderno:25f73f0c734b",
    "antes": {
@@ -503,8 +911,7 @@
     "respuesta": "Por ejemplo: Me gustó cuando cantaste lento al final porque se oyó cada palabra",
     "razon": "Dice qué gustó y qué se oyó, sin juzgar a la persona. Valen otras frases que cumplan eso."
    },
-   "cambio": "situación distinta de la del ejemplo y sin las frases dadas",
-   "duda": "es el texto que propuso el segundo verificador; nadie más lo ha leído"
+   "cambio": "situación distinta de la del ejemplo y sin las frases dadas"
   },
   {
    "item": "escolar-chile:1-basico:mu01-oa-07:c03:ej-apply-02",
@@ -545,6 +952,21 @@
     "huella": "7f70d9da8371"
    },
    "aplicada": "3fd976d50bb2176f0e31dfbe389b9422fc13274a"
+  },
+  {
+   "item": "escolar-chile:1-basico:te01-oa-05:c03:ej-recovery-02",
+   "hallazgo": "solucion_en_enunciado:c010f43661ae",
+   "antes": {
+    "enunciado": "Una mesa grande se dibuja ¿grande o muy pequeña?",
+    "razon": "Se respeta el tamaño.",
+    "respuesta": "Grande"
+   },
+   "despues": {
+    "enunciado": "En un plano dibujas una mesa y el lápiz que está encima. ¿Cuál de los dos dibujas más grande?",
+    "respuesta": "La mesa",
+    "razon": "En el plano se respeta qué cosa es más grande."
+   },
+   "cambio": "hay que comparar los objetos; el enunciado no dice cuál es grande"
   }
  ],
  "segunda_lectura": [
@@ -552,6 +974,8 @@
   "",
   "- Primera ronda, 28 preguntas: 19 sin observaciones, 6 por corregir y 3 dudas. Se cambiaron esas 9.",
   "- Segunda ronda, las 9 cambiadas: 5 sin observaciones, 1 por corregir y 3 dudas; ninguna respuesta errónea.",
-  "- La corrección pedida en la segunda ronda está aplicada y **no tiene otra lectura**. Las preguntas marcadas con «Para tu criterio» siguen abiertas."
+  "- La corrección pedida en la segunda ronda está aplicada y **no tiene otra lectura**. Las preguntas marcadas con «Para tu criterio» siguen abiertas.",
+  "",
+  "Los textos añadidos o cambiados para resolver las dudas tienen sus lecturas en [Dudas abiertas](dudas-1-basico.md); las cifras anteriores se refieren a las primeras 28 correcciones."
  ]
 }
