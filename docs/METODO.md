@@ -145,6 +145,15 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Reutilizable:** el criterio de término de una etapa debe depender solo de lo que esa etapa puede hacer; lo demás se asigna por escrito a la que sí puede, con sus cifras.
 - **Límite:** cerrar la fase no es declarar limpio el contenido. Ninguna persona lo ha revisado y el dataset v1.0 conserva sus cruces.
 
+### 3.18 Plan de la fase 2
+
+- **Qué:** [plan](PLAN_FASE_2.md) del vigía curricular (L04) y de los vacíos de contenido (L03): mediciones, fuentes, pasos, riesgos, criterio de término y decisiones. No se construyó nada.
+- **Por qué:** se pidió planificar antes de construir, y un plan sin medir ni probar las fuentes prometería cosas no comprobadas.
+- **Cómo se midió:** conteos sobre el núcleo publicado por tipo, rol, medio y objetivo; los medios que piden las consignas, por expresiones regulares sobre los cuadernos, que son indicios y no un inventario.
+- **Cómo se probaron las fuentes:** una lectura con identificador genérico de cada página; para los OA se compararon códigos y textos oficiales con la instantánea de la fuente en memoria, sin guardarlos. Coincidieron 237 de 237. Los sitios que ya habían rechazado la lectura no se reintentaron.
+- **Reutilizable:** antes de diseñar un vigilante, probar contra una línea base conocida que la fuente se puede leer y comparar; así «sin cambios» y «no se pudo leer» quedan distinguidos desde el diseño.
+- **Límite:** las mediciones y la prueba se hicieron con código temporal, que el paso 2.1 debe reemplazar por código con pruebas.
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |

@@ -91,6 +91,7 @@ def check(root: Path = ROOT, modality_lines: dict[str, str] | None = None) -> li
     for path in [
         *sorted(folder.glob("*.md")),
         root / "docs" / "PLAN_1_BASICO.md",
+        root / "docs" / "PLAN_FASE_2.md",
         root / "docs" / "CORE_CONTRACT.md",
         root / "docs" / "METODO.md",
     ]:

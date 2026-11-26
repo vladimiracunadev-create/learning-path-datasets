@@ -30,7 +30,7 @@ Se registran hechos, fechas y enlaces. No se copian notas de prensa ni documento
 
 ## Cómo se ejecuta
 
-No implementado. Agente previsto: `vigia-curricular`, a pedido y, más adelante, programado.
+No implementado. Agente previsto: `vigia-curricular`, a pedido y, más adelante, programado. Pasos y fuentes comprobadas: [plan de la fase 2](../PLAN_FASE_2.md), pendiente de aprobación.
 
 ## Pruebas
 

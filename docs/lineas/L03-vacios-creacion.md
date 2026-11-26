@@ -33,7 +33,7 @@ Primero contenido propio. El material de terceros solo entra con licencia compat
 
 ## Cómo se ejecuta
 
-No implementado. Skills y agentes previstos: `investigador-fuentes`, `autor-contenido`, `extractor-conocimiento` y `verificador-independiente`.
+No implementado. Skills y agentes previstos: `investigador-fuentes`, `autor-contenido`, `extractor-conocimiento` y `verificador-independiente`. Vacíos medidos y pasos: [plan de la fase 2](../PLAN_FASE_2.md), pendiente de aprobación.
 
 ## Pruebas
 
