@@ -32,7 +32,7 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | Etiquetado de habilidades | `EXPERIMENTAL` | 1.200 tareas de Matemática con habilidades en la copia combinada; en el núcleo publicado y el dataset el campo sigue vacío |
 | Contrato del núcleo `nucleo-0.1` | `EXPERIMENTAL` | `src/lpdatasets/core.py`, `schema/core.schema.json`, `tests/test_core.py` |
 | Núcleo de 1.º básico | `OPERATIVO` | `nucleo/escolar-chile/1-basico/manifest.json`, `lpdatasets core-validate` |
-| Informe y propuestas de limpieza | `EXPERIMENTAL` | `lpdatasets clean-report --check` y `clean-proposals --check`; 1.093 hallazgos aceptados, 19 resueltos, 29 pendientes y 27 archivados |
+| Informe y propuestas de limpieza | `EXPERIMENTAL` | `lpdatasets clean-report --check` y `clean-proposals --check`; 1.093 hallazgos aceptados, 19 resueltos, 29 pendientes y 27 archivados; 59 correcciones aplicadas en la fuente y 122 sin aprobar |
 | Vigía curricular | `OPERATIVO` | `lpdatasets watch-report --check`, `tests/test_watch.py`, `tests/test_watch_pages.py`; a pedido, 4 fuentes manuales sin revisar |
 | Capa de aportes | `EXPERIMENTAL` | `lpdatasets contrib-report --check`, `tests/test_contributions.py`; 82 etiquetas, 60 aprobadas y 22 observadas |
 | Registro de modalidades | `EXPERIMENTAL` | `src/lpdatasets/modalities.py`, `tests/test_modalities.py`; ninguna modalidad real |

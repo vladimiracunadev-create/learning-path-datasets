@@ -22,6 +22,7 @@
 - Capa de aportes (paso 2.3): órdenes `contrib-report`, `contrib-verify`, `contrib-approve` y `contrib-export`; vocabulario de 21 habilidades oficiales. Sin piezas todavía.
 - Paso 2.4 (por aprobar): habilidades solo en tareas y dificultad solo en ejercicios cerrados; la limpieza lee los aportes; orden `clean-mark-contributed`; 82 etiquetas de Matemática, 60 verificadas por doble lectura. 49 hallazgos pendientes.
 - El titular aprobó las 60 etiquetas y los 20 casos «no aplica»: 1.093 hallazgos aceptados, 19 resueltos y 29 pendientes.
+- 122 correcciones de defectos de Matemática redactadas, con dos lecturas ciegas, sin aprobar ni aplicar.
 - Documento de método (`docs/METODO.md`): lo realizado, sus fundamentos, cambios de criterio y cómo reutilizarlo; el CI exige que nombre cada módulo, script, orden, skill y agente.
 - Campo opcional `idioma` en el contrato `nucleo-0.1`.
 - El lector de la fuente busca el archivo de cada OA una sola vez; el dataset v1.0 no cambia.

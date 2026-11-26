@@ -1142,6 +1142,1837 @@
     "huella": "a390a62c110f"
    },
    "aplicada": "b3647111142be767140a9453671c145c5ff27317"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-01:c02:ej-challenge-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Cuento de 2 en 2 y llego a 16. ¿Cuántos saltos di?",
+    "razon": "2, 4, 6, 8, 10, 12, 14, 16 son 8 números.",
+    "respuesta": "8 saltos"
+   },
+   "despues": {
+    "enunciado": "Parto en 0, cuento de 2 en 2 y llego a 16. ¿Cuántos saltos di?",
+    "razon": "2, 4, 6, 8, 10, 12, 14, 16 son 8 números.",
+    "respuesta": "8 saltos"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-02:c01:ej-understand-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En la misma fila, ¿qué hay en el quinto lugar?",
+    "razon": "Sol 1º, luna 2º, estrella 3º, nube 4º, rayo 5º.",
+    "respuesta": "El rayo"
+   },
+   "despues": {
+    "enunciado": "Fila de izquierda a derecha: sol, luna, estrella, nube, rayo. ¿Qué hay en el quinto lugar?",
+    "razon": "Sol 1º, luna 2º, estrella 3º, nube 4º, rayo 5º.",
+    "respuesta": "El rayo"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-02:c01:ej-understand-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En la misma fila, ¿quién está en el segundo lugar?",
+    "razon": "La luna está justo después del sol.",
+    "respuesta": "La luna"
+   },
+   "despues": {
+    "enunciado": "Fila de izquierda a derecha: sol, luna, estrella, nube, rayo. ¿Qué hay en el segundo lugar?",
+    "razon": "La luna es la segunda desde la izquierda.",
+    "respuesta": "La luna"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-02:c02:ej-apply-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En la misma fila, ¿qué fruta es la décima?",
+    "razon": "La fila tiene diez frutas y la última es la piña.",
+    "respuesta": "🍍 (piña)"
+   },
+   "despues": {
+    "enunciado": "Fila de izquierda a derecha: 🍎 🍌 🍇 🍊 🍓 🍒 🍑 🍋 🍐 🍍. ¿Qué fruta es la décima?",
+    "razon": "La fila tiene diez frutas y la última es la piña.",
+    "respuesta": "🍍 (piña)"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-02:c02:ej-apply-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En la misma fila, ¿qué fruta ocupa el séptimo lugar?",
+    "razon": "Después de la cereza, la séptima es el durazno.",
+    "respuesta": "🍑 (durazno)"
+   },
+   "despues": {
+    "enunciado": "Fila de izquierda a derecha: 🍎 🍌 🍇 🍊 🍓 🍒 🍑 🍋 🍐 🍍. ¿Qué fruta ocupa el séptimo lugar?",
+    "razon": "Después de la cereza, la séptima es el durazno.",
+    "respuesta": "🍑 (durazno)"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-02:c02:ej-understand-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Qué lugar es más adelante: el sexto o el séptimo?",
+    "razon": "7º viene después de 6º.",
+    "respuesta": "El séptimo"
+   },
+   "despues": {
+    "enunciado": "En una fila, ¿quién está más cerca del comienzo: el sexto o el séptimo?",
+    "razon": "El sexto va antes que el séptimo.",
+    "respuesta": "El sexto"
+   },
+   "cambio": "«más adelante» se podía entender de dos maneras y la respuesta era discutible"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-02:c03:ej-understand-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En la misma fila, ¿quién está antes del gato?",
+    "razon": "Perro 1º, gato 2º.",
+    "respuesta": "El perro"
+   },
+   "despues": {
+    "enunciado": "Fila de izquierda a derecha: perro, gato, pez, ave, vaca. ¿Quién está antes del gato?",
+    "razon": "Perro 1º, gato 2º.",
+    "respuesta": "El perro"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-02:c03:ej-understand-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En la misma fila, ¿quién está entre el gato y el ave?",
+    "razon": "Gato 2º, pez 3º, ave 4º.",
+    "respuesta": "El pez"
+   },
+   "despues": {
+    "enunciado": "Fila: perro, gato, pez, ave, vaca. ¿Quién está entre el gato y el ave?",
+    "razon": "Gato 2º, pez 3º, ave 4º.",
+    "respuesta": "El pez"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-02:c03:ejemplo-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Antes y después: ¿Quién está justo antes del sexto y quién justo después?",
+    "razon": "1. Antes del 6º está el 5º. 2. Después del 6º está el 7º.",
+    "respuesta": "Quinto y séptimo"
+   },
+   "despues": {
+    "enunciado": "Antes y después: En una fila de 10 lugares, ¿cuál está justo antes del sexto y cuál justo después?",
+    "razon": "1. Antes del 6º está el 5º. 2. Después del 6º está el 7º.",
+    "respuesta": "Quinto y séptimo"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-04:c03:ej-apply-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Ordena de menor a mayor: 17, 3, 9, 14.",
+    "razon": "Se busca siempre el menor que queda.",
+    "respuesta": "3, 9, 14, 17"
+   },
+   "despues": {
+    "enunciado": "Ordena de menor a mayor: 16, 4, 8, 13.",
+    "razon": "Se busca el menor, luego el siguiente, hasta el mayor.",
+    "respuesta": "4, 8, 13, 16"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-04:c03:ej-apply-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Ordena de mayor a menor: 6, 20, 11, 0.",
+    "razon": "Se parte por el mayor.",
+    "respuesta": "20, 11, 6, 0"
+   },
+   "despues": {
+    "enunciado": "Ordena de mayor a menor: 5, 19, 12, 1.",
+    "razon": "Se busca el mayor, luego el siguiente, hasta el menor.",
+    "respuesta": "19, 12, 5, 1"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-04:c03:ej-challenge-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Escribe tres números entre 5 y 15 y ordénalos de mayor a menor.",
+    "razon": "Los tres están entre 5 y 15.",
+    "respuesta": "Por ejemplo 12, 9, 7"
+   },
+   "despues": {
+    "enunciado": "Los números 9, 14 y 7 están entre 5 y 15. Ordénalos de mayor a menor.",
+    "razon": "14 es mayor que 9 y 9 es mayor que 7.",
+    "respuesta": "14, 9, 7"
+   },
+   "cambio": "ahora tiene una sola respuesta correcta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-04:c04:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Ema tiene 15 y quiere igualar a Lola, que tiene 11. ¿Cuántos debe regalar?",
+    "razon": "15 − 11 = 4.",
+    "respuesta": "4"
+   },
+   "despues": {
+    "enunciado": "Ema tiene 15 fichas y Lola tiene 11. ¿Cuántas fichas debe guardar Ema en una caja para quedar con las mismas que Lola?",
+    "razon": "15 − 4 = 11, igual que Lola.",
+    "respuesta": "4"
+   },
+   "cambio": "si Ema regalaba fichas a Lola no quedaban iguales"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c02:ej-reason-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Beto dice que si llena un marco hay exactamente 10 y nada más. ¿Tiene razón?",
+    "razon": "Un marco lleno es diez.",
+    "respuesta": "Sí"
+   },
+   "despues": {
+    "enunciado": "Un marco de diez está lleno y no quedan fichas afuera. Beto dice que hay 10 fichas. ¿Tiene razón?",
+    "razon": "Un marco lleno tiene 10 fichas.",
+    "respuesta": "Sí"
+   },
+   "cambio": "se aclara que no hay fichas fuera del marco"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c02:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Dos marcos llenos y otro con 3. ¿Cuántos hay en total?",
+    "razon": "10, 20 y 3 más.",
+    "respuesta": "23"
+   },
+   "despues": {
+    "enunciado": "Un marco de diez está lleno y otro tiene 7 fichas. ¿Cuántas fichas hay en total?",
+    "razon": "10 y 7 más son 17.",
+    "respuesta": "17"
+   },
+   "cambio": "el resultado anterior, 23, pasaba de los números que trabaja la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-06:c02:ej-apply-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Separa el 9 de otra manera que 4 + 5.",
+    "razon": "6 + 3 = 9.",
+    "respuesta": "6 + 3"
+   },
+   "despues": {
+    "enunciado": "Completa otra manera de formar 9: 8 + __.",
+    "razon": "8 + 1 = 9.",
+    "respuesta": "1"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-06:c02:ej-reason-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Beto dice que 6 + 2 = 8 y 5 + 3 = 9 son otras maneras del 8. ¿Tiene razón?",
+    "razon": "Una de las sumas está mal.",
+    "respuesta": "No; 5 + 3 = 8, no 9"
+   },
+   "despues": {
+    "enunciado": "Beto quiere escribir maneras de formar 8 y anota 6 + 2 y 5 + 4. ¿Cuál está mal?",
+    "razon": "5 + 4 = 9, no 8.",
+    "respuesta": "5 + 4"
+   },
+   "cambio": "la pregunta anterior mezclaba dos errores y confundía"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-06:c03:auto-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Qué va antes del signo =: las partes o el todo?",
+    "razon": "Las partes se suman y dan el todo.",
+    "respuesta": "Las partes"
+   },
+   "despues": {
+    "enunciado": "En 6 + 1 = 7, ¿qué número es el todo?",
+    "razon": "Las dos partes juntas forman 7.",
+    "respuesta": "7"
+   },
+   "cambio": "ya no fija que las partes van siempre antes del signo igual, algo que otra clase contradice"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-06:c03:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Diagrama: todo 11. Escribe dos diagramas distintos.",
+    "razon": "Ambos suman 11.",
+    "respuesta": "6 + 5 y 7 + 4"
+   },
+   "despues": {
+    "enunciado": "Diagrama con todo 11. Si una parte es 6, ¿cuál es la otra? ¿Y si una parte es 7?",
+    "razon": "6 + 5 = 11 y 7 + 4 = 11.",
+    "respuesta": "5 y 4"
+   },
+   "cambio": "ahora tiene una sola respuesta correcta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-06:c04:ej-recovery-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Escribe todas las parejas de sumandos que forman 6, sin repetir el orden.",
+    "razon": "Se parte de 0 y se sube el primer sumando hasta la mitad de 6.",
+    "respuesta": "0 + 6, 1 + 5, 2 + 4, 3 + 3"
+   },
+   "despues": {
+    "enunciado": "Escribe todas las parejas de sumandos que forman 3, sin repetir el orden.",
+    "razon": "Se parte de 0 y se sube el primer sumando.",
+    "respuesta": "0 + 3, 1 + 2"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-08:c03:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Dibuja un número del 11 al 19 que tenga más unidades que 5.",
+    "razon": "Una barra y siete puntos.",
+    "respuesta": "Por ejemplo 17"
+   },
+   "despues": {
+    "enunciado": "¿Cuál de estos números tiene más de 5 unidades sueltas: 13, 17 o 14?",
+    "razon": "17 tiene 7 unidades sueltas.",
+    "respuesta": "17"
+   },
+   "cambio": "ahora tiene una sola respuesta correcta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-09:c02:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Inventa una historia para 7 − 2 = 5.",
+    "razon": "Hay que quitar 2 de 7.",
+    "respuesta": "Por ejemplo: había 7 pelotas y se perdieron 2"
+   },
+   "despues": {
+    "enunciado": "Inventa una historia con una pregunta para 7 − 2.",
+    "razon": "Una historia de resta cuenta lo que había, lo que se quita y pregunta lo que queda.",
+    "respuesta": "Por ejemplo: Había 7 pelotas y se perdieron 2. ¿Cuántas quedan? Quedan 5."
+   },
+   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-09:c03:ej-understand-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Es el total mayor o menor que cada sumando?",
+    "razon": "Al agregar hay más.",
+    "respuesta": "Mayor"
+   },
+   "despues": {
+    "enunciado": "Había 8 y agrego 4. ¿El total es mayor o menor que 8?",
+    "razon": "12 es mayor que 8.",
+    "respuesta": "Mayor"
+   },
+   "cambio": "la afirmación general no se cumplía al sumar cero"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-09:c05:ejemplo-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Crear y resolver: Crea un problema con 12 y 5 que se resuelva con una resta.",
+    "razon": "1. Elijo pájaros y la acción de irse. 2. Escribo: «Hay 12 pájaros y se van 5. ¿Cuántos quedan?». 3. 12 − 5 = 7. 4. Compruebo: 7 + 5 = 12.",
+    "respuesta": "Quedan 7 pájaros"
+   },
+   "despues": {
+    "enunciado": "Crear y resolver: Inventa un problema de resta con 12 y 5 y resuélvelo.",
+    "razon": "1. Elijo pájaros y la acción de irse. 2. Escribo: «Hay 12 pájaros y se van 5. ¿Cuántos quedan?». 3. 12 − 5 = 7. 4. Compruebo: 7 + 5 = 12.",
+    "respuesta": "Hay 12 pájaros y se van 5. ¿Cuántos quedan? Quedan 7 pájaros."
+   },
+   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-09:c05:ej-challenge-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Inventa un problema que se resuelva con 20 − 12.",
+    "razon": "Hay que quitar 12 de 20.",
+    "respuesta": "Por ejemplo: Había 20 sillas y se llevaron 12"
+   },
+   "despues": {
+    "enunciado": "Inventa un problema con una pregunta que se resuelva con 20 − 12.",
+    "razon": "Se quitan 12 de 20.",
+    "respuesta": "Por ejemplo: Había 20 sillas y se llevaron 12. ¿Cuántas quedan? Quedan 8."
+   },
+   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-10:c02:ej-understand-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cuántos números distintos hay en una familia de operaciones?",
+    "razon": "Dos partes y un todo.",
+    "respuesta": "3"
+   },
+   "despues": {
+    "enunciado": "En la familia de operaciones de 2, 7 y 9, ¿cuáles son las partes y cuál es el todo?",
+    "razon": "2 y 7 juntos forman 9.",
+    "respuesta": "Las partes son 2 y 7; el todo es 9"
+   },
+   "cambio": "decía que siempre hay tres números distintos, y la clase acepta partes iguales"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-10:c04:auto-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En __ − 2 = 7, ¿falta una suma o una resta?",
+    "razon": "7 + 2.",
+    "respuesta": "Una suma"
+   },
+   "despues": {
+    "enunciado": "Para completar __ − 2 = 7, ¿te ayuda sumar o restar?",
+    "razon": "7 + 2 = 9, y 9 − 2 = 7.",
+    "respuesta": "Sumar"
+   },
+   "cambio": "la pregunta confundía el número que falta con la operación"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-11:c01:ej-recovery-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Continúa el patrón: A B B A __ __.",
+    "razon": "La unidad es A B B.",
+    "respuesta": "B B"
+   },
+   "despues": {
+    "enunciado": "Continúa el patrón: A B B A B B __ __ __.",
+    "razon": "La unidad es A B B.",
+    "respuesta": "A B B"
+   },
+   "cambio": "se muestran dos repeticiones para que haya una sola continuación"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-11:c01:ej-recovery-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Continúa el patrón: A A B A __ __.",
+    "razon": "La unidad es A A B.",
+    "respuesta": "A B"
+   },
+   "despues": {
+    "enunciado": "Continúa el patrón: A A B B A A B B __ __ __ __.",
+    "razon": "La unidad es A A B B.",
+    "respuesta": "A A B B"
+   },
+   "cambio": "se muestran dos repeticiones para que haya una sola continuación"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-11:c02:ej-recovery-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Continúa con ▲ ■ ●: ▲ ■ ● __ __ __.",
+    "razon": "La unidad es ▲ ■ ●.",
+    "respuesta": "▲ ■ ●"
+   },
+   "despues": {
+    "enunciado": "Continúa el patrón: ▲ ■ ● ▲ ■ ● __ __ __.",
+    "razon": "La unidad es ▲ ■ ●.",
+    "respuesta": "▲ ■ ●"
+   },
+   "cambio": "se muestran dos repeticiones de la unidad"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-11:c03:actividad-abierta",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Crea un patrón creciente que empiece en 1 y use la regla «suma 3» hasta pasar de 15. Escribe la lista, comprueba la diferencia entre cada par de vecinos y señala el número más grande menor que 20.",
+    "razon": "Criterios: aplica la regla; comprueba las diferencias; encuentra el número pedido",
+    "respuesta": "1, 4, 7, 10, 13, 16, 19. Diferencias: 3 en todos los pares. El mayor menor que 20 es 19."
+   },
+   "despues": {
+    "enunciado": "Crea un patrón creciente que empiece en 1 y use la regla «suma 3» hasta llegar a 19. Escribe la lista, comprueba la diferencia entre cada par de vecinos y señala el número que está justo antes del 19.",
+    "razon": "Criterios: aplica la regla; comprueba las diferencias; encuentra el número pedido",
+    "respuesta": "1, 4, 7, 10, 13, 16, 19. Diferencias: 3 en todos los pares. Justo antes del 19 está el 16."
+   },
+   "cambio": "la lista de ejemplo no se detenía donde pedía la consigna"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-11:c05:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Crea un patrón que combine un color y una figura con unidad de 4 elementos.",
+    "razon": "Los colores y las figuras se repiten.",
+    "respuesta": "Por ejemplo: rojo ▲, azul ●, rojo ▲, azul ●"
+   },
+   "despues": {
+    "enunciado": "La unidad de un patrón es: rojo ▲, azul ●, verde ■, amarillo ▲. ¿Qué viene después del verde ■?",
+    "razon": "Es el cuarto elemento de la unidad.",
+    "respuesta": "Amarillo ▲"
+   },
+   "cambio": "el ejemplo anterior no tenía la unidad de cuatro que pedía"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-12:c03:auto-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Escribe una suma equivalente a 3 + 3.",
+    "razon": "Ambas valen 6.",
+    "respuesta": "4 + 2"
+   },
+   "despues": {
+    "enunciado": "¿Qué suma vale lo mismo que 3 + 3: 4 + 2 o 4 + 3?",
+    "razon": "3 + 3 = 6 y 4 + 2 = 6.",
+    "respuesta": "4 + 2"
+   },
+   "cambio": "ahora tiene una sola respuesta correcta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-12:c03:ej-apply-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Escribe una suma equivalente a 9 + 1.",
+    "razon": "8 + 2 = 10.",
+    "respuesta": "8 + 2"
+   },
+   "despues": {
+    "enunciado": "¿Qué suma vale lo mismo que 9 + 1: 8 + 3 u 8 + 2?",
+    "razon": "9 + 1 = 10 y 8 + 2 = 10.",
+    "respuesta": "8 + 2"
+   },
+   "cambio": "ahora tiene una sola respuesta correcta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-12:c03:ej-apply-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Escribe una suma equivalente a 7 + 5.",
+    "razon": "Las dos valen 12.",
+    "respuesta": "6 + 6"
+   },
+   "despues": {
+    "enunciado": "¿Qué suma vale lo mismo que 7 + 5: 6 + 6 o 6 + 5?",
+    "razon": "7 + 5 = 12 y 6 + 6 = 12.",
+    "respuesta": "6 + 6"
+   },
+   "cambio": "ahora tiene una sola respuesta correcta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-12:c03:ej-challenge-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Escribe tres sumas equivalentes a 12.",
+    "razon": "Todas valen 12.",
+    "respuesta": "6 + 6, 7 + 5 y 9 + 3"
+   },
+   "despues": {
+    "enunciado": "¿Cuáles de estas sumas valen 12: 6 + 6, 7 + 4, 9 + 3, 8 + 3?",
+    "razon": "Las dos dan 12; las otras dan 11.",
+    "respuesta": "6 + 6 y 9 + 3"
+   },
+   "cambio": "ahora tiene una sola respuesta correcta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-13:c01:ej-recovery-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Con cuál mano escribes: derecha o izquierda? Responde para ti.",
+    "razon": "La mano con que escribes es una de las dos.",
+    "respuesta": "Depende de cada persona; la mano que usas se llama así"
+   },
+   "despues": {
+    "enunciado": "Tienes dos manos. Si una es la derecha, ¿cómo se llama la otra?",
+    "razon": "Las dos manos son la derecha y la izquierda.",
+    "respuesta": "Izquierda"
+   },
+   "cambio": "la respuesta anterior estaba mal redactada y no respondía"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-13:c02:ej-recovery-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Misma fila. ¿Qué hay a la izquierda del pez?",
+    "razon": "Viene antes del pez.",
+    "respuesta": "El perro"
+   },
+   "despues": {
+    "enunciado": "Fila de izquierda a derecha: gato, perro, pez. ¿Qué hay justo a la izquierda del pez?",
+    "razon": "El perro está justo antes del pez, a su izquierda.",
+    "respuesta": "El perro"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-13:c02:ej-recovery-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Misma fila. ¿Qué está entre el gato y el pez?",
+    "razon": "Queda en el medio.",
+    "respuesta": "El perro"
+   },
+   "despues": {
+    "enunciado": "Fila de izquierda a derecha: gato, perro, pez. ¿Qué está entre el gato y el pez?",
+    "razon": "Queda en el medio.",
+    "respuesta": "El perro"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-13:c04:auto-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Qué indica la columna?",
+    "razon": "Se cuenta desde la izquierda.",
+    "respuesta": "Qué columna es, contando desde la izquierda"
+   },
+   "despues": {
+    "enunciado": "En un plano, ¿las columnas van de arriba abajo o de un lado al otro?",
+    "razon": "La columna va de arriba abajo; la fila va de un lado al otro.",
+    "respuesta": "De arriba abajo"
+   },
+   "cambio": "la respuesta repetía la pregunta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-13:c04:ejemplo-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Leer un plano: En un plano, la mesa está en la fila 2, columna 3. ¿Cómo la encuentras?",
+    "razon": "1. Parto en la esquina de arriba a la izquierda. 2. Cuento 2 filas hacia abajo, y la de arriba es la fila 1. 3. Cuento 3 columnas hacia la derecha, y la de la izquierda es la columna 1.",
+    "respuesta": "Fila 2, columna 3"
+   },
+   "despues": {
+    "enunciado": "Leer un plano: En un plano, la mesa está en la fila 2, columna 3. ¿Dónde pones el dedo?",
+    "razon": "1. Parto en la esquina de arriba a la izquierda. 2. Cuento 2 filas hacia abajo, y la de arriba es la fila 1. 3. Cuento 3 columnas hacia la derecha, y la de la izquierda es la columna 1.",
+    "respuesta": "En el cuadro de la segunda fila desde arriba y la tercera columna desde la izquierda"
+   },
+   "cambio": "la respuesta repetía la pregunta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-14:c01:ej-understand-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿En qué se diferencian?",
+    "razon": "Es lo que los distingue.",
+    "respuesta": "El cuadrado tiene los 4 lados iguales; el rectángulo no"
+   },
+   "despues": {
+    "enunciado": "Un cuadrado y un rectángulo alargado tienen 4 lados. ¿En cuál son iguales los 4 lados?",
+    "razon": "El rectángulo alargado tiene dos lados más largos.",
+    "respuesta": "En el cuadrado"
+   },
+   "cambio": "presentaba cuadrado y rectángulo como figuras que se excluyen"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-15:c02:ej-contexto-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En una mochila hay 3 cuadernos (bordes rectos) y 2 pelotitas (bordes curvos). ¿Cuántos objetos hay?",
+    "razon": "Se juntan los dos grupos. Cálculo: 3 + 2 = 5.",
+    "respuesta": "5"
+   },
+   "despues": {
+    "enunciado": "En una mochila hay un cuaderno, una regla y una pelota. ¿Cuántos de esos objetos tienen bordes rectos?",
+    "razon": "El cuaderno y la regla tienen bordes rectos; la pelota es curva.",
+    "respuesta": "2"
+   },
+   "cambio": "antes bastaba sumar y no había que mirar las líneas"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-16:c01:ej-understand-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cuándo empiezo a contar?",
+    "razon": "Así mido toda la duración.",
+    "respuesta": "Cuando empieza el evento"
+   },
+   "despues": {
+    "enunciado": "Dejé de contar cuando Ana llevaba un solo brazo dentro del abrigo. ¿Medí bien cuánto tardó en ponérselo?",
+    "razon": "Debía contar hasta que terminara de ponérselo.",
+    "respuesta": "No"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-16:c02:ej-contexto-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En el recreo, Pedro tardó 14 aplausos en dar una vuelta al patio corriendo y Mari tardó 11. ¿Quién llegó antes y por cuánto?",
+    "razon": "Menos aplausos es menos tiempo: 14 − 11 = 3.",
+    "respuesta": "Mari; por 3 aplausos"
+   },
+   "despues": {
+    "enunciado": "En el recreo, Pedro y Mari partieron juntos a dar una vuelta al patio. Pedro tardó 14 aplausos y Mari 11. ¿Quién llegó antes y por cuánto?",
+    "razon": "Menos aplausos es menos tiempo: 14 − 11 = 3.",
+    "respuesta": "Mari; por 3 aplausos"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-16:c03:ej-challenge-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Hay cuatro eventos. Dos duran lo mismo. ¿Cuántas duraciones distintas hay?",
+    "razon": "Dos eventos repiten una duración.",
+    "respuesta": "3"
+   },
+   "despues": {
+    "enunciado": "Cuatro actividades duran 5, 8, 8 y 10 aplausos. ¿Cuántas duraciones distintas hay?",
+    "razon": "Las duraciones son 5, 8 y 10.",
+    "respuesta": "3"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-16:c03:ejemplo-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "El más largo: ¿Cuál es el más largo del ejemplo anterior?",
+    "razon": "1. El que tiene más aplausos. 2. Es la galleta con 12.",
+    "respuesta": "Comer la galleta"
+   },
+   "despues": {
+    "enunciado": "El más largo: Lavarse dura 8 aplausos, guardar 5, comer una galleta 12 y ponerse la chaqueta 10. ¿Cuál dura más?",
+    "razon": "1. El que tiene más aplausos. 2. Es la galleta con 12.",
+    "respuesta": "Comer la galleta"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-16:c04:ej-understand-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cuántas condiciones tiene una medición justa?",
+    "razon": "Unidad, ritmo, inicio y final.",
+    "respuesta": "4"
+   },
+   "despues": {
+    "enunciado": "Para comparar dos actividades con aplausos de forma justa, ¿qué debe ser igual: el ritmo de los aplausos o el color de la ropa?",
+    "razon": "Con otro ritmo los números no se pueden comparar.",
+    "respuesta": "El ritmo de los aplausos"
+   },
+   "cambio": "preguntaba por una cifra que solo estaba en el cuaderno"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-17:c01:ej-understand-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Qué significa «antes»?",
+    "razon": "Antes pasó primero.",
+    "respuesta": "Ya ocurrió"
+   },
+   "despues": {
+    "enunciado": "Antes de salir a jugar, me pongo los zapatos. ¿Qué hago primero: ponerme los zapatos o salir a jugar?",
+    "razon": "Lo que va antes pasa primero.",
+    "respuesta": "Ponerme los zapatos"
+   },
+   "cambio": "definía «antes» como algo que ya ocurrió"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-17:c02:ej-reason-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Por qué lunes a viernes son días de colegio y sábado y domingo no?",
+    "razon": "Es la organización de la semana escolar.",
+    "respuesta": "Porque son días de descanso"
+   },
+   "despues": {
+    "enunciado": "Hoy es viernes. ¿Mañana es día de colegio o de descanso?",
+    "razon": "Después del viernes viene el sábado.",
+    "respuesta": "De descanso"
+   },
+   "cambio": "la respuesta anterior no respondía la pregunta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-18:c01:ej-recovery-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Un lápiz y una goma: ¿cuál es más largo?",
+    "razon": "El lápiz mide más que la goma.",
+    "respuesta": "El lápiz"
+   },
+   "despues": {
+    "enunciado": "Una cuchara mide 10 cubitos y un clip mide 3. ¿Cuál es más largo?",
+    "razon": "10 cubitos es más que 3.",
+    "respuesta": "La cuchara"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-18:c03:ej-recovery-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Las mismas cintas. ¿Cuál es la más larga?",
+    "razon": "Es la mayor.",
+    "respuesta": "La de 25 cubitos"
+   },
+   "despues": {
+    "enunciado": "Tres cintas miden 10, 25 y 15 cubitos. ¿Cuánto mide la más larga?",
+    "razon": "25 es el mayor.",
+    "respuesta": "25 cubitos"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-18:c03:ej-recovery-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Las mismas cintas. ¿Cuál es la del medio?",
+    "razon": "Ni la más corta ni la más larga.",
+    "respuesta": "La de 15 cubitos"
+   },
+   "despues": {
+    "enunciado": "Tres cintas miden 10, 25 y 15 cubitos. ¿Cuánto mide la del medio?",
+    "razon": "15 está entre 10 y 25.",
+    "respuesta": "15 cubitos"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-18:c04:ejemplo-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Comparar con una cinta: Compara el alto de la puerta con el largo de una mesa.",
+    "razon": "1. Mido el alto de la puerta con la cinta y marco el largo. 2. Llevo la cinta a la mesa. 3. La cinta sobra, entonces la mesa es más corta.",
+    "respuesta": "La mesa es más corta que la puerta"
+   },
+   "despues": {
+    "enunciado": "Comparar con una cinta: Marcas en una cinta el alto de la puerta y, al ponerla sobre la mesa, sobra cinta. ¿Cuál es más corto: el alto de la puerta o el largo de la mesa?",
+    "razon": "1. Mido el alto de la puerta con la cinta y marco el largo. 2. Llevo la cinta a la mesa. 3. La cinta sobra, entonces la mesa es más corta.",
+    "respuesta": "El largo de la mesa"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-19:c03:ejemplo-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Pasar de bloques a marcas: Bloques: perro 6, gato 3. Haz la tabla de conteo.",
+    "razon": "1. Perro: un grupo de cinco y una raya. 2. Gato: tres rayas. 3. Totales: 6 y 3.",
+    "respuesta": "Perro 6, gato 3"
+   },
+   "despues": {
+    "enunciado": "Pasar de bloques a marcas: Hay 6 bloques para perro y 3 para gato. ¿Qué marcas pones en la tabla de conteo?",
+    "razon": "1. Perro: un grupo de cinco y una raya. 2. Gato: tres rayas. 3. Totales: 6 y 3.",
+    "respuesta": "Perro: un grupo de cinco rayas y una raya más. Gato: tres rayas."
+   },
+   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c02:ej-apply-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Manzana 9, naranja 5, plátano 6. ¿Cuántos respondieron?",
+    "razon": "Se suman. Cálculo: 9 + 5 + 6 = 20.",
+    "respuesta": "20"
+   },
+   "despues": {
+    "enunciado": "Perro 8, gato 7, pez 4. ¿Cuántos respondieron?",
+    "razon": "8 + 7 = 15 y 15 + 4 = 19.",
+    "respuesta": "19"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c03:ejemplo-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Construir: Hay 5 tapas rojas, 3 azules y 4 verdes. Construye el pictograma.",
+    "razon": "1. Título: «Tapas por color». 2. Rojas: ● ● ● ● ●. 3. Azules: ● ● ●. 4. Verdes: ● ● ● ●. 5. Clave: ● = 1 tapa.",
+    "respuesta": "Rojas 5, azules 3, verdes 4"
+   },
+   "despues": {
+    "enunciado": "Construir: Hay 5 tapas rojas, 3 azules y 4 verdes. ¿Qué símbolos dibujas en cada fila del pictograma?",
+    "razon": "1. Título: «Tapas por color». 2. Rojas: ● ● ● ● ●. 3. Azules: ● ● ●. 4. Verdes: ● ● ● ●. 5. Clave: ● = 1 tapa.",
+    "respuesta": "Rojas ● ● ● ● ●, azules ● ● ●, verdes ● ● ● ● (● = 1 tapa)"
+   },
+   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c03:ejemplo-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Comprobar: ¿Cuántas tapas hay en total?",
+    "razon": "1. 5 + 3 + 4. 2. 5 + 3 = 8; 8 + 4 = 12.",
+    "respuesta": "12"
+   },
+   "despues": {
+    "enunciado": "Comprobar: Un pictograma muestra 5 tapas rojas, 3 azules y 4 verdes. ¿Cuántas tapas hay en total?",
+    "razon": "1. 5 + 3 + 4. 2. 5 + 3 = 8; 8 + 4 = 12.",
+    "respuesta": "12"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c04:ejemplo-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "De la tabla al pictograma: Perro 6, gato 4, pez 2. Construye el pictograma.",
+    "razon": "1. Título: «Mascotas favoritas». 2. Perro: ● ● ● ● ● ●. 3. Gato: ● ● ● ●. 4. Pez: ● ●. 5. Clave: ● = 1 persona.",
+    "respuesta": "Perro 6, gato 4, pez 2"
+   },
+   "despues": {
+    "enunciado": "De la tabla al pictograma: La tabla dice perro 6, gato 4 y pez 2. ¿Qué símbolos dibujas en cada fila?",
+    "razon": "1. Título: «Mascotas favoritas». 2. Perro: ● ● ● ● ● ●. 3. Gato: ● ● ● ●. 4. Pez: ● ●. 5. Clave: ● = 1 persona.",
+    "respuesta": "Perro ● ● ● ● ● ●, gato ● ● ● ●, pez ● ● (● = 1 persona)"
+   },
+   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c04:ejemplo-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Comprobar: ¿Coincide el total del gráfico con la tabla?",
+    "razon": "1. 6 + 4 + 2 = 12 en el gráfico. 2. La tabla suma 12. 3. Las respuestas coinciden con las personas.",
+    "respuesta": "Sí"
+   },
+   "despues": {
+    "enunciado": "Comprobar: La tabla dice perro 6, gato 4 y pez 2, y el pictograma tiene 12 símbolos. ¿Coinciden los totales?",
+    "razon": "1. La tabla suma 6 + 4 + 2 = 12. 2. El pictograma tiene 12 símbolos. 3. Los totales coinciden.",
+    "respuesta": "Sí"
+   },
+   "cambio": "ahora se entiende sin leer la tarea anterior"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c05:auto-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cuántos pasos tiene la investigación del cuaderno?",
+    "razon": "Preguntar, tabla, pictograma, interpretar y comunicar.",
+    "respuesta": "5"
+   },
+   "despues": {
+    "enunciado": "En una investigación, ¿qué haces primero: la pregunta o el pictograma?",
+    "razon": "Sin pregunta no hay datos para dibujar.",
+    "respuesta": "La pregunta"
+   },
+   "cambio": "preguntaba por un cuaderno que la tarea no incluye"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-01:c02:ej-apply-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Hay 4 pares de calcetines. ¿Cuántos calcetines hay?",
+    "razon": "Cuatro parejas de 2 son 8. Cálculo: 4 × 2 = 8.",
+    "respuesta": "8"
+   },
+   "despues": {
+    "enunciado": "Hay 4 pares de calcetines. ¿Cuántos calcetines hay?",
+    "razon": "Cuento de 2 en 2: 2, 4, 6, 8.",
+    "respuesta": "8"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-01:c02:ej-apply-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En una mesa hay 6 niños. Cada uno tiene 2 manos. ¿Cuántas manos hay?",
+    "razon": "Seis parejas de manos son 12. Cálculo: 6 × 2 = 12.",
+    "respuesta": "12"
+   },
+   "despues": {
+    "enunciado": "En una mesa hay 6 niños. Cada uno tiene 2 manos. ¿Cuántas manos hay?",
+    "razon": "Cuento de 2 en 2, una vez por niño: 2, 4, 6, 8, 10, 12.",
+    "respuesta": "12"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-01:c03:ej-apply-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Hay 3 manos. ¿Cuántos dedos hay si cuento de 5 en 5?",
+    "razon": "Tres saltos de 5 son 15. Cálculo: 3 × 5 = 15.",
+    "respuesta": "15"
+   },
+   "despues": {
+    "enunciado": "Hay 3 manos. ¿Cuántos dedos hay si cuento de 5 en 5?",
+    "razon": "Cuento de 5 en 5: 5, 10, 15.",
+    "respuesta": "15"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-01:c03:ej-apply-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Hay 9 paquetes de 10 lápices. ¿Cuántos lápices hay?",
+    "razon": "Nueve saltos de 10 llegan a 90. Cálculo: 9 × 10 = 90.",
+    "respuesta": "90"
+   },
+   "despues": {
+    "enunciado": "Hay 9 paquetes de 10 lápices. ¿Cuántos lápices hay?",
+    "razon": "Cuento de 10 en 10 nueve veces: 10, 20, 30, 40, 50, 60, 70, 80, 90.",
+    "respuesta": "90"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-01:c03:ej-contexto-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En la sala hay 5 niños. Cada niño tiene 10 palitos de helado. ¿Cuántos palitos hay en total?",
+    "razon": "Cinco paquetes de 10 son 50 palitos. Cálculo: 5 × 10 = 50.",
+    "respuesta": "50"
+   },
+   "despues": {
+    "enunciado": "En la sala hay 5 niños. Cada niño tiene 10 palitos de helado. ¿Cuántos palitos hay en total?",
+    "razon": "Cuento de 10 en 10, una vez por niño: 10, 20, 30, 40, 50.",
+    "respuesta": "50"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-apply-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Una caja tiene tres grupos de cinco bolitas y 2 sueltas. ¿Cuántas bolitas hay?",
+    "razon": "15 y 2 más. Cálculo: 3 × 5 + 2 = 17.",
+    "respuesta": "17"
+   },
+   "despues": {
+    "enunciado": "Una caja tiene tres grupos de cinco bolitas y 2 sueltas. ¿Cuántas bolitas hay?",
+    "razon": "5, 10, 15 y 2 más son 17.",
+    "respuesta": "17"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-contexto-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En una bandeja hay 3 filas de 5 galletas. Estima y calcula cuántas galletas hay.",
+    "razon": "Tres filas de 5 son 15 galletas. Cálculo: 3 × 5 = 15.",
+    "respuesta": "15"
+   },
+   "despues": {
+    "enunciado": "En una bandeja hay 3 filas de 5 galletas. Estima y calcula cuántas galletas hay.",
+    "razon": "Cuento las filas de 5 en 5: 5, 10, 15.",
+    "respuesta": "15"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-recovery-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Una colección ocupa 2 grupos de cinco. ¿Cuánto estimas?",
+    "razon": "Dos grupos de 5 son 10. Cálculo: 2 × 5 = 10.",
+    "respuesta": "10"
+   },
+   "despues": {
+    "enunciado": "Una colección ocupa 2 grupos de cinco. ¿Cuánto estimas?",
+    "razon": "5 y 5 son 10.",
+    "respuesta": "10"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "duda": "la primera lectura notó que casi repite otra tarea de su clase; solo se quitó la multiplicación"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-recovery-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Otra ocupa 1 grupo de cinco. ¿Cuánto estimas?",
+    "razon": "Un grupo vale 5. Cálculo: 1 × 5 = 5.",
+    "respuesta": "5"
+   },
+   "despues": {
+    "enunciado": "Una colección ocupa 1 grupo de cinco. ¿Cuánto estimas?",
+    "razon": "Un grupo de cinco tiene 5.",
+    "respuesta": "5"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico y empezaba con «Otra»"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-recovery-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Otra ocupa 4 grupos de cinco. ¿Cuánto estimas?",
+    "razon": "Cuatro grupos son 20. Cálculo: 4 × 5 = 20.",
+    "respuesta": "20"
+   },
+   "despues": {
+    "enunciado": "Una colección ocupa 4 grupos de cinco. ¿Cuánto estimas?",
+    "razon": "Cuento de 5 en 5: 5, 10, 15, 20.",
+    "respuesta": "20"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico y empezaba con «Otra»",
+   "duda": "la primera lectura notó que casi repite otra tarea de su clase; solo se quitó la multiplicación"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c01:auto-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cuántos son 4 grupos de cinco?",
+    "razon": "Cuatro grupos de 5 son 20. Cálculo: 4 × 5 = 20.",
+    "respuesta": "20"
+   },
+   "despues": {
+    "enunciado": "¿Cuántos son 4 grupos de cinco?",
+    "razon": "Cuento de 5 en 5: 5, 10, 15, 20.",
+    "respuesta": "20"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-apply-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Hay ● ● ● ● ● y un grupo parecido. ¿Cuánto estimas en total?",
+    "razon": "Son dos grupos de cinco.",
+    "respuesta": "Cerca de 10"
+   },
+   "despues": {
+    "enunciado": "Hay ● ● ● ● ● y otro grupo de cinco. ¿Cuánto estimas en total?",
+    "razon": "Son dos grupos de cinco.",
+    "respuesta": "Cerca de 10"
+   },
+   "cambio": "«un grupo parecido» no decía que fuera de cinco"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c03:auto-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Dos grupos de cinco y 3 más, ¿cuántos son?",
+    "razon": "10 y 3 más. Cálculo: 2 × 5 + 3 = 13.",
+    "respuesta": "13"
+   },
+   "despues": {
+    "enunciado": "Dos grupos de cinco y 3 más, ¿cuántos son?",
+    "razon": "Dos grupos de cinco son 10; 10 y 3 más son 13.",
+    "respuesta": "13"
+   },
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-01:c04:explicacion",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Objetivo de la clase: Aprenderé a elegir el salto correcto y a contar hacia adelante o hacia atrás desde cualquier número. Sirve para llegar a una meta, como juntar un número de figuritas.",
+    "respuesta": "Para llegar de un número a otro, primero elige el salto. Si el salto es de 10 y partes en 30, el siguiente es 40. Hacia atrás es lo contrario: desde 30 con salto de 10 vas a 20. Puedes empezar en cualquier número, no sólo en 0. Si partes en 27 y cuentas de 1 en 1 llegas a 28, 29, 30. Si cuentas de 10 en 10 llegas a 37, 47, 57. Fíjate en el último número de cada uno: en los saltos de 10 no cambia (siempre termina en 7). Con una flecha puedes marcar lo que haces: «+5» avanza cinco, «−5» retrocede cinco. Elige el salto que te lleve a la meta con menos pasos y comprueba que la meta coincida."
+   },
+   "despues": {
+    "enunciado": "Objetivo de la clase: Aprenderé a elegir el salto correcto y a contar hacia adelante o hacia atrás desde cualquier número. Sirve para llegar a una meta, como juntar un número de figuritas.",
+    "respuesta": "Para llegar de un número a otro, primero elige el salto. Si el salto es de 10 y partes en 30, el siguiente es 40. Hacia atrás es lo contrario: desde 30 con salto de 10 vas a 20. Puedes empezar en cualquier número, no sólo en 0. Si partes en 27 y cuentas de 1 en 1 llegas a 28, 29, 30. Si cuentas de 10 en 10 llegas a 37, 47, 57. Fíjate en la última cifra de cada número: en los saltos de 10 no cambia (siempre termina en 7). Con una flecha puedes marcar lo que haces: «+5» avanza cinco, «−5» retrocede cinco. Elige el salto que te lleve a la meta con menos pasos y comprueba que la meta coincida."
+   },
+   "cambio": "decía «número» donde correspondía «cifra»"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-04:c01:vocab-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "menos",
+    "respuesta": "se quedó sin pareja para algunos de la otra"
+   },
+   "despues": {
+    "enunciado": "menos",
+    "respuesta": "cuando hay una cantidad más chica que otra"
+   },
+   "cambio": "la definición no se entendía"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-04:c01:ej-reason-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En un baile hay 6 niñas y 5 niños. Si todos bailan en pareja, ¿qué pasa?",
+    "razon": "Hay una niña más.",
+    "respuesta": "Sobra una niña"
+   },
+   "despues": {
+    "enunciado": "En un baile hay 6 niñas y 5 niños. Cada pareja es de una niña y un niño. Si se forman todas las parejas posibles, ¿qué pasa?",
+    "razon": "Hay una niña más.",
+    "respuesta": "Sobra una niña"
+   },
+   "cambio": "decía que todos bailaban en pareja y a la vez sobraba una niña"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-08:c02:ej-reason-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Por qué todos los números del 11 al 19 tienen una sola decena?",
+    "razon": "Entre 10 y 19 no se llegan a dos grupos.",
+    "respuesta": "Porque 20 ya son dos decenas"
+   },
+   "despues": {
+    "enunciado": "¿Por qué todos los números del 11 al 19 tienen una sola decena?",
+    "razon": "La segunda decena se completa en el 20.",
+    "respuesta": "Porque no alcanzan para formar dos decenas"
+   },
+   "cambio": "se aclara una frase confusa"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-08:c04:ej-reason-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Por qué 20 no tiene punto en la tabla D U?",
+    "razon": "U = 0.",
+    "respuesta": "Porque no hay unidades sueltas"
+   },
+   "despues": {
+    "enunciado": "En la tabla D U, ¿por qué el 20 tiene 0 en las unidades?",
+    "razon": "Son dos decenas completas.",
+    "respuesta": "Porque no hay unidades sueltas"
+   },
+   "cambio": "se aclara una frase confusa"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-10:c01:auto-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Parto en 7, resto 3 y sumo 3. ¿Llego a?",
+    "razon": "Volví al inicio.",
+    "respuesta": "7"
+   },
+   "despues": {
+    "enunciado": "Parto en 7, resto 3 y sumo 3. ¿A qué número llego?",
+    "razon": "Volví al inicio.",
+    "respuesta": "7"
+   },
+   "cambio": "la pregunta estaba incompleta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-19:c02:auto-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Qué debo revisar al final?",
+    "razon": "Para no olvidar ni repetir.",
+    "respuesta": "Que las respuestas sean igual a las personas"
+   },
+   "despues": {
+    "enunciado": "Terminaste de preguntar a tu curso. ¿Cómo revisas que no falte ni sobre ninguna respuesta?",
+    "razon": "Para no olvidar ni repetir.",
+    "respuesta": "Cuento las respuestas y los compañeros: deben ser la misma cantidad"
+   },
+   "cambio": "se aclara una frase confusa",
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c04:ej-reason-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Ema estimó 20 para 11 objetos. ¿Fue razonable? ¿Qué falló?",
+    "razon": "20 − 11 = 9.",
+    "respuesta": "No; se pasó mucho del referente"
+   },
+   "despues": {
+    "enunciado": "Ema estimó 20 para 11 objetos. ¿Fue razonable? ¿Por qué?",
+    "razon": "20 − 11 = 9.",
+    "respuesta": "No; 20 está muy lejos de 11"
+   },
+   "cambio": "culpaba al referente y el error es la distancia con la cantidad real"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c04:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Hay 16. ¿Cuántas estimaciones razonables (diferencia 3 o menos) hay entre 13 y 19?",
+    "razon": "Son 13, 14, 15, 16, 17, 18 y 19.",
+    "respuesta": "7"
+   },
+   "despues": {
+    "enunciado": "Hay 16 objetos. ¿Cuáles de estas estimaciones tienen una diferencia de 3 o menos: 11, 14, 18 y 20?",
+    "razon": "16 − 14 = 2 y 18 − 16 = 2.",
+    "respuesta": "14 y 18"
+   },
+   "cambio": "no decía si se contaban el primero y el último"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-05:c04:actividad-abierta",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Mira 14 puntos agrupados como 10 y 4 más. Escribe tres estimaciones posibles (por ejemplo 6, 13 y 20), calcula la diferencia de cada una con 14 y elige la más cercana.",
+    "razon": "Criterios: calcula las tres diferencias; elige la menor; explica con palabras",
+    "respuesta": "6 → 8 de diferencia; 13 → 1 de diferencia; 20 → 6 de diferencia. La más cercana es 13."
+   },
+   "despues": {
+    "enunciado": "Dibuja 14 puntos agrupados como 10 y 4 más. Escribe tres estimaciones posibles (por ejemplo 6, 13 y 20), calcula la diferencia de cada una con 14, elige la más cercana y explica por qué.",
+    "razon": "Criterios: calcula las tres diferencias; elige la menor; explica con palabras",
+    "respuesta": "6 → 8 de diferencia; 13 → 1 de diferencia; 20 → 6 de diferencia. La más cercana es 13, porque su diferencia es la menor."
+   },
+   "cambio": "pedía mirar unos puntos que no se incluían"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-13:c03:ej-apply-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Escribe una instrucción para ir 3 cuadrados hacia arriba y luego 1 a la derecha.",
+    "razon": "Dirección y cantidad.",
+    "respuesta": "Avanza 3, gira a la derecha y avanza 1"
+   },
+   "despues": {
+    "enunciado": "Miras hacia arriba en la hoja. Escribe una instrucción para ir 1 cuadrado hacia arriba y luego 4 a la derecha.",
+    "razon": "Dirección y cantidad.",
+    "respuesta": "Avanza 1, gira a la derecha y avanza 4"
+   },
+   "cambio": "faltaba hacia dónde mira quien parte"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-13:c03:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Escribe una instrucción de tres pasos que te lleve del inicio a un cuadrado 2 arriba y 2 a la izquierda.",
+    "razon": "Dirección y cantidad.",
+    "respuesta": "Avanza 2, gira a la izquierda y avanza 2"
+   },
+   "despues": {
+    "enunciado": "Miras hacia arriba en la hoja. Escribe una instrucción para ir primero 2 cuadrados hacia arriba y después 2 a la izquierda.",
+    "razon": "Dirección y cantidad.",
+    "respuesta": "Avanza 2, gira a la izquierda y avanza 2"
+   },
+   "cambio": "faltaba hacia dónde mira quien parte"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-14:c04:auto-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Qué criterio agrupa círculo aparte del cuadrado?",
+    "razon": "Cero y cuatro.",
+    "respuesta": "El número de lados"
+   },
+   "despues": {
+    "enunciado": "¿Cuántos lados rectos tiene el círculo y cuántos el cuadrado?",
+    "razon": "Cero y cuatro.",
+    "respuesta": "El círculo ninguno y el cuadrado 4"
+   },
+   "cambio": "la pregunta anterior admitía otra respuesta"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-14:c04:ej-apply-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Clasifica por lados: triángulo, círculo, rectángulo, cuadrado.",
+    "razon": "Se cuentan los lados.",
+    "respuesta": "0: círculo; 3: triángulo; 4: rectángulo y cuadrado"
+   },
+   "despues": {
+    "enunciado": "Dibujo el borde de una hoja (un rectángulo), de una tapa (un círculo) y de un cartel (un triángulo). ¿Cuántos lados tiene cada figura?",
+    "razon": "Se cuentan los lados de cada figura.",
+    "respuesta": "El rectángulo 4, el círculo ninguno y el triángulo 3"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-apply-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Perro: ● ● ● ● ● ● ● ●. Gato: ● ● ● ●. ¿Cuántos eligieron perro y cuántos gato?",
+    "razon": "Se cuentan los símbolos de cada fila.",
+    "respuesta": "Perro 8, gato 4"
+   },
+   "despues": {
+    "enunciado": "Cada ● es una persona. Perro: ● ● ● ● ● ● ● ●. Gato: ● ● ● ●. ¿Cuántos eligieron perro y cuántos gato?",
+    "razon": "Se cuentan los símbolos de cada fila.",
+    "respuesta": "Perro 8, gato 4"
+   },
+   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-apply-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Perro tiene 8 símbolos y gato 4. ¿Cuántos más eligieron perro?",
+    "razon": "Diferencia de los símbolos. Cálculo: 8 − 4 = 4.",
+    "respuesta": "4"
+   },
+   "despues": {
+    "enunciado": "En un pictograma cada símbolo es una persona. Perro tiene 8 símbolos y gato 4. ¿Cuántas personas más eligieron perro?",
+    "razon": "Diferencia de los símbolos. Cálculo: 8 − 4 = 4.",
+    "respuesta": "4"
+   },
+   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-apply-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Perro tiene 8 símbolos, gato 4 y pez 3. ¿Cuántas personas respondieron en total?",
+    "razon": "Se suman todos. Cálculo: 8 + 4 + 3 = 15.",
+    "respuesta": "15"
+   },
+   "despues": {
+    "enunciado": "En un pictograma cada símbolo es una persona. Perro tiene 8 símbolos, gato 4 y pez 3. ¿Cuántas personas respondieron en total?",
+    "razon": "Se suman todos. Cálculo: 8 + 4 + 3 = 15.",
+    "respuesta": "15"
+   },
+   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-contexto-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En el pictograma de «Juegos favoritos», pelota tiene 6 símbolos y cuerda 5. ¿Cuántos niños respondieron en total?",
+    "razon": "Se suman los símbolos de las dos filas. Cálculo: 6 + 5 = 11.",
+    "respuesta": "11"
+   },
+   "despues": {
+    "enunciado": "En el pictograma «Juegos favoritos» cada símbolo es un niño. Pelota tiene 6 símbolos y cuerda 5. ¿Cuántos niños respondieron en total?",
+    "razon": "Se suman los símbolos de las dos filas. Cálculo: 6 + 5 = 11.",
+    "respuesta": "11"
+   },
+   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-challenge-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Hay filas con 6, 3 y 7 símbolos. ¿Cuál es la menos elegida y cuánto se diferencia de la más elegida?",
+    "razon": "7 − 3 = 4.",
+    "respuesta": "La de 3; 4 menos que la de 7"
+   },
+   "despues": {
+    "enunciado": "En un pictograma cada símbolo es una persona. Perro tiene 6 símbolos, gato 3 y pez 7. ¿Cuál es la menos elegida y cuántas personas menos tiene que la más elegida?",
+    "razon": "7 − 3 = 4.",
+    "respuesta": "Gato; 4 personas menos que pez"
+   },
+   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-09:c04:error-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Error frecuente: Decir que Ana tiene 14 más.",
+    "razon": "Se confunde cuántas tiene con cuántas más tiene.",
+    "respuesta": "La pregunta es la diferencia: 14 − 9."
+   },
+   "despues": {
+    "enunciado": "Error frecuente: Ana tiene 16 y Beto 9; al preguntar cuántas más tiene Ana, responder 16.",
+    "razon": "Se confunde cuántas tiene con cuántas más tiene.",
+    "respuesta": "La pregunta es la diferencia: 16 − 9 = 7."
+   },
+   "cambio": "se agregan los datos que faltaban",
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-09:c04:error-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Error frecuente: Retroceder cinco lugares en vez de cuatro.",
+    "razon": "Se cuenta el punto de partida.",
+    "respuesta": "Parte en 15 y di los números que van antes."
+   },
+   "despues": {
+    "enunciado": "Error frecuente: En 17 − 4, retroceder cinco lugares en vez de cuatro.",
+    "razon": "Se retrocede un lugar de más.",
+    "respuesta": "Parte en 17 sin contarlo y di cuatro números hacia atrás: 16, 15, 14, 13."
+   },
+   "cambio": "se agregan los datos que faltaban",
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-09:c04:ej-understand-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cuántos más tiene Ana si tiene 14 y Beto 9?",
+    "razon": "14 − 9 = 5.",
+    "respuesta": "5 más"
+   },
+   "despues": {
+    "enunciado": "Luz tiene 13 fichas y Nico tiene 6. ¿Cuántas fichas más tiene Luz que Nico?",
+    "razon": "13 − 6 = 7.",
+    "respuesta": "7 más"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-09:c04:ej-understand-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En 14 − 9, ¿se puede comparar y también quitar?",
+    "razon": "La resta sirve para ambas situaciones.",
+    "respuesta": "Sí"
+   },
+   "despues": {
+    "enunciado": "Tengo 12 fichas y mi amiga tiene 7. Para saber cuántas más tengo, ¿puedo calcular 12 − 7?",
+    "razon": "La resta sirve para comparar.",
+    "respuesta": "Sí"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-12:c04:error-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Error frecuente: Agregar 7 al lado menor.",
+    "razon": "No se calcula la diferencia.",
+    "respuesta": "Calcula 7 − 4 = 3 y agrega sólo 3."
+   },
+   "despues": {
+    "enunciado": "Error frecuente: Con 7 a un lado y 4 al otro, agregar 7 al lado menor.",
+    "razon": "No se calcula la diferencia.",
+    "respuesta": "Calcula 7 − 4 = 3 y agrega sólo 3."
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-12:c04:ej-reason-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Raúl dice que para equilibrar 9 y 4 hay que agregar 9 a la derecha. ¿Qué error comete?",
+    "razon": "9 − 4 = 5.",
+    "respuesta": "Debe agregar 5"
+   },
+   "despues": {
+    "enunciado": "Un lado tiene 9 y el otro 4. Raúl dice que para equilibrar hay que agregar 9 al lado de 4. ¿Cuántos debe agregar de verdad?",
+    "razon": "9 − 4 = 5.",
+    "respuesta": "5"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-12:c04:auto-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Izquierda: 8. Derecha: 5. ¿Cuánto falta?",
+    "razon": "8 − 5 = 3.",
+    "respuesta": "3"
+   },
+   "despues": {
+    "enunciado": "Izquierda: 8. Derecha: 5. ¿Cuántos faltan a la derecha para igualar?",
+    "razon": "8 − 5 = 3.",
+    "respuesta": "3"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-19:c04:ej-reason-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Mateo dice que la manzana es la favorita de todos los niños de Chile. ¿Qué error comete?",
+    "razon": "No puede generalizar.",
+    "respuesta": "Preguntó sólo a su curso"
+   },
+   "despues": {
+    "enunciado": "Sofía preguntó solo a su familia y dice que a todo su barrio le gusta la pera. ¿Qué error comete?",
+    "razon": "No puede generalizar.",
+    "respuesta": "Dice de todo el barrio lo que solo averiguó en su familia"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-19:c04:ej-recovery-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Manzana 7, plátano 4. ¿Cuál es la más elegida?",
+    "razon": "7 es mayor que 4.",
+    "respuesta": "La manzana"
+   },
+   "despues": {
+    "enunciado": "Pera 8, uva 3. ¿Cuál es la más elegida?",
+    "razon": "8 es mayor que 3.",
+    "respuesta": "La pera"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c02:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cuántos símbolos debe agregar la naranja para igualar a la manzana?",
+    "razon": "9 − 5 = 4.",
+    "respuesta": "4"
+   },
+   "despues": {
+    "enunciado": "La pera tiene 8 símbolos y la uva 2. ¿Cuántos símbolos debe agregar la uva para igualar a la pera?",
+    "razon": "8 − 2 = 6.",
+    "respuesta": "6"
+   },
+   "cambio": "se agregan los datos que faltaban"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-20:c02:auto-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cómo respondo?",
+    "razon": "La frase completa muestra que entendí.",
+    "respuesta": "Con una frase"
+   },
+   "despues": {
+    "enunciado": "Después de calcular, ¿cómo comunico mi respuesta?",
+    "razon": "La frase completa muestra que entendí.",
+    "respuesta": "Con una frase completa"
+   },
+   "cambio": "ahora se entiende sin otra tarea"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-07:c02:ej-understand-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "En 9 − 3, ¿desde dónde parto?",
+    "razon": "El primer número de la resta.",
+    "respuesta": "Desde 9"
+   },
+   "despues": {
+    "enunciado": "En 12 − 4, ¿desde dónde parto?",
+    "razon": "El primer número de la resta.",
+    "respuesta": "Desde 12"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-07:c04:ej-understand-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Qué estrategia conviene para 9 + 8?",
+    "razon": "9 está cerca de 10.",
+    "respuesta": "Completar diez"
+   },
+   "despues": {
+    "enunciado": "¿Qué estrategia conviene para 9 + 6?",
+    "razon": "9 está cerca de 10.",
+    "respuesta": "Completar diez"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-14:c02:ej-apply-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Clasifica: pelota. ¿Rueda? ¿Se apila?",
+    "razon": "La pelota es toda curva.",
+    "respuesta": "Rueda; no se apila bien"
+   },
+   "despues": {
+    "enunciado": "Clasifica: caja de leche. ¿Rueda? ¿Se apila?",
+    "razon": "La caja tiene caras planas.",
+    "respuesta": "No rueda; se apila"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-14:c02:ej-recovery-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Rueda una pelota?",
+    "razon": "Es toda curva.",
+    "respuesta": "Sí"
+   },
+   "despues": {
+    "enunciado": "¿Rueda una naranja?",
+    "razon": "Es redonda por todos lados.",
+    "respuesta": "Sí"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-14:c02:ej-understand-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Qué necesita un cuerpo para apilarse?",
+    "razon": "Se apoya y sostiene.",
+    "respuesta": "Una cara plana"
+   },
+   "despues": {
+    "enunciado": "¿Qué le ayuda a una caja a quedar firme cuando la apilas?",
+    "razon": "Se apoya y sostiene.",
+    "respuesta": "Sus caras planas"
+   },
+   "cambio": "una sola cara plana no basta para apilar, como en un cono"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-14:c03:auto-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Qué figura deja un dado?",
+    "razon": "Sus caras son cuadradas.",
+    "respuesta": "Cuadrado"
+   },
+   "despues": {
+    "enunciado": "¿Qué figura deja la cara grande de una caja de zapatos?",
+    "razon": "Esa cara es un rectángulo.",
+    "respuesta": "Rectángulo"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-15:c04:ej-recovery-03",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cuántas rectas tiene la letra «L» mayúscula?",
+    "razon": "Una vertical y una horizontal.",
+    "respuesta": "2"
+   },
+   "despues": {
+    "enunciado": "¿Cuántas rectas tiene la letra «F» mayúscula?",
+    "razon": "Una vertical y dos horizontales.",
+    "respuesta": "3"
+   },
+   "cambio": "ya no repite un ejemplo resuelto de la clase"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-06:c01:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Dibuja un diagrama con todo 6 y partes 2 y 4. ¿Cuánto es 2 + 4?",
+    "razon": "Las partes juntas forman 6.",
+    "respuesta": "6"
+   },
+   "despues": {
+    "enunciado": "Dibuja un diagrama con partes 2 y 4. ¿Qué número escribes en el todo?",
+    "razon": "Las partes juntas forman 6.",
+    "respuesta": "6"
+   },
+   "cambio": "la respuesta no correspondía a todo lo que se pedía"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-11:c04:ej-reason-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Rocío dice que 10, 8, 5, 4 baja de 2 en 2. ¿Qué error ve?",
+    "razon": "Debería ser 6.",
+    "respuesta": "De 8 a 5 baja 3"
+   },
+   "despues": {
+    "enunciado": "Rocío dice que 10, 8, 5, 4 baja de 2 en 2. ¿Qué número está mal y cuál debería ir?",
+    "razon": "10, 8, 6, 4 baja de 2 en 2.",
+    "respuesta": "El 5; debería ir el 6"
+   },
+   "cambio": "se aclara una frase confusa"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-17:c03:ej-challenge-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Mi cumpleaños es en abril. ¿Cuántos meses faltan desde enero?",
+    "razon": "Febrero, marzo y abril.",
+    "respuesta": "3"
+   },
+   "despues": {
+    "enunciado": "¿Cuántos meses hay entre enero y abril, sin contar enero ni abril?",
+    "razon": "Febrero y marzo.",
+    "respuesta": "2"
+   },
+   "cambio": "«cuántos meses faltan» admitía dos respuestas"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-17:c03:ej-challenge-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "¿Cuántos meses hay entre marzo y septiembre sin contarlos?",
+    "razon": "Abril, mayo, junio, julio y agosto.",
+    "respuesta": "5"
+   },
+   "despues": {
+    "enunciado": "¿Cuántos meses hay entre marzo y septiembre, sin contar marzo ni septiembre?",
+    "razon": "Abril, mayo, junio, julio y agosto.",
+    "respuesta": "5"
+   },
+   "cambio": "se aclara una frase confusa"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-17:c03:ej-contexto-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "El colegio empieza en marzo y las vacaciones de invierno son en julio. ¿Cuántos meses hay entre marzo y julio sin contarlos?",
+    "razon": "Abril, mayo y junio.",
+    "respuesta": "3"
+   },
+   "despues": {
+    "enunciado": "El colegio empieza en marzo y las vacaciones de invierno son en julio. ¿Cuántos meses hay entre los dos, sin contar marzo ni julio?",
+    "razon": "Abril, mayo y junio.",
+    "respuesta": "3"
+   },
+   "cambio": "se aclara una frase confusa"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-19:c01:ej-reason-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Ana preguntó «¿Cómo te llamas?» a todo su curso. ¿Sirve para contar?",
+    "razon": "Las respuestas no se agrupan.",
+    "respuesta": "No; cada persona tiene un nombre distinto"
+   },
+   "despues": {
+    "enunciado": "Ana preguntó «¿Cómo te llamas?» a todo su curso. ¿Es una pregunta con pocas opciones para contar?",
+    "razon": "Hay muchas respuestas posibles y no unas pocas opciones.",
+    "respuesta": "No; hay demasiados nombres distintos"
+   },
+   "cambio": "afirmaba que ningún nombre se repite",
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-18:c02:ej-apply-01",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Un lápiz mide 14 cubitos y una regla 30 cubitos. Escribe la frase de comparación.",
+    "razon": "14 es menor que 30.",
+    "respuesta": "El lápiz es más corto que la regla"
+   },
+   "despues": {
+    "enunciado": "Un lápiz mide 14 cubitos y una regla 30 cubitos. Completa: el lápiz es más ___ que la regla.",
+    "razon": "14 es menor que 30.",
+    "respuesta": "corto"
+   },
+   "cambio": "la respuesta anterior no era la única válida"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-17:c01:explicacion",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Objetivo de la clase: Aprenderé a ordenar lo que hago en un día usando antes, durante y después. Sirve para organizar mi rutina.",
+    "respuesta": "Los eventos ocurren en un orden en el tiempo. Lo primero que pasa es el comienzo; lo último es el final. Para ordenar, usa las palabras antes, durante, después, primero, luego y al final. Antes significa que ya ocurrió: antes de ir al colegio, desayuno. Durante significa que ocurre al mismo tiempo: durante la clase, escribimos. Después significa que viene más tarde: después del recreo, volvemos a la sala. Para ordenar una rutina, haz una lista con números: 1, 2, 3. Pregúntate qué sucede primero y qué se necesita para el siguiente paso. Así no te equivocas."
+   },
+   "despues": {
+    "enunciado": "Objetivo de la clase: Aprenderé a ordenar lo que hago en un día usando antes, durante y después. Sirve para organizar mi rutina.",
+    "respuesta": "Los eventos ocurren en un orden en el tiempo. Lo primero que pasa es el comienzo; lo último es el final. Para ordenar, usa las palabras antes, durante, después, primero, luego y al final. Antes quiere decir que pasa primero: antes de ir al colegio, desayuno. Durante significa que ocurre al mismo tiempo: durante la clase, escribimos. Después significa que viene más tarde: después del recreo, volvemos a la sala. Para ordenar una rutina, haz una lista con números: 1, 2, 3. Pregúntate qué sucede primero y qué se necesita para el siguiente paso. Así no te equivocas."
+   },
+   "cambio": "definía «antes» como algo que ya ocurrió"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-02:c02:explicacion",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Objetivo de la clase: Aprenderé los ordinales del sexto al décimo. Sirve para ubicarme en filas largas, como las de un recreo o una carrera.",
+    "respuesta": "Después del quinto vienen el sexto (6º), el séptimo (7º), el octavo (8º), el noveno (9º) y el décimo (10º). Con ellos puedes ubicar a alguien en una fila de hasta diez lugares. Los ordinales se escriben con el número y una pequeña «o» arriba: 6º, 7º, 8º, 9º, 10º. Se leen sexto, séptimo, octavo, noveno y décimo. Cuando hablas de una niña o de algo femenino, se dice sexta, séptima, octava, novena, décima (6ª, 7ª…). Para encontrar un lugar largo, no cuentes desde cero cada vez: cuenta desde el primero, apoyándote en los que ya sabes. El quinto lleva la mitad de la fila de diez delante; el sexto es el que viene justo después."
+   },
+   "despues": {
+    "enunciado": "Objetivo de la clase: Aprenderé los ordinales del sexto al décimo. Sirve para ubicarme en filas largas, como las de un recreo o una carrera.",
+    "respuesta": "Después del quinto vienen el sexto (6º), el séptimo (7º), el octavo (8º), el noveno (9º) y el décimo (10º). Con ellos puedes ubicar a alguien en una fila de hasta diez lugares. Los ordinales se escriben con el número y una pequeña «o» arriba: 6º, 7º, 8º, 9º, 10º. Se leen sexto, séptimo, octavo, noveno y décimo. Cuando hablas de una niña o de algo femenino, se dice sexta, séptima, octava, novena, décima (6ª, 7ª…). Para encontrar un lugar largo, no cuentes desde cero cada vez: cuenta desde el primero, apoyándote en los que ya sabes. Contando hasta el quinto llevas la mitad de una fila de diez; el sexto es el que viene justo después."
+   },
+   "cambio": "decía que el quinto tiene la mitad de la fila delante y delante hay cuatro",
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-14:c04:ejemplo-02",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Construir: Describe un cohete con cilindro y cono.",
+    "razon": "1. El cuerpo es un cilindro. 2. La punta es un cono. 3. Las ventanas son círculos.",
+    "respuesta": "Un cilindro, un cono y círculos"
+   },
+   "despues": {
+    "enunciado": "Construir: Describe un cohete con cilindro y cono.",
+    "razon": "1. El cuerpo es un cilindro. 2. La punta es un cono. 3. Las ventanas son círculos.",
+    "respuesta": "Un cilindro para el cuerpo y un cono para la punta"
+   },
+   "cambio": "la respuesta mezclaba los cuerpos pedidos con las ventanas",
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+  },
+  {
+   "item": "escolar-chile:1-basico:ma01-oa-19:c03:explicacion",
+   "hallazgo": null,
+   "antes": {
+    "enunciado": "Objetivo de la clase: Aprenderé a pasar los datos de bloques a una tabla de conteo con marcas. Sirve para organizar muchas respuestas con orden.",
+    "respuesta": "Una tabla de conteo tiene una fila por opción y una marca por cada respuesta. Se escribe una raya (|) por cada persona. Después de cuatro rayas, la quinta cruza las cuatro: ||||. Así se cuenta de 5 en 5. Por ejemplo, 7 respuestas a «perro» se anotan con un grupo de cinco más dos rayas. Al terminar, escribe en otra columna el número total de cada opción. La suma de todos los totales debe ser el número de personas. La tabla es más ordenada que una lista y es más fácil de contar. Revisa siempre que la suma de totales sea igual al número de personas que respondieron."
+   },
+   "despues": {
+    "enunciado": "Objetivo de la clase: Aprenderé a pasar los datos de bloques a una tabla de conteo con marcas. Sirve para organizar muchas respuestas con orden.",
+    "respuesta": "Una tabla de conteo tiene una fila por opción y una marca por cada respuesta. Se escribe una raya (|) por cada persona. Después de cuatro rayas, la quinta cruza las cuatro, como si las amarrara. Así se cuenta de 5 en 5. Por ejemplo, 7 respuestas a «perro» se anotan con un grupo de cinco más dos rayas. Al terminar, escribe en otra columna el número total de cada opción. La suma de todos los totales debe ser el número de personas. La tabla es más ordenada que una lista y es más fácil de contar. Revisa siempre que la suma de totales sea igual al número de personas que respondieron."
+   },
+   "cambio": "el ejemplo del grupo de cinco mostraba cuatro rayas sin cruzar"
   }
  ],
  "segunda_lectura": [
@@ -1151,6 +2982,8 @@
   "- Segunda ronda, las 9 cambiadas: 5 sin observaciones, 1 por corregir y 3 dudas; ninguna respuesta errónea.",
   "- La corrección pedida en la segunda ronda está aplicada y **no tiene otra lectura**. Las preguntas marcadas con «Para tu criterio» siguen abiertas.",
   "",
-  "Los textos añadidos o cambiados para resolver las dudas tienen sus lecturas en [Dudas abiertas](dudas-1-basico.md); las cifras anteriores se refieren a las primeras 28 correcciones."
+  "Los textos añadidos o cambiados para resolver las dudas tienen sus lecturas en [Dudas abiertas](dudas-1-basico.md); las cifras anteriores se refieren a las primeras 28 correcciones.",
+  "",
+  "**Matemática (2026-11-26), 122 correcciones de defectos hallados leyendo, sin aplicar.** Primera lectura ciega, 119 textos: 88 sin observaciones y 31 observados. Se ajustaron esos 31 y se sumó una explicación. Segunda lectura de los 32 cambiados: 23 sin observaciones y 9 observados. Los cambios posteriores, marcados «Para tu criterio», no tienen otra lectura."
  ]
 }

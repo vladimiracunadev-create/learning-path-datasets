@@ -266,3 +266,18 @@ def test_a_vanished_finding_keeps_its_decision_and_judgement_in_the_archive(tmp_
     assert json.loads((folder / "decisiones.json").read_text(encoding="utf-8")) == {"decisiones": []}
     assert json.loads((folder / "revision.json").read_text(encoding="utf-8"))["hallazgos"] == {}
     assert report(nucleo, datasets, tmp_path / "limpieza.md") == []
+
+
+def test_a_defect_found_by_reading_may_be_only_in_the_answer():
+    answer_only = correction(question=OLD, answer="De vidrio fino", hallazgo=None)
+    proposals = [{"id": "h1", "veredicto": "aceptar", "items_a_cambiar": []}]
+    assert check_corrections(ENTITIES, proposals, [answer_only], FINDINGS) == []
+    same = correction(hallazgo=None, despues=copy.deepcopy(GLASS["contenido"]))
+    assert any("no cambia nada" in p for p in check_corrections(ENTITIES, proposals, [same], FINDINGS))
+
+
+def test_a_worked_example_may_show_its_own_answer():
+    solved = correction(question="Mira este ejemplo: ¿de qué es la mesa?", answer="La madera de los árboles")
+    assert any("ejemplo del cuaderno" in p for p in problems(solved))
+    shown = GLASS | {"tipo": "ejemplo_resuelto", "publico_solucion": ["estudiante", "docente"]}
+    assert check_corrections([CLASS, NOTEBOOK, shown, OTHER], PROPOSALS, [solved], FINDINGS) == []

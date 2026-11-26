@@ -1,6 +1,6 @@
 # Plan de la fase 2 · vigía curricular y vacíos de 1.º básico
 
-Fecha de corte: **2026-11-26**. Alcance: **exclusivamente 1.º básico**. El titular lo **aprobó el 2026-11-26** con sus recomendaciones. Están hechos los **pasos 2.1 a 2.4**; la fase figura `en curso` en [`lineas.json`](lineas/lineas.json).
+Fecha de corte: **2026-11-26**. Alcance: **exclusivamente 1.º básico**. El titular lo **aprobó el 2026-11-26** con sus recomendaciones. Están hechos los **pasos 2.1 a 2.4**; el 2.5 está en pausa mientras se preparan [correcciones de Matemática](defectos-matematica-1-basico.md), que no eran parte de este plan; la fase figura `en curso` en [`lineas.json`](lineas/lineas.json).
 
 Comprende [L04 · Vigía curricular](lineas/L04-vigia-curricular.md) y [L03 · Vacíos y creación](lineas/L03-vacios-creacion.md), en ese orden.
 

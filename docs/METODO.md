@@ -198,6 +198,26 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 - **Quedan:** 10 hallazgos de tareas sin habilidades (en Matemática, 460 tareas de 23 clases) y 19 cruces del dataset.
 - **Límite:** aprobar las etiquetas no es una revisión pedagógica de cada clase.
 
+### 3.24 Correcciones de defectos de Matemática (preparadas, sin aplicar)
+
+- **Qué:** a pedido del titular se pausó el paso 2.5 y se prepararon 122 [correcciones](informes/correcciones-1-basico.md) en 66 clases: 88 ejercicios cerrados, 13 autoevaluaciones, 11 ejemplos, 4 explicaciones, 3 errores comentados, 2 actividades y 1 definición. Detalle y lo no corregido en [defectos](defectos-matematica-1-basico.md).
+- **Criterio:** corregir lo erróneo, incompleto, confuso, fuera de nivel o copiado de un ejemplo; mantener la repetición de lo que la explicación enseña, ya aceptada en la limpieza.
+- **Dos reglas ajustadas:** lo visto al leer (sin hallazgo) puede corregirse solo en la respuesta o la razón; y la búsqueda de respuestas regaladas se limita a las respuestas ocultas, porque un ejemplo muestra la suya.
+- **Cómo se comprobó:** las reglas de corrección detectaron duplicados y respuestas regaladas en mis borradores. Lectura ciega de 119: 31 observadas, entre ellas una errata mía y varias que seguían repitiendo un ejemplo. Segunda lectura de las 32 cambiadas: 9 observadas. Los cambios posteriores no tienen otra lectura y quedan marcados para decidir.
+- **Aprendizaje:** una de cada cuatro redacciones nuevas seguía observada en la primera lectura; «quien verifica no es quien escribió» vale también para corregir. Corregir contenido ya etiquetado hace caducar sus etiquetas: aquí, 48 de las 60 aprobadas, que habrá que releer.
+- **Límite:** nada aprobado ni aplicado; solo Matemática; lectores de IA.
+
+### 3.25 Qué vuelve a la fuente
+
+Este repositorio no solo deriva datos: lo que la limpieza encuentra mejora el programa de origen, su sitio y sus PDF, porque el contenido se corrige allí.
+
+| Resultado del análisis | Dónde queda | Estado al 2026-11-26 |
+|---|---|---|
+| 24 preguntas que entregaban su respuesta | fuente, commit `3fd976d5` | aplicado |
+| 13 preguntas y 22 definiciones | fuente, commit `b3647111` | aplicado |
+| 122 correcciones de Matemática | fuente, tras aprobación | redactado |
+| 60 etiquetas de habilidades | `aportes/` de este repositorio | aprobado; la fuente no se toca |
+
 ## 4. Cambios de criterio en el camino
 
 | Antes | Después | Motivo |
@@ -216,6 +236,7 @@ El titular aprobó los 15 hallazgos nuevos o reclasificados: 1.057 aceptados y 7
 | Un hallazgo corregido simplemente desaparece | se archiva con el commit que lo resolvió | permite mostrar antes y después |
 | L02 terminaba solo sin cruces entre entrenamiento y evaluación | ese criterio es de L08 y L02 exige asignar cada pendiente | los cruces se corrigen al construir el dataset siguiente |
 | L04 terminaba con un informe fechado que declara lo no leído | además comprueba cada fuente que admite lectura | con solo los objetivos ya habría figurado operativa |
+| Corregir una pregunta exige cambiar su enunciado | lo visto al leer puede estar solo en la respuesta | había respuestas erróneas con enunciado correcto |
 | Toda pieza necesita habilidades y dificultad | habilidades en tareas, dificultad en ejercicios cerrados | exigirlas a todo obligaba a inventarlas |
 | Una aceptación vale mientras el hallazgo tenga el mismo identificador | se retira si cambia un texto que cubre | se aceptó el texto anterior, no el nuevo |
 
@@ -316,6 +337,7 @@ Skills: `dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-
 ## 9. Lo que no está hecho
 
 - Ninguna persona ha revisado el contenido.
+- 122 correcciones de Matemática redactadas y sin aprobar ni aplicar.
 - Quedan 29 hallazgos pendientes: 10 de tareas sin habilidades (L03) y 19 cruces del dataset (L08).
 - L03 tiene 60 etiquetas aprobadas, solo en Matemática, y ningún contenido nuevo; líneas L05 a L09 sin implementación nueva; L04 opera a pedido y sus 4 fuentes manuales no se han revisado; ninguna modalidad real.
 - La posible nueva propuesta curricular sigue sin confirmación oficial.

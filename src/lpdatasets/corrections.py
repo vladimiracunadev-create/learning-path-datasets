@@ -96,8 +96,10 @@ def check_corrections(
             problems.append(f"{ident}: «despues» necesita {', '.join(k for k in FIELDS if k in wanted)}")
         elif all(normalize(new[k]) == normalize(c["antes"].get(k, "")) for k in new):
             problems.append(f"{ident}: no cambia nada")
-        elif items[ident]["tipo"] != "vocabulario" and normalize(new["enunciado"]) == normalize(
-            c["antes"].get("enunciado", "")
+        elif (
+            c.get("hallazgo")  # un hallazgo trata del enunciado; lo visto al leer puede estar solo en la respuesta
+            and items[ident]["tipo"] != "vocabulario"
+            and normalize(new["enunciado"]) == normalize(c["antes"].get("enunciado", ""))
         ):
             problems.append(f"{ident}: el enunciado no cambia")
         declared = c.get("hallazgo")
@@ -137,7 +139,9 @@ def check_corrections(
         for e in changed
         if e["entidad"] == "recurso" and e.get("extra", {}).get("rol") == "cuaderno_estudiante"
     }
-    for c in (c for c in corrections if c["item"] in exercises):
+    # Solo las respuestas ocultas pueden quedar regaladas: un ejemplo o un error comentado muestran la suya.
+    hidden = {i for i in exercises if "estudiante" not in items[i]["publico_solucion"]}
+    for c in (c for c in corrections if c["item"] in hidden):
         answer = normalize(c["despues"]["respuesta"])
         notebook = normalize(notebooks.get(items[c["item"]].get("clase_id"), ""))
         # La respuesta puede estar en el propio enunciado (una elección); no en el resto del cuaderno.
