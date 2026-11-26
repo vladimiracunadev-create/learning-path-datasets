@@ -1,0 +1,14 @@
+{
+  "lineas": [
+    {"id": "L01", "titulo": "Núcleo de contenido", "archivo": "L01-nucleo.md", "estado": "EXPERIMENTAL"},
+    {"id": "L02", "titulo": "Limpieza de datos", "archivo": "L02-limpieza.md", "estado": "PLANIFICADO"},
+    {"id": "L03", "titulo": "Vacíos y creación de contenido", "archivo": "L03-vacios-creacion.md", "estado": "PLANIFICADO"},
+    {"id": "L04", "titulo": "Vigía curricular", "archivo": "L04-vigia-curricular.md", "estado": "PLANIFICADO"},
+    {"id": "L05", "titulo": "Recuperación (RAG)", "archivo": "L05-rag.md", "estado": "PLANIFICADO"},
+    {"id": "L06", "titulo": "Servidor MCP", "archivo": "L06-mcp.md", "estado": "PLANIFICADO"},
+    {"id": "L07", "titulo": "Skills y agentes de uso", "archivo": "L07-agentes-uso.md", "estado": "PLANIFICADO"},
+    {"id": "L08", "titulo": "Dataset", "archivo": "L08-dataset.md", "estado": "PLANIFICADO"},
+    {"id": "L09", "titulo": "Ajuste de modelos", "archivo": "L09-fine-tuning.md", "estado": "PLANIFICADO"},
+    {"id": "L10", "titulo": "Modalidad nueva", "archivo": "L10-modalidad-nueva.md", "estado": "EXPERIMENTAL"}
+  ]
+}

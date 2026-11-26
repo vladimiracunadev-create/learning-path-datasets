@@ -20,7 +20,7 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 
 - **Cuadernos del estudiante:** por cada clase, la explicación, el vocabulario, los ejemplos resueltos, los errores frecuentes, los ejercicios cerrados por nivel de dificultad (recuperación, comprensión, aplicación, razonamiento y desafío), los ejercicios de contexto, la autoevaluación y la actividad abierta con sus criterios.
 - **Diccionarios de 1.º básico:** español (sílabas, clase, significado, sinónimos, antónimos y ejemplo; los verbos con presente, ayer y mañana) e inglés (IPA, cómo suena, traducción, significado y ejemplo traducido). Se publican con `asignatura` `lengua-es` y `lengua-en`.
-- **Asignaturas:** artes visuales, ciencias naturales, educación física y salud, historia, geografía y ciencias sociales, inglés (propuesta propia), lenguaje y comunicación, matemática, música, orientación y tecnología, más los diccionarios.
+- **Asignaturas:** artes visuales, ciencias naturales, educación física y salud, historia, geografía y ciencias sociales, inglés (propuesta), lenguaje y comunicación, matemática, música, orientación y tecnología, más los diccionarios.
 
 ## Uso previsto
 
@@ -48,7 +48,7 @@ Cerca del 10 % de las clases (no de los ejemplos) se reserva para evaluación (`
 - Contenido asistido por IA, **sin revisión humana profesional** (`ia_asistida_sin_revision_humana`).
 - La proporción de ejercicios verificables por cálculo es baja (ver la tabla de arriba).
 - Se excluye «Lengua y Cultura de los Pueblos Originarios Ancestrales» (requiere educador tradicional).
-- `ingles-propuesta` es una propuesta propia, no un currículo oficial.
+- `ingles-propuesta` sigue una propuesta curricular del Mineduc, según la marca el programa de origen; no forma parte de la formación general obligatoria de 1.º básico.
 - Una clase puede repetir ideas de otra; la evaluación no está libre de cercanía de contenido con el entrenamiento.
 - El campo `habilidades` está vacío: aún no hay etiquetado de habilidades.
 - Solo 1.º básico; los otros once niveles están planificados.

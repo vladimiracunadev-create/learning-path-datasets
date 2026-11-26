@@ -2,9 +2,13 @@
 
 Lo que sigue es una intención, no una promesa de fechas. Cada punto se incorpora cuando tiene pruebas y documentación.
 
+## Foco actual
+
+El trabajo en curso es **exclusivamente 1.º básico**, según su [plan](docs/PLAN_1_BASICO.md). Los puntos siguientes que tocan otros niveles o programas quedan en espera.
+
 ## Próximo
 
-1. **Los otros once niveles escolares** (2.º básico a 4.º medio) del pack `escolar-chile`, un nivel por vez, con su propia tarjeta de cambios.
+1. **Los otros once niveles escolares** (2.º básico a 4.º medio) del pack `escolar-chile`, un nivel por vez, con su propia tarjeta de cambios. El exportador actual no admite 3.º y 4.º medio, que en la fuente usan carpetas separadas.
 2. **Packs para otros programas de aprendizaje** del ecosistema, probando primero el adaptador genérico `markdown-course` sobre cada repositorio real y escribiendo un adaptador propio donde haga falta (ejercicios, rúbricas, glosarios).
 3. **Etiquetado de habilidades** (`habilidades`) a partir de los objetivos de aprendizaje.
 

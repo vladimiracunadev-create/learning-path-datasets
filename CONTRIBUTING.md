@@ -10,8 +10,14 @@ ruff format --check src tests scripts
 pytest
 python scripts/smoke.py
 python scripts/docs_stats.py --check
+python scripts/verify_docs.py
 lpdatasets validate
 ```
+
+## Reglas para las líneas de implementación
+
+- Toda línea tiene su documento en [`docs/lineas/`](docs/lineas/README.md), con las secciones de la plantilla. Actualízalo en el mismo cambio que modifica su comportamiento.
+- Una modalidad nueva recibe datos solo a través de `run()` o `select()`, que aplican derechos, público y marco curricular. Sigue [L10](docs/lineas/L10-modalidad-nueva.md).
 
 ## Reglas para los datos
 

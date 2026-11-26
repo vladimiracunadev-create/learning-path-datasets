@@ -21,7 +21,7 @@ Léelo antes de entrenar con estos datos o de redistribuirlos.
 
 - Se excluye «Lengua y Cultura de los Pueblos Originarios Ancestrales»: requiere un educador tradicional y no debe entrenarse sin su participación.
 - Los registros de diccionario van solo en `train`.
-- El pack incluye la asignatura `ingles-propuesta`: es una **propuesta propia** del programa de origen, no un currículo oficial de inglés para ese nivel.
+- El pack incluye la asignatura `ingles-propuesta`: sigue una **propuesta curricular del Mineduc**, según la marca el programa de origen, y no forma parte de la formación general obligatoria de 1.º básico. El contenido pedagógico es del programa de origen.
 
 ## Privacidad
 

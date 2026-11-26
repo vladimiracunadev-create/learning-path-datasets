@@ -1,0 +1,40 @@
+{
+  "marcos": [
+    {
+      "id": "cl-bases-1-6",
+      "nombre": "Bases Curriculares 1.º a 6.º básico",
+      "estado": "vigente",
+      "niveles": ["1-basico", "2-basico", "3-basico", "4-basico", "5-basico", "6-basico"],
+      "verificacion": "pagina_oficial_leida",
+      "url": "https://www.curriculumnacional.cl/recursos/bases-curriculares-1-6-basico",
+      "consultado": "2026-11-26"
+    },
+    {
+      "id": "cl-bases-1-6-propuesta-2026",
+      "nombre": "Propuesta de nuevas Bases Curriculares 1.º a 6.º básico (2026)",
+      "estado": "propuesta_sin_confirmar",
+      "niveles": ["1-basico", "2-basico", "3-basico", "4-basico", "5-basico", "6-basico"],
+      "verificacion": "resumen_de_buscador",
+      "url": "https://www.theclinic.cl/2026/11/25/desde-educacion-financiera-al-uso-de-ia-y-foco-en-fake-news-los-cambios-del-mineduc-para-actualizar-el-curriculum-escolar-de-1-a-6-basico/",
+      "consultado": "2026-11-26"
+    },
+    {
+      "id": "cl-propuesta-ingles-1b",
+      "nombre": "Propuesta curricular de Inglés 1.º básico (Mineduc)",
+      "estado": "propuesta_no_obligatoria",
+      "niveles": ["1-basico"],
+      "verificacion": "resumen_de_buscador",
+      "url": "https://www.curriculumnacional.cl/docentes/Educacion-General/Ingles-Propuesta-curricular-/Ingles-Propuesta-1-basico/18984:Propuesta-curricular-Ingles-1-basico",
+      "consultado": "2026-11-26"
+    },
+    {
+      "id": "sin-marco-oficial",
+      "nombre": "Contenido no ligado a un marco curricular, como los diccionarios",
+      "estado": "no_aplica",
+      "niveles": ["1-basico"],
+      "verificacion": "no_aplica",
+      "url": null,
+      "consultado": "2026-11-26"
+    }
+  ]
+}

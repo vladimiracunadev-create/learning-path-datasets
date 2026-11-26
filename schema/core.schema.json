@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/vladimiracunadev-create/learning-path-datasets/schema/core.schema.json",
+  "title": "Entidad del núcleo de learning-path-datasets (nucleo-0.1)",
+  "description": "Una clase, un ítem o un recurso, independiente de la modalidad que lo use. El registro de marcos curriculares y sus niveles lo comprueba el validador de Python.",
+  "oneOf": [{"$ref": "#/$defs/clase"}, {"$ref": "#/$defs/item"}, {"$ref": "#/$defs/recurso"}],
+  "$defs": {
+    "texto": {"type": "string", "pattern": "\\S"},
+    "publicos": {"type": "array", "items": {"enum": ["estudiante", "docente", "familia"]}},
+    "procedencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["repo", "commit", "ruta"],
+      "properties": {
+        "repo": {"$ref": "#/$defs/texto"},
+        "commit": {"$ref": "#/$defs/texto"},
+        "ruta": {"$ref": "#/$defs/texto"}
+      }
+    },
+    "derechos": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["licencia", "titular", "origen"],
+      "properties": {
+        "licencia": {"$ref": "#/$defs/texto"},
+        "titular": {"$ref": "#/$defs/texto"},
+        "origen": {"enum": ["propio", "oficial", "tercero", "desconocido"]},
+        "atribucion": {"type": "string"},
+        "autorizaciones": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["uso", "referencia"],
+            "properties": {
+              "uso": {"enum": ["personal", "educativo", "comercial"]},
+              "referencia": {"$ref": "#/$defs/texto"}
+            }
+          }
+        }
+      },
+      "allOf": [
+        {
+          "if": {"required": ["licencia"], "properties": {"licencia": {"pattern": "^CC-BY"}}},
+          "then": {"required": ["atribucion"], "properties": {"atribucion": {"$ref": "#/$defs/texto"}}}
+        },
+        {
+          "if": {"required": ["origen"], "properties": {"origen": {"const": "desconocido"}}},
+          "then": {"properties": {"autorizaciones": {"maxItems": 0}}}
+        }
+      ]
+    },
+    "comun": {
+      "type": "object",
+      "required": ["contrato", "entidad", "id", "marco", "nivel", "procedencia", "derechos", "revision"],
+      "properties": {
+        "contrato": {"const": "nucleo-0.1"},
+        "id": {"$ref": "#/$defs/texto"},
+        "marco": {"$ref": "#/$defs/texto"},
+        "nivel": {"$ref": "#/$defs/texto"},
+        "procedencia": {"$ref": "#/$defs/procedencia"},
+        "derechos": {"$ref": "#/$defs/derechos"},
+        "revision": {
+          "enum": [
+            "ia_asistida_sin_revision_humana", "revision_humana_parcial", "revision_humana_completa", "no_aplica"
+          ]
+        },
+        "extra": {"type": "object"}
+      }
+    },
+    "clase": {
+      "allOf": [{"$ref": "#/$defs/comun"}],
+      "required": ["asignatura", "oa", "numero", "estado_editorial", "titulo"],
+      "properties": {
+        "entidad": {"const": "clase"},
+        "asignatura": {"$ref": "#/$defs/texto"},
+        "oa": {"$ref": "#/$defs/texto"},
+        "numero": {"type": "integer", "minimum": 1},
+        "estado_editorial": {"enum": ["desarrollada", "integrada"]},
+        "titulo": {"$ref": "#/$defs/texto"}
+      },
+      "unevaluatedProperties": false
+    },
+    "item": {
+      "allOf": [{"$ref": "#/$defs/comun"}],
+      "required": ["asignatura", "tipo", "publico", "publico_solucion", "contenido"],
+      "properties": {
+        "entidad": {"const": "item"},
+        "asignatura": {"$ref": "#/$defs/texto"},
+        "tipo": {
+          "enum": [
+            "explicacion", "ejemplo_resuelto", "ejercicio_cerrado", "autoevaluacion", "error_comun",
+            "actividad_abierta", "vocabulario", "diccionario_es", "diccionario_en", "concepto",
+            "hecho", "definicion", "relacion", "procedimiento", "concepcion_erronea"
+          ]
+        },
+        "publico": {"$ref": "#/$defs/publicos", "minItems": 1},
+        "publico_solucion": {"$ref": "#/$defs/publicos"},
+        "contenido": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["enunciado"],
+          "properties": {
+            "enunciado": {"$ref": "#/$defs/texto"},
+            "respuesta": {"$ref": "#/$defs/texto"},
+            "razon": {"$ref": "#/$defs/texto"}
+          }
+        },
+        "clase_id": {"type": ["string", "null"], "pattern": "\\S"},
+        "habilidades": {"type": "array", "items": {"$ref": "#/$defs/texto"}},
+        "dificultad": {"type": ["integer", "null"], "minimum": 1, "maximum": 5}
+      },
+      "unevaluatedProperties": false
+    },
+    "recurso": {
+      "allOf": [{"$ref": "#/$defs/comun"}],
+      "required": ["medio", "publico"],
+      "properties": {
+        "entidad": {"const": "recurso"},
+        "medio": {"type": "string", "pattern": "^[a-z]+/[a-z0-9][a-z0-9.+-]*$"},
+        "publico": {"$ref": "#/$defs/publicos", "minItems": 1},
+        "clase_id": {"type": ["string", "null"], "pattern": "\\S"},
+        "texto": {"$ref": "#/$defs/texto"},
+        "uri": {"$ref": "#/$defs/texto"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+        "descripcion": {"$ref": "#/$defs/texto"}
+      },
+      "oneOf": [{"required": ["texto"]}, {"required": ["uri", "sha256"]}],
+      "not": {"required": ["texto", "uri"]},
+      "if": {"required": ["medio"], "properties": {"medio": {"not": {"pattern": "^text/"}}}},
+      "then": {"required": ["descripcion"]},
+      "unevaluatedProperties": false
+    }
+  }
+}

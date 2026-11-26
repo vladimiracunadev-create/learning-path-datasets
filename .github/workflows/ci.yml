@@ -34,5 +34,6 @@ jobs:
       - run: pytest
       - run: python scripts/smoke.py
       - run: python scripts/docs_stats.py --check
+      - run: python scripts/verify_docs.py
       - run: lpdatasets validate
       - run: python -m pip wheel --no-deps -w dist .

@@ -46,6 +46,10 @@ flowchart TB
 5. **Una dependencia obligatoria.** El núcleo solo requiere NumPy; Qdrant es opcional.
 6. **El dato publicado se valida en CI.** Las pruebas leen `datasets/` tal como está en el repositorio, no una copia generada al vuelo.
 
+## Hacia el núcleo
+
+El flujo de arriba es el que produce el dataset publicado. El [plan de 1.º básico](PLAN_1_BASICO.md) lo reemplaza gradualmente por un [núcleo](CORE_CONTRACT.md) del que leen todas las [modalidades](lineas/README.md). Hoy existen el contrato (`core.py`) y el registro de modalidades (`modalities.py`), todavía sin contenido exportado.
+
 ## Qué no hace
 
 No descarga ni entrena modelos, no revisa el contenido pedagógico y no sustituye la revisión humana. No copia textos oficiales de objetivos de aprendizaje.
