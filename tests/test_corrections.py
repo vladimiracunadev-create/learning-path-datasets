@@ -281,3 +281,32 @@ def test_a_worked_example_may_show_its_own_answer():
     assert any("ejemplo del cuaderno" in p for p in problems(solved))
     shown = GLASS | {"tipo": "ejemplo_resuelto", "publico_solucion": ["estudiante", "docente"]}
     assert check_corrections([CLASS, NOTEBOOK, shown, OTHER], PROPOSALS, [solved], FINDINGS) == []
+
+
+def test_a_group_that_gains_a_corrected_item_is_not_called_solved(tmp_path: Path):
+    stays = item("s", "¿La mesa es de madera o de papel?", "madera", clase_id=CLASS["id"])
+    joins = item("j", "¿De qué es una puerta?", "metal", clase_id=CLASS["id"])
+    entities = [CLASS, text_resource("guia_docente"), NOTEBOOK, stays, joins]
+    after = joins["contenido"] | {"enunciado": "¿La puerta es de metal o de lana?"}
+    row = {"item": "j", "antes": joins["contenido"], "despues": after}
+    row["aprobacion"] = {"por": "revisora", "huella": fingerprint(after)}
+    nucleo = tmp_path / "nucleo"
+    folder = nucleo / "demo" / "1-basico"
+    info = {"pack": "demo", "nivel": "1-basico", "commit_fuente": "viejo"}
+    info["cobertura"] = {"catalogo": 1, "representadas": 1, "excluidas": []}
+    write_core(folder, entities, info)
+    cleaning = folder / "limpieza"
+    cleaning.mkdir()
+    datasets = tmp_path / "datasets"
+    datasets.mkdir()
+    report(nucleo, datasets, tmp_path / "limpieza.md")
+    [old] = [f for f in read_jsonl(cleaning / "hallazgos.jsonl") if f["regla"] == "solucion_en_enunciado"]
+    accepted = {"id": old["id"], "estado": "aceptado", "motivo": "elección", "aprobado_por": "revisora"}
+    (cleaning / "decisiones.json").write_text(json.dumps({"decisiones": [accepted]}), encoding="utf-8")
+    (cleaning / "revision.json").write_text(json.dumps({"items": {}, "hallazgos": {}}), encoding="utf-8")
+    (cleaning / "correcciones.json").write_text(json.dumps({"correcciones": [row]}), encoding="utf-8")
+    write_core(folder, simulate(entities, [row]), info | {"commit_fuente": "nuevo"})
+    assert mark_applied(nucleo, datasets) == (1, 0, 0, 1)
+    assert read_jsonl(cleaning / "retiradas.jsonl")[0]["id"] == old["id"]
+    assert not (cleaning / "resueltos.jsonl").exists()
+    assert report(nucleo, datasets, tmp_path / "limpieza.md") == []

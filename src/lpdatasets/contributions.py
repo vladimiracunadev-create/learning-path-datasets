@@ -291,6 +291,12 @@ def combined(nucleo: Path, root: Path | None = None) -> list[Entity]:
     return compose(entities, files)
 
 
+def expired(nucleo: Path, root: Path | None = None) -> list[str]:
+    """Piezas cuya verificación o aprobación dejó de valer porque cambió su texto o el de la fuente."""
+    entities, _, _, files = _checked(nucleo, root or nucleo.parent / "aportes")
+    return sorted(p["id"] for rows in files.values() for p in rows if state(entities, p) == "caducada")
+
+
 def export(nucleo: Path, root: Path, out: Path) -> int:
     """Escribe en `out` el núcleo combinado con las piezas aprobadas y devuelve cuántas entraron."""
     entities, manifest, folder, files = _checked(nucleo, root)

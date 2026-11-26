@@ -14,7 +14,7 @@ from lpdatasets.cleaning import report as clean_report
 from lpdatasets.contributions import approve, check_pieces, compose, export, report, verify
 from lpdatasets.core import select
 from lpdatasets.core_build import read_core, validate_core, write_core
-from lpdatasets.corrections import mark_contributed
+from lpdatasets.corrections import fingerprint, mark_applied, mark_contributed, simulate
 from lpdatasets.proposals import proposals_report
 from tests.test_cleaning import item
 from tests.test_core import CLASS
@@ -304,3 +304,30 @@ def test_a_label_outside_the_sample_of_a_finding_is_still_explained(tmp_path: Pa
         assert mark_contributed(layer.nucleo, datasets) == 1
         cleaning(layer, tmp_path)
     assert len(read_jsonl(layer.core / "limpieza" / "resueltos.jsonl")) == 2
+
+
+def test_a_correction_that_expires_a_label_regroups_without_calling_it_solved(tmp_path: Path):
+    layer = Layer(tmp_path, label(tipos=["ejercicio_cerrado"]))
+    datasets, _ = cleaning(layer, tmp_path)
+    layer.verify("habilidad")
+    layer.approve()
+    mark_contributed(layer.nucleo, datasets)
+    other = [e for e in BASE if e["id"] != "a"] + [exercise("a"), exercise("c")]
+    write_core(layer.core, other, layer.info)
+    report(layer.nucleo, layer.aportes, layer.doc)
+    cleaning(layer, tmp_path)
+    entities = read_core(layer.core)
+    before = next(e for e in entities if e["id"] == "a")["contenido"]
+    after = before | {"enunciado": "¿Cuánto es 2 + 2?"}
+    row = {"item": "a", "hallazgo": None, "antes": before, "despues": after, "cambio": "x"}
+    row["aprobacion"] = {"por": "revisora", "huella": fingerprint(after)}
+    folder = layer.core / "limpieza"
+    document = {"redactor": "p", "fecha": "f", "correcciones": [row]}
+    (folder / "correcciones.json").write_text(json.dumps(document), encoding="utf-8")
+    archived = len(read_jsonl(folder / "resueltos.jsonl"))
+    write_core(layer.core, simulate(entities, [row]), layer.info | {"commit_fuente": "nuevo"})
+    report(layer.nucleo, layer.aportes, layer.doc)
+    done = mark_applied(layer.nucleo, datasets)
+    assert done.corrections == 1 and done.gone == 0
+    assert len(read_jsonl(folder / "resueltos.jsonl")) == archived
+    assert "| caducada | 0 | 1 |" in layer.doc.read_text(encoding="utf-8")

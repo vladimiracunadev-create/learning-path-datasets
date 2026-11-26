@@ -3,7 +3,7 @@
 Generado con `lpdatasets clean-corrections`; no se edita a mano.
 
 - Redacción: asistente de IA; sin revisión humana (2026-11-26).
-- Estado: 59 de 181 aprobadas por vladimiracunadev-create; **59 de 181 aplicadas en la fuente**.
+- Estado: 181 de 181 aprobadas por vladimiracunadev-create; **59 de 181 aplicadas en la fuente**.
 - Textos (preguntas y definiciones): 181. Detectados al redactar, fuera de los hallazgos: 123.
 
 ## Segunda lectura
@@ -720,7 +720,7 @@ Estado: aprobada por vladimiracunadev-create. Aplicada en el commit `b3647111142
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -732,7 +732,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -744,7 +744,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -756,7 +756,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -768,7 +768,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -780,7 +780,7 @@ Estado: sin aprobar.
 
 Qué cambia: «más adelante» se podía entender de dos maneras y la respuesta era discutible.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -792,7 +792,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -804,7 +804,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -816,7 +816,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -828,7 +828,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -840,7 +840,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -852,7 +852,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora tiene una sola respuesta correcta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -864,7 +864,7 @@ Estado: sin aprobar.
 
 Qué cambia: si Ema regalaba fichas a Lola no quedaban iguales.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -876,7 +876,7 @@ Estado: sin aprobar.
 
 Qué cambia: se aclara que no hay fichas fuera del marco.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -888,7 +888,7 @@ Estado: sin aprobar.
 
 Qué cambia: el resultado anterior, 23, pasaba de los números que trabaja la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -900,7 +900,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -912,7 +912,7 @@ Estado: sin aprobar.
 
 Qué cambia: la pregunta anterior mezclaba dos errores y confundía.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -926,7 +926,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: ya no fija que las partes van siempre antes del signo igual, algo que otra clase contradice.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -940,7 +940,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: ahora tiene una sola respuesta correcta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -952,7 +952,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -964,7 +964,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora tiene una sola respuesta correcta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -976,7 +976,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta ahora cumple lo que pide la consigna.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -988,7 +988,7 @@ Estado: sin aprobar.
 
 Qué cambia: la afirmación general no se cumplía al sumar cero.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1000,7 +1000,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta ahora cumple lo que pide la consigna.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1012,7 +1012,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta ahora cumple lo que pide la consigna.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1024,7 +1024,7 @@ Estado: sin aprobar.
 
 Qué cambia: decía que siempre hay tres números distintos, y la clase acepta partes iguales.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1036,7 +1036,7 @@ Estado: sin aprobar.
 
 Qué cambia: la pregunta confundía el número que falta con la operación.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1048,7 +1048,7 @@ Estado: sin aprobar.
 
 Qué cambia: se muestran dos repeticiones para que haya una sola continuación.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1062,7 +1062,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: se muestran dos repeticiones para que haya una sola continuación.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1076,7 +1076,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: se muestran dos repeticiones de la unidad.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1090,7 +1090,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: la lista de ejemplo no se detenía donde pedía la consigna.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1102,7 +1102,7 @@ Estado: sin aprobar.
 
 Qué cambia: el ejemplo anterior no tenía la unidad de cuatro que pedía.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1116,7 +1116,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: ahora tiene una sola respuesta correcta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1128,7 +1128,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora tiene una sola respuesta correcta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1140,7 +1140,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora tiene una sola respuesta correcta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1152,7 +1152,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora tiene una sola respuesta correcta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1164,7 +1164,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta anterior estaba mal redactada y no respondía.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1176,7 +1176,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1190,7 +1190,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1202,7 +1202,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta repetía la pregunta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1214,7 +1214,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta repetía la pregunta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1226,7 +1226,7 @@ Estado: sin aprobar.
 
 Qué cambia: presentaba cuadrado y rectángulo como figuras que se excluyen.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1238,7 +1238,7 @@ Estado: sin aprobar.
 
 Qué cambia: antes bastaba sumar y no había que mirar las líneas.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1250,7 +1250,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1262,7 +1262,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1274,7 +1274,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1286,7 +1286,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1298,7 +1298,7 @@ Estado: sin aprobar.
 
 Qué cambia: preguntaba por una cifra que solo estaba en el cuaderno.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1310,7 +1310,7 @@ Estado: sin aprobar.
 
 Qué cambia: definía «antes» como algo que ya ocurrió.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1322,7 +1322,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta anterior no respondía la pregunta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1334,7 +1334,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1346,7 +1346,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1358,7 +1358,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1372,7 +1372,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1384,7 +1384,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta ahora cumple lo que pide la consigna.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1396,7 +1396,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1408,7 +1408,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta ahora cumple lo que pide la consigna.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1420,7 +1420,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1432,7 +1432,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta ahora cumple lo que pide la consigna.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1444,7 +1444,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin leer la tarea anterior.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1458,7 +1458,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: preguntaba por un cuaderno que la tarea no incluye.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1470,7 +1470,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1482,7 +1482,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1494,7 +1494,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1506,7 +1506,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1518,7 +1518,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1530,7 +1530,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1542,7 +1542,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1554,7 +1554,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1568,7 +1568,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico y empezaba con «Otra».
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1580,7 +1580,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico y empezaba con «Otra».
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1594,7 +1594,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1606,7 +1606,7 @@ Estado: sin aprobar.
 
 Qué cambia: «un grupo parecido» no decía que fuera de cinco.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1618,7 +1618,7 @@ Estado: sin aprobar.
 
 Qué cambia: la razón usaba una multiplicación, que no es de 1.º básico.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1630,7 +1630,7 @@ Estado: sin aprobar.
 
 Qué cambia: decía «número» donde correspondía «cifra».
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1641,7 +1641,7 @@ Estado: sin aprobar.
 
 Qué cambia: la definición no se entendía.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1652,7 +1652,7 @@ Estado: sin aprobar.
 
 Qué cambia: decía que todos bailaban en pareja y a la vez sobraba una niña.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1664,7 +1664,7 @@ Estado: sin aprobar.
 
 Qué cambia: se aclara una frase confusa.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1676,7 +1676,7 @@ Estado: sin aprobar.
 
 Qué cambia: se aclara una frase confusa.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1688,7 +1688,7 @@ Estado: sin aprobar.
 
 Qué cambia: la pregunta estaba incompleta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1702,7 +1702,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: se aclara una frase confusa.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1716,7 +1716,7 @@ Estado: sin aprobar.
 
 Qué cambia: culpaba al referente y el error es la distancia con la cantidad real.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1728,7 +1728,7 @@ Estado: sin aprobar.
 
 Qué cambia: no decía si se contaban el primero y el último.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1740,7 +1740,7 @@ Estado: sin aprobar.
 
 Qué cambia: pedía mirar unos puntos que no se incluían.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1752,7 +1752,7 @@ Estado: sin aprobar.
 
 Qué cambia: faltaba hacia dónde mira quien parte.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1764,7 +1764,7 @@ Estado: sin aprobar.
 
 Qué cambia: faltaba hacia dónde mira quien parte.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1776,7 +1776,7 @@ Estado: sin aprobar.
 
 Qué cambia: la pregunta anterior admitía otra respuesta.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1788,7 +1788,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1802,7 +1802,7 @@ Estado: sin aprobar.
 
 Qué cambia: se dice cuánto vale cada símbolo del pictograma.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1814,7 +1814,7 @@ Estado: sin aprobar.
 
 Qué cambia: se dice cuánto vale cada símbolo del pictograma.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1828,7 +1828,7 @@ La respuesta nueva figura en el enunciado: confirmar que exige pensarla.
 
 Qué cambia: se dice cuánto vale cada símbolo del pictograma.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1840,7 +1840,7 @@ Estado: sin aprobar.
 
 Qué cambia: se dice cuánto vale cada símbolo del pictograma.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1852,7 +1852,7 @@ Estado: sin aprobar.
 
 Qué cambia: se dice cuánto vale cada símbolo del pictograma.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1864,7 +1864,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1878,7 +1878,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1892,7 +1892,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1906,7 +1906,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1918,7 +1918,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1930,7 +1930,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1942,7 +1942,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1954,7 +1954,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1966,7 +1966,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1978,7 +1978,7 @@ Estado: sin aprobar.
 
 Qué cambia: se agregan los datos que faltaban.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -1990,7 +1990,7 @@ Estado: sin aprobar.
 
 Qué cambia: ahora se entiende sin otra tarea.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2002,7 +2002,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2014,7 +2014,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2026,7 +2026,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2038,7 +2038,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2050,7 +2050,7 @@ Estado: sin aprobar.
 
 Qué cambia: una sola cara plana no basta para apilar, como en un cono.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2062,7 +2062,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2074,7 +2074,7 @@ Estado: sin aprobar.
 
 Qué cambia: ya no repite un ejemplo resuelto de la clase.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2086,7 +2086,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta no correspondía a todo lo que se pedía.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2098,7 +2098,7 @@ Estado: sin aprobar.
 
 Qué cambia: se aclara una frase confusa.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2110,7 +2110,7 @@ Estado: sin aprobar.
 
 Qué cambia: «cuántos meses faltan» admitía dos respuestas.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2122,7 +2122,7 @@ Estado: sin aprobar.
 
 Qué cambia: se aclara una frase confusa.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2134,7 +2134,7 @@ Estado: sin aprobar.
 
 Qué cambia: se aclara una frase confusa.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2146,7 +2146,7 @@ Estado: sin aprobar.
 
 Qué cambia: afirmaba que ningún nombre se repite.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2160,7 +2160,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta anterior no era la única válida.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2172,7 +2172,7 @@ Estado: sin aprobar.
 
 Qué cambia: definía «antes» como algo que ya ocurrió.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2183,7 +2183,7 @@ Estado: sin aprobar.
 
 Qué cambia: decía que el quinto tiene la mitad de la fila delante y delante hay cuatro.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2196,7 +2196,7 @@ Estado: sin aprobar.
 
 Qué cambia: la respuesta mezclaba los cuerpos pedidos con las ventanas.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|
@@ -2210,7 +2210,7 @@ Estado: sin aprobar.
 
 Qué cambia: el ejemplo del grupo de cinco mostraba cuatro rayas sin cruzar.
 
-Estado: sin aprobar.
+Estado: aprobada por vladimiracunadev-create.
 
 | | Antes | Después |
 |---|---|---|

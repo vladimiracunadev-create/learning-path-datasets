@@ -17,7 +17,7 @@ from typing import Any, NamedTuple
 
 from .build import dumps, read_jsonl
 from .cleaning import all_findings, core_findings, dataset_records, normalize
-from .contributions import combined
+from .contributions import combined, expired
 from .core import Entity
 from .core_build import core_folders, read_core
 from .proposals import WORKED, statement_kind
@@ -302,16 +302,30 @@ def mark_applied(nucleo: Path, datasets: Path) -> Applied:
     if not applied:
         raise SystemExit("ninguna corrección aprobada está en el núcleo")
     ids = {r["item"] for r in applied}
-    current_ids = {f["id"] for f in all_findings(entities, dataset_records(datasets, manifest))}
+    current = all_findings(entities, dataset_records(datasets, manifest))
+    current_ids = {f["id"] for f in current}
     before = read_jsonl(cleaning / "hallazgos.jsonl")
     gone = [f for f in before if f["id"] not in current_ids]
+    # Un grupo de ítems sin etiqueta cambia cuando caduca un aporte: se reagrupa, no queda resuelto.
+    listed = _load(cleaning / "decisiones.json", {"decisiones": []})["decisiones"]
+    accepted = {d["id"] for d in listed}
+    stale = expired(nucleo)
+    regrouped = [f for f in gone if f["regla"] in LABEL_RULES and f["id"] not in accepted and stale]
+    gone = [f for f in gone if f not in regrouped]
+    # Un grupo puede cambiar de identificador porque se le sumó un ítem corregido, aunque los suyos no cambiaran.
+    shifted = [
+        f
+        for f in gone
+        if not ids & set(f["entidades"])
+        and any(g["regla"] == f["regla"] and set(g["entidades"]) ^ set(f["entidades"]) <= ids for g in current)
+    ]
+    gone = [f for f in gone if f not in shifted]
     unexplained = [f["id"] for f in gone if not ids & set(f["entidades"])]
     if unexplained:
         raise SystemExit("desaparecen hallazgos que ninguna corrección explica: " + ", ".join(unexplained))
     for row in applied:
         row["aplicada"] = commit
     done = {r["item"]: r for r in document["correcciones"] if r.get("aplicada")}
-    listed = _load(cleaning / "decisiones.json", {"decisiones": []})["decisiones"]
     decisions = {d["id"]: d for d in listed}
     review = _load(cleaning / "revision.json")
     doubts = {d["hallazgo"]: d for d in _load(cleaning / "dudas.json", {"dudas": []})["dudas"]}
@@ -326,6 +340,10 @@ def mark_applied(nucleo: Path, datasets: Path) -> Applied:
         archived.append(f | history)
 
     withdrawn, closed = [], 0
+    for f in shifted:  # no queda resuelto: el grupo nuevo se decide otra vez
+        review["hallazgos"].pop(f["id"], None)
+        if f["id"] in decisions:
+            withdrawn.append(decisions.pop(f["id"]) | {"retirada_en": commit})
     for f in (f for f in before if f["id"] in current_ids and ids & set(f["entidades"])):
         ident = f["id"]
         if ident in decisions:

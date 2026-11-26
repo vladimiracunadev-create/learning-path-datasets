@@ -1156,7 +1156,11 @@
     "razon": "2, 4, 6, 8, 10, 12, 14, 16 son 8 números.",
     "respuesta": "8 saltos"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "8f508c0d595a"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-02:c01:ej-understand-02",
@@ -1171,7 +1175,11 @@
     "razon": "Sol 1º, luna 2º, estrella 3º, nube 4º, rayo 5º.",
     "respuesta": "El rayo"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "fbce400cc072"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-02:c01:ej-understand-03",
@@ -1186,7 +1194,11 @@
     "razon": "La luna es la segunda desde la izquierda.",
     "respuesta": "La luna"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "b01204c5632a"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-02:c02:ej-apply-02",
@@ -1201,7 +1213,11 @@
     "razon": "La fila tiene diez frutas y la última es la piña.",
     "respuesta": "🍍 (piña)"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "2b8d998de3b0"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-02:c02:ej-apply-03",
@@ -1216,7 +1232,11 @@
     "razon": "Después de la cereza, la séptima es el durazno.",
     "respuesta": "🍑 (durazno)"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "28730015ed34"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-02:c02:ej-understand-03",
@@ -1231,7 +1251,11 @@
     "razon": "El sexto va antes que el séptimo.",
     "respuesta": "El sexto"
    },
-   "cambio": "«más adelante» se podía entender de dos maneras y la respuesta era discutible"
+   "cambio": "«más adelante» se podía entender de dos maneras y la respuesta era discutible",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "dcdfa043b696"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-02:c03:ej-understand-02",
@@ -1246,7 +1270,11 @@
     "razon": "Perro 1º, gato 2º.",
     "respuesta": "El perro"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "56aa1bd765f1"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-02:c03:ej-understand-03",
@@ -1261,7 +1289,11 @@
     "razon": "Gato 2º, pez 3º, ave 4º.",
     "respuesta": "El pez"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "8ee4df99af89"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-02:c03:ejemplo-01",
@@ -1276,7 +1308,11 @@
     "razon": "1. Antes del 6º está el 5º. 2. Después del 6º está el 7º.",
     "respuesta": "Quinto y séptimo"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "8188f6072509"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-04:c03:ej-apply-01",
@@ -1291,7 +1327,11 @@
     "razon": "Se busca el menor, luego el siguiente, hasta el mayor.",
     "respuesta": "4, 8, 13, 16"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "c878c8b90700"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-04:c03:ej-apply-02",
@@ -1306,7 +1346,11 @@
     "razon": "Se busca el mayor, luego el siguiente, hasta el menor.",
     "respuesta": "19, 12, 5, 1"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "931b39b79c72"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-04:c03:ej-challenge-01",
@@ -1321,7 +1365,11 @@
     "razon": "14 es mayor que 9 y 9 es mayor que 7.",
     "respuesta": "14, 9, 7"
    },
-   "cambio": "ahora tiene una sola respuesta correcta"
+   "cambio": "ahora tiene una sola respuesta correcta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "acb1269c8bc4"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-04:c04:ej-challenge-02",
@@ -1336,7 +1384,11 @@
     "razon": "15 − 4 = 11, igual que Lola.",
     "respuesta": "4"
    },
-   "cambio": "si Ema regalaba fichas a Lola no quedaban iguales"
+   "cambio": "si Ema regalaba fichas a Lola no quedaban iguales",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "5f935c51fe7c"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c02:ej-reason-01",
@@ -1351,7 +1403,11 @@
     "razon": "Un marco lleno tiene 10 fichas.",
     "respuesta": "Sí"
    },
-   "cambio": "se aclara que no hay fichas fuera del marco"
+   "cambio": "se aclara que no hay fichas fuera del marco",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "1376cd8896c9"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c02:ej-challenge-02",
@@ -1366,7 +1422,11 @@
     "razon": "10 y 7 más son 17.",
     "respuesta": "17"
    },
-   "cambio": "el resultado anterior, 23, pasaba de los números que trabaja la clase"
+   "cambio": "el resultado anterior, 23, pasaba de los números que trabaja la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "f0394379ba99"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-06:c02:ej-apply-03",
@@ -1381,7 +1441,11 @@
     "razon": "8 + 1 = 9.",
     "respuesta": "1"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "21f152eac89e"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-06:c02:ej-reason-01",
@@ -1396,7 +1460,11 @@
     "razon": "5 + 4 = 9, no 8.",
     "respuesta": "5 + 4"
    },
-   "cambio": "la pregunta anterior mezclaba dos errores y confundía"
+   "cambio": "la pregunta anterior mezclaba dos errores y confundía",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "8c68edd52e01"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-06:c03:auto-03",
@@ -1411,7 +1479,11 @@
     "razon": "Las dos partes juntas forman 7.",
     "respuesta": "7"
    },
-   "cambio": "ya no fija que las partes van siempre antes del signo igual, algo que otra clase contradice"
+   "cambio": "ya no fija que las partes van siempre antes del signo igual, algo que otra clase contradice",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "671160a1ac0a"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-06:c03:ej-challenge-02",
@@ -1426,7 +1498,11 @@
     "razon": "6 + 5 = 11 y 7 + 4 = 11.",
     "respuesta": "5 y 4"
    },
-   "cambio": "ahora tiene una sola respuesta correcta"
+   "cambio": "ahora tiene una sola respuesta correcta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "404f11adc85b"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-06:c04:ej-recovery-03",
@@ -1441,7 +1517,11 @@
     "razon": "Se parte de 0 y se sube el primer sumando.",
     "respuesta": "0 + 3, 1 + 2"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "16786e042700"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-08:c03:ej-challenge-02",
@@ -1456,7 +1536,11 @@
     "razon": "17 tiene 7 unidades sueltas.",
     "respuesta": "17"
    },
-   "cambio": "ahora tiene una sola respuesta correcta"
+   "cambio": "ahora tiene una sola respuesta correcta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "a8df0e1a5fea"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-09:c02:ej-challenge-02",
@@ -1471,7 +1555,11 @@
     "razon": "Una historia de resta cuenta lo que había, lo que se quita y pregunta lo que queda.",
     "respuesta": "Por ejemplo: Había 7 pelotas y se perdieron 2. ¿Cuántas quedan? Quedan 5."
    },
-   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+   "cambio": "la respuesta ahora cumple lo que pide la consigna",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "1b89f4260dd9"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-09:c03:ej-understand-03",
@@ -1486,7 +1574,11 @@
     "razon": "12 es mayor que 8.",
     "respuesta": "Mayor"
    },
-   "cambio": "la afirmación general no se cumplía al sumar cero"
+   "cambio": "la afirmación general no se cumplía al sumar cero",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "10539265f999"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-09:c05:ejemplo-01",
@@ -1501,7 +1593,11 @@
     "razon": "1. Elijo pájaros y la acción de irse. 2. Escribo: «Hay 12 pájaros y se van 5. ¿Cuántos quedan?». 3. 12 − 5 = 7. 4. Compruebo: 7 + 5 = 12.",
     "respuesta": "Hay 12 pájaros y se van 5. ¿Cuántos quedan? Quedan 7 pájaros."
    },
-   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+   "cambio": "la respuesta ahora cumple lo que pide la consigna",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "0219becdc2d2"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-09:c05:ej-challenge-01",
@@ -1516,7 +1612,11 @@
     "razon": "Se quitan 12 de 20.",
     "respuesta": "Por ejemplo: Había 20 sillas y se llevaron 12. ¿Cuántas quedan? Quedan 8."
    },
-   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+   "cambio": "la respuesta ahora cumple lo que pide la consigna",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "2a903328969d"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-10:c02:ej-understand-01",
@@ -1531,7 +1631,11 @@
     "razon": "2 y 7 juntos forman 9.",
     "respuesta": "Las partes son 2 y 7; el todo es 9"
    },
-   "cambio": "decía que siempre hay tres números distintos, y la clase acepta partes iguales"
+   "cambio": "decía que siempre hay tres números distintos, y la clase acepta partes iguales",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "a25854ddbe8e"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-10:c04:auto-02",
@@ -1546,7 +1650,11 @@
     "razon": "7 + 2 = 9, y 9 − 2 = 7.",
     "respuesta": "Sumar"
    },
-   "cambio": "la pregunta confundía el número que falta con la operación"
+   "cambio": "la pregunta confundía el número que falta con la operación",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "cd31dfd1afa6"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-11:c01:ej-recovery-02",
@@ -1561,7 +1669,11 @@
     "razon": "La unidad es A B B.",
     "respuesta": "A B B"
    },
-   "cambio": "se muestran dos repeticiones para que haya una sola continuación"
+   "cambio": "se muestran dos repeticiones para que haya una sola continuación",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "75fda00a70ac"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-11:c01:ej-recovery-03",
@@ -1576,7 +1688,11 @@
     "razon": "La unidad es A A B B.",
     "respuesta": "A A B B"
    },
-   "cambio": "se muestran dos repeticiones para que haya una sola continuación"
+   "cambio": "se muestran dos repeticiones para que haya una sola continuación",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "078a902fe26c"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-11:c02:ej-recovery-03",
@@ -1591,7 +1707,11 @@
     "razon": "La unidad es ▲ ■ ●.",
     "respuesta": "▲ ■ ●"
    },
-   "cambio": "se muestran dos repeticiones de la unidad"
+   "cambio": "se muestran dos repeticiones de la unidad",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "748a4f7ef333"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-11:c03:actividad-abierta",
@@ -1606,7 +1726,11 @@
     "razon": "Criterios: aplica la regla; comprueba las diferencias; encuentra el número pedido",
     "respuesta": "1, 4, 7, 10, 13, 16, 19. Diferencias: 3 en todos los pares. Justo antes del 19 está el 16."
    },
-   "cambio": "la lista de ejemplo no se detenía donde pedía la consigna"
+   "cambio": "la lista de ejemplo no se detenía donde pedía la consigna",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3cc22b0ce29e"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-11:c05:ej-challenge-02",
@@ -1621,7 +1745,11 @@
     "razon": "Es el cuarto elemento de la unidad.",
     "respuesta": "Amarillo ▲"
    },
-   "cambio": "el ejemplo anterior no tenía la unidad de cuatro que pedía"
+   "cambio": "el ejemplo anterior no tenía la unidad de cuatro que pedía",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "36e99081c189"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-12:c03:auto-03",
@@ -1636,7 +1764,11 @@
     "razon": "3 + 3 = 6 y 4 + 2 = 6.",
     "respuesta": "4 + 2"
    },
-   "cambio": "ahora tiene una sola respuesta correcta"
+   "cambio": "ahora tiene una sola respuesta correcta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "5cb5ac5e5f74"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-12:c03:ej-apply-01",
@@ -1651,7 +1783,11 @@
     "razon": "9 + 1 = 10 y 8 + 2 = 10.",
     "respuesta": "8 + 2"
    },
-   "cambio": "ahora tiene una sola respuesta correcta"
+   "cambio": "ahora tiene una sola respuesta correcta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3647166faf26"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-12:c03:ej-apply-02",
@@ -1666,7 +1802,11 @@
     "razon": "7 + 5 = 12 y 6 + 6 = 12.",
     "respuesta": "6 + 6"
    },
-   "cambio": "ahora tiene una sola respuesta correcta"
+   "cambio": "ahora tiene una sola respuesta correcta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "b753db311d4a"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-12:c03:ej-challenge-01",
@@ -1681,7 +1821,11 @@
     "razon": "Las dos dan 12; las otras dan 11.",
     "respuesta": "6 + 6 y 9 + 3"
    },
-   "cambio": "ahora tiene una sola respuesta correcta"
+   "cambio": "ahora tiene una sola respuesta correcta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3fb342daa320"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-13:c01:ej-recovery-01",
@@ -1696,7 +1840,11 @@
     "razon": "Las dos manos son la derecha y la izquierda.",
     "respuesta": "Izquierda"
    },
-   "cambio": "la respuesta anterior estaba mal redactada y no respondía"
+   "cambio": "la respuesta anterior estaba mal redactada y no respondía",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "59c5d2f06a05"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-13:c02:ej-recovery-02",
@@ -1712,7 +1860,11 @@
     "respuesta": "El perro"
    },
    "cambio": "ahora se entiende sin leer la tarea anterior",
-   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "b943cd9f0ec0"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-13:c02:ej-recovery-03",
@@ -1727,7 +1879,11 @@
     "razon": "Queda en el medio.",
     "respuesta": "El perro"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "7f61c0a9c4f7"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-13:c04:auto-02",
@@ -1742,7 +1898,11 @@
     "razon": "La columna va de arriba abajo; la fila va de un lado al otro.",
     "respuesta": "De arriba abajo"
    },
-   "cambio": "la respuesta repetía la pregunta"
+   "cambio": "la respuesta repetía la pregunta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "735c0ba867f9"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-13:c04:ejemplo-01",
@@ -1757,7 +1917,11 @@
     "razon": "1. Parto en la esquina de arriba a la izquierda. 2. Cuento 2 filas hacia abajo, y la de arriba es la fila 1. 3. Cuento 3 columnas hacia la derecha, y la de la izquierda es la columna 1.",
     "respuesta": "En el cuadro de la segunda fila desde arriba y la tercera columna desde la izquierda"
    },
-   "cambio": "la respuesta repetía la pregunta"
+   "cambio": "la respuesta repetía la pregunta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "94278b5556b0"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-14:c01:ej-understand-02",
@@ -1772,7 +1936,11 @@
     "razon": "El rectángulo alargado tiene dos lados más largos.",
     "respuesta": "En el cuadrado"
    },
-   "cambio": "presentaba cuadrado y rectángulo como figuras que se excluyen"
+   "cambio": "presentaba cuadrado y rectángulo como figuras que se excluyen",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "2f280c8a80b8"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-15:c02:ej-contexto-01",
@@ -1787,7 +1955,11 @@
     "razon": "El cuaderno y la regla tienen bordes rectos; la pelota es curva.",
     "respuesta": "2"
    },
-   "cambio": "antes bastaba sumar y no había que mirar las líneas"
+   "cambio": "antes bastaba sumar y no había que mirar las líneas",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "51c3384c205c"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-16:c01:ej-understand-03",
@@ -1802,7 +1974,11 @@
     "razon": "Debía contar hasta que terminara de ponérselo.",
     "respuesta": "No"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "7703a66c8419"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-16:c02:ej-contexto-01",
@@ -1817,7 +1993,11 @@
     "razon": "Menos aplausos es menos tiempo: 14 − 11 = 3.",
     "respuesta": "Mari; por 3 aplausos"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "522c7900f08f"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-16:c03:ej-challenge-01",
@@ -1832,7 +2012,11 @@
     "razon": "Las duraciones son 5, 8 y 10.",
     "respuesta": "3"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "5c4889bedae0"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-16:c03:ejemplo-02",
@@ -1847,7 +2031,11 @@
     "razon": "1. El que tiene más aplausos. 2. Es la galleta con 12.",
     "respuesta": "Comer la galleta"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "babc2a201684"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-16:c04:ej-understand-01",
@@ -1862,7 +2050,11 @@
     "razon": "Con otro ritmo los números no se pueden comparar.",
     "respuesta": "El ritmo de los aplausos"
    },
-   "cambio": "preguntaba por una cifra que solo estaba en el cuaderno"
+   "cambio": "preguntaba por una cifra que solo estaba en el cuaderno",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "89ced11b75f6"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-17:c01:ej-understand-02",
@@ -1877,7 +2069,11 @@
     "razon": "Lo que va antes pasa primero.",
     "respuesta": "Ponerme los zapatos"
    },
-   "cambio": "definía «antes» como algo que ya ocurrió"
+   "cambio": "definía «antes» como algo que ya ocurrió",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "964b3931efba"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-17:c02:ej-reason-02",
@@ -1892,7 +2088,11 @@
     "razon": "Después del viernes viene el sábado.",
     "respuesta": "De descanso"
    },
-   "cambio": "la respuesta anterior no respondía la pregunta"
+   "cambio": "la respuesta anterior no respondía la pregunta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "d8dd04edfca0"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-18:c01:ej-recovery-01",
@@ -1907,7 +2107,11 @@
     "razon": "10 cubitos es más que 3.",
     "respuesta": "La cuchara"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "a656dc9c7f55"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-18:c03:ej-recovery-02",
@@ -1922,7 +2126,11 @@
     "razon": "25 es el mayor.",
     "respuesta": "25 cubitos"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "8e0aa055199d"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-18:c03:ej-recovery-03",
@@ -1937,7 +2145,11 @@
     "razon": "15 está entre 10 y 25.",
     "respuesta": "15 cubitos"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "0c4ef6bdaa2d"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-18:c04:ejemplo-01",
@@ -1952,7 +2164,11 @@
     "razon": "1. Mido el alto de la puerta con la cinta y marco el largo. 2. Llevo la cinta a la mesa. 3. La cinta sobra, entonces la mesa es más corta.",
     "respuesta": "El largo de la mesa"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "372a3a4aef63"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-19:c03:ejemplo-01",
@@ -1967,7 +2183,11 @@
     "razon": "1. Perro: un grupo de cinco y una raya. 2. Gato: tres rayas. 3. Totales: 6 y 3.",
     "respuesta": "Perro: un grupo de cinco rayas y una raya más. Gato: tres rayas."
    },
-   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+   "cambio": "la respuesta ahora cumple lo que pide la consigna",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "7efcf69933b5"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c02:ej-apply-01",
@@ -1982,7 +2202,11 @@
     "razon": "8 + 7 = 15 y 15 + 4 = 19.",
     "respuesta": "19"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "7d7040ba35b5"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c03:ejemplo-01",
@@ -1997,7 +2221,11 @@
     "razon": "1. Título: «Tapas por color». 2. Rojas: ● ● ● ● ●. 3. Azules: ● ● ●. 4. Verdes: ● ● ● ●. 5. Clave: ● = 1 tapa.",
     "respuesta": "Rojas ● ● ● ● ●, azules ● ● ●, verdes ● ● ● ● (● = 1 tapa)"
    },
-   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+   "cambio": "la respuesta ahora cumple lo que pide la consigna",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "712667b34a34"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c03:ejemplo-02",
@@ -2012,7 +2240,11 @@
     "razon": "1. 5 + 3 + 4. 2. 5 + 3 = 8; 8 + 4 = 12.",
     "respuesta": "12"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "48f70497c9ac"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c04:ejemplo-01",
@@ -2027,7 +2259,11 @@
     "razon": "1. Título: «Mascotas favoritas». 2. Perro: ● ● ● ● ● ●. 3. Gato: ● ● ● ●. 4. Pez: ● ●. 5. Clave: ● = 1 persona.",
     "respuesta": "Perro ● ● ● ● ● ●, gato ● ● ● ●, pez ● ● (● = 1 persona)"
    },
-   "cambio": "la respuesta ahora cumple lo que pide la consigna"
+   "cambio": "la respuesta ahora cumple lo que pide la consigna",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "da2e1b33e231"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c04:ejemplo-02",
@@ -2042,7 +2278,11 @@
     "razon": "1. La tabla suma 6 + 4 + 2 = 12. 2. El pictograma tiene 12 símbolos. 3. Los totales coinciden.",
     "respuesta": "Sí"
    },
-   "cambio": "ahora se entiende sin leer la tarea anterior"
+   "cambio": "ahora se entiende sin leer la tarea anterior",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "f59bd2cb384e"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c05:auto-01",
@@ -2057,7 +2297,11 @@
     "razon": "Sin pregunta no hay datos para dibujar.",
     "respuesta": "La pregunta"
    },
-   "cambio": "preguntaba por un cuaderno que la tarea no incluye"
+   "cambio": "preguntaba por un cuaderno que la tarea no incluye",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "f1d7863443a8"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-01:c02:ej-apply-01",
@@ -2072,7 +2316,11 @@
     "razon": "Cuento de 2 en 2: 2, 4, 6, 8.",
     "respuesta": "8"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "c48c416929e6"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-01:c02:ej-apply-03",
@@ -2087,7 +2335,11 @@
     "razon": "Cuento de 2 en 2, una vez por niño: 2, 4, 6, 8, 10, 12.",
     "respuesta": "12"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "43e1378e19a6"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-01:c03:ej-apply-01",
@@ -2102,7 +2354,11 @@
     "razon": "Cuento de 5 en 5: 5, 10, 15.",
     "respuesta": "15"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "09681a69ce30"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-01:c03:ej-apply-02",
@@ -2117,7 +2373,11 @@
     "razon": "Cuento de 10 en 10 nueve veces: 10, 20, 30, 40, 50, 60, 70, 80, 90.",
     "respuesta": "90"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "cb7e29c6bd72"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-01:c03:ej-contexto-01",
@@ -2132,7 +2392,11 @@
     "razon": "Cuento de 10 en 10, una vez por niño: 10, 20, 30, 40, 50.",
     "respuesta": "50"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "1e8cc2fbd979"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-apply-02",
@@ -2147,7 +2411,11 @@
     "razon": "5, 10, 15 y 2 más son 17.",
     "respuesta": "17"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "4c2db1f124a5"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-contexto-01",
@@ -2162,7 +2430,11 @@
     "razon": "Cuento las filas de 5 en 5: 5, 10, 15.",
     "respuesta": "15"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "909a8f1d1339"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-recovery-01",
@@ -2178,7 +2450,11 @@
     "respuesta": "10"
    },
    "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
-   "duda": "la primera lectura notó que casi repite otra tarea de su clase; solo se quitó la multiplicación"
+   "duda": "la primera lectura notó que casi repite otra tarea de su clase; solo se quitó la multiplicación",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "c7bc88d958f5"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-recovery-02",
@@ -2193,7 +2469,11 @@
     "razon": "Un grupo de cinco tiene 5.",
     "respuesta": "5"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico y empezaba con «Otra»"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico y empezaba con «Otra»",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "48919ac761c9"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-recovery-03",
@@ -2209,7 +2489,11 @@
     "respuesta": "20"
    },
    "cambio": "la razón usaba una multiplicación, que no es de 1.º básico y empezaba con «Otra»",
-   "duda": "la primera lectura notó que casi repite otra tarea de su clase; solo se quitó la multiplicación"
+   "duda": "la primera lectura notó que casi repite otra tarea de su clase; solo se quitó la multiplicación",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "0e9ad1ef12fc"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c01:auto-03",
@@ -2224,7 +2508,11 @@
     "razon": "Cuento de 5 en 5: 5, 10, 15, 20.",
     "respuesta": "20"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "8f72fc4a5a50"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c01:ej-apply-01",
@@ -2239,7 +2527,11 @@
     "razon": "Son dos grupos de cinco.",
     "respuesta": "Cerca de 10"
    },
-   "cambio": "«un grupo parecido» no decía que fuera de cinco"
+   "cambio": "«un grupo parecido» no decía que fuera de cinco",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "6fbaa1e1e1a8"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c03:auto-02",
@@ -2254,7 +2546,11 @@
     "razon": "Dos grupos de cinco son 10; 10 y 3 más son 13.",
     "respuesta": "13"
    },
-   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico"
+   "cambio": "la razón usaba una multiplicación, que no es de 1.º básico",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "d891b8234f4f"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-01:c04:explicacion",
@@ -2267,7 +2563,11 @@
     "enunciado": "Objetivo de la clase: Aprenderé a elegir el salto correcto y a contar hacia adelante o hacia atrás desde cualquier número. Sirve para llegar a una meta, como juntar un número de figuritas.",
     "respuesta": "Para llegar de un número a otro, primero elige el salto. Si el salto es de 10 y partes en 30, el siguiente es 40. Hacia atrás es lo contrario: desde 30 con salto de 10 vas a 20. Puedes empezar en cualquier número, no sólo en 0. Si partes en 27 y cuentas de 1 en 1 llegas a 28, 29, 30. Si cuentas de 10 en 10 llegas a 37, 47, 57. Fíjate en la última cifra de cada número: en los saltos de 10 no cambia (siempre termina en 7). Con una flecha puedes marcar lo que haces: «+5» avanza cinco, «−5» retrocede cinco. Elige el salto que te lleve a la meta con menos pasos y comprueba que la meta coincida."
    },
-   "cambio": "decía «número» donde correspondía «cifra»"
+   "cambio": "decía «número» donde correspondía «cifra»",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3eaf37311a11"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-04:c01:vocab-03",
@@ -2280,7 +2580,11 @@
     "enunciado": "menos",
     "respuesta": "cuando hay una cantidad más chica que otra"
    },
-   "cambio": "la definición no se entendía"
+   "cambio": "la definición no se entendía",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "64d9184f54e8"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-04:c01:ej-reason-02",
@@ -2295,7 +2599,11 @@
     "razon": "Hay una niña más.",
     "respuesta": "Sobra una niña"
    },
-   "cambio": "decía que todos bailaban en pareja y a la vez sobraba una niña"
+   "cambio": "decía que todos bailaban en pareja y a la vez sobraba una niña",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "e1157c3a2ed3"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-08:c02:ej-reason-02",
@@ -2310,7 +2618,11 @@
     "razon": "La segunda decena se completa en el 20.",
     "respuesta": "Porque no alcanzan para formar dos decenas"
    },
-   "cambio": "se aclara una frase confusa"
+   "cambio": "se aclara una frase confusa",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "ad351ea03c2d"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-08:c04:ej-reason-02",
@@ -2325,7 +2637,11 @@
     "razon": "Son dos decenas completas.",
     "respuesta": "Porque no hay unidades sueltas"
    },
-   "cambio": "se aclara una frase confusa"
+   "cambio": "se aclara una frase confusa",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "586ba1eae997"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-10:c01:auto-03",
@@ -2340,7 +2656,11 @@
     "razon": "Volví al inicio.",
     "respuesta": "7"
    },
-   "cambio": "la pregunta estaba incompleta"
+   "cambio": "la pregunta estaba incompleta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3587ff57e84d"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-19:c02:auto-03",
@@ -2356,7 +2676,11 @@
     "respuesta": "Cuento las respuestas y los compañeros: deben ser la misma cantidad"
    },
    "cambio": "se aclara una frase confusa",
-   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "19a1be87b029"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c04:ej-reason-01",
@@ -2371,7 +2695,11 @@
     "razon": "20 − 11 = 9.",
     "respuesta": "No; 20 está muy lejos de 11"
    },
-   "cambio": "culpaba al referente y el error es la distancia con la cantidad real"
+   "cambio": "culpaba al referente y el error es la distancia con la cantidad real",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "23f848a93b2b"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c04:ej-challenge-02",
@@ -2386,7 +2714,11 @@
     "razon": "16 − 14 = 2 y 18 − 16 = 2.",
     "respuesta": "14 y 18"
    },
-   "cambio": "no decía si se contaban el primero y el último"
+   "cambio": "no decía si se contaban el primero y el último",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "6072867cb1a2"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-05:c04:actividad-abierta",
@@ -2401,7 +2733,11 @@
     "razon": "Criterios: calcula las tres diferencias; elige la menor; explica con palabras",
     "respuesta": "6 → 8 de diferencia; 13 → 1 de diferencia; 20 → 6 de diferencia. La más cercana es 13, porque su diferencia es la menor."
    },
-   "cambio": "pedía mirar unos puntos que no se incluían"
+   "cambio": "pedía mirar unos puntos que no se incluían",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "44ad82b8b70b"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-13:c03:ej-apply-03",
@@ -2416,7 +2752,11 @@
     "razon": "Dirección y cantidad.",
     "respuesta": "Avanza 1, gira a la derecha y avanza 4"
    },
-   "cambio": "faltaba hacia dónde mira quien parte"
+   "cambio": "faltaba hacia dónde mira quien parte",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "45c62ab54575"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-13:c03:ej-challenge-02",
@@ -2431,7 +2771,11 @@
     "razon": "Dirección y cantidad.",
     "respuesta": "Avanza 2, gira a la izquierda y avanza 2"
    },
-   "cambio": "faltaba hacia dónde mira quien parte"
+   "cambio": "faltaba hacia dónde mira quien parte",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "0d04b0867d60"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-14:c04:auto-01",
@@ -2446,7 +2790,11 @@
     "razon": "Cero y cuatro.",
     "respuesta": "El círculo ninguno y el cuadrado 4"
    },
-   "cambio": "la pregunta anterior admitía otra respuesta"
+   "cambio": "la pregunta anterior admitía otra respuesta",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "8647b04b83d9"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-14:c04:ej-apply-02",
@@ -2462,7 +2810,11 @@
     "respuesta": "El rectángulo 4, el círculo ninguno y el triángulo 3"
    },
    "cambio": "ya no repite un ejemplo resuelto de la clase",
-   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "cc5ad6784500"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-apply-01",
@@ -2477,7 +2829,11 @@
     "razon": "Se cuentan los símbolos de cada fila.",
     "respuesta": "Perro 8, gato 4"
    },
-   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+   "cambio": "se dice cuánto vale cada símbolo del pictograma",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "8274ec93f2d1"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-apply-02",
@@ -2492,7 +2848,11 @@
     "razon": "Diferencia de los símbolos. Cálculo: 8 − 4 = 4.",
     "respuesta": "4"
    },
-   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+   "cambio": "se dice cuánto vale cada símbolo del pictograma",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "a389c181a751"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-apply-03",
@@ -2507,7 +2867,11 @@
     "razon": "Se suman todos. Cálculo: 8 + 4 + 3 = 15.",
     "respuesta": "15"
    },
-   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+   "cambio": "se dice cuánto vale cada símbolo del pictograma",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3cd963ae291f"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-contexto-01",
@@ -2522,7 +2886,11 @@
     "razon": "Se suman los símbolos de las dos filas. Cálculo: 6 + 5 = 11.",
     "respuesta": "11"
    },
-   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+   "cambio": "se dice cuánto vale cada símbolo del pictograma",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "2b49e0adf766"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c01:ej-challenge-01",
@@ -2537,7 +2905,11 @@
     "razon": "7 − 3 = 4.",
     "respuesta": "Gato; 4 personas menos que pez"
    },
-   "cambio": "se dice cuánto vale cada símbolo del pictograma"
+   "cambio": "se dice cuánto vale cada símbolo del pictograma",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "2031fca1631f"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-09:c04:error-01",
@@ -2553,7 +2925,11 @@
     "respuesta": "La pregunta es la diferencia: 16 − 9 = 7."
    },
    "cambio": "se agregan los datos que faltaban",
-   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "b7e913f960fa"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-09:c04:error-02",
@@ -2569,7 +2945,11 @@
     "respuesta": "Parte en 17 sin contarlo y di cuatro números hacia atrás: 16, 15, 14, 13."
    },
    "cambio": "se agregan los datos que faltaban",
-   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "39c20cf9ece2"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-09:c04:ej-understand-01",
@@ -2585,7 +2965,11 @@
     "respuesta": "7 más"
    },
    "cambio": "ya no repite un ejemplo resuelto de la clase",
-   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "e570448b2883"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-09:c04:ej-understand-02",
@@ -2600,7 +2984,11 @@
     "razon": "La resta sirve para comparar.",
     "respuesta": "Sí"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3c37cae55461"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-12:c04:error-01",
@@ -2615,7 +3003,11 @@
     "razon": "No se calcula la diferencia.",
     "respuesta": "Calcula 7 − 4 = 3 y agrega sólo 3."
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "41d601bb6fed"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-12:c04:ej-reason-01",
@@ -2630,7 +3022,11 @@
     "razon": "9 − 4 = 5.",
     "respuesta": "5"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "c71bdbc64def"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-12:c04:auto-02",
@@ -2645,7 +3041,11 @@
     "razon": "8 − 5 = 3.",
     "respuesta": "3"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "f2ac10f18b72"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-19:c04:ej-reason-01",
@@ -2660,7 +3060,11 @@
     "razon": "No puede generalizar.",
     "respuesta": "Dice de todo el barrio lo que solo averiguó en su familia"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "d48a30dd6303"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-19:c04:ej-recovery-01",
@@ -2675,7 +3079,11 @@
     "razon": "8 es mayor que 3.",
     "respuesta": "La pera"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "61ed743edd88"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c02:ej-challenge-02",
@@ -2690,7 +3098,11 @@
     "razon": "8 − 2 = 6.",
     "respuesta": "6"
    },
-   "cambio": "se agregan los datos que faltaban"
+   "cambio": "se agregan los datos que faltaban",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "daa9c9998e5e"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-20:c02:auto-03",
@@ -2705,7 +3117,11 @@
     "razon": "La frase completa muestra que entendí.",
     "respuesta": "Con una frase completa"
    },
-   "cambio": "ahora se entiende sin otra tarea"
+   "cambio": "ahora se entiende sin otra tarea",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "f05a450e36cc"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-07:c02:ej-understand-01",
@@ -2720,7 +3136,11 @@
     "razon": "El primer número de la resta.",
     "respuesta": "Desde 12"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "1f96c7bfbe41"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-07:c04:ej-understand-03",
@@ -2735,7 +3155,11 @@
     "razon": "9 está cerca de 10.",
     "respuesta": "Completar diez"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "83fc111862fc"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-14:c02:ej-apply-01",
@@ -2750,7 +3174,11 @@
     "razon": "La caja tiene caras planas.",
     "respuesta": "No rueda; se apila"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "b2e94f15eced"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-14:c02:ej-recovery-01",
@@ -2765,7 +3193,11 @@
     "razon": "Es redonda por todos lados.",
     "respuesta": "Sí"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "b429f0a1413b"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-14:c02:ej-understand-02",
@@ -2780,7 +3212,11 @@
     "razon": "Se apoya y sostiene.",
     "respuesta": "Sus caras planas"
    },
-   "cambio": "una sola cara plana no basta para apilar, como en un cono"
+   "cambio": "una sola cara plana no basta para apilar, como en un cono",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "14775f7fd03b"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-14:c03:auto-01",
@@ -2795,7 +3231,11 @@
     "razon": "Esa cara es un rectángulo.",
     "respuesta": "Rectángulo"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "ed4779d29c9f"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-15:c04:ej-recovery-03",
@@ -2810,7 +3250,11 @@
     "razon": "Una vertical y dos horizontales.",
     "respuesta": "3"
    },
-   "cambio": "ya no repite un ejemplo resuelto de la clase"
+   "cambio": "ya no repite un ejemplo resuelto de la clase",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "598743f16391"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-06:c01:ej-challenge-02",
@@ -2825,7 +3269,11 @@
     "razon": "Las partes juntas forman 6.",
     "respuesta": "6"
    },
-   "cambio": "la respuesta no correspondía a todo lo que se pedía"
+   "cambio": "la respuesta no correspondía a todo lo que se pedía",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "367ae3c3885b"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-11:c04:ej-reason-01",
@@ -2840,7 +3288,11 @@
     "razon": "10, 8, 6, 4 baja de 2 en 2.",
     "respuesta": "El 5; debería ir el 6"
    },
-   "cambio": "se aclara una frase confusa"
+   "cambio": "se aclara una frase confusa",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "4af746d7c14a"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-17:c03:ej-challenge-01",
@@ -2855,7 +3307,11 @@
     "razon": "Febrero y marzo.",
     "respuesta": "2"
    },
-   "cambio": "«cuántos meses faltan» admitía dos respuestas"
+   "cambio": "«cuántos meses faltan» admitía dos respuestas",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "698eafe226e8"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-17:c03:ej-challenge-02",
@@ -2870,7 +3326,11 @@
     "razon": "Abril, mayo, junio, julio y agosto.",
     "respuesta": "5"
    },
-   "cambio": "se aclara una frase confusa"
+   "cambio": "se aclara una frase confusa",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "5c7a4a1271a8"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-17:c03:ej-contexto-01",
@@ -2885,7 +3345,11 @@
     "razon": "Abril, mayo y junio.",
     "respuesta": "3"
    },
-   "cambio": "se aclara una frase confusa"
+   "cambio": "se aclara una frase confusa",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "7dcfe63583f7"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-19:c01:ej-reason-01",
@@ -2901,7 +3365,11 @@
     "respuesta": "No; hay demasiados nombres distintos"
    },
    "cambio": "afirmaba que ningún nombre se repite",
-   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "c0e764a653d8"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-18:c02:ej-apply-01",
@@ -2916,7 +3384,11 @@
     "razon": "14 es menor que 30.",
     "respuesta": "corto"
    },
-   "cambio": "la respuesta anterior no era la única válida"
+   "cambio": "la respuesta anterior no era la única válida",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "0510a2f728ea"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-17:c01:explicacion",
@@ -2929,7 +3401,11 @@
     "enunciado": "Objetivo de la clase: Aprenderé a ordenar lo que hago en un día usando antes, durante y después. Sirve para organizar mi rutina.",
     "respuesta": "Los eventos ocurren en un orden en el tiempo. Lo primero que pasa es el comienzo; lo último es el final. Para ordenar, usa las palabras antes, durante, después, primero, luego y al final. Antes quiere decir que pasa primero: antes de ir al colegio, desayuno. Durante significa que ocurre al mismo tiempo: durante la clase, escribimos. Después significa que viene más tarde: después del recreo, volvemos a la sala. Para ordenar una rutina, haz una lista con números: 1, 2, 3. Pregúntate qué sucede primero y qué se necesita para el siguiente paso. Así no te equivocas."
    },
-   "cambio": "definía «antes» como algo que ya ocurrió"
+   "cambio": "definía «antes» como algo que ya ocurrió",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "c0ff9740982a"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-02:c02:explicacion",
@@ -2943,7 +3419,11 @@
     "respuesta": "Después del quinto vienen el sexto (6º), el séptimo (7º), el octavo (8º), el noveno (9º) y el décimo (10º). Con ellos puedes ubicar a alguien en una fila de hasta diez lugares. Los ordinales se escriben con el número y una pequeña «o» arriba: 6º, 7º, 8º, 9º, 10º. Se leen sexto, séptimo, octavo, noveno y décimo. Cuando hablas de una niña o de algo femenino, se dice sexta, séptima, octava, novena, décima (6ª, 7ª…). Para encontrar un lugar largo, no cuentes desde cero cada vez: cuenta desde el primero, apoyándote en los que ya sabes. Contando hasta el quinto llevas la mitad de una fila de diez; el sexto es el que viene justo después."
    },
    "cambio": "decía que el quinto tiene la mitad de la fila delante y delante hay cuatro",
-   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "b979ece623a6"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-14:c04:ejemplo-02",
@@ -2959,7 +3439,11 @@
     "respuesta": "Un cilindro para el cuerpo y un cono para la punta"
    },
    "cambio": "la respuesta mezclaba los cuerpos pedidos con las ventanas",
-   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído"
+   "duda": "este texto cambió después de la segunda lectura y nadie más lo ha leído",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "3c15e9fb3cc9"
+   }
   },
   {
    "item": "escolar-chile:1-basico:ma01-oa-19:c03:explicacion",
@@ -2972,7 +3456,11 @@
     "enunciado": "Objetivo de la clase: Aprenderé a pasar los datos de bloques a una tabla de conteo con marcas. Sirve para organizar muchas respuestas con orden.",
     "respuesta": "Una tabla de conteo tiene una fila por opción y una marca por cada respuesta. Se escribe una raya (|) por cada persona. Después de cuatro rayas, la quinta cruza las cuatro, como si las amarrara. Así se cuenta de 5 en 5. Por ejemplo, 7 respuestas a «perro» se anotan con un grupo de cinco más dos rayas. Al terminar, escribe en otra columna el número total de cada opción. La suma de todos los totales debe ser el número de personas. La tabla es más ordenada que una lista y es más fácil de contar. Revisa siempre que la suma de totales sea igual al número de personas que respondieron."
    },
-   "cambio": "el ejemplo del grupo de cinco mostraba cuatro rayas sin cruzar"
+   "cambio": "el ejemplo del grupo de cinco mostraba cuatro rayas sin cruzar",
+   "aprobacion": {
+    "por": "vladimiracunadev-create",
+    "huella": "a04e8b1b5780"
+   }
   }
  ],
  "segunda_lectura": [
