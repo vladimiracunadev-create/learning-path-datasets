@@ -35,6 +35,7 @@ def test_expected_skills_and_agents_exist():
         "verificador-independiente",
         "curador-datasets",
         "auditor-derechos-datos",
+        "limpiador-datos",
     }
 
 

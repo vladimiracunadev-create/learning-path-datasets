@@ -1,0 +1,84 @@
+{
+  "archivos": {
+    "clases.jsonl": {
+      "entidades": 887,
+      "sha256": "ddbae9999032c0a2a7c94e72a5dd5483e3a8be7af94d3c115f818bc9be6debad"
+    },
+    "items.jsonl": {
+      "entidades": 16386,
+      "sha256": "69b5826dd17e256eab4bfeac6c10572b9d994ec3360dca00851c692e9eb6e41e"
+    },
+    "recursos.jsonl": {
+      "entidades": 1653,
+      "sha256": "2f2638c8aab75c01de748357b4fdf90d14940d594dd02f032dea05772c499cef"
+    }
+  },
+  "cobertura": {
+    "catalogo": 1034,
+    "excluidas": [
+      {
+        "asignatura": "lengua-cultura-pueblos-originarios-ancestrales",
+        "clases": 147,
+        "motivo": "requiere un educador tradicional y no debe usarse sin su participación"
+      }
+    ],
+    "oa_catalogo": 237,
+    "oa_representados": 204,
+    "por_estado_editorial": {
+      "desarrollada": 562,
+      "integrada": 325
+    },
+    "representadas": 887
+  },
+  "commit_fuente": "668559a6525427021f2c18ebf472e2ea4be3f3b0",
+  "contrato": "nucleo-0.1",
+  "fuente": "vladimiracunadev-create/chilean-school-learning-path",
+  "licencia": [
+    "CC-BY-NC-SA-4.0"
+  ],
+  "nivel": "1-basico",
+  "pack": "escolar-chile",
+  "por_asignatura": {
+    "artes-visuales": 725,
+    "ciencias-naturales": 1462,
+    "educacion-fisica-salud": 1424,
+    "historia-geografia-ciencias-sociales": 2036,
+    "ingles-propuesta": 2089,
+    "lengua-en": 214,
+    "lengua-es": 355,
+    "lenguaje-comunicacion": 3828,
+    "matematica": 2475,
+    "musica": 869,
+    "orientacion": 1015,
+    "tecnologia": 781
+  },
+  "por_entidad": {
+    "clase": 887,
+    "item": 16386,
+    "recurso": 1653
+  },
+  "por_marco": {
+    "cl-bases-1-6": 16096,
+    "cl-propuesta-ingles-1b": 2261,
+    "sin-marco-oficial": 569
+  },
+  "por_tipo": {
+    "actividad_abierta": 562,
+    "autoevaluacion": 1686,
+    "diccionario_en": 214,
+    "diccionario_es": 355,
+    "ejemplo_resuelto": 1131,
+    "ejercicio_cerrado": 7868,
+    "error_comun": 1124,
+    "explicacion": 562,
+    "vocabulario": 2884
+  },
+  "revision": [
+    "ia_asistida_sin_revision_humana"
+  ],
+  "texto_oficial_omitido": {
+    "entidades": 521,
+    "tramos": 1519
+  },
+  "total": 18926
+}

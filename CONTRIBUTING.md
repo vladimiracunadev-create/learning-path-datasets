@@ -12,6 +12,8 @@ python scripts/smoke.py
 python scripts/docs_stats.py --check
 python scripts/verify_docs.py
 python scripts/docs_diagram.py --check
+lpdatasets core-validate
+lpdatasets clean-report --check
 lpdatasets validate
 ```
 
@@ -26,6 +28,7 @@ lpdatasets validate
 - **No copies** textos oficiales de objetivos de aprendizaje: cita su código.
 - Cada registro necesita `fuente` (repositorio, commit y ruta) y `licencia`. El estado de `revision` debe ser verdadero: no marques revisión humana si no la hubo.
 - Si cambias un dataset publicado, regenéralo con `lpdatasets export` y actualiza las cifras con `python scripts/docs_stats.py --write`. No edites los JSONL a mano: el SHA-256 del manifiesto lo detectará.
+- El núcleo de `nucleo/` tampoco se edita a mano: se regenera con `lpdatasets core-export` y después `lpdatasets clean-report`.
 - Un pack nuevo debe asignar la partición por clase o unidad, nunca por ejemplo suelto, y traer pruebas con una fuente sintética.
 
 Al participar aceptas el [Código de conducta](CODE_OF_CONDUCT.md).

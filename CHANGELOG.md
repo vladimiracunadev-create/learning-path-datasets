@@ -1,5 +1,13 @@
 # Changelog
 
+## Sin publicar · fase 1 del plan de 1.º básico
+
+- Núcleo de 1.º básico en `nucleo/`: 887 clases, 16.386 ítems y 1.653 recursos, con 147 clases excluidas y declaradas. Comandos `core-export` y `core-validate`.
+- El texto oficial de los OA citado por las experiencias integradas se sustituye por su código.
+- Informe de limpieza (`clean-report`) con 1.140 hallazgos pendientes y agente `limpiador-datos`.
+- Campo opcional `idioma` en el contrato `nucleo-0.1`.
+- El lector de la fuente busca el archivo de cada OA una sola vez; el dataset v1.0 no cambia.
+
 ## Sin publicar · fase 0 del plan de 1.º básico
 
 - Plan de implementación de 1.º básico (`docs/PLAN_1_BASICO.md`) y un documento por línea (L01 a L10) con plantilla común; `scripts/verify_docs.py` y el CI los comprueban.

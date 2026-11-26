@@ -18,7 +18,9 @@ diagram = load("docs_diagram")
 def docs_copy(tmp_path: Path) -> Path:
     """Copia del repositorio sin entornos ni datos, para estropear documentos sin tocar los reales."""
     shutil.copytree(
-        ROOT, tmp_path / "repo", ignore=shutil.ignore_patterns(".git", ".venv", ".vector*", "datasets", "*cache*")
+        ROOT,
+        tmp_path / "repo",
+        ignore=shutil.ignore_patterns(".git", ".venv", ".vector*", "datasets", "nucleo", "*cache*"),
     )
     return tmp_path / "repo"
 

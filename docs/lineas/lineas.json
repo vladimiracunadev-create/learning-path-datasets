@@ -1,14 +1,14 @@
 {
   "fases": [
     {"fase": 0, "titulo": "Base documentada", "estado": "hecha"},
-    {"fase": 1, "titulo": "Núcleo y limpieza", "estado": "pendiente"},
+    {"fase": 1, "titulo": "Núcleo y limpieza", "estado": "en curso"},
     {"fase": 2, "titulo": "Vigía y vacíos", "estado": "pendiente"},
     {"fase": 3, "titulo": "RAG, MCP y agentes", "estado": "pendiente"},
     {"fase": 4, "titulo": "Dataset y ajuste", "estado": "pendiente"}
   ],
   "lineas": [
-    {"id": "L01", "titulo": "Núcleo de contenido", "archivo": "L01-nucleo.md", "estado": "EXPERIMENTAL", "fase": 1},
-    {"id": "L02", "titulo": "Limpieza de datos", "archivo": "L02-limpieza.md", "estado": "PLANIFICADO", "fase": 1},
+    {"id": "L01", "titulo": "Núcleo de contenido", "archivo": "L01-nucleo.md", "estado": "OPERATIVO", "fase": 1},
+    {"id": "L02", "titulo": "Limpieza de datos", "archivo": "L02-limpieza.md", "estado": "EXPERIMENTAL", "fase": 1},
     {"id": "L03", "titulo": "Vacíos y creación de contenido", "archivo": "L03-vacios-creacion.md", "estado": "PLANIFICADO", "fase": 2},
     {"id": "L04", "titulo": "Vigía curricular", "archivo": "L04-vigia-curricular.md", "estado": "PLANIFICADO", "fase": 2},
     {"id": "L05", "titulo": "Recuperación (RAG)", "archivo": "L05-rag.md", "estado": "PLANIFICADO", "fase": 3},

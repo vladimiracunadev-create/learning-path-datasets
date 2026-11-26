@@ -25,7 +25,7 @@ La exclusión se mantiene: esa asignatura requiere un educador tradicional.
 
 | Vacío | Medición | Cómo se busca o se crea | Línea |
 |---|---|---|---|
-| Solo hay texto | por palabras clave: 286 clases mencionan dibujar o pintar, 219 escuchar o cantar y 118 mirar imágenes | inventariar el recurso que pide cada clase; crear imágenes y audio propios o con licencia compatible | L03 |
+| Solo hay texto, sin imágenes ni audio | por palabras clave: 286 clases mencionan dibujar o pintar, 219 escuchar o cantar y 118 mirar imágenes | inventariar el recurso que pide cada clase; crear imágenes y audio propios o con licencia compatible | L03 |
 | Estudiantes que aún no leen | explicaciones de 121 palabras en promedio | versión para lectura en voz alta y guía para el adulto | L03, L07 |
 | Sin habilidades etiquetadas | `habilidades` vacío en los 16.386 registros | etiquetar desde OA e indicadores, con verificador | L03 |
 | Dificultad incompleta | 8.518 registros sin `dificultad` | etiquetar con criterio declarado | L02 |
@@ -35,7 +35,7 @@ La exclusión se mantiene: esa asignatura requiere un educador tradicional.
 | Duplicados y cruces | 282 pares repetidos; 27 registros de evaluación idénticos a uno de entrenamiento; 203 de 1.797 comparten la entrada; 525 entradas con respuestas distintas (algunas pueden ser legítimas) | línea de limpieza | L02 |
 | Sin revisión humana | todos los registros declaran `ia_asistida_sin_revision_humana` | muestreo por asignatura, registrando quién revisó | L02 |
 
-Las mediciones sobre texto comparan en minúsculas y con espacios normalizados. Los conteos por palabras clave son heurísticos: indican dónde mirar, no cuántas clases necesitan de verdad un recurso.
+Estas son las mediciones previas a la fase 1; las vigentes están en el [informe de limpieza](informes/limpieza-1-basico.md). Las mediciones sobre texto comparan en minúsculas y con espacios normalizados. Los conteos por palabras clave son heurísticos: indican dónde mirar, no cuántas clases necesitan de verdad un recurso.
 
 ## Cambios educativos y derechos
 
@@ -104,7 +104,7 @@ Flujo: vigía → informe → **aprobación humana** → autor → verificador �
 
 El estado de cada fase está en `lineas.json` y se ve en el esquema.
 
-La prueba de escalamiento (una salida de ejemplo, como fichas imprimibles, sin tocar el núcleo) se hace cuando L01 produzca datos. En la fase 0 se probó el contrato con una modalidad ficticia dentro de las pruebas.
+La prueba de escalamiento (una salida de ejemplo, como fichas imprimibles, sin tocar el núcleo) sigue pendiente; L01 ya produce los datos que necesita. En la fase 0 se probó el contrato con una modalidad ficticia dentro de las pruebas.
 
 ## Decisiones pendientes
 

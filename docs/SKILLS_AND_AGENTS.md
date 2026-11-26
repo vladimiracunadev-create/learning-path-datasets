@@ -1,6 +1,6 @@
 # Skills y agentes para crear datasets de conocimiento
 
-Cuatro skills y cuatro agentes de Claude Code, **independientes del dominio**, que siguen el [estándar de conocimiento puro](KNOWLEDGE_STANDARD.md). Viven en `.claude/skills/` y `.claude/agents/`, así que funcionan solos dentro de este repositorio; además se pueden instalar para todos tus proyectos.
+Cuatro skills y cinco agentes de Claude Code, **independientes del dominio**, que siguen el [estándar de conocimiento puro](KNOWLEDGE_STANDARD.md). Viven en `.claude/skills/` y `.claude/agents/`, así que funcionan solos dentro de este repositorio; además se pueden instalar para todos tus proyectos.
 
 ## Skills
 
@@ -19,6 +19,7 @@ Cuatro skills y cuatro agentes de Claude Code, **independientes del dominio**, q
 | `verificador-independiente` | **lector**: contexto distinto al autor; no sube el estado de revisión |
 | `curador-datasets` | **orquesta** el ciclo (máximo dos tareas en paralelo), integra, deduplica y publica |
 | `auditor-derechos-datos` | licencias, texto de terceros, datos personales y contenido que exige un experto |
+| `limpiador-datos` | convierte los hallazgos de limpieza en propuestas; registra solo lo que una persona apruebe |
 
 ## Ciclo recomendado
 

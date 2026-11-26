@@ -40,9 +40,9 @@ SPECIFIC = {
     "recurso": ("medio", "publico"),
 }
 OPTIONAL = {
-    "clase": ("extra",),
-    "item": ("clase_id", "habilidades", "dificultad", "extra"),
-    "recurso": ("clase_id", "texto", "uri", "sha256", "descripcion", "extra"),
+    "clase": ("idioma", "extra"),
+    "item": ("idioma", "clase_id", "habilidades", "dificultad", "extra"),
+    "recurso": ("idioma", "clase_id", "texto", "uri", "sha256", "descripcion", "extra"),
 }
 SOLUTION_KEYS = ("respuesta", "razon")
 MEDIA_TYPE = re.compile(r"^[a-z]+/[a-z0-9][a-z0-9.+-]*$")
@@ -124,6 +124,8 @@ def validate_entity(entity: Any, marcos: dict[str, dict[str, Any]] | None = None
     problems += _check_rights(entity["derechos"])
     if entity["revision"] not in REVISIONES:
         problems.append(f"revision desconocida: {entity['revision']!r}")
+    if "idioma" in entity and not _is_text(entity["idioma"]):
+        problems.append("«idioma» debe ser texto no vacío")
     if "extra" in entity and not isinstance(entity["extra"], dict):
         problems.append("«extra» debe ser un objeto")
     if entity.get("clase_id") is not None and not _is_text(entity["clase_id"]):

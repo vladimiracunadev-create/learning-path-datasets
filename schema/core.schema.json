@@ -64,6 +64,7 @@
             "ia_asistida_sin_revision_humana", "revision_humana_parcial", "revision_humana_completa", "no_aplica"
           ]
         },
+        "idioma": {"$ref": "#/$defs/texto"},
         "extra": {"type": "object"}
       }
     },

@@ -67,7 +67,7 @@ Una modalidad real, como fichas imprimibles, se agrega desde la plantilla sin mo
 
 ## Límites
 
-No hay todavía ninguna modalidad real registrada ni un comando de línea para ejecutarlas.
+No hay todavía ninguna modalidad real registrada ni un comando de línea para ejecutarlas. El [núcleo](L01-nucleo.md) ya tiene datos con los que probar la primera.
 
 ## Decisiones
 

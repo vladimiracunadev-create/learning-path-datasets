@@ -1,6 +1,6 @@
 # L02 · Limpieza de datos
 
-- **Estado:** `PLANIFICADO`
+- **Estado:** `EXPERIMENTAL`
 - **Depende de:** L01
 
 ## Propósito
@@ -18,11 +18,17 @@ Detectar y resolver duplicados, respuestas en conflicto, fugas entre particiones
 
 ## Entradas y salidas
 
-Entrada: entidades del núcleo (y, como línea base, el dataset v1.0). Salida: informe de hallazgos y propuesta de cambios; nunca edición silenciosa.
+Entrada: el núcleo y, como línea base, el dataset v1.0. Salida: `nucleo/escolar-chile/1-basico/limpieza/hallazgos.jsonl` y el [informe de limpieza](../informes/limpieza-1-basico.md). Nunca edita los datos.
 
 ## Contrato de datos
 
-Cada hallazgo guarda identificador de la entidad, regla, evidencia, acción propuesta y quién la aprobó.
+Cada hallazgo guarda `id` estable, `regla`, `severidad`, `ambito`, `total`, `entidades`, `evidencia`, `accion_propuesta`, `estado`, `motivo` y `aprobado_por`. Las reglas agregadas de etiquetas guardan una muestra de 20 identificadores. Las decisiones van en `limpieza/decisiones.json`:
+
+```json
+{"decisiones": [{"id": "regla:abc123abc123", "estado": "aceptado", "motivo": "…", "aprobado_por": "…"}]}
+```
+
+Si las entidades de un hallazgo cambian, su identificador cambia y la decisión antigua se rechaza.
 
 ## Derechos
 
@@ -30,15 +36,34 @@ No cambia licencias ni procedencia. No eleva el estado de revisión sin una pers
 
 ## Cómo se ejecuta
 
-No implementado.
+```bash
+lpdatasets clean-report
+lpdatasets clean-report --check
+```
+
+El agente [`limpiador-datos`](../../.claude/agents/limpiador-datos.md) prepara las propuestas de decisión; las aprueba una persona.
 
 ## Pruebas
 
-Exigidas: un caso sintético por cada regla y la comprobación de que la limpieza es determinista.
+`tests/test_cleaning.py` tiene un caso sintético por regla, comprueba el determinismo y rechaza decisiones incompletas u obsoletas. El CI comprueba que el informe publicado corresponda a los datos.
 
 ## Métricas
 
-Línea base del dataset v1.0 al 2026-11-26: 282 pares repetidos; 27 registros de evaluación idénticos a uno de entrenamiento; 203 de 1.797 registros de evaluación con la entrada presente en entrenamiento; 525 entradas con respuestas distintas; 2.499 salidas de 3 caracteres o menos; 8.518 registros sin `dificultad`. Las salidas cortas y parte de los conflictos pueden ser legítimos.
+Primer informe, 2026-11-26: 1.140 hallazgos, todos pendientes.
+
+| Regla | Hallazgos | Afectados |
+|---|---:|---:|
+| Evaluación idéntica a entrenamiento (v1.0) | 9 | 27 |
+| Evaluación con la entrada en entrenamiento (v1.0) | 10 | 203 |
+| Duplicado exacto por asignatura | 151 | 348 |
+| Respuestas en conflicto por asignatura y tipo | 328 | 856 |
+| Solución contenida en el enunciado | 445 | 1.569 |
+| Respuesta larga literal en el cuaderno | 165 | 201 |
+| Coincidencia con texto oficial | 12 | 12 |
+| Sin habilidades | 12 | 16.386 |
+| Sin dificultad | 8 | 8.518 |
+
+Las cifras de duplicados y conflictos difieren de la medición del plan porque ahora se agrupa por asignatura y tipo.
 
 ## Listo cuando
 
@@ -46,8 +71,9 @@ Hay un informe antes y después, cada hallazgo está resuelto o aceptado con mot
 
 ## Límites
 
-Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector.
+Las reglas encuentran problemas de forma; los errores pedagógicos requieren un lector, y muchos hallazgos «revisar» pueden ser legítimos. `recurso_ausente` dio 0: solo busca consignas que piden ver o escuchar un medio con ciertos verbos; en los ejemplos leídos las consignas describen la imagen con palabras, pero eso no descarta otros casos. Todavía no hay informe «después»: ninguna decisión está aprobada ni aplicada.
 
 ## Decisiones
 
-- 2026-11-26: el agente `limpiador-datos` propondrá cambios y no borrará sin registro.
+- 2026-11-26: el agente `limpiador-datos` propone cambios y no borra sin registro.
+- 2026-11-26: el dataset v1.0 no se modifica; sus cruces se corrigen al construir la versión siguiente (L08).

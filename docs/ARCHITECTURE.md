@@ -48,7 +48,7 @@ flowchart TB
 
 ## Hacia el núcleo
 
-El flujo de arriba es el que produce el dataset publicado. El [plan de 1.º básico](PLAN_1_BASICO.md) lo reemplaza gradualmente por un [núcleo](CORE_CONTRACT.md) del que leen todas las [modalidades](lineas/README.md). Hoy existen el contrato (`core.py`) y el registro de modalidades (`modalities.py`), todavía sin contenido exportado.
+El flujo de arriba es el que produce el dataset publicado. El [plan de 1.º básico](PLAN_1_BASICO.md) lo reemplaza gradualmente por un [núcleo](CORE_CONTRACT.md) del que leen todas las [modalidades](lineas/README.md). El núcleo de 1.º básico ya se exporta (`core_escolar.py`), se valida (`core_build.py`) y se revisa (`cleaning.py`); el registro de modalidades (`modalities.py`) todavía no tiene ninguna real. El dataset v1.0 se sigue generando por el flujo anterior.
 
 ## Qué no hace
 

@@ -1,4 +1,4 @@
-"""Línea de comandos: export, validate, stats, index y search."""
+"""Línea de comandos: export, validate, stats, index, search y las órdenes del núcleo y de limpieza."""
 
 from __future__ import annotations
 
@@ -9,6 +9,9 @@ from pathlib import Path
 
 from . import __version__
 from .build import build, stats, validate_datasets
+from .cleaning import report
+from .core_build import validate_core
+from .core_escolar import export as export_core
 from .vector import build_index, search
 
 
@@ -34,6 +37,20 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--licencia")
     p.add_argument("--idioma")
     p.add_argument("--repo")
+
+    p = sub.add_parser("core-export", help="exporta chilean-school-learning-path al núcleo")
+    p.add_argument("--source", required=True, help="carpeta del programa de aprendizaje")
+    p.add_argument("--nivel", default="1-basico")
+    p.add_argument("--out", default="nucleo")
+
+    p = sub.add_parser("core-validate", help="valida el núcleo publicado")
+    p.add_argument("--nucleo", default="nucleo")
+
+    p = sub.add_parser("clean-report", help="informe de limpieza; no modifica los datos")
+    p.add_argument("--nucleo", default="nucleo")
+    p.add_argument("--datasets", default="datasets")
+    p.add_argument("--informe", default="docs/informes/limpieza-1-basico.md")
+    p.add_argument("--check", action="store_true", help="falla si el informe está desactualizado")
 
     p = sub.add_parser("validate", help="valida esquema, hashes y particiones")
     p.add_argument("--datasets", default="datasets")
@@ -65,6 +82,18 @@ def main(argv: list[str] | None = None) -> int:
         folder = build(args.pack, Path(args.out), source=args.source, **extra)
         print(f"Dataset escrito en {folder}")
         return 0
+    if args.cmd == "core-export":
+        folder = export_core(Path(args.source), Path(args.out), args.nivel)
+        print(f"Núcleo escrito en {folder}")
+        return 0
+    if args.cmd == "core-validate":
+        problems = validate_core(Path(args.nucleo))
+        print("\n".join(problems[:50]) if problems else "OK: núcleo válido")
+        return 1 if problems else 0
+    if args.cmd == "clean-report":
+        stale = report(Path(args.nucleo), Path(args.datasets), Path(args.informe), args.check)
+        print("\n".join(stale) if stale else "OK: informe de limpieza al día")
+        return 1 if stale else 0
     if args.cmd == "validate":
         problems = validate_datasets(Path(args.datasets))
         print("\n".join(problems[:50]) if problems else "OK: datasets válidos")

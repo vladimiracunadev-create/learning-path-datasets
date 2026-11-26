@@ -2,7 +2,7 @@
 
 El núcleo representa el contenido **una vez**; las modalidades (dataset, RAG, MCP, agentes y las futuras) lo leen. Definición: [`schema/core.schema.json`](../schema/core.schema.json) y `src/lpdatasets/core.py`, comparadas entre sí en `tests/test_core.py`.
 
-Estado: experimental. Aún **no hay contenido exportado** a este formato; ver [L01](lineas/L01-nucleo.md). El [esquema de registros v1.0](DATASET_SCHEMA.md) y el dataset publicado no cambian.
+Estado del contrato: experimental. Contiene **1.º básico**, exportado en `nucleo/` (ver [L01](lineas/L01-nucleo.md)). El [esquema de registros v1.0](DATASET_SCHEMA.md) y el dataset publicado no cambian.
 
 ## Entidades
 
@@ -24,6 +24,7 @@ Estado: experimental. Aún **no hay contenido exportado** a este formato; ver [L
 | `procedencia` | `repo`, `commit` y `ruta` |
 | `derechos` | `licencia`, `titular`, `origen`; `atribucion` en licencias CC BY; `autorizaciones` opcionales |
 | `revision` | los mismos estados del esquema v1.0 |
+| `idioma` | opcional; código de idioma |
 | `extra` | campos propios; se quita cuando se oculta la solución |
 
 ## Marcos curriculares

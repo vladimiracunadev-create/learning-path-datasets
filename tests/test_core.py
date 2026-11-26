@@ -78,6 +78,7 @@ def rights(**values) -> dict:
 INVALID = [
     changed(CLASS, entidad="video"),
     changed(CLASS, numero=0),
+    changed(CLASS, idioma=""),
     changed(CLASS, estado_editorial="borrador"),
     changed(CLASS, inventado=True),
     without(CLASS, "derechos"),

@@ -270,8 +270,11 @@ def records(source: str | Path, nivel: str = "1-basico", **_: Any) -> Iterator[R
         student_lessons.load_all()
         commit = _git_commit(source)
         code = LEVEL_CODE[nivel]
+        files: dict[str, Path | None] = {}
         for (oa_code, number), content in sorted(student_lessons.REGISTRY.items()):
-            path = validator.curriculum_file(oa_code)
+            if oa_code not in files:
+                files[oa_code] = validator.curriculum_file(oa_code)
+            path = files[oa_code]
             if path is None or path.parent.parent.name != nivel:
                 continue
             asignatura = path.parent.name

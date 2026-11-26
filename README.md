@@ -66,8 +66,9 @@ Tipos en `escolar-chile` · 1-basico: actividad_abierta 562, autoevaluacion 1.68
 | Índice Qdrant local | `OPERATIVO-CON-EXTRA` | extra `qdrant`, prueba de equivalencia con NumPy |
 | Embeddings semánticos | `PLANIFICADO` | el embedder por defecto es **léxico**; ver [Base vectorial](docs/VECTOR_STORE.md) |
 | Tipos de conocimiento puro (`hecho`, `definicion`, `relacion`…) | `OPERATIVO` | esquema y [estándar](docs/KNOWLEDGE_STANDARD.md) |
-| 4 skills y 4 agentes generales para crear datasets | `OPERATIVO` | `.claude/`, `scripts/verify_assets.py` y pruebas; estructura verificada, calidad no medida |
-| Contrato del núcleo y selección por uso, público y marco | `EXPERIMENTAL` | [núcleo](docs/CORE_CONTRACT.md) y pruebas; aún sin contenido exportado |
+| 4 skills y 5 agentes generales para crear y limpiar datasets | `OPERATIVO` | `.claude/`, `scripts/verify_assets.py` y pruebas; estructura verificada, calidad no medida |
+| Núcleo de 1.º básico: 887 clases, 16.386 ítems y 1.653 recursos | `OPERATIVO` | `nucleo/`, `lpdatasets core-validate`; contrato [`nucleo-0.1`](docs/CORE_CONTRACT.md), aún experimental |
+| Informe de limpieza | `EXPERIMENTAL` | [1.140 hallazgos](docs/informes/limpieza-1-basico.md), pendientes de decisión |
 | Líneas de implementación documentadas | `OPERATIVO` | `scripts/verify_docs.py`; comprueba estructura, no la calidad del texto |
 | Otros niveles escolares y otros programas | `PLANIFICADO` | [hoja de ruta](ROADMAP.md) |
 
@@ -110,7 +111,7 @@ lpdatasets export --pack escolar-chile --nivel 1-basico \
 
 ## 🤖 Skills y agentes
 
-Para producir datasets de **conocimiento puro** en cualquier dominio hay cuatro skills (`dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar`, `dataset-pack-nuevo`) y cuatro agentes (`extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos`), con la regla de que **quien verifica no es quien escribió**. Se instalan para todos tus proyectos con `python scripts/install_claude_assets.py`. Detalle en [Skills y agentes](docs/SKILLS_AND_AGENTS.md).
+Para producir datasets de **conocimiento puro** en cualquier dominio hay cuatro skills (`dataset-conocimiento-extraer`, `dataset-verificar`, `dataset-construir-publicar`, `dataset-pack-nuevo`) y cinco agentes (`extractor-conocimiento`, `verificador-independiente`, `curador-datasets`, `auditor-derechos-datos`, `limpiador-datos`), con la regla de que **quien verifica no es quien escribió**. Se instalan para todos tus proyectos con `python scripts/install_claude_assets.py`. Detalle en [Skills y agentes](docs/SKILLS_AND_AGENTS.md).
 
 ## 🧩 Packs
 
